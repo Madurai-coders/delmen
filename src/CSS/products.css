@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.ourproducts {
+  padding: 20px 150px;
+}
+.product_title {
+  color: #8d1fa8;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 129%;
+}
+
+@media only screen and (max-width: 1479px) {
+  .img_2 {
+    margin-top: 0px !important;
+ 
+  }
+}
+@media only screen and (max-width: 1225px) {
+  .ourproducts {
+    padding: 20px 100px;
+  }
+}
+@media only screen and (max-width: 1125px) {
+       .ourproducts {
+         padding: 20px 70px;
+       }
+     }
+     @media only screen and (max-width: 1000px) {
+       .ourproducts {
+         padding: 20px 50px;
+       }
+       .img_3{
+              margin-bottom: 30px!important;
+       }
+     }
+     @media only screen and (max-width: 580px) {
+       .ourproducts {
+         padding: 20px 30px;
+       }
+     }
+     @media only screen and (max-width: 425px) {
+       .ourproducts {
+         padding: 20px 20px;
+       }
+       .img_2{
+              margin-top: 2px!important;
+       }
+       .img_3{
+              margin-bottom: 26px!important;
+       }
+       .product_title{
+              font-size: 35px;
+       }
+     }
+     @media only screen and (max-width: 300px) {
+       .product_title{
+              font-size:28px;
+       }
+     }

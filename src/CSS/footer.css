@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+.footer {
+  background: #9100b7;
+  margin-top: 250px;
+}
+.company_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.4679px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.footer_txt {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20.2817px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.links {
+  padding: 0px 0px;
+}
+.footer_content {
+  padding: 0 100px;
+  position: relative;
+  bottom: 70px;
+}
+.navbar_list {
+  display: inline-block;
+  padding: 0px 30px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: 0.035em;
+  color: #ffffff;
+}
+
+.contact_card {
+  background-image: url("../assets/applications/contact.svg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  bottom: 100px;
+}
+
+.contactcard_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 51px;
+  
+}
+.contactcard_address {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+ 
+}
+
+.contactus_btn {
+  border-color: #8d1fa8 !important;
+  background: #8d1fa8 !important;
+  border-radius: 70px;
+  padding: 8px 30px;
+ margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .footer_content {
+    padding: 0 60px;
+  }
+  .navbar_list{
+    margin-left: 0px!important;
+    padding: 0 20px;
+  }
+
+}
+@media only screen and (max-width: 1058px) {
+  .company_title{
+    font-size: 26px;
+  }
+  .footer_txt{
+font-size: 17px;
+  }
+  .navbar_list{
+    font-size: 17px;
+  padding: 0 10px;
+  }
+  .footer_content{
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+.Navbar {
+  background-image: url("../assets/applications/homepage.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: fit-content;
+}
+.Nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  color: white;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.2836px;
+  line-height: 22px;
+}
+
+.inquiry_btn {
+  border-radius: 32px;
+  text-transform: lowercase !important;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.2636px;
+  line-height: 17px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+.homepage_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 129%;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.search {
+  width: 350px;
+  padding: 10px 0px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  position: relative;
+}
+.search_icon {
+  color: #ffffff;
+}
+.iconbutton {
+  background-color: #8d1fa8 !important;
+  position: relative;
+  left: 40px;
+}
+/* menulist */
+.menu > li,
+.menu > a {
+  display: inline-block;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 20px;
+  transition: background-color 0.22s ease, color 0.22s ease;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  color: white;
+}
+
+.menu li {
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  width: 180px;
+  left: -20px;
+  right: 0;
+  display: none;
+  padding: 10px 0px;
+  border-top: 2px #8d1fa8;
+  z-index: 2;
+  background: #fef9ff;
+  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
+  border-radius: 11px;
+}
+.submenu li {
+  list-style: none;
+}
+
+.submenu a {
+  color: #7a7979;
+  font-size: 12px;
+  padding: 5px 5px;
+}
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.submenu_2 {
+  position: absolute;
+  left: 182px;
+  top: 0;
+  display: none;
+  overflow-x: hidden;
+  width: 110%;
+  background: #fef9ff;
+  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
+  border-radius: 11px;
+}
+.submenu_2 a {
+  color: #7a7979;
+  font-size: 13px;
+}
+.submenu_2 li {
+  padding: 1px 0px;
+  margin-left: -20px;
+}
+.menu li:hover > .submenu_2 {
+  display: block;
+}
+.submenu a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 10px;
+  background-color: #8d1fa8 !important;
+  transition: 0.6s ease-in-out;
+}
+.submenu a:hover:after {
+  width: 90%;
+}
+
+.menu a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 10px;
+  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.menu a:hover:after {
+  width: 90%;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: inset 0px 4px 36px rgba(226, 114, 255, 0.38);
+  border-radius: 28px;
+  width: 70%;
+  margin-bottom: 40px;
+  border: none;
+}
+.megaphone {
+  height: 150px;
+}
+.megaphone_txt {
+  background: #9100b7;
+  color: #ffffff;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+.latest_txt {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+.cards {
+  padding: 30px 120px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .menu a {
+    font-size: 16px;
+  }
+  .submenu a {
+    font-size: 12px;
+  }
+  .submenu_2 a {
+    font-size: 12px;
+  }
+  .inquiry_btn {
+    margin-left: 0px !important;
+    font-size: 14px;
+  }
+  .logo {
+    font-size: 16px;
+  }
+  .card {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .homepage_menu {
+    margin-left: 0px !important;
+  }
+}

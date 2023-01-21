@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+.about_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 129%;
+  letter-spacing: 0.05em;
+  color: #8d1fa8;
+}
+.about_content {
+  width: 79%;
+}
+.about_des {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.06em;
+}
+.about_des1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.06em;
+}
+
+.readmore_btn {
+  border-color: #8d1fa8 !important;
+  background: #8d1fa8 !important;
+  border-radius: 70px;
+  padding: 10px 35px;
+}
+
+@media only screen and (max-width: 1210px) {
+  .about_content {
+    width: 90%;
+  }
+  .aboutus {
+    margin-top: 0px !important;
+    padding-top: 10px !important;
+  }
+  .about_des {
+    font-size: 17px;
+  }
+  .about_des1 {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about_des {
+    font-size: 16px;
+  }
+  .about_des1 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about_des {
+    font-size: 15px;
+  }
+  .about_des1 {
+    font-size: 15px;
+  }
+  .forcontact_details {
+    margin-top: -5px !important;
+  }
+  .readmore_btn {
+    margin-top: 20px !important;
+  }
+  .aboutus {
+    padding-top: 0px !important;
+  }
+  .ab {
+    margin-top: 10px !important;
+  }
+  .about_title {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .about_des {
+    font-size: 12px;
+  }
+  .about_des1 {
+    font-size: 12px;
+  }
+  .readmore_btn {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about_des1 {
+    display: none;
+  }
+  .about_des {
+    font-size: 12px;
+  }
+  .readmore_btn {
+    font-size: 13px;
+  }
+  .aboutus {
+    margin-top: 20px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .aboutus {
+    margin-top: 0px !important;
+  }
+  .about_des {
+    font-size: 10px;
+  }
+  .about_content {
+    margin-top: 10px !important;
+  }
+  .readmore_btn {
+    font-size: 11px;
+    padding: 7px 20px;
+    margin-top: 10px !important;
+  }
+  .about_title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 389px) {
+  .about_des {
+    font-size: 9px;
+  }
+  .about_title {
+    font-size: 26px;
+  }
+}

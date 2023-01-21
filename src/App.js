@@ -1,11 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "../src/App.css";
+import OurProducts from "./Components/OurProducts/products";
+import Application from "./Components/Application/application";
+import WhoWeAre from './Components/WhoWeAre/weare';
+import Mesh from './Components/MeshImage/mesh';
+import Footer from "./Components/Footer/footer";
+import Navbar from "./Components/Navbar/navbar";
 function App() {
   return (
-    <div>
-<h1>delmen</h1>
-    </div>
+    <>
+      <div>
+         <Navbar/> 
+        <OurProducts />
+        <WhoWeAre/>
+        <Application/>
+        <Mesh/>
+        <Footer/> 
+      </div>
+    </>
   );
 }
 
