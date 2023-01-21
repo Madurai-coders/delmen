@@ -1,21 +1,16 @@
 import "../src/App.css";
-import OurProducts from "./Components/OurProducts/products";
-import Application from "./Components/Application/application";
-import WhoWeAre from './Components/WhoWeAre/weare';
-import Mesh from './Components/MeshImage/mesh';
-import Footer from "./Components/Footer/footer";
-import Navbar from "./Components/Navbar/navbar";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./Components/main/main";
+
 function App() {
   return (
     <>
-      <div>
-         <Navbar/> 
-        <OurProducts />
-        <WhoWeAre/>
-        <Application/>
-        <Mesh/>
-        <Footer/> 
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
