@@ -33,6 +33,11 @@
   line-height: 17px;
   background-color: #ffffff;
   padding: 10px 20px;
+  color: black;
+}
+
+.inquiry_btn:hover{
+  color: black;
 }
 .homepage_title {
   font-family: "Rubik";

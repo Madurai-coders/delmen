@@ -98,7 +98,7 @@ function Navbar() {
               </Link>
             </li>
 
-            <button type="button" className="btn btn-light inquiry_btn ms-4">
+            <button type="button" className="btn inquiry_btn ms-4">
               Send Enquiry
             </button>
           </ul>

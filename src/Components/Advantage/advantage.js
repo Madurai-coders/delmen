@@ -18,15 +18,15 @@ function Advantage() {
     <>
       <div className="advantage">
         <div className="Nav text-center">
-          <h5 className="logo mt-4">
+          <h5 className="log mt-4">
             Delmen Mosquito<br></br>Screen
           </h5>
 
           <div className="homepage_menu">
-            <ul className="menu mt-4">
+            <ul className="Menu mt-2">
               <li>
                 <Link to="/" style={{ textDecoration: "none" }}>
-                  <a href="#" className="contacttrans">
+                  <a href="#" className="Contacttrans">
                     Home Page
                   </a>
                 </Link>
@@ -37,10 +37,10 @@ function Advantage() {
               <li>
                 <a href="#">Our Products</a>
 
-                <ul className="submenu">
+                <ul className="SubMenu">
                   <li>
                     <a href="#">Retractable Double Door</a>
-                    <ul className="submenu_2">
+                    <ul className="Submenu_2">
                       <li>
                         <a href="#">Retractable Double Door</a>
                       </li>
@@ -75,7 +75,7 @@ function Advantage() {
                   </li>
                   <li>
                     <a href="#">Doors/Windows Accessories</a>
-                    <ul className="submenu_2">
+                    <ul className="Submenu_2">
                       <li>
                         <a href="#">Sliding Window system</a>
                       </li>
@@ -95,7 +95,7 @@ function Advantage() {
 
                   <li>
                     <a href="#">Magnetic Insect Screens</a>
-                    <ul className="submenu_2">
+                    <ul className="Submenu_2">
                       <li>
                         <a href="#">
                           Magnetic Insect Screens with Fiber Glass Mesh
@@ -107,13 +107,13 @@ function Advantage() {
               </li>
               <li>
                 <Link to="/contactus" style={{ textDecoration: "none" }}>
-                  <a href="#" className="contacttrans">
+                  <a href="#" className="Contacttrans">
                     Contact Us
                   </a>{" "}
                 </Link>
               </li>
 
-              <button type="button" className="btn  inquiry_btn ms-4">
+              <button type="button" className="btn  Inquiry_btn ms-4">
                 Send Enquiry
               </button>
             </ul>
