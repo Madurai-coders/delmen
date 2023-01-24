@@ -40,9 +40,12 @@
   letter-spacing: 0.035em;
   color: #ffffff;
 }
+.navbar_list:hover{
+  text-decoration: underline;
+}
 
 .contact_card {
-  background-image: url("../assets/applications/contact.svg");
+  background-image: url("../../assets/applications/contact.svg");
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;

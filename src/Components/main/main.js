@@ -1,13 +1,13 @@
-import Navbar from "../Navbar/navbar";
-import OurProducts from "../OurProducts/products";
-import WeAre from '../WhoWeAre/weare';
-import Application from '../Application/application';
-import MeshImg from '../MeshImage/mesh';
+import OurProducts from "../Homepage/products";
+import WeAre from '../Homepage/weare';
+import Application from '../Homepage/application';
+import MeshImg from '../Homepage/mesh';
 import Footer from '../Footer/footer';
+import Landingpage from "../Homepage/landingpage";
 function Main() {
   return (
     <>
-      <Navbar />
+      <Landingpage/>
       <OurProducts />
       <WeAre/>
       <Application/>

@@ -1,6 +1,6 @@
-import "../../CSS/weare.css";
+import "../../CSS/homepage/weare.css";
 import Since from "../../assets/applications/about.svg";
-
+import { Link } from "react-router-dom";
 function Weare() {
   return (
     <>
@@ -33,8 +33,9 @@ function Weare() {
                   improve/substitute them with superior alternatives as
                   available.
                 </p>
-               
+                <Link to="/advantage" style={{ textDecoration: "none" }}>
                 <button type="button" className="btn btn-secondary readmore_btn mt-5">Read More</button>
+                </Link>
               </div>
             </div>
           </div>

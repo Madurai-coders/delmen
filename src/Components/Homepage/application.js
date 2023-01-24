@@ -1,4 +1,4 @@
-import "../../CSS/application.css";
+import "../../CSS/homepage/application.css";
 import Home from "../../assets/applications/home.png";
 import Hotel from "../../assets/applications/hotel.png";
 import Office from "../../assets/applications/office.png";

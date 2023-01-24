@@ -1,4 +1,4 @@
-import "../../CSS/mesh.css";
+import "../../CSS/homepage/mesh.css";
 import MeshNet from "../../assets/MagneticNet/magneticnet.png";
 import Strips from "../../assets/MagneticNet/strips.png";
 import Magnet from "../../assets/MagneticNet/magnet.png";

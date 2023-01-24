@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+.Nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  color: #8d1fa8;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.2836px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.inquiry_btn {
+  border-radius: 32px;
+  text-transform: lowercase !important;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.2636px;
+  line-height: 17px;
+  background-color: #8d1fa8;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+.inquiry_btn:hover {
+  color: #ffffff;
+}
+
+.menu > li,
+.menu > a {
+  display: inline-block;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 30px;
+  transition: background-color 0.22s ease, color 0.22s ease;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #8d1fa8;
+}
+
+.menu li {
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  width: 180px;
+  left: -20px;
+  right: 0;
+  display: none;
+  padding: 10px 0px;
+  border-top: 2px #8d1fa8;
+  z-index: 2;
+  background: #8d1fa8;
+  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
+  border-radius: 11px;
+}
+.submenu li {
+  list-style: none;
+}
+
+.submenu a {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px 5px;
+}
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.submenu_2 {
+  position: absolute;
+  left: 182px;
+  top: 0;
+  display: none;
+  overflow-x: hidden;
+  width: 110%;
+  background: #8d1fa8;
+  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
+  border-radius: 11px;
+}
+.submenu_2 a {
+  color: #ffffff;
+  font-size: 13px;
+}
+.submenu_2 li {
+  padding: 1px 0px;
+  margin-left: -20px;
+}
+.menu li:hover > .submenu_2 {
+  display: block;
+}
+.submenu a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 10px;
+  background-color: #ffffff !important;
+  transition: 0.6s ease-in-out;
+}
+.submenu a:hover:after {
+  width: 90%;
+}
+
+.menu a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0px;
+  left: 10px;
+  background-color: #8d1fa8;
+  transition: 0.3s ease-in-out;
+}
+.menu .contacttrans {
+  padding: 2px 20px;
+}
+
+.menu a:hover:after {
+  width: 90%;
+}
+.ourproducts-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 33px;
+  letter-spacing: 0.075em;
+  color: #000000;
+}
+.products-des {
+  padding-right: 40px;
+}
+.products_details {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 129.5%;
+  letter-spacing: 0.035em;
+  text-transform: capitalize;
+  color: #000000;
+}
+.products_points {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 301.5%;
+  letter-spacing: 0.035em;
+  text-transform: capitalize;
+  color: #000000;
+}
+.advantageof_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 33px;
+  letter-spacing: 0.075em;
+  color: #000000;
+}
+.aa {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 100;
+}
+
+.container {
+  padding: 0px 10px 60px 0px;
+  max-width: 1200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.slick-slide img {
+  margin: auto;
+}
+.card-description{
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 14.4545px;
+line-height: 217.5%;
+letter-spacing: 0.055em;
+text-transform: capitalize;
+color: #000000;
+}
+
+@media only screen and (max-width: 1120px) {
+  .menu a {
+    font-size: 16px;
+    padding: 20px 20px;
+  }
+  .submenu a {
+    font-size: 12px;
+    padding: 5px 0px;
+  }
+  .submenu_2 a {
+    font-size: 12px;
+  }
+
+  .inquiry_btn {
+    margin-left: 0px !important;
+    font-size: 12px;
+  }
+  .logo {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .homepage_menu {
+    margin-left: 0px !important;
+  }
+}

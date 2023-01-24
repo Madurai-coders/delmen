@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
 
 .Navbar {
-  background-image: url("../assets/applications/homepage.png");
+  background-image: url("../../assets/applications/homepage.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -12,7 +12,6 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 .logo {
   color: white;
@@ -21,6 +20,7 @@
   font-weight: 500;
   font-size: 18.2836px;
   line-height: 22px;
+  text-transform: uppercase;
 }
 
 .inquiry_btn {
@@ -67,12 +67,12 @@
 .menu a {
   text-decoration: none;
   display: block;
-  padding: 20px 20px;
+  padding: 20px 30px;
   transition: background-color 0.22s ease, color 0.22s ease;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 23px;
   color: white;
 }
@@ -147,15 +147,19 @@
   position: absolute;
   width: 0%;
   height: 2px;
-  bottom: 0;
+  bottom: 0px;
   left: 10px;
   background-color: #ffffff;
   transition: 0.3s ease-in-out;
 }
+.menu .contacttrans {
+  padding: 2px 20px;
+}
+
 .menu a:hover:after {
   width: 90%;
 }
-
+/* card */
 .card {
   background: #ffffff;
   box-shadow: inset 0px 4px 36px rgba(226, 114, 255, 0.38);
@@ -189,16 +193,19 @@
 @media only screen and (max-width: 1120px) {
   .menu a {
     font-size: 16px;
+    padding: 20px 20px;
   }
   .submenu a {
     font-size: 12px;
+    padding: 5px 0px;
   }
   .submenu_2 a {
     font-size: 12px;
   }
+
   .inquiry_btn {
     margin-left: 0px !important;
-    font-size: 14px;
+    font-size: 12px;
   }
   .logo {
     font-size: 16px;

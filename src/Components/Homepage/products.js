@@ -1,4 +1,4 @@
-import "../../CSS/products.css";
+import "../../CSS/homepage/products.css";
 import MultiSlidingDoor from "../../assets/Retractable Double Door/multislidingdoor.png";
 import OpenableSingleDoor from "../../assets/Retractable Double Door/openablesingledoor.png";
 import SlidingWindow from "../../assets/Retractable Double Door/slidingwindow.png";
