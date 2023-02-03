@@ -8,7 +8,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
-  font-size: 32.4679px;
+  font-size: 26px;
   line-height: 38px;
   color: #ffffff;
 }
@@ -16,7 +16,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
-  font-size: 20.2817px;
+  font-size: 17px;
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 20px;
@@ -25,27 +25,27 @@
   padding: 0px 0px;
 }
 .footer_content {
-  padding: 0 100px;
+  padding: 0 90px;
   position: relative;
   bottom: 70px;
 }
 .navbar_list {
   display: inline-block;
-  padding: 0px 30px;
+  padding: 0px 15px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.035em;
   color: #ffffff;
 }
-.navbar_list:hover{
+.navbar_list:hover {
   text-decoration: underline;
 }
 
 .contact_card {
-  background-image: url("../../assets/applications/contact.svg");
+  background-image: url("../../assets/HomePage/contact.svg");
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
@@ -59,7 +59,6 @@
   font-weight: 500;
   font-size: 38px;
   line-height: 51px;
-  
 }
 .contactcard_address {
   font-family: "Rubik";
@@ -67,7 +66,6 @@
   font-weight: 300;
   font-size: 17px;
   line-height: 25px;
- 
 }
 
 .contactus_btn {
@@ -75,31 +73,198 @@
   background: #8d1fa8 !important;
   border-radius: 70px;
   padding: 8px 30px;
- margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 1250px) {
-  .footer_content {
-    padding: 0 60px;
-  }
-  .navbar_list{
-    margin-left: 0px!important;
-    padding: 0 20px;
-  }
 
-}
 @media only screen and (max-width: 1058px) {
-  .company_title{
+  .company_title {
     font-size: 26px;
   }
-  .footer_txt{
-font-size: 17px;
-  }
-  .navbar_list{
+  .footer_txt {
     font-size: 17px;
-  padding: 0 10px;
+  }
+  .navbar_list {
+    padding: 0 10px;
+    font-size: 17px;
+  }
+  .footer_content {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 893px) {
+  .contact_card {
+    background-image: url("../../assets/HomePage/contact.svg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    top: -100px;
+  }
+  .contactcard_des {
+    margin-top: 0px !important;
+    position: relative;
+    top: 30px;
+    padding: 0px 100px;
+  }
+  .contactcard_title {
+    font-size: 30px;
+  }
+  .contactcard_address {
+    font-size: 15px;
+  }
+  .contactus_btn {
+    margin-bottom: 100px;
   }
   .footer_content{
-    padding: 0 40px;
+    position: relative;
+    bottom: 80px;
+    padding: 0 20px;
+  }
+  
+  .footer_txt
+  {
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  .navbar_list{
+    font-size: 15px;
+    margin-left: 0px!important;
+  }
+  .company_title{
+    font-size: 24px;
+  }
+  .footer{
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer_txt{
+    padding: 0px 0px;
+    text-align: center;
+  }
+  .company_title{
+    text-align: center;
+  }
+  .footer_content{
+    position: relative;
+    bottom: 80px;
+  }
+ .navbar_list{
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 0px!important;
+
+ }
+ .link{
+  display: flex;
+  justify-content: center;
+  position: relative;
+    bottom: 30px;
+ }
+
+}
+@media only screen and (max-width: 686px) {
+  .contact_card {
+    background-image: url("../../assets/HomePage/contact.svg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contact_card {
+    background-image: url("../../assets/HomePage/contact.svg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 170% 100%;
+    top: -80px;
+  }
+  .contactcard_title {
+    font-size: 23px;
+  }
+  .contactcard_address {
+    font-size: 12px;
+  }
+  .contactcard_des {
+    padding: 0px 0px;
+  }
+  .company_title{
+    font-size: 23px;
+  }
+  .navbar_list{
+    font-size: 14px;
+  }
+  .footer{
+    margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 493px) {
+  .contactus_btn {
+    font-size: 13px;
+    margin-top: 0px !important;
+  }
+  .contactcard_address {
+    margin-top: 0px !important;
+  }
+  .contactcard_title {
+    margin-top: 25px !important;
+    position: relative;
+    top: 10px;
+  }
+  .navbar_list{
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+  .company_title{
+    font-size: 16px;
+  }
+  .footer_txt{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .footer{
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 388px) {
+  .contactus_btn {
+    font-size: 11px;
+  }
+  .contactcard_address {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contactcard_title {
+    font-size: 20px;
+  }
+  .footer{
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .contactus_btn {
+    font-size: 8px;
+    padding: 3px 15px;
+  }
+  .contactcard_address {
+    font-size: 9px;
+    line-height: 13px;
+  }
+  .contactcard_title {
+    font-size: 17px;
+    position: relative;
+    top: 14px;
+  }
+  .company_title{
+    font-size: 13px;
+  }
+  .footer_txt{
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .navbar_list{
+    font-size: 8px;
   }
 }

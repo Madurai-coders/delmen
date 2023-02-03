@@ -1,38 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-.mesh{
-       padding: 50px 80px;
+.mesh {
+  padding: 50px 80px;
 }
 
-.densermesh_txt{
-       
-font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 16.7919px;
-line-height: 140%;
+.densermesh_txt {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.7919px;
+  line-height: 140%;
 }
 
+.densermesh_txt3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.7919px;
+  line-height: 140%;
+}
+.denser {
+  height: 50px;
+}
 @media only screen and (max-width: 1350px) {
-       .mesh{
-              padding: 50px 20px;
-       } 
-
+  .mesh {
+    padding: 50px 20px;
+  }
 }
 @media only screen and (max-width: 1200px) {
-       .meshimg{
-              margin-left: 0px!important;
-       }
+  .meshimg {
+    margin-left: 0px !important;
+  }
+  .magnetgrp_img {
+    margin-top: 80px !important;
+  }
 }
 @media only screen and (max-width: 1050px) {
-       .meshimg{
-              padding-left:10px!important;
-       }
-       .magnetgrp_img{
-              margin-left: 20px;
-              margin-top: 20px!important;
-       }
-       .strips_img{
-              margin-top: 30px!important;
-       }
+  .meshimg {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+  .magnetgrp_img {
+    margin-left: 20px;
+  }
+  .strips_img {
+    margin-top: 30px !important;
+  }
+  .meshimg{
+    width: 120%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .denser_img {
+    width: 60%;
+    text-align: left;
+  }
+  .meshimg {
+    width: 130%;
+  }
+  .magnetgrp_img {
+    margin-top: 100px !important;
+  }
+  .strips_img {
+    width: 60%;
+  }
+  .densermesh_txt {
+    font-size: 14px;
+  }
+  .densermesh_txt3 {
+    font-size: 14px;
+  }
+  .magnet_img{
+    margin-left: 0px!important;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .denser_img {
+    width: 60%;
+    text-align: left;
+  }
+  .magnetgrp_img {
+    margin-top: 20px !important;
+  }
+  .strips_img {
+    width: 60%;
+  }
+  .densermesh_txt {
+    font-size: 12px;
+  }
+  .densermesh_txt3 {
+    font-size: 12px;
+  }
+  .mesh {
+    margin-top: 0px !important;
+    padding-top: 0px;
+  }
+  .meshimg {
+    margin-top: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .denser_img {
+    width: 30%;
+    text-align: left;
+  }
+  .meshimg {
+    width: 150%;
+  }
+  .magnet_img {
+    margin-left: 50px !important;
+    margin-top: 10px !important;
+  }
+  .strips_img {
+    width: 25%;
+    margin-top: 10px !important;
+    margin-left: 50px !important;
+  }
+  .densermesh_txt {
+    font-size: 10px;
+  }
+  .densermesh_txt3 {
+    font-size: 10px;
+    margin-left: 55px;
+  }
+  .magnetgrp_img {
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .meshimg {
+    width: 180%;
+  }
 }

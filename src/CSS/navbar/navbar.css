@@ -2,10 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
 
 .Navbar {
-  background-image: url("../../assets/applications/homepage.png");
+  background-image: url("../../assets/HomePage/homepage.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 100%;
   height: fit-content;
 }
 .Nav {
@@ -36,7 +35,7 @@
   color: black;
 }
 
-.inquiry_btn:hover{
+.inquiry_btn:hover {
   color: black;
 }
 .homepage_title {
@@ -48,21 +47,19 @@
   color: #ffffff;
   text-transform: uppercase;
 }
-
-.search {
-  width: 350px;
-  padding: 10px 0px;
+.inputbase {
   background-color: #ffffff;
   border-radius: 32px;
-  position: relative;
+}
+
+.inputbase .css-yz9k0d-MuiInputBase-input {
+  padding: 15px 30px;
 }
 .search_icon {
   color: #ffffff;
 }
 .iconbutton {
   background-color: #8d1fa8 !important;
-  position: relative;
-  left: 40px;
 }
 /* menulist */
 .menu > li,
@@ -72,7 +69,7 @@
 .menu a {
   text-decoration: none;
   display: block;
-  padding: 20px 30px;
+  padding: 20px 25px;
   transition: background-color 0.22s ease, color 0.22s ease;
   font-family: "Rubik";
   font-style: normal;
@@ -94,7 +91,7 @@
   padding: 10px 0px;
   border-top: 2px #8d1fa8;
   z-index: 2;
-  background: #fef9ff;
+  background: #ffffff;
   box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
   border-radius: 11px;
 }
@@ -118,7 +115,7 @@
   display: none;
   overflow-x: hidden;
   width: 110%;
-  background: #fef9ff;
+  background: #ffffff;
   box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
   border-radius: 11px;
 }
@@ -173,6 +170,9 @@
   margin-bottom: 40px;
   border: none;
 }
+.card:hover .latest_txt{
+  text-decoration: underline;
+}
 .megaphone {
   height: 150px;
 }
@@ -195,10 +195,117 @@
   padding: 30px 120px;
 }
 
-@media only screen and (max-width: 1120px) {
+.cards_row {
+  margin: 0 0;
+  padding: 0 0;
+  --bs-gutter-x: 0em;
+}
+
+/* mobile_navbar */
+.menu_icon {
+  color: #ffffff;
+}
+.topnavbar {
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-in-out;
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+}
+
+.sub-menu {
+  background-color: #ffffff;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-in-out;
+  width: 100%;
+  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
+}
+.topnavbar.open {
+  height: 410px;
+  overflow-y: scroll;
+}
+.nav-item span {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+.menuopenicon {
+  position: absolute;
+  bottom: 150px;
+  font-size: 36px !important;
+  color: #9100b7;
+}
+.nav-item:hover .menuopenicon {
+  color: #ffffff !important;
+}
+.menuopenicon {
+  color: #9100b7;
+}
+.sub-menu.open {
+  height: 150px;
+}
+.menuopen_icon {
+  transform: rotate(180deg);
+}
+
+.topnavbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.sub-Menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.submenu-link {
+  display: block;
+  color: #9100b7;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background-color 0.22s ease, color 0.22s ease;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.nav-link {
+  display: block;
+  color: #9100b7 !important;
+  padding: 25px 20px;
+  text-decoration: none;
+  transition: background-color 0.22s ease, color 0.22s ease;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 10px;
+  margin-top: 30px;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  background-color: #8d1fa8;
+}
+
+.submenu-link:hover {
+  color: #ffffff;
+  background-color: #8d1fa8;
+}
+
+@media only screen and (max-width: 1177px) {
   .menu a {
     font-size: 16px;
-    padding: 20px 20px;
+    padding: 20px 15px;
+
   }
   .submenu a {
     font-size: 12px;
@@ -206,6 +313,9 @@
   }
   .submenu_2 a {
     font-size: 12px;
+  }
+  .menu{
+    margin-top: 11px!important;
   }
 
   .inquiry_btn {
@@ -218,9 +328,134 @@
   .card {
     width: 85%;
   }
+  .card {
+    margin-left: 20px !important;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .homepage_menu {
     margin-left: 0px !important;
+  }
+  .card {
+    width: 90%;
+  }
+  .latest_txt {
+    font-size: 18px;
+  }
+  .cards {
+    padding: 30px 60px;
+  }
+  .homepage_title {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .dropdown {
+    position: absolute;
+    right: 150px;
+  }
+  .homepage_title {
+    font-size: 30px;
+  }
+  .card {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+  .card_gap {
+    --bs-gutter-x: 1em;
+  }
+  .cards {
+    padding: 30px 30px;
+  }
+  .latest_txt {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .homepage_title {
+    font-size: 25px;
+    margin-top: 20px !important;
+  }
+  .latest_img {
+    width: 70px;
+    margin-top: 20px !important;
+  }
+  .latest_img1 {
+    width: 60px;
+  }
+  .latest_img2 {
+    width: 50px;
+  }
+  .card {
+    height: 130px;
+  }
+  .cards {
+    padding: 10px 10px;
+  }
+  .megaphone_txt {
+    height: 30px;
+  }
+  .latest_txt {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+  .logo {
+    font-size: 14px;
+  }
+.iconbtn{
+  margin-right: 0px!important;
+}
+  .search {
+    margin-top: 20px !important;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .homepage_title {
+    font-size: 20px;
+    margin-top: 20px !important;
+  }
+  .inputbase .css-yz9k0d-MuiInputBase-input {
+    padding: 12px 15px;
+  }
+  .latest_txt {
+    font-size: 9px;
+  }
+  .card {
+    height: 110px;
+  }
+  .latest_img {
+    margin-top: 10px !important;
+    width: 60px;
+  }
+  .latest_img1 {
+    margin-top: 15px !important;
+    width: 50px;
+  }
+  .latest_img2 {
+    margin-top: 12px !important;
+    width: 40px;
+  }
+
+  .menu_icon {
+    font-size: 30px !important;
+  }
+ 
+}
+
+@media only screen and (max-width: 320px) {
+  .logo{
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .menu_icon{
+    font-size: 25px!important;
+  }
+  .homepage_title{
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .cards{
+    padding: 10px 0px;
   }
 }

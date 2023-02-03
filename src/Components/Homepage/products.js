@@ -1,63 +1,119 @@
 import "../../CSS/homepage/products.css";
-import MultiSlidingDoor from "../../assets/Retractable Double Door/multislidingdoor.png";
-import OpenableSingleDoor from "../../assets/Retractable Double Door/openablesingledoor.png";
-import SlidingWindow from "../../assets/Retractable Double Door/slidingwindow.png";
-import MagneticNet from "../../assets/Magnetic Insect Screens/magneticnet.png";
-import RetractableRollerDoubleDoor from "../../assets/Retractable Double Door/retractablerollerdoubledoor.png";
-import MagneticInsectScreens from "../../assets/Magnetic Insect Screens/magneticinsectscreens.png";
-import DoubleSlidingDoorWithSingleTrack from "../../assets/Retractable Double Door/doubleslidingdoorwithsingletrack.png";
-import RetractableDoubleDoor from "../../assets/Retractable Double Door/retractabledoubledoor.png";
-
+import MultiSlidingDoor from "../../assets/OurProducts/sliding dr.png";
+import OpenableSingleDoor from "../../assets/OurProducts/openablesingledoor.png";
+import SlidingWindow from "../../assets/OurProducts/slidingwindow.png";
+import MagneticNet from "../../assets/OurProducts/magneticnet.png";
+import RetractableRollerDoubleDoor from "../../assets/OurProducts/retractablerollerdoubledoor.png";
+import MagneticInsectScreens from "../../assets/OurProducts/magneticinsectscreens.png";
+import DoubleSlidingDoorWithSingleTrack from "../../assets/OurProducts/doubleslidingdoorwithsingletrack.png";
+import RetractableDoubleDoor from "../../assets/OurProducts/retractabledoubledoor.png";
+import { Link } from "react-router-dom";
 function Products() {
   return (
     <>
-      <div className="ourproducts">
-        <div className="row mt-5">
+      <div className="ourproducts mt-5">
+        <div className="row cards_row">
           <div className="col-12 text-center">
             <h2 className="product_title">OUR PRODUCTS</h2>
           </div>
           <div className="col-4 d-flex flex-column pt-5">
             <div className="product_img">
-              <img src={MultiSlidingDoor} alt="" className="img-fluid mb-4"  ></img>
-              <img
-                src={OpenableSingleDoor}
-                alt=""
-                className="img-fluid mb-4"
-              ></img>
-              <img
-                src={SlidingWindow}
-                alt=""
-                className="img-fluid"
-              ></img>
+              <div class="img-container">
+                <Link to="/multislidingdr" style={{ textDecoration: "none" }}>
+                  <img
+                    src={MultiSlidingDoor}
+                    alt=""
+                    className="img-fluid mb-4 zoom-img"
+                  ></img>
+                  <div class="hover-text">multi sliding door</div>
+                </Link>
+              </div>
+              <div class="img-container">
+                <Link to="/openablesingledr" style={{ textDecoration: "none" }}>
+                  <img
+                    src={OpenableSingleDoor}
+                    alt=""
+                    className="img-fluid mb-4  zoom-img"
+                  ></img>
+                  <div class="hover-text">openable single door system</div>
+                </Link>
+              </div>
+              <div class="img-container">
+                <Link to="/slidingwindow" style={{ textDecoration: "none" }}>
+                  <img
+                    src={SlidingWindow}
+                    alt=""
+                    className="img-fluid  zoom-img"
+                  ></img>
+                  <div class="hover-text">sliding window</div>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="col-4 d-flex flex-column pt-5">
             <div className="product_img">
-              <img src={MagneticNet} alt="" className="img-fluid mb-4 img_2"></img>
-              <img
-                src={RetractableRollerDoubleDoor}
-                alt=""
-                className="img-fluid mt-3 img_2"
-              ></img>
+              <div class="img-container">
+                <Link
+                  to="/magneticinsectscreens"
+                  style={{ textDecoration: "none" }}
+                >
+                  <img
+                    src={MagneticNet}
+                    alt=""
+                    className="img-fluid mb-4 img_2  zoom-img"
+                  ></img>
+                  <div class="hover-text">magnetic insect screen</div>
+                </Link>
+              </div>
+              <div class="img-container">
+                <Link to="/rollerdoubledoor" style={{ textDecoration: "none" }}>
+                  <img
+                    src={RetractableRollerDoubleDoor}
+                    alt=""
+                    className="img-fluid mt-3 img_2  zoom-img"
+                  ></img>
+                  <div class="hover-text">Retractable roller double Door</div>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="col-4 d-flex flex-column pt-5">
             <div className="product_img">
-              <img
-                src={MagneticInsectScreens}
-                alt=""
-                className="img-fluid mb-5 img_3"
-              ></img>
-              <img
-                src={DoubleSlidingDoorWithSingleTrack}
-                alt=""
-                className="mb-4 img-fluid"
-              ></img>
-              <img
-                src={RetractableDoubleDoor}
-                alt=""
-                className="img-fluid pt-1"
-              ></img>
+              <div class="img-container">
+                <Link to="/magneticnet" style={{ textDecoration: "none" }}>
+                  <img
+                    src={MagneticInsectScreens}
+                    alt=""
+                    className="img-fluid mb-5 img_3  zoom-img"
+                  ></img>
+                  <div class="hover-text">Magnetic net</div>
+                </Link>
+              </div>
+              <div class="img-container">
+                <Link to="/slidingdoor" style={{ textDecoration: "none" }}>
+                  <img
+                    src={DoubleSlidingDoorWithSingleTrack}
+                    alt=""
+                    className="mb-4 img-fluid  zoom-img"
+                  ></img>
+                  <div class="hover-text"> Sliding door</div>
+                </Link>
+              </div>
+              <div class="img-container">
+                <Link
+                  to="/doubleslidingwithsingletrack"
+                  style={{ textDecoration: "none" }}
+                >
+                  <img
+                    src={RetractableDoubleDoor}
+                    alt=""
+                    className="img-fluid pt-1  zoom-img"
+                  ></img>
+                  <div class="hover-text">
+                    double sliding door with single track
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

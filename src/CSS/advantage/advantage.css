@@ -1,136 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
 
-.Nav {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-}
-.log {
-  color: #8d1fa8;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18.2836px;
-  line-height: 22px;
-  text-transform: uppercase;
-}
-
-.Inquiry_btn {
-  border-radius: 32px;
-  text-transform: lowercase !important;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14.2636px;
-  line-height: 17px;
-  background-color: #8d1fa8;
-  padding: 10px 20px;
-  color: #ffffff;
-}
-.Inquiry_btn:hover {
-  color: #ffffff;
-}
-
-.Menu > li,
-.Menu > a {
-  display: inline-block;
-}
-.Menu a {
-  text-decoration: none;
-  display: block;
-  padding: 20px 30px;
-  transition: background-color 0.22s ease, color 0.22s ease;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 23px;
-  color: #8d1fa8;
-}
-
-.Menu li {
-  position: relative;
-}
-.SubMenu {
-  position: absolute;
-  width: 180px;
-  left: -20px;
-  right: 0;
-  display: none;
-  padding: 10px 0px;
-  border-top: 2px #8d1fa8;
-  z-index: 2;
-  background: #8d1fa8;
-  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
-  border-radius: 11px;
-}
-.SubMenu li {
-  list-style: none;
-}
-
-.SubMenu a {
-  color: #ffffff;
-  font-size: 12px;
-  padding: 5px 5px;
-}
-.Menu li:hover > .SubMenu {
-  display: block;
-}
-
-.Submenu_2 {
-  position: absolute;
-  left: 182px;
-  top: 0;
-  display: none;
-  overflow-x: hidden;
-  width: 110%;
-  background: #8d1fa8;
-  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
-  border-radius: 11px;
-}
-.Submenu_2 a {
-  color: #ffffff;
-  font-size: 13px;
-}
-.Submenu_2 li {
-  padding: 1px 0px;
-  margin-left: -20px;
-}
-.Menu li:hover > .Submenu_2 {
-  display: block;
-}
-.SubMenu a:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 10px;
-  background-color: #ffffff !important;
-  transition: 0.6s ease-in-out;
-}
-.SubMenu a:hover:after {
-  width: 90%;
-}
-
-.Menu a:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0px;
-  left: 10px;
-  background-color: #8d1fa8;
-  transition: 0.3s ease-in-out;
-}
-.Menu .Contacttrans {
-  padding: 2px 20px;
-}
-
-.Menu a:hover:after {
-  width: 90%;
-}
 .ourproducts-title {
   font-family: "Rubik";
   font-style: normal;
@@ -148,7 +18,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
-  line-height: 129.5%;
+  line-height: 140%;
   letter-spacing: 0.035em;
   text-transform: capitalize;
   color: #000000;
@@ -157,11 +27,12 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 301.5%;
+  font-size: 19px;
+  line-height: 40%;
   letter-spacing: 0.035em;
   text-transform: capitalize;
   color: #000000;
+  margin-top: 50px;
 }
 .advantageof_title {
   font-family: "Rubik";
@@ -181,8 +52,8 @@
 }
 
 .container {
-  padding: 0px 10px 60px 0px;
   max-width: 1200px;
+  padding: 0px 0px 60px 0px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -190,40 +61,397 @@
 .slick-slide img {
   margin: auto;
 }
-.card-description{
-  font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 14.4545px;
-line-height: 217.5%;
-letter-spacing: 0.055em;
-text-transform: capitalize;
-color: #000000;
+.card-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 131%;
+  letter-spacing: 0.035em;
+  text-transform: capitalize;
+  color: #000000;
+}
+.card-description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.4545px;
+  line-height: 217.5%;
+  letter-spacing: 0.055em;
+  text-transform: capitalize;
+  color: #000000;
+}
+.card-subdescription {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.4545px;
+  line-height: 217.5%;
+  letter-spacing: 0.055em;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 20px;
+}
+.card-detail {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.4545px;
+  line-height: 217.5%;
+  letter-spacing: 0.055em;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 20px;
+}
+
+ .slick-dots li button:before {
+  position: relative;
+  top: 30px !important;
+  font-size: 10px;
+}
+.slick-dots li.slick-active button:before {
+  color: #8d1fa8 !important;
+  font-size: 15px;
+}
+.slick-dots li button:before {
+  color: #8d1fa8;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  color: #8d1fa8 !important;
+}
+.slick-dots li.slick-active button:before:hover {
+  color: #8d1fa8;
+} 
+.our_quality {
+  background: #ffffff;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.19);
+  border-radius: 13px;
+  margin-top: 100px;
+}
+.quality_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 33px;
+  letter-spacing: 0.075em;
+}
+.quality_des {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16.4323px;
+  line-height: 131.5%;
+  letter-spacing: 0.065em;
+}
+.infrastructure_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 33px;
+  letter-spacing: 0.075em;
+}
+.infrastructure_des {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 31px;
+  letter-spacing: 0.085em;
+}
+.advantage_quotes {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 149%;
+  letter-spacing: 0.085em;
+}
+@media only screen and (max-width: 1400px) {
+  .card-title {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 1345px) {
+  .products-des {
+    padding-right: 20px;
+  }
+  .container{
+max-width: 1000px;
+  }
+}
+@media only screen and (max-width: 1242px) {
+  .quality_des {
+    font-size: 14px;
+  }
+  .quality_title {
+    margin-top: 10px !important;
+  }
+}
+@media only screen and (max-width: 1204px) {
+  .products-des {
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+  }
+  .products_points {
+    font-size: 18px;
+  }
+  .products_details {
+    font-size: 19px;
+  }
 }
 
 @media only screen and (max-width: 1120px) {
-  .menu a {
+ 
+  
+  .products_details {
+    font-size: 18px;
+  }
+  .products_points {
     font-size: 16px;
-    padding: 20px 20px;
   }
-  .submenu a {
-    font-size: 12px;
-    padding: 5px 0px;
-  }
-  .submenu_2 a {
+  .quality_des {
     font-size: 12px;
   }
-
-  .inquiry_btn {
-    margin-left: 0px !important;
-    font-size: 12px;
+  .quality_title {
+    font-size: 28px;
+    padding-top: 20px !important;
   }
-  .logo {
-    font-size: 16px;
+  .infrastructure_des {
+    font-size: 17px;
   }
 }
 @media only screen and (max-width: 1000px) {
   .homepage_menu {
     margin-left: 0px !important;
+  }
+  .container {
+    max-width: 1400px;
+    padding: 0px 40px 60px 40px;
+  }
+  .card-description {
+    font-size: 13px;
+  }
+  .card-subdescription {
+    font-size: 13px;
+  }
+  .card-detail {
+    font-size: 13px;
+  }
+  .infrastructure_des {
+    font-size: 15px;
+  }
+  .advantage_quotes {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .products_details {
+    padding: 0 10px;
+  }
+  .ourproducts-title {
+    padding: 0 10px;
+    margin-top: 0px !important;
+  }
+
+  .Products_Points {
+    margin-left: 10px;
+  }
+  .products_details {
+    font-size: 16px;
+  }
+  .products_points {
+    font-size: 15px;
+  }
+
+}
+@media only screen and (max-width: 873px) {
+  .quality_des{
+    font-size: 10px;
+    margin-top: 15px!important;
+  }
+  .quality_title{
+    font-size: 25px;
+    margin-top: 0px!important;
+  }
+  .advantage_quotes{
+    margin-top: 0px!important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ourproducts-title{
+    font-size: 47px;
+  }
+  .products_details{
+    padding-left: 90px;
+    padding-right: 50px;
+    font-size: 19px;
+
+  }
+  .products_points{
+    margin-left: 80px;
+  }
+  .aa{
+    margin-top: -50px!important;
+  }
+  .advantageof_title{
+    font-size: 35px;
+    margin-top: 0px!important;
+    line-height: 45px;
+  }
+  .card_img{
+    margin-top: 60px!important;
+  }
+  .infrastructure_des{
+    line-height: 28px;
+  }
+  .infrastructure_title{
+    padding-top: 0px!important;
+  }
+  .advantage_quotes{
+    margin-top: 0px!important;
+    padding-top: 20px!important;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .quality_des{
+    font-size: 9px;
+    margin-top: 5px!important;
+  }
+  .quality_title{
+    padding-top: 10px!important;
+  }
+  .Quality_img{
+    height: 240px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .ourproducts-title{
+    font-size: 40px;
+  }
+  .products_details{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+
+  }
+  .Products_Points{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .products_points{
+    margin-left: 10px;
+    margin-top: 20px!important;
+    line-height: 130%;
+  }
+  .container{
+    padding:0px 20px 60px 20px;
+  }
+  .card-description{
+    line-height: 25px;
+  }
+  .card-subdescription{
+    line-height: 25px;
+
+  }
+  .card-readmore{
+    line-height: 25px;
+
+  }
+  .Quality_img{
+    height: 250px;
+  }
+  .quality_des{
+    font-size: 8px;
+    font-weight: 400;
+  }
+  .quality_title{
+    font-size: 22px;
+  }
+  .infrastructure_des{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .infrastructure_title{
+    font-size: 30px;
+  }
+  .infrastructure_title{
+    margin-top: 20px!important;
+  }
+  .advantage_quotes{
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 361px) {
+  .ourproducts-title{
+    font-size: 37px;
+  }
+  .products_details{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+
+  }
+  .Products_Points{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .products_points{
+    margin-left: 10px;
+    margin-top: 20px!important;
+    line-height: 130%;
+    font-size: 14px;
+  }
+  .card_img{
+    margin-left: 30px!important;
+  }
+  .quality_des{
+    margin-left: -20px;
+  }
+  .quality_title{
+    margin-left: -20px;
+
+  }
+}
+@media only screen and (max-width: 351px) {
+  .quality_des{
+    font-size: 7px;
+  }
+ .quality_title{
+  font-size: 20px;
+ }
+.infrastructure_des{
+  font-size: 12px;
+  line-height: 20px;
+}
+.infrastructure_title{
+  font-size: 26px;
+}
+}
+@media only screen and (max-width: 310px) {
+  .ourproducts-title{
+    font-size: 33px;
+  }
+  .products_details{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+
+  }
+  .Products_Points{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .products_points{
+    margin-left: 10px;
+    margin-top: 20px!important;
+    line-height: 130%;
+    font-size: 12px;
   }
 }

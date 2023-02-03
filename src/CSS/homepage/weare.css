@@ -40,9 +40,8 @@
   .about_content {
     width: 90%;
   }
-  .aboutus {
-    margin-top: 0px !important;
-    padding-top: 10px !important;
+  .aboutus{
+    padding-left: 20px;
   }
   .about_des {
     font-size: 17px;
@@ -59,6 +58,9 @@
   .about_des1 {
     font-size: 16px;
   }
+  .aboutus{
+    margin-top: 0px!important;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -74,11 +76,9 @@
   .readmore_btn {
     margin-top: 20px !important;
   }
-  .aboutus {
-    padding-top: 0px !important;
-  }
+  
   .ab {
-    margin-top: 10px !important;
+    margin-top: 25px !important;
   }
   .about_title {
     font-size: 35px;
@@ -94,6 +94,9 @@
   .readmore_btn {
     font-size: 13px;
   }
+  .ab {
+    margin-top: 10px !important;
+  }
 }
 @media only screen and (max-width: 600px) {
   .about_des1 {
@@ -106,7 +109,7 @@
     font-size: 13px;
   }
   .aboutus {
-    margin-top: 20px !important;
+    margin-top: 0px !important;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -127,13 +130,16 @@
   .about_title {
     font-size: 30px;
   }
+  .ab {
+    margin-top: 0px !important;
+  }
 }
 
 @media only screen and (max-width: 389px) {
   .about_des {
-    font-size: 9px;
+    font-size: 8px;
   }
   .about_title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }

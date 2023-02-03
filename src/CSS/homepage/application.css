@@ -54,6 +54,31 @@ color: #FFFFFF;
   
   }
 }
+@media only screen and (max-width: 918px) {
+  .hotel{
+    margin-left: 3px;
+    width:90%;
+  }
+  .home_txt{
+    font-size: 14px;
+  }
+  .application_box{
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .home{
+    margin-top: 20px;
+  }
 
-
+}
+@media only screen and (max-width: 650px) {
+ 
+  .resort{
+    margin-left: 0px!important;
+  }
+ .application{
+  margin-left: 3px;
+ }
+}
 

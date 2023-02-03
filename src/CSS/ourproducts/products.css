@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+.ourProducts {
+  background-color: #f5f5f5;
+}
+
+.container-fluid {
+  padding: 0px 50px;
+}
+.products_table {
+  background: #ffffff;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  height: 1520px;
+  width: 100%;
+}
+.products_table1 {
+  background: #ffffff;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  height: 400px;
+  width: 100%;
+}
+.products_table2 {
+  background: #ffffff;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  height: 360px;
+  width: 100%;
+}
+.tables {
+  width: 20vw;
+}
+.tables1 {
+  width: 17.3vw;
+}
+.LISTS {
+  width: 80vw;
+}
+.LISTS_1 {
+  width: 69.6vw;
+}
+.products_name {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.035em;
+  text-transform: capitalize;
+  color: #3f3f3f;
+}
+.names {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.035em;
+  text-transform: capitalize;
+  color: #3f3f3f;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.names:hover {
+  color: #c120e9;
+  text-decoration: underline;
+}
+.card-1 {
+  background: #ffffff;
+  box-shadow: 0px 3.6px 2.7px rgba(0, 0, 0, 0.14);
+  border-radius: 6.3px;
+  width: 80%;
+  height: 340px;
+  margin-left: 9px !important;
+}
+
+.card-2 {
+  background: #ffffff;
+  box-shadow: 0px 3.6px 2.7px rgba(0, 0, 0, 0.14);
+  border-radius: 6.3px;
+  width: 90%;
+  height: 340px;
+}
+
+.card1-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.035em;
+  text-transform: capitalize;
+  color: #3f3f3f;
+  cursor: pointer;
+}
+.card1-title:hover {
+  text-decoration: underline;
+}
+.card1-des {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.035em;
+  text-transform: capitalize;
+  color: #000000;
+}
+@media only screen and (max-width: 1400px) {
+  .products_table {
+    width: 133%;
+  }
+  .products_table1 {
+    width: 133%;
+  }
+  .products_table2 {
+    width: 133%;
+  }
+  .card-1 {
+    width: 98%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .products_table {
+    width: 140%;
+  }
+  .products_table1 {
+    width: 140%;
+  }
+  .products_table2 {
+    width: 140%;
+  }
+  .card-1 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1135px) {
+  .tables {
+    margin-left: 0px !important;
+  }
+  .tables1 {
+    margin-left: 0px !important;
+  }
+  .card-1 {
+    height: 330px;
+  }
+
+  .card-1 img {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .tables {
+    width: 20vw;
+  }
+  .tables1{
+    width: 20vw;
+  }
+  .names {
+    font-size: 13px;
+  }
+  .products_table {
+    height: 1890px;
+    width: 247px;
+  }
+  .products_table1 {
+    height:730px;
+    width: 247px;
+  }
+  .products_table2 {
+    height:360px;
+    width:247px;
+  }
+  .mt {
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tables {
+    width: 19vw;
+  }
+  .names {
+    font-size: 12px;
+  }
+  .products_table {
+    height: 4620px;
+  }
+  .products_table1 {
+    height: 1360px;
+  }
+  .products_table2 {
+    height: 460px;
+  }
+  .mt {
+    margin-top: 48px;
+  }
+
+  .card-1 img {
+    margin-top: 15px !important;
+    width: 80%;
+  }
+  .card-1 {
+    margin-left: 50px !important;
+    width: 80%;
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+  .cc {
+    margin-top: 48px;
+  }
+  .container-fluid {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .products_table {
+    height: 4400px;
+  }
+  .products_table1{
+    height: 1280px;
+  }
+  .products_table2{
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .products_table {
+    height: 4070px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .products_table {
+    height: 3840px;
+  }
+  .products_table1{
+    height: 1080px;
+  }
+  .products_table2{
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container-fluid {
+    padding-left: 10px;
+  }
+  .card-1 {
+    margin-left: 60px !important;
+  }
+  .products_table {
+    width: 230px;
+    height: 3750px;
+  }
+  .products_table1{
+    height: 1050px;
+    width: 230px;
+  }
+  .products_table2{
+    height: 350px;
+    width: 220px;
+  }
+  .products_name {
+    font-size: 15px;
+  }
+  .FOOTER{
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .products_table {
+    width: 230px;
+    height: 3400px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .products_table {
+    width: 180px;
+    height: 3200px;
+  }
+  .products_table1 {
+    width: 180px;
+    height: 1080px;
+  }
+  .products_table2{
+    width: 160px;
+    height: 300px;
+  }
+  .names {
+    font-size: 11px;
+  }
+  .card-1 img {
+    width: 100%;
+    margin-top: 0px !important;
+  }
+  .card1-title {
+    font-size: 11px;
+  }
+  .card-1{
+    margin-left: 22px!important;
+    width: 99%;
+  }
+  .card1-des{
+    font-size: 11px;
+  }
+  .cc{
+    margin-top: 15px!important;
+  }
+  .mt{
+    margin-top: 15px!important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .products_table {
+    height: 2830px;
+  }
+  .products_table1 {
+    height: 890px;
+  }
+}

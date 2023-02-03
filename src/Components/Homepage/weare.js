@@ -1,11 +1,11 @@
 import "../../CSS/homepage/weare.css";
-import Since from "../../assets/applications/about.svg";
+import Since from "../../assets/HomePage/about.svg";
 import { Link } from "react-router-dom";
 function Weare() {
   return (
     <>
       <div className="weare mt-5">
-        <div className="row mt-5">
+        <div className="row mt-5 cards_row">
           <div className="col-3">
             <img src={Since} alt="" className="img-fluid"></img>
           </div>
