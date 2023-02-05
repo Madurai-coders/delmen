@@ -11,8 +11,8 @@ function Contact() {
         <div className="contacttitle mt-5">
           <h1 className="contactustitle mt-5 pt-5">Contact Us</h1>
         </div>
-        <div className="row justify-content-center">
-          <div className="col-9">
+        <div className="row justify-content-center cards_row">
+          <div className="col-lg-9 col-md-10 col-sm-11 col-11">
             <div className="contactform">
               <h4 className="contactus_des pl-5 pt-5">
                 Describe Your BUYING Requirement
@@ -25,8 +25,8 @@ function Contact() {
               </div>
               <textarea className="text_area ml-5 mt-2"></textarea>
               <h6 className="attachment ml-5 mt-3">+ Add Attachment</h6>
-              <div className="d-flex flex-row ms-4 mt-4">
-                <div className="col-5 email ms-2">
+              <div className="row ms-4 mt-4 EMAIL">
+                <div className="col-lg-5 col-md-5 col-sm-5 col-10 ms-3 ">
                   <TextField
                     id="outlined-basic"
                     fullWidth
@@ -35,7 +35,7 @@ function Contact() {
                     className="email_input"
                   />
                 </div>
-                <div className="col-5 email ms-4">
+                <div className="col-lg-5 col-md-5 col-sm-5 col-10 email ms-4">
                   <TextField
                     id="outlined-basic"
                     fullWidth

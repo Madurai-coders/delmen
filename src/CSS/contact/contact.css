@@ -23,10 +23,9 @@
     0px -4px 8px rgba(255, 255, 255, 0.4);
   border-radius: 12px;
   margin-top: 100px;
- margin-bottom: 100px;
- 
+  margin-bottom: 100px;
 }
-.des{
+.des {
   padding-right: 100px;
 }
 .contactus_des {
@@ -38,7 +37,6 @@
   letter-spacing: 0.05em;
   text-transform: capitalize;
   color: #373737;
- 
 }
 .contactus_detail {
   font-family: "Rubik";
@@ -121,37 +119,127 @@
 }
 
 @media only screen and (max-width: 1230px) {
-  .contactustitle{
-    margin-top: 0px!important;
-    padding-top: 0px!important;
+  .contactustitle {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
   }
-  .contactform{
+  .contactform {
     margin-top: 80px;
   }
 }
 
 @media only screen and (max-width: 1150px) {
- 
-  .contactform{
+  .contactform {
     margin-top: 60px;
   }
-  .contactustitle{
+  .contactustitle {
     font-size: 49px;
   }
 }
 @media only screen and (max-width: 1050px) {
- 
-  .contactform{
+  .contactform {
     margin-top: 40px;
   }
- 
 }
 @media only screen and (max-width: 960px) {
- 
-  .contactform{
+  .contactform {
     margin-top: 20px;
   }
-  .contactustitle{
+  .contactustitle {
     font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .contactus_des {
+    padding-top: 20px !important;
+    font-size: 18px;
+  }
+  .contactus_detail {
+    font-size: 11px;
+  }
+  .contactus_txt {
+    font-size: 13px;
+  }
+
+  .contactform {
+    margin-top: 0px !important;
+  }
+  .contactustitle {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    font-size: 30px;
+  }
+  .contacttitle {
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .email {
+    margin-left: 16px !important;
+    margin-top: 30px;
+  }
+  .contactform {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .contactus_des {
+    font-size: 15px;
+    padding-left: 25px !important;
+  }
+  .contactus_detail {
+    font-size: 8px;
+    padding-left: 25px !important;
+  }
+  .contactus_txt {
+    font-size: 10px;
+  }
+  .attachment {
+    margin-left: 24px !important;
+  }
+  .text_area {
+    margin-left: 25px !important;
+  }
+  .EMAIL {
+    margin-left: 0px !important;
+  }
+
+  .contactform {
+    margin-top: 0px !important;
+  }
+  .contactustitle {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    font-size: 25px;
+  }
+  .contacttitle {
+    margin-top: -30px !important;
+  }
+  .des {
+    padding-right: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .contactus_des {
+    font-size: 12px;
+  }
+  .contactus_detail {
+    font-size: 7px;
+  }
+  .contactus_txt {
+    font-size: 9px;
+  }
+  .contactustitle {
+    font-size: 17px;
+  }
+  .contacttitle{
+    margin-top: -40px!important;
+  }
+
+  .des {
+    padding-right: 5px !important;
   }
 }
