@@ -244,7 +244,7 @@ function Navbar() {
                   </div>
                 </li>
                 <li className="nav-item">
-                  <Link to="/contactus">
+                  <Link to="/contactus" style={{ textDecoration: "none" }}>
                     <a href="#" className="nav-link">
                       Contact Us
                     </a>

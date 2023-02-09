@@ -55,8 +55,9 @@
 
 }
 
-.inputbase .css-yz9k0d-MuiInputBase-input {
-  padding: 15px 30px;
+.inputbase{
+  padding: 10px 50px;
+  margin-left: -20px;
 }
 .search_icon {
   color: #ffffff;
@@ -412,8 +413,8 @@
   .search {
     margin-top: 20px !important;
   }
-  .inputbase .css-yz9k0d-MuiInputBase-input {
-    padding: 15px 15px;
+  .inputbase{
+    padding: 6px 10px;
   }
 }
 @media only screen and (max-width: 395px) {

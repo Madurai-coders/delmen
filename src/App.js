@@ -15,25 +15,31 @@ import OpenableWindow from "./Components/ProductCards/Retractable/OpenableWindow
 import SlidingWindowSystem from "./Components/ProductCards/Retractable/SlidingWindowSystem";
 import OpenableDoubleDoor from "./Components/ProductCards/Retractable/OpenableDoubleDoor";
 import DoubleSlidingWithSingleTrack from "./Components/ProductCards/Retractable/DoubleSlidingWithSingleTrack";
-import SlidingSystem from './Components/ProductCards/Window/SlidingWindowSystem';
+import SlidingSystem from "./Components/ProductCards/Window/SlidingWindowSystem";
 import SlidingDoor from "./Components/ProductCards/Window/SlidingDoor";
 import OpenableDoorSystemWithMesh from "./Components/ProductCards/Window/OpenableDoorSystemWithMesh";
 import MagneticInsect from "./Components/ProductCards/MagnetInsectScreen/MagneticInsect";
+import ScrollToTop from "./Components/script/script";
 function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/contactus" element={<Contact />}></Route>
-          <Route path="/advantage" element={<Advantage />}></Route>
+          <Route
+            path="/advantage"
+            hash="#readmore"
+            element={<Advantage />}
+          ></Route>
           <Route path="/ourproducts" element={<OurProducts />}></Route>
           <Route path="/companyprofile" element={<CompanyProfile />}></Route>
           <Route
             path="/retractabledoubledoor"
             element={<RetractableDoubleDoor />}
           ></Route>
-           <Route
+          <Route
             path="/rollerdoubledoor"
             element={<RollerDoubleDoor />}
           ></Route>
@@ -60,19 +66,16 @@ function App() {
             path="/doubleslidingwithsingletrack"
             element={<DoubleSlidingWithSingleTrack />}
           ></Route>
-           <Route
+          <Route
             path="/slidingwindowsystem"
             element={<SlidingSystem />}
           ></Route>
-           <Route
-            path="/slidingdoor"
-            element={<SlidingDoor />}
-          ></Route>
-            <Route
+          <Route path="/slidingdoor" element={<SlidingDoor />}></Route>
+          <Route
             path="/openabledoorwithmesh"
             element={<OpenableDoorSystemWithMesh />}
           ></Route>
-           <Route
+          <Route
             path="/magneticinsectscreens"
             element={<MagneticInsect />}
           ></Route>

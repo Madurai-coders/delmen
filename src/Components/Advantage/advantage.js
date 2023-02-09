@@ -11,6 +11,7 @@ import Slider from "react-slick";
 import React from "react";
 import MagnetMesh from "../../assets/advantages/magnetmesh.png";
 import Navbar_1 from "../Navbar_1/navbar_1";
+import '../script/script';
 function Advantage() {
   var settings = {
     slidesToShow: 1,
@@ -24,7 +25,7 @@ function Advantage() {
 
   return (
     <>
-      <div className="advantage">
+      <div className="advantage" id="readmore">
         <Navbar_1 />
         <div className="OurProducts mt-5">
           <div className="row justify-content-center mt-5 cards_row">

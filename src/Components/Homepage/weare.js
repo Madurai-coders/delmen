@@ -1,6 +1,7 @@
 import "../../CSS/homepage/weare.css";
 import Since from "../../assets/HomePage/about.svg";
 import { Link } from "react-router-dom";
+import '../script/script';
 function Weare() {
   return (
     <>
@@ -21,7 +22,7 @@ function Weare() {
                   suppliers of Magnetic Insect Screens and Retractable Roller
                   System for existing Windows and Doors.
                 </p>
-               
+
                 <p className="about_des1">
                   We are expertise in designing insects screens, which can be
                   installed over the Windows and Doors to restrict unwanted
@@ -33,8 +34,19 @@ function Weare() {
                   improve/substitute them with superior alternatives as
                   available.
                 </p>
-                <Link to="/advantage" style={{ textDecoration: "none" }}>
-                <button type="button" className="btn btn-secondary readmore_btn mt-5">Read More</button>
+                <Link
+                  to={{
+                    pathname: "/advantage",
+                  }}
+                  style={{ textDecoration: "none" }}
+                >
+                  <button
+                    href="readmore"
+                    type="button"
+                    className="btn btn-secondary readmore_btn mt-5"
+                  >
+                    Read More
+                  </button>
                 </Link>
               </div>
             </div>
