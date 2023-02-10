@@ -12,7 +12,7 @@ import MultiSlidingDoor from "./Components/ProductCards/Retractable/MultiSliding
 import SingleSliderWithTrack from "./Components/ProductCards/Retractable/SingleSliderWithTrack";
 import MagneticNet from "./Components/ProductCards/Retractable/MagneticNet";
 import OpenableWindow from "./Components/ProductCards/Retractable/OpenableWindow";
-import SlidingWindowSystem from "./Components/ProductCards/Retractable/SlidingWindowSystem";
+import SlidingWindowSystem from "./Components/ProductCards/Retractable/SlidingWindowMesh";
 import OpenableDoubleDoor from "./Components/ProductCards/Retractable/OpenableDoubleDoor";
 import DoubleSlidingWithSingleTrack from "./Components/ProductCards/Retractable/DoubleSlidingWithSingleTrack";
 import SlidingSystem from "./Components/ProductCards/Window/SlidingWindowSystem";

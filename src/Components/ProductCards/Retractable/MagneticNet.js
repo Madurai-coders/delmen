@@ -15,6 +15,9 @@ import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door
 import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import MagneticNetVideo from "../../../assets/ProductsVideo/magneticnet.mp4";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
 function MagneticNet() {
   const [pricecard, setpricecard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -27,11 +30,23 @@ function MagneticNet() {
         <Navbar_1 />
         {isTab && (
           <>
-            <div className="CARDS_2">
+            <div className="CARDS_1">
               <div className="row mt-5">
                 <div className="col-5">
                   <div className="Card_1">
-                    <img src={Magnetic} alt="" className="img-fluid"></img>
+                    <Video
+                      loop
+                      controls={[
+                        "PlayPause",
+                        "Seek",
+                        "Time",
+                        "Volume",
+                        "Fullscreen",
+                      ]}
+                    >
+                      <source src={MagneticNetVideo} type="video/webm" />
+                    </Video>
+
                     <div className="share p-5">
                       <h6 className="share_txt">Share Your Product</h6>
                       <div className="Icons d-flex flex-row">
@@ -141,8 +156,19 @@ function MagneticNet() {
                 </h5>
               </div>
               <div className="col-12 text-center mt-5">
-                <img src={Magnetic} alt="" className="img-fluid"></img>
-
+                {/* <img src={Magnetic} alt="" className="img-fluid"></img> */}
+                <Video
+                  loop
+                  controls={[
+                    "PlayPause",
+                    "Seek",
+                    "Time",
+                    "Volume",
+                    "Fullscreen",
+                  ]}
+                >
+                  <source src={MagneticNetVideo} type="video/webm" />
+                </Video>
                 <div className="mt-5">
                   <Button
                     type="button"
@@ -336,7 +362,7 @@ function MagneticNet() {
           </div>
         </div>
         <div className="FOOTER">
-        <Footer />
+          <Footer />
         </div>
       </div>
     </>

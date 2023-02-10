@@ -15,6 +15,10 @@ import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/Op
 import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import SingleSliderVideo from "../../../assets/ProductsVideo/singleslider.mp4";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+
 function SingleSliderWithTrack() {
   const [pricecard, setpricecard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -31,7 +35,19 @@ function SingleSliderWithTrack() {
               <div className="row mt-5 cards_row">
                 <div className="col-5">
                   <div className="Card_1">
-                    <img src={SingleSlider} alt="" className="img-fluid"></img>
+                    <Video
+                      loop
+                      controls={[
+                        "PlayPause",
+                        "Seek",
+                        "Time",
+                        "Volume",
+                        "Fullscreen",
+                      ]}
+                    >
+                      <source src={SingleSliderVideo} type="video/webm" />
+                    </Video>
+
                     <div className="share p-5">
                       <h6 className="share_txt">Share Your Product</h6>
                       <div className="Icons d-flex flex-row">
@@ -123,7 +139,19 @@ function SingleSliderWithTrack() {
                 </h5>
               </div>
               <div className="col-12 text-center mt-5">
-                <img src={SingleSlider} alt="" className="img-fluid"></img>
+                <Video
+                  loop
+                  controls={[
+                    "PlayPause",
+                    "Seek",
+                    "Time",
+                    "Volume",
+                    "Fullscreen",
+                  ]}
+                >
+                  <source src={SingleSliderVideo} type="video/webm" />
+                </Video>
+                {/* <img src={SingleSlider} alt="" className="img-fluid"></img> */}
 
                 <div className="mt-5">
                   <Button
@@ -178,7 +206,7 @@ function SingleSliderWithTrack() {
 
         <div className="row justify-content-center cards_row">
           <div className="col-lg-9 col-md-9 col-sm-10 col-11">
-            <div className="contactform">
+            <div className="contactform1">
               <h4 className="contactus_des1 pl-5 pt-5">
                 Enter Buying Requirement Details
               </h4>
@@ -233,41 +261,19 @@ function SingleSliderWithTrack() {
           </div>
           {isCard_3 && (
             <>
-          <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-            <div className="otherproduct_card  text-center">
-              <Link
-                to="/retractabledoubledoor"
-                style={{ textDecoration: "none" }}
-              >
-                <img
-                  src={RetractableDoubleDoor}
-                  alt=""
-                  className="img-fluid  mt-2 pt-1"
-                ></img>
-                <h4 className="otherproductcard_title mt-4">
-                  Retractable Double Door
-                </h4>
-                <h6 className="otherproductcard_des mt-3">
-                  250 INR/Square Foot
-                </h6>
-              </Link>
-            </div>
-          </div>
-          </>
-          )}
-              <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
-                <div className="otherproduct_card text-center">
+              <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
+                <div className="otherproduct_card  text-center">
                   <Link
-                    to="/rollerdoubledoor"
+                    to="/retractabledoubledoor"
                     style={{ textDecoration: "none" }}
                   >
                     <img
-                      src={RetractableRollerDoubleDoor}
+                      src={RetractableDoubleDoor}
                       alt=""
                       className="img-fluid  mt-2 pt-1"
                     ></img>
                     <h4 className="otherproductcard_title mt-4">
-                      Retractable Roller Double Door<br></br>System
+                      Retractable Double Door
                     </h4>
                     <h6 className="otherproductcard_des mt-3">
                       250 INR/Square Foot
@@ -275,7 +281,26 @@ function SingleSliderWithTrack() {
                   </Link>
                 </div>
               </div>
-          
+            </>
+          )}
+          <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
+            <div className="otherproduct_card text-center">
+              <Link to="/rollerdoubledoor" style={{ textDecoration: "none" }}>
+                <img
+                  src={RetractableRollerDoubleDoor}
+                  alt=""
+                  className="img-fluid  mt-2 pt-1"
+                ></img>
+                <h4 className="otherproductcard_title mt-4">
+                  Retractable Roller Double Door<br></br>System
+                </h4>
+                <h6 className="otherproductcard_des mt-3">
+                  250 INR/Square Foot
+                </h6>
+              </Link>
+            </div>
+          </div>
+
           {isCard_1 && (
             <>
               <div className="col-lg-3 col-md-6 col-6 text-center mt-5">

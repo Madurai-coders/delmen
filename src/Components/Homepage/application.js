@@ -12,7 +12,7 @@ function Application() {
           <div className="row justify-content-center cards_row">
             <div className="col-lg-2 col-md-2 col-sm-4 col-5 text-center">
               <div className="home">
-                <img src={School} alt="" className="hotel"></img>
+                <img src={Hospital} alt="" className="hotel"></img>
               </div>
               <h6 className="home_txt mt-2">Home & Apartments</h6>
             </div>

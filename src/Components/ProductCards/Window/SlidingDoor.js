@@ -15,6 +15,10 @@ import StainlessSteel from "../../../assets/Windows Accessories/StainlessSteel.p
 import WindowSystem from "../../../assets/Windows Accessories/WindowSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import SlidingDrVideo from "../../../assets/ProductsVideo/slidingdr.mp4";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+
 function SlidingDoor() {
   const [pricecard, setpricecard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -26,11 +30,22 @@ function SlidingDoor() {
         <Navbar_1 />
         {isTab && (
           <>
-            <div className="CARDS_3">
+            <div className="CARDS_2">
               <div className="row mt-5 cards_row">
                 <div className="col-5">
                   <div className="Card_1">
-                    <img src={SlidingDr} alt="" className="img-fluid"></img>
+                    <Video
+                      loop
+                      controls={[
+                        "PlayPause",
+                        "Seek",
+                        "Time",
+                        "Volume",
+                        "Fullscreen",
+                      ]}
+                    >
+                      <source src={SlidingDrVideo} type="video/webm" />
+                    </Video>
                     <div className="share p-5">
                       <h6 className="share_txt">Share Your Product</h6>
                       <div className="Icons d-flex flex-row">
@@ -134,7 +149,19 @@ function SlidingDoor() {
                 </h5>
               </div>
               <div className="col-12 text-center mt-5">
-                <img src={SlidingDr} alt="" className="img-fluid"></img>
+                <Video
+                  loop
+                  controls={[
+                    "PlayPause",
+                    "Seek",
+                    "Time",
+                    "Volume",
+                    "Fullscreen",
+                  ]}
+                >
+                  <source src={SlidingDrVideo} type="video/webm" />
+                </Video>
+                {/* <img src={SlidingDr} alt="" className="img-fluid"></img> */}
 
                 <div className="mt-5">
                   <Button
@@ -193,7 +220,7 @@ function SlidingDoor() {
 
         <div className="row justify-content-center cards_row">
           <div className="col-lg-9 col-md-9 col-sm-10 col-11">
-            <div className="contactform">
+            <div className="contactform1">
               <h4 className="contactus_des1 pl-5 pt-5">
                 Enter Buying Requirement Details
               </h4>

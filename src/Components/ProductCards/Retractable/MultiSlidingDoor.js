@@ -1,6 +1,6 @@
 import Footer from "../../Footer/footer";
 import Navbar_1 from "../../Navbar_1/navbar_1";
-import MultiSlidingDr from "../../../assets/CardsImg/multislidingdoor.png";
+import MultiSlidingDr from "../../../assets/OurProducts/sliding dr.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -15,6 +15,10 @@ import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/Op
 import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import ProductVideo from "../../../assets/ProductsVideo/multislidingdr.mp4";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+
 function MultiSlidingDoor() {
   const [pricecard, setpricecard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -27,15 +31,24 @@ function MultiSlidingDoor() {
         <Navbar_1 />
         {isTab && (
           <>
-            <div className="CARDS">
+            <div className="CARDS_2">
               <div className="row mt-5 cards_row">
                 <div className="col-5">
                   <div className="Card_1">
-                    <img
-                      src={MultiSlidingDr}
-                      alt=""
-                      className="img-fluid"
-                    ></img>
+                    <Video
+                      loop
+                      controls={[
+                        "PlayPause",
+                        "Seek",
+                        "Time",
+                        "Volume",
+                        "Fullscreen",
+                      ]}
+                      poster={MultiSlidingDr}
+                    >
+                      <source src={ProductVideo} type="video/webm" />
+                    </Video>
+
                     <div className="share p-5">
                       <h6 className="share_txt">Share Your Product</h6>
                       <div className="Icons d-flex flex-row">
@@ -128,7 +141,19 @@ function MultiSlidingDoor() {
                 </h5>
               </div>
               <div className="col-12 text-center mt-5">
-                <img src={MultiSlidingDr} alt="" className="img-fluid"></img>
+                <Video
+                  loop
+                  controls={[
+                    "PlayPause",
+                    "Seek",
+                    "Time",
+                    "Volume",
+                    "Fullscreen",
+                  ]}
+                  poster={MultiSlidingDr}
+                >
+                  <source src={ProductVideo} type="video/webm" />
+                </Video>
                 <div className="mt-5">
                   <Button
                     type="button"
@@ -181,7 +206,7 @@ function MultiSlidingDoor() {
 
         <div className="row justify-content-center cards_row">
           <div className="col-lg-9 col-md-9 col-sm-10 col-11">
-            <div className="contactform">
+            <div className="contactform1">
               <h4 className="contactus_des1 pl-5 pt-5">
                 Enter Buying Requirement Details
               </h4>
@@ -303,7 +328,7 @@ function MultiSlidingDoor() {
           )}
         </div>
         <div className="FOOTER">
-        <Footer />
+          <Footer />
         </div>
       </div>
     </>

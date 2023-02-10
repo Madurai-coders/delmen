@@ -15,6 +15,10 @@ import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/Op
 import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import OpenableWindowVideo from "../../../assets/ProductsVideo/openablewindow.mp4";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+
 function OpenableWindow() {
   const [pricecard, setpricecard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -27,15 +31,22 @@ function OpenableWindow() {
         <Navbar_1 />
         {isTab && (
           <>
-            <div className="CARDS">
+            <div className="CARDS_2">
               <div className="row mt-5 cards_row">
                 <div className="col-5">
                   <div className="Card_1">
-                    <img
-                      src={Openablewindow}
-                      alt=""
-                      className="img-fluid"
-                    ></img>
+                    <Video
+                      loop
+                      controls={[
+                        "PlayPause",
+                        "Seek",
+                        "Time",
+                        "Volume",
+                        "Fullscreen",
+                      ]}
+                    >
+                      <source src={OpenableWindowVideo} type="video/webm" />
+                    </Video>
                     <div className="share p-5">
                       <h6 className="share_txt">Share Your Product</h6>
                       <div className="Icons d-flex flex-row">
@@ -69,6 +80,13 @@ function OpenableWindow() {
                       </Button>
                     </h5>
                     <h5 className="product_des mt-4">product description</h5>
+                    <p className="Product_Exn mt-3">
+                      It is made out of 1Aluminium Profile with Stainless Steel
+                      mesh It has Felt Grove to arrest gaps in the contact
+                      surface Easy to operate and remove the system for a wash
+                      It is assembled with screw Joints to avoid breakage in the
+                      edges on a long Run
+                    </p>
                     <h5 className="Product_Title mt-4">
                       Openable Window System
                     </h5>
@@ -91,6 +109,9 @@ function OpenableWindow() {
                     </ul>
                     <p className="Product_Feature mt-5">Trade Information</p>
                     <ul>
+                      <li className="Product_Points">
+                        minimum Warranty is 5 years
+                      </li>
                       <li className="Product_Points">
                         Supply Ability 1000 Square Foot Per Day
                       </li>
@@ -126,7 +147,19 @@ function OpenableWindow() {
                 </h5>
               </div>
               <div className="col-12 text-center mt-5">
-                <img src={Openablewindow} alt="" className="img-fluid"></img>
+                <Video
+                  loop
+                  controls={[
+                    "PlayPause",
+                    "Seek",
+                    "Time",
+                    "Volume",
+                    "Fullscreen",
+                  ]}
+                >
+                  <source src={OpenableWindowVideo} type="video/webm" />
+                </Video>
+                {/* <img src={Openablewindow} alt="" className="img-fluid"></img> */}
 
                 <div className="mt-5">
                   <Button
@@ -142,6 +175,11 @@ function OpenableWindow() {
 
             <div className="col-12 mt-5">
               <h5 className="product_des mt-4">product description</h5>
+              <p className="Product_Exn mt-3">
+                45 degree cut and joined SS screws the mesh is also 304 SS mesh
+                advantage of the product it can be removed from the window and
+                it can be washed and fixed back to the window.
+              </p>
               <h5 className="Product_Title mt-4">Openable Window System</h5>
               <p className="Product_Exn mt-3">
                 It is made out of 1Aluminium Profile with Stainless Steel mesh
@@ -159,6 +197,7 @@ function OpenableWindow() {
               </ul>
               <p className="Product_Feature mt-5">Trade Information</p>
               <ul>
+                <li className="Product_Points">minimum Warranty is 5 years</li>
                 <li className="Product_Points">
                   Supply Ability 1000 Square Foot Per Day
                 </li>

@@ -32,7 +32,7 @@ function Navbar() {
               </h5>
 
               <div className="homepage_menu">
-                <ul className="menu mt-4">
+                <ul className="menu mt-2">
                   <li>
                     <Link to="/" style={{ textDecoration: "none" }}>
                       <a href="#" className="contacttrans">

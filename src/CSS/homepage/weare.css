@@ -76,12 +76,11 @@
   .readmore_btn {
     margin-top: 20px !important;
   }
-  
-  .ab {
-    margin-top: 25px !important;
-  }
+ 
   .about_title {
     font-size: 35px;
+    margin-top: 25px !important;
+
   }
 }
 @media only screen and (max-width: 760px) {
@@ -94,15 +93,19 @@
   .readmore_btn {
     font-size: 13px;
   }
-  .ab {
-    margin-top: 10px !important;
-  }
+ .about_title{
+  margin-top: 10px !important;
+
+ }
 }
 @media only screen and (max-width: 600px) {
-  .about_des1 {
+  /* .about_des1 {
     display: none;
-  }
+  } */
   .about_des {
+    font-size: 12px;
+  }
+   .about_des1 {
     font-size: 12px;
   }
   .readmore_btn {
@@ -110,17 +113,26 @@
   }
   .aboutus {
     margin-top: 0px !important;
+    padding-top: 0px!important;
   }
 }
 @media only screen and (max-width: 500px) {
   .aboutus {
     margin-top: 0px !important;
+    margin-left: 0px!important;
   }
   .about_des {
     font-size: 10px;
+    font-weight: 400;
+  }
+  .about_des1 {
+    font-size: 10px;
+    font-weight: 400;
+
   }
   .about_content {
     margin-top: 10px !important;
+    width: 94%;
   }
   .readmore_btn {
     font-size: 11px;
@@ -129,10 +141,10 @@
   }
   .about_title {
     font-size: 30px;
-  }
-  .ab {
     margin-top: 0px !important;
+
   }
+  
 }
 
 @media only screen and (max-width: 389px) {
@@ -141,5 +153,8 @@
   }
   .about_title {
     font-size: 24px;
+  }
+  .about_des1 {
+    font-size: 8px;
   }
 }

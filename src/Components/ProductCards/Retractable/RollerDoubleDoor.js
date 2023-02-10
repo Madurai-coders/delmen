@@ -20,6 +20,10 @@ import MagneticNet from "../../../assets/Retractable Double Door/MagneticNet.png
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import RollerDoubleDrVideo from "../../../assets/ProductsVideo/rollerdoubledr.mp4";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+
 function RollerDoubleDoor() {
   const [pricecard, setpricecard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -32,15 +36,22 @@ function RollerDoubleDoor() {
         <Navbar_1></Navbar_1>
         {isTab && (
           <>
-            <div className="CARDS">
+            <div className="CARDS_4">
               <div className="row mt-5 cards_row">
                 <div className="col-5">
                   <div className="Card_1">
-                    <img
-                      src={RollerdoubleDoor}
-                      alt=""
-                      className="img-fluid"
-                    ></img>
+                    <Video
+                      loop
+                      controls={[
+                        "PlayPause",
+                        "Seek",
+                        "Time",
+                        "Volume",
+                        "Fullscreen",
+                      ]}
+                    >
+                      <source src={RollerDoubleDrVideo} type="video/webm" />
+                    </Video>
                     <div className="share p-5">
                       <h6 className="share_txt">Share Your Product</h6>
                       <div className="Icons d-flex flex-row">
@@ -66,10 +77,7 @@ function RollerDoubleDoor() {
                       Retractable Roller Double Door System
                     </h5>
                     <h5 className="Square">
-                   
-                      250 INR<code className="Square_txt">
-                        /Square Foot
-                      </code>
+                      250 INR<code className="Square_txt">/Square Foot</code>
                       <Button
                         type="button"
                         className="price_btn ms-4"
@@ -79,6 +87,11 @@ function RollerDoubleDoor() {
                       </Button>
                     </h5>
                     <h5 className="product_des mt-4">product description</h5>
+                    <p className="Product_Exn mt-3">
+                      Roller double door it is custom made for the existing
+                      french door as well sliding doors. This product is easy to
+                      operate and mounted adjacent to your existing French door.
+                    </p>
                     <h5 className="Product_Title mt-4">
                       Retractable Roller Double Door{" "}
                     </h5>
@@ -150,7 +163,19 @@ function RollerDoubleDoor() {
                 </h5>
               </div>
               <div className="col-12 text-center mt-5">
-                <img src={RollerdoubleDoor} alt="" className="img-fluid"></img>
+                <Video
+                  loop
+                  controls={[
+                    "PlayPause",
+                    "Seek",
+                    "Time",
+                    "Volume",
+                    "Fullscreen",
+                  ]}
+                >
+                  <source src={RollerDoubleDrVideo} type="video/webm" />
+                </Video>
+                {/* <img src={RollerdoubleDoor} alt="" className="img-fluid"></img> */}
                 <div className="mt-5">
                   <Button
                     type="button"
@@ -165,6 +190,11 @@ function RollerDoubleDoor() {
 
             <div className="col-12 mt-5">
               <h5 className="product_des mt-4">product description</h5>
+              <p className="Product_Exn mt-3">
+                Roller double door it is custom made for the existing french
+                door as well sliding doors. This product is easy to operate and
+                mounted adjacent to your existing French door.
+              </p>
               <h5 className="Product_Title mt-4">
                 Retractable Roller Double Door{" "}
               </h5>
@@ -215,7 +245,7 @@ function RollerDoubleDoor() {
 
         <div className="row justify-content-center cards_row">
           <div className="col-lg-9 col-md-9 col-sm-10 col-11">
-            <div className="contactform">
+            <div className="contactform1">
               <h4 className="contactus_des1 pl-5 pt-5">
                 Enter Buying Requirement Details
               </h4>

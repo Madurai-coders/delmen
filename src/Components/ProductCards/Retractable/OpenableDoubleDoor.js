@@ -15,6 +15,10 @@ import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/Op
 import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import OpenableDoubleDrVideo from "../../../assets/ProductsVideo/openabledoubledr.mp4";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+
 function OpenableDoubleDoor() {
   const [pricecard, setpricecard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -27,15 +31,22 @@ function OpenableDoubleDoor() {
         <Navbar_1 />
         {isTab && (
           <>
-            <div className="CARDS">
+            <div className="CARDS_3">
               <div className="row mt-5 cards_row">
                 <div className="col-5">
                   <div className="Card_1">
-                    <img
-                      src={Openabledoubledr}
-                      alt=""
-                      className="img-fluid"
-                    ></img>
+                    <Video
+                      loop
+                      controls={[
+                        "PlayPause",
+                        "Seek",
+                        "Time",
+                        "Volume",
+                        "Fullscreen",
+                      ]}
+                    >
+                      <source src={OpenableDoubleDrVideo} type="video/webm" />
+                    </Video>
                     <div className="share p-5">
                       <h6 className="share_txt">Share Your Product</h6>
                       <div className="Icons d-flex flex-row">
@@ -71,17 +82,23 @@ function OpenableDoubleDoor() {
                       </Button>
                     </h5>
                     <h5 className="product_des mt-4">product description</h5>
+                    <p className="Product_Exn mt-3">
+                      Openable Door it is custom made for the existing Main Door
+                      utility door as well balcony
+                    </p>
                     <h5 className="Product_Title mt-4">
                       Openable Double Door System
                     </h5>
                     <p className="Product_Exn mt-3">
-                      It is made out of 2Aluminium Profile with SS mesh It has
-                      Felt Grove to arrest gaps in the contact surface Easy to
-                      operate and remove the system for a wash
+                      It is made out of 2Aluminium Profile with SS 304 mesh It
+                      has Felt Grove to arrest gaps in the contact surface Easy
+                      to operate and remove the system for a wash
                     </p>
 
                     <p className="Product_Feature mt-5">Price And Quantity</p>
                     <ul>
+                      <li className="Product_Points">5 years warranty </li>
+
                       <li className="Product_Points">
                         Minimum Order Quantity 100 Square Foot
                       </li>
@@ -129,7 +146,19 @@ function OpenableDoubleDoor() {
                 </h5>
               </div>
               <div className="col-12 text-center mt-5">
-                <img src={Openabledoubledr} alt="" className="img-fluid"></img>
+                <Video
+                  loop
+                  controls={[
+                    "PlayPause",
+                    "Seek",
+                    "Time",
+                    "Volume",
+                    "Fullscreen",
+                  ]}
+                >
+                  <source src={OpenableDoubleDrVideo} type="video/webm" />
+                </Video>
+                {/* <img src={Openabledoubledr} alt="" className="img-fluid"></img> */}
                 <div className="mt-5">
                   <Button
                     type="button"
@@ -144,13 +173,17 @@ function OpenableDoubleDoor() {
 
             <div className="col-12 mt-5">
               <h5 className="product_des mt-4">product description</h5>
+              <p className="Product_Exn mt-3">
+                Openable Door it is custom made for the existing Main Door
+                utility door as well balcony
+              </p>
               <h5 className="Product_Title mt-4">
                 Openable Double Door System
               </h5>
               <p className="Product_Exn mt-3">
-                It is made out of 2Aluminium Profile with SS mesh It has Felt
-                Grove to arrest gaps in the contact surface Easy to operate and
-                remove the system for a wash
+                It is made out of 2Aluminium Profile with SS 304 mesh It has
+                Felt Grove to arrest gaps in the contact surface Easy to operate
+                and remove the system for a wash
               </p>
 
               <p className="Product_Feature mt-5">Price And Quantity</p>
@@ -162,6 +195,7 @@ function OpenableDoubleDoor() {
               </ul>
               <p className="Product_Feature mt-5">Trade Information</p>
               <ul>
+                <li className="Product_Points">5 years warranty </li>
                 <li className="Product_Points">
                   Supply Ability 1000 Square Foot Per Day
                 </li>
@@ -181,7 +215,7 @@ function OpenableDoubleDoor() {
 
         <div className="row justify-content-center cards_row">
           <div className="col-lg-9 col-md-9 col-sm-10 col-11">
-            <div className="contactform">
+            <div className="contactform1">
               <h4 className="contactus_des1 pl-5 pt-5">
                 Enter Buying Requirement Details
               </h4>
@@ -303,7 +337,7 @@ function OpenableDoubleDoor() {
           )}
         </div>
         <div className="FOOTER">
-        <Footer />
+          <Footer />
         </div>
       </div>
     </>

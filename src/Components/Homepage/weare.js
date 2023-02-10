@@ -10,9 +10,9 @@ function Weare() {
           <div className="col-3">
             <img src={Since} alt="" className="img-fluid"></img>
           </div>
-          <div className="col-9 mt-5 ab">
-            <div className="aboutus d-flex flex-column mt-5 pt-5">
-              <h2 className="about_title">WHO WE ARE?</h2>
+          <div className="col-9">
+            <div className="aboutus d-flex flex-column mt-5 pt-5 ms-2">
+              <h2 className="about_title mt-5">WHO WE ARE?</h2>
               <div className="about_content mt-4">
                 <p className="about_des">
                   We, Delmen Mosquito ScreensTM, started our business in the

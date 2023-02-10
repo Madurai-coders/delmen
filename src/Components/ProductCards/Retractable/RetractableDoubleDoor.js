@@ -32,7 +32,7 @@ function RetractableDoubleDoor() {
         <Navbar_1></Navbar_1>
         {isTab && (
           <>
-            <div className="CARDS_2">
+            <div className="CARDS_3">
               <div className="row mt-5 cards_row">
                 <div className="col-5">
                   <div className="Card_1">
@@ -221,7 +221,7 @@ function RetractableDoubleDoor() {
 
         <div className="row justify-content-center cards_row">
           <div className="col-lg-9 col-md-9 col-sm-10 col-11">
-            <div className="contactform">
+            <div className="contactform1">
               <h4 className="contactus_des1 pl-5 pt-5">
                 Enter Buying Requirement Details
               </h4>
@@ -277,17 +277,17 @@ function RetractableDoubleDoor() {
           {isCard_1 && (
             <>
               <div className="col-lg-3 col-md-6 col-sm-6 text-center mt-5">
-                <div className="card-1 text-center ms-5">
+                <div className="otherproduct_card  text-center ms-5">
                   <Link to="/openablewindow" style={{ textDecoration: "none" }}>
                     <img
                       src={OpenableWindowSystem}
                       alt=""
                       className="img-fluid  mt-2 pt-1"
                     ></img>
-                    <h4 className="card1-title mt-4">
+                    <h4 className="otherproductcard_title mt-4">
                       Openable Window<br></br> System
                     </h4>
-                    <h6 className="card1-des mt-3">250 INR/Square Foot</h6>
+                    <h6 className="otherproductcard_des mt-3">250 INR/Square Foot</h6>
                   </Link>
                 </div>
               </div>
@@ -296,7 +296,7 @@ function RetractableDoubleDoor() {
           {isCard_3 && (
             <>
               <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-                <div className="card-1 text-center ms-4">
+                <div className="otherproduct_card  text-center ms-4">
                   <Link
                     to="/singlesliderwithtrack"
                     style={{ textDecoration: "none" }}
@@ -306,10 +306,10 @@ function RetractableDoubleDoor() {
                       alt=""
                       className="img-fluid  mt-2 pt-1"
                     ></img>
-                    <h4 className="card1-title mt-4">
+                    <h4 className="otherproductcard_title mt-4">
                       Single Slider With<br></br> Track
                     </h4>
-                    <h6 className="card1-des mt-3">250 INR/Square Foot</h6>
+                    <h6 className="otherproductcard_des mt-3">250 INR/Square Foot</h6>
                   </Link>
                 </div>
               </div>

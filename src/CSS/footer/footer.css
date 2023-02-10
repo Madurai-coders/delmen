@@ -76,7 +76,6 @@
   margin-bottom: 30px;
 }
 
-
 @media only screen and (max-width: 1058px) {
   .company_title {
     font-size: 26px;
@@ -116,53 +115,50 @@
   .contactus_btn {
     margin-bottom: 100px;
   }
-  .footer_content{
+  .footer_content {
     position: relative;
     bottom: 80px;
     padding: 0 20px;
   }
-  
-  .footer_txt
-  {
+
+  .footer_txt {
     margin-bottom: 0px;
     font-size: 16px;
   }
-  .navbar_list{
+  .navbar_list {
     font-size: 15px;
-    margin-left: 0px!important;
+    margin-left: 0px !important;
   }
-  .company_title{
+  .company_title {
     font-size: 24px;
   }
-  .footer{
+  .footer {
     margin-top: 100px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .footer_txt{
+  .footer_txt {
     padding: 0px 0px;
     text-align: center;
   }
-  .company_title{
+  .company_title {
     text-align: center;
   }
-  .footer_content{
+  .footer_content {
     position: relative;
     bottom: 80px;
   }
- .navbar_list{
-  text-align: center;
-  padding: 10px 20px;
-  margin-top: 0px!important;
-
- }
- .link{
-  display: flex;
-  justify-content: center;
-  position: relative;
+  .navbar_list {
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 0px !important;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    position: relative;
     bottom: 30px;
- }
-
+  }
 }
 @media only screen and (max-width: 686px) {
   .contact_card {
@@ -189,47 +185,21 @@
   .contactcard_des {
     padding: 0px 0px;
   }
-  .company_title{
+  .company_title {
     font-size: 23px;
   }
-  .navbar_list{
+  .navbar_list {
     font-size: 14px;
   }
-  .footer{
+  .footer {
     margin-top: 70px;
   }
 }
+
 @media only screen and (max-width: 493px) {
   .contactus_btn {
-    font-size: 13px;
-    margin-top: 0px !important;
-  }
-  .contactcard_address {
-    margin-top: 0px !important;
-  }
-  .contactcard_title {
-    margin-top: 25px !important;
-    position: relative;
-    top: 10px;
-  }
-  .navbar_list{
-    padding: 8px 10px;
-    font-size: 10px;
-  }
-  .company_title{
-    font-size: 16px;
-  }
-  .footer_txt{
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .footer{
-    margin-top: 40px;
-  }
-}
-@media only screen and (max-width: 388px) {
-  .contactus_btn {
     font-size: 11px;
+    margin-top: 0px !important;
   }
   .contactcard_address {
     font-size: 12px;
@@ -238,33 +208,55 @@
   .contactcard_title {
     font-size: 20px;
   }
-  .footer{
-    margin-top: 30px;
+  .footer {
+    margin-top: 40px;
+  }
+  .footer_txt {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .company_title {
+    font-size: 16px;
+  }
+  .contactcard_address {
+    margin-top: 0px !important;
+  }
+  .contactcard_title {
+    margin-top: 25px !important;
+    position: relative;
+    top: 10px;
+    font-size: 21px;
+  }
+  .navbar_list {
+    padding: 8px 10px;
+    font-size: 10px;
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 395px) {
   .contactus_btn {
-    font-size: 8px;
+    font-size: 9px;
     padding: 3px 15px;
+    margin-top: 10px!important;
   }
   .contactcard_address {
-    font-size: 9px;
-    line-height: 13px;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
   }
   .contactcard_title {
-    font-size: 17px;
+    font-size: 18px;
     position: relative;
-    top: 14px;
+    top: 12px;
   }
-  .company_title{
-    font-size: 13px;
+  .company_title {
+    font-size: 14px;
   }
-  .footer_txt{
+  .footer_txt {
     font-size: 10px;
     line-height: 17px;
   }
-  .navbar_list{
+  .navbar_list {
     font-size: 8px;
   }
 }
