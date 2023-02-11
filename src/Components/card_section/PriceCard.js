@@ -38,7 +38,7 @@ function PriceCard(props) {
               fullWidth
               label="Email"
               variant="outlined"
-              className="email_input ms-5 mt-5"
+              className="email_input ms-5 mt-4 pt-2"
             />
           </div>
           <div className="col-lg-5 col-md-5 col-sm-5 col-10 txt">
@@ -47,7 +47,7 @@ function PriceCard(props) {
               fullWidth
               label="Mobile No"
               variant="outlined"
-              className="email_input ms-5 mt-5"
+              className="email_input ms-5 mt-4 pt-2"
             />
           </div>
           <div className="col-lg-5 col-md-5 col-sm-5 col-10 ms-4">
@@ -56,7 +56,7 @@ function PriceCard(props) {
               id="outlined-number"
               label="Enter Quantity"
               type="number"
-              className="email_input ms-5 mt-5"
+              className="email_input ms-5 mt-4 pt-2"
               InputLabelProps={{
                 shrink: true,
               }}
@@ -69,7 +69,7 @@ function PriceCard(props) {
               fullWidth
               label="Select Unit"
               defaultValue=""
-              className="email_input ms-5 mt-5"
+              className="email_input ms-5 mt-4 pt-2"
             >
               {Items.map((option) => (
                 <MenuItem key={option.value} value={option.value}>
@@ -83,8 +83,8 @@ function PriceCard(props) {
               Request Quote
             </Button>
           </div>
-          <div className="col-12 text-center mt-4">
-            <h6 className="pricecard_quote">
+          <div className="col-12 text-center p-4">
+            <h6 className="price_quotes">
               "We are accepting local inquiries mostly from Tamil Nadu &
               Karnataka."
             </h6>
