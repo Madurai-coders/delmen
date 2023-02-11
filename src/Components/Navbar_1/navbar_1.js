@@ -12,7 +12,7 @@ function Navbar_1() {
 
   function Open() {
     setisMenuopen(!isMenuopen);
-    document.querySelector("#down").classList.toggle("menuopen_icon");
+    document.querySelector("#Down").classList.toggle("menuopen_icon");
   }
 
   const [isOpen, setIsOpen] = useState(false);
@@ -182,7 +182,7 @@ function Navbar_1() {
                     </a>
                   </Link>
                 </li>
-                <li className="nav-item" onClick={Open}>
+                <li className="nav-item">
                   <Link to="/ourproducts" style={{ textDecoration: "none" }}>
                     <a href="#" className="Nav-link">
                       Our Products
@@ -192,26 +192,41 @@ function Navbar_1() {
                     {" "}
                     <ExpandMoreIcon
                       onClick={Open}
-                      id="down"
-                      className="menuopenicon"
+                      id="Down"
+                      className="Menuopenicon"
                     />
                   </span>
-                  <div className={`sub-menu  ${isMenuopen ? "open" : ""}`}>
-                    <ul className="sub-Menu">
-                      <li className="submneu-item">
-                        <a href="#" className="Submenu-link">
-                          Retractable Double Door
-                        </a>
+                  <div className={`sub-Menu  ${isMenuopen ? "open" : ""}`}>
+                    <ul className="sub mt-2">
+                      <li className="subMenu-item">
+                        <Link
+                          to="/ourproducts"
+                          style={{ textDecoration: "none" }}
+                        >
+                          <a href="#" className="Submenu-link">
+                            Retractable Double Door
+                          </a>
+                        </Link>
                       </li>
-                      <li>
-                        <a href="#" className="Submenu-link">
-                          Doors/Windows Accessories
-                        </a>
+                      <li className="subMenu-item">
+                        <Link
+                          to="/ourproducts"
+                          style={{ textDecoration: "none" }}
+                        >
+                          <a href="#" className="Submenu-link">
+                            Doors/Windows Accessories
+                          </a>
+                        </Link>
                       </li>
-                      <li>
-                        <a href="#" className="Submenu-link">
-                          Magnetic Insect Screens
-                        </a>
+                      <li className="subMenu-item">
+                        <Link
+                          to="/ourproducts"
+                          style={{ textDecoration: "none" }}
+                        >
+                          <a href="#" className="Submenu-link">
+                            Magnetic Insect Screens
+                          </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

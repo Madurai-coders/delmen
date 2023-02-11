@@ -196,7 +196,7 @@ function Navbar() {
                     </a>
                   </Link>
                 </li>
-                <li className="nav-item" onClick={Open}>
+                <li className="nav-item">
                   <a href="#" className="nav-link">
                     Our Products
                   </a>
@@ -208,9 +208,9 @@ function Navbar() {
                       className="menuopenicon"
                     />
                   </span>
-                  <div className={`sub-menu  ${isMenuopen ? "open" : ""}`}>
-                    <ul className="sub-Menu">
-                      <li className="submneu-item">
+                   <div className={`sub-menu  ${isMenuopen ? "open" : ""}`}> 
+                    <ul className="sub">
+                      <li className="submenu-item">
                         <Link
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
@@ -220,7 +220,7 @@ function Navbar() {
                           </a>
                         </Link>
                       </li>
-                      <li>
+                      <li className="submenu-item">
                         <Link
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
@@ -230,7 +230,7 @@ function Navbar() {
                           </a>
                         </Link>
                       </li>
-                      <li>
+                      <li className="submenu-item">
                         <Link
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
@@ -241,7 +241,7 @@ function Navbar() {
                         </Link>
                       </li>
                     </ul>
-                  </div>
+                   </div> 
                 </li>
                 <li className="nav-item">
                   <Link to="/contactus" style={{ textDecoration: "none" }}>

@@ -4,6 +4,7 @@ import Hotel from "../../assets/HomePage/hotel.png";
 import Office from "../../assets/HomePage/office.png";
 import School from "../../assets/HomePage/school.png";
 import Hospital from "../../assets/HomePage/hospital.png";
+import { HomeSharp } from "@mui/icons-material";
 function Application() {
   return (
     <>
@@ -12,7 +13,7 @@ function Application() {
           <div className="row justify-content-center cards_row">
             <div className="col-lg-2 col-md-2 col-sm-4 col-5 text-center">
               <div className="home">
-                <img src={Hospital} alt="" className="hotel"></img>
+                <img src={Home} alt="" className="hotel"></img>
               </div>
               <h6 className="home_txt mt-2">Home & Apartments</h6>
             </div>
