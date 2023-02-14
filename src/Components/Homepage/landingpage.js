@@ -7,8 +7,61 @@ import Sale from "../../assets/HomePage/hot-sale 1.png";
 import New from "../../assets/HomePage/new-product 1.png";
 import Navbar from "../Navbar/navbar";
 import InputAdornment from "@mui/material/InputAdornment";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+
+const searchData = [
+  "Door",
+  "Mosquito Net For Window",
+  "Retractable Door",
+  "Mosquito Net",
+  "Magnet Net",
+  "Sliding Door",
+  "Sliding Window",
+];
 function Landingpage() {
+  const [inputValue, setInputValue] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+
+  const navigate = useNavigate();
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+    setSuggestions(
+      searchData.filter((item) =>
+        item.toLowerCase().startsWith(event.target.value.toLowerCase())
+      )
+    );
+  };
+  const Search = (event) => {
+    if (
+      inputValue === "Door" ||
+      inputValue === "Retractable Door" ||
+      inputValue === "Mosquito Net For Window" ||
+      inputValue === "Window" ||
+      inputValue === "Mosquito Net"
+    ) {
+      navigate("/ourproducts");
+    } else if (inputValue === "Sliding Window") {
+      navigate("./slidingwindowsystem");
+    } else if (inputValue === "Sliding Door") {
+      navigate("./slidingdoor");
+    }
+  };
+
+  const Add = (e) => {
+    if (e.key == "Enter" && inputValue === Search()) {
+      navigate("/ourproducts");
+    } else if (e.key == "Enter" && inputValue === "Sliding Door") {
+      navigate("/slidingdoor");
+    } else if (e.key == "Enter" && inputValue === "Sliding Window") {
+      navigate("./slidingwindowsystem");
+    }
+  };
+  const handleSuggestionClick = (suggestion) => {
+    setInputValue(suggestion);
+    setSuggestions([]);
+  };
   return (
     <>
       <div className="Navbar">
@@ -23,17 +76,36 @@ function Landingpage() {
           <div className="col-lg-3 col-md-4 text-center">
             <div className="search mt-5">
               <InputBase
+                onKeyDown={(e) => Add(e)}
+                value={inputValue}
+                onChange={handleInputChange}
                 className="inputbase pe-1"
                 placeholder="Search"
                 inputProps={{ "aria-label": "search google maps" }}
                 endAdornment={
                   <InputAdornment position="end">
                     <IconButton className="iconbutton">
-                      <SearchIcon className="search_icon" />
+                      <SearchIcon className="search_icon" onClick={Search} />
                     </IconButton>
                   </InputAdornment>
                 }
               ></InputBase>
+
+              {suggestions.length > 0 && (
+                <div className="search_autocomplete mt-1 ms-4">
+                  <ul className="search_item">
+                    {suggestions.map((suggestion) => (
+                      <li
+                        className="search_list"
+                        key={suggestion}
+                        onClick={() => handleSuggestionClick(suggestion)}
+                      >
+                        {suggestion}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </div>

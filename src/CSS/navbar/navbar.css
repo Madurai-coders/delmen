@@ -24,7 +24,6 @@
 
 .inquiry_btn {
   border-radius: 32px;
-  text-transform: lowercase !important;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -292,6 +291,20 @@
 }
 .nav-link:hover {
   text-decoration: underline;
+}
+/* search */
+.search_autocomplete {
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 32px;
+  padding: 5px 2px;
+}
+.search_list {
+  list-style-type: none;
+  cursor: pointer;
+  text-align: left;
+  line-height: 30px;
+  font-family: "Rubik";
 }
 
 @media only screen and (max-width: 1177px) {

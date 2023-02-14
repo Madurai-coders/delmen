@@ -65,7 +65,7 @@ function Product() {
                     <h6 className="names">Openable window System</h6>
                   </Link>
                   <Link to="/slidingwindow" style={{ textDecoration: "none" }}>
-                    <h6 className="names">sliding window mesh</h6>
+                    <h6 className="names">sliding window with mesh</h6>
                   </Link>
                   <Link
                     to="/openabledoubledoor"

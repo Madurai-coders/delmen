@@ -27,9 +27,11 @@ function Navbar() {
         {isTab && (
           <>
             <div className="Nav text-center">
-              <h5 className="logo mt-4">
-                Delmen Mosquito<br></br>Screen
-              </h5>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <h5 className="logo mt-4" style={{ cursor: "pointer" }}>
+                  Delmen Mosquito<br></br>Screen
+                </h5>
+              </Link>
 
               <div className="homepage_menu">
                 <ul className="menu mt-2">
@@ -66,38 +68,88 @@ function Navbar() {
                         </Link>
                         <ul className="submenu_2">
                           <li>
-                            <a href="#">Retractable Double Door</a>
+                            <Link
+                              to="/retractabledoubledoor"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Retractable Double Door</a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">Magnetic Net</a>
+                            <Link
+                              to="/magneticnet"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Magnetic Net</a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
-                              Retractable Roller Double Door System
-                            </a>
+                            <Link
+                              to="/rollerdoubledoor"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">
+                                Retractable Roller Double Door System
+                              </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">Openable Window System</a>
+                            <Link
+                              to="/openablewindow"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Openable Window System</a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">Openable Single Door System</a>
+                            <Link
+                              to="/openablesingledr"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Openable Single Door System</a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">Sliding window System</a>
+                            <Link
+                              to="/slidingwindow"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Sliding window with mesh</a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">Multi Sliding Door System</a>
+                            <Link
+                              to="/multislidingdr"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Multi Sliding Door System</a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">Openable Double Door system</a>
+                            <Link
+                              to="/openabledoubledoor"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Openable Double Door system</a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">Single slider with Track</a>
+                            <Link
+                              to="/singlesliderwithtrack"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Single slider with Track</a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
-                              Double sliding Door with Single Track
-                            </a>
+                            <Link
+                              to="/doubleslidingwithsingletrack"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">
+                                Double sliding Door with Single Track
+                              </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -110,18 +162,31 @@ function Navbar() {
                         </Link>
                         <ul className="submenu_2">
                           <li>
-                            <a href="#">Sliding Window system</a>
+                            <Link
+                              to="/slidingwindowsystem"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Sliding Window system</a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">Sliding Door</a>
+                            <Link
+                              to="/slidingdoor"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Sliding Door</a>
+                            </Link>
                           </li>
+
                           <li>
-                            <a href="#">Open Able Double Door System</a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              Openable Door system with Stainless Steel Mesh
-                            </a>
+                            <Link
+                              to="/openabledoorwithmesh"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">
+                                Openable Door system with Stainless Steel Mesh
+                              </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -135,9 +200,14 @@ function Navbar() {
                         </Link>
                         <ul className="submenu_2">
                           <li>
-                            <a href="#">
-                              Magnetic Insect Screens with Fiber Glass Mesh
-                            </a>
+                            <Link
+                              to="/MagneticInsectScreens"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">
+                                Magnetic Insect Screens with Fiber Glass Mesh
+                              </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
@@ -166,10 +236,11 @@ function Navbar() {
           <>
             <div className="row cards_row">
               <div className="col-md-4 col-sm-5 col-5 text-center">
-                <h2 className="logo pt-3">
-                  {" "}
-                  Delmen Mosquito<br></br>Screen
-                </h2>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                  <h2 className="logo pt-3">
+                    Delmen Mosquito<br></br>Screen
+                  </h2>
+                </Link>
               </div>
               <div className="col-md-8 col-sm-7 col-7 text-end">
                 <IconButton
@@ -197,18 +268,17 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#" className="nav-link">
+                  <a href="#" className="nav-link" onClick={Open}>
                     Our Products
                   </a>
                   <span>
-                    {" "}
                     <ExpandMoreIcon
                       onClick={Open}
                       id="down"
                       className="menuopenicon"
                     />
                   </span>
-                   <div className={`sub-menu  ${isMenuopen ? "open" : ""}`}> 
+                  <div className={`sub-menu  ${isMenuopen ? "open" : ""}`}>
                     <ul className="sub">
                       <li className="submenu-item">
                         <Link
@@ -241,7 +311,7 @@ function Navbar() {
                         </Link>
                       </li>
                     </ul>
-                   </div> 
+                  </div>
                 </li>
                 <li className="nav-item">
                   <Link to="/contactus" style={{ textDecoration: "none" }}>

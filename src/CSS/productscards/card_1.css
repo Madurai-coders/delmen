@@ -223,7 +223,7 @@
 }
 .Pricecard {
   width: 60%;
-  height: 450px;
+  height: 470px;
   background: #ffffff;
   box-shadow: 0px -1.63673px 4.91018px rgba(141, 31, 168, 0.12),
     0px 1.63673px 6.54691px rgba(168, 85, 189, 0.14);
@@ -232,7 +232,7 @@
   z-index: 2;
   position: absolute;
   bottom: 0px;
-  top: 340px;
+  top: 500px;
   left: 330px;
 }
 .Card_Title {
@@ -258,7 +258,6 @@
   text-transform: capitalize !important;
   color: #ffffff !important;
   background: #81089f !important;
-  background: #8d1fa8 !important;
   border-radius: 65.2787px !important;
 }
 .price_qoutes {
@@ -347,11 +346,13 @@
   color: rgba(141, 31, 168, 0.76);
   cursor: pointer;
 }
-
 .email_input1 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
   border: 0.6px solid rgba(0, 0, 0, 0.22) !important;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
   border-radius: 7px;
+}
+.email_input1 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  margin-top: 7.5px !important;
 }
 .email_input1
   .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
@@ -403,6 +404,59 @@
   text-transform: capitalize;
   color: #000000;
 }
+
+/* callback card */
+.callbackcard {
+  width: 60%;
+  height: 360px;
+  background: #ffffff;
+  box-shadow: 0px -1.63673px 4.91018px rgba(141, 31, 168, 0.12),
+    0px 1.63673px 6.54691px rgba(168, 85, 189, 0.14);
+  border-radius: 9.82036px;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  top: 800px;
+  left: 330px;
+}
+.callback_title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.mobile_input .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border: 0.6px solid rgba(0, 0, 0, 0.22) !important;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 7px;
+}
+.mobile_input
+  .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2 !important;
+  border: 0.6px solid;
+}
+.mobile_input .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  margin-top: 7.5px !important;
+}
+.Callback_btn {
+  padding: 18px 100px !important;
+  font-family: "Rubik" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 13.3015px !important;
+  line-height: 16px !important;
+  text-align: center !important;
+  letter-spacing: 0.035em !important;
+  text-transform: capitalize !important;
+  color: #ffffff !important;
+  background: #81089f !important;
+  border-radius: 65.2787px !important;
+}
+
 @media only screen and (max-width: 1200px) {
   .CARDS_1 {
     padding-bottom: 250px;
@@ -427,11 +481,20 @@
   .otherproductcard_title {
     font-size: 14px;
   }
+  .callbackcard {
+    position: absolute;
+    left: 230px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .otherproduct_card {
     width: 80%;
     margin-left: 60px;
+  }
+  .callbackcard {
+    width: 70%;
+    position: absolute;
+    left: 160px;
   }
 }
 @media only screen and (max-width: 977px) {
@@ -491,6 +554,10 @@
   .CARDS {
     padding-bottom: 180px;
   }
+  .callbackcard {
+    position: absolute;
+    left: 140px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -520,8 +587,8 @@
     width: 94%;
     position: absolute;
     left: 10px;
-    top: 1200px;
-    height: 450px;
+    top: 1760px;
+    height: 470px;
   }
   .email_input {
     margin-left: 0px !important;
@@ -560,11 +627,27 @@
     padding: 10px 15px !important;
     font-size: 12px !important;
   }
+  .callbackcard {
+    position: absolute;
+    top: 1400px;
+  }
+  .Callback_btn {
+    padding: 15px 70px !important;
+  }
 }
 @media only screen and (max-width: 658px) {
   .Pricecard {
     position: absolute;
-    top: 1160px;
+    top: 1400px;
+  }
+  .callback_title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .callbackcard {
+    width: 80%;
+    position: absolute;
+    left: 50px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -597,7 +680,11 @@
     font-size: 15px;
   }
   .Pricecard {
-    height: 630px;
+    height: 650px;
+  }
+  .Callback_btn {
+    padding: 15px 45px !important;
+    font-size: 12px!important;
   }
 }
 
@@ -621,8 +708,8 @@
   }
   .Pricecard {
     position: absolute;
-    top: 1000px;
-    height: 650px;
+    top: 1170px;
+    height: 670px;
   }
   .contactus_txt1 {
     font-size: 14px;
@@ -634,6 +721,15 @@
   }
   .Card_Title {
     margin-top: 30px !important;
+  }
+  .callback_title {
+    font-size: 14px;
+  }
+  .callbackcard {
+    position: absolute;
+    left: 20px;
+    width: 90%;
+    top: 1250px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -655,9 +751,9 @@
     margin-top: 10px !important;
   }
   .Pricecard {
-    height: 660px;
+    height: 670px;
     position: absolute;
-    top: 930px;
+    top: 1130px;
   }
   .ShareProduct1 {
     position: absolute;
@@ -671,6 +767,11 @@
   }
   .contactform1 {
     height: 650px;
+  }
+  .callbackcard {
+    position: absolute;
+  
+    top: 1200px;
   }
 }
 @media only screen and (max-width: 376px) {
@@ -687,9 +788,9 @@
     font-size: 12px;
   }
   .Pricecard {
-    height: 650px;
+    height: 670px;
     position: absolute;
-    top: 870px;
+    top: 1080px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -703,9 +804,9 @@
     font-size: 18px;
   }
   .Pricecard {
-    height: 650px;
+    height: 670px;
     position: absolute;
-    top: 800px;
+    top: 1000px;
   }
   .contactform1 {
     height: 690px;

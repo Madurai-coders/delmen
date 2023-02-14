@@ -7,7 +7,7 @@ function Footer() {
   const isTab = useMediaQuery({ query: "(min-width: 768px)" });
 
   return (
-    <div className="footer">
+    <div className="footer pt-5">
       <div className="row links cards_row">
         <div className="col-lg-12 col-md-12 col-sm-12 col-12 contact_card text-center">
           <div className="contactcard_des">
