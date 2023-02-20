@@ -18,6 +18,9 @@ const searchData = [
   "Magnet Net",
   "Sliding Door",
   "Sliding Window",
+  "RetractableDoubleDoor",
+  "Retractable Roller Double Door",
+  "Openable Single Door System",
 ];
 function Landingpage() {
   const [inputValue, setInputValue] = useState("");
@@ -46,6 +49,14 @@ function Landingpage() {
       navigate("./slidingwindowsystem");
     } else if (inputValue === "Sliding Door") {
       navigate("./slidingdoor");
+    } else if (inputValue === "Magnet Net") {
+      navigate("./magneticnet");
+    } else if (inputValue === "RetractableDoubleDoor") {
+      navigate("./retractabledoubledoor");
+    } else if (inputValue === "Retractable Roller Double Door") {
+      navigate("./rollerdoubledoor");
+    } else if (inputValue === "Openable Single Door System") {
+      navigate("./openablesingledr");
     }
   };
 
@@ -61,6 +72,11 @@ function Landingpage() {
   const handleSuggestionClick = (suggestion) => {
     setInputValue(suggestion);
     setSuggestions([]);
+
+    if(suggestion === "Sliding Window"){
+      navigate("./slidingwindowsystem");
+
+    }
   };
   return (
     <>
