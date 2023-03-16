@@ -12,21 +12,28 @@
   background: #ffffff;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  height: 1520px;
+  height: 380px;
   width: 100%;
 }
 .products_table1 {
   background: #ffffff;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  height: 400px;
+  height: 380px;
   width: 100%;
 }
 .products_table2 {
   background: #ffffff;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  height: 360px;
+  height: 750px;
+  width: 100%;
+}
+.products_table3 {
+  background: #ffffff;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  height: 750px;
   width: 100%;
 }
 .tables {
@@ -117,9 +124,7 @@
   .products_table1 {
     width: 133%;
   }
-  .products_table2 {
-    width: 133%;
-  }
+
   .card-1 {
     width: 98%;
   }
@@ -131,9 +136,7 @@
   .products_table1 {
     width: 140%;
   }
-  .products_table2 {
-    width: 140%;
-  }
+
   .card-1 {
     width: 100%;
   }
@@ -158,23 +161,26 @@
   .tables {
     width: 20vw;
   }
-  .tables1{
+  .tables1 {
     width: 20vw;
   }
   .names {
     font-size: 13px;
   }
   .products_table {
-    height: 1890px;
     width: 247px;
   }
   .products_table1 {
-    height:730px;
+    height: 700px;
     width: 247px;
   }
   .products_table2 {
-    height:360px;
-    width:247px;
+    height: 1170px;
+    width: 247px;
+  }
+  .products_table3 {
+    height: 780px;
+    width: 247px;
   }
   .mt {
     margin-top: 48px;
@@ -189,13 +195,17 @@
     font-size: 12px;
   }
   .products_table {
-    height: 4620px;
+    height: 840px;
   }
   .products_table1 {
-    height: 1360px;
+    height:1260px;
   }
   .products_table2 {
-    height: 460px;
+    height: 2200px!important;
+  }
+  .products_table3{
+    height: 1800px!important;
+
   }
   .mt {
     margin-top: 48px;
@@ -220,30 +230,48 @@
 }
 @media only screen and (max-width: 730px) {
   .products_table {
-    height: 4400px;
+    height: 740px;
   }
-  .products_table1{
-    height: 1280px;
+  .products_table1 {
+    height:1060px;
   }
-  .products_table2{
-    height: 400px;
+  .products_table2 {
+    height: 2000px!important;
+  }
+  .products_table3{
+    height: 1700px!important;
+
   }
 }
 @media only screen and (max-width: 670px) {
   .products_table {
-    height: 4070px;
+    height: 640px;
+  }
+  .products_table1 {
+    height:960px;
+  }
+  .products_table2 {
+    height: 1900px!important;
+  }
+  .products_table3{
+    height: 1600px!important;
+
   }
 }
 
 @media only screen and (max-width: 620px) {
   .products_table {
-    height: 3840px;
+    height: 540px;
   }
-  .products_table1{
-    height: 1080px;
+  .products_table1 {
+    height:860px;
   }
-  .products_table2{
-    height: 350px;
+  .products_table2 {
+    height: 1800px!important;
+  }
+  .products_table3{
+    height: 1500px!important;
+
   }
 }
 @media only screen and (max-width: 576px) {
@@ -255,41 +283,45 @@
   }
   .products_table {
     width: 230px;
-    height: 3750px;
+    height: 650px;
   }
-  .products_table1{
+  .products_table1 {
     height: 1050px;
     width: 230px;
   }
-  .products_table2{
+  .products_table2 {
     height: 350px;
+    width: 220px;
+  }
+  .products_table3 {
+    height: 390px;
     width: 220px;
   }
   .products_name {
     font-size: 15px;
   }
-  .FOOTER{
+  .FOOTER {
     margin-top: 200px;
   }
 }
-@media only screen and (max-width: 520px) {
-  .products_table {
-    width: 230px;
-    height: 3400px;
-  }
-}
+
 @media only screen and (max-width: 470px) {
   .products_table {
     width: 180px;
-    height: 3200px;
+    height: 630px;
   }
   .products_table1 {
     width: 180px;
-    height: 1080px;
+    height: 950px;
   }
-  .products_table2{
+  .products_table2 {
     width: 160px;
-    height: 300px;
+    height:1600px!important;
+  }
+  .products_table3{
+    width: 160px;
+    height:1400px!important;
+
   }
   .names {
     font-size: 11px;
@@ -301,26 +333,37 @@
   .card1-title {
     font-size: 11px;
   }
-  .card-1{
-    margin-left: 22px!important;
+  .card-1 {
+    margin-left: 22px !important;
     width: 99%;
   }
-  .card1-des{
+  .card1-des {
     font-size: 11px;
   }
-  .cc{
-    margin-top: 15px!important;
+  .cc {
+    margin-top: 15px !important;
   }
-  .mt{
-    margin-top: 15px!important;
+  .mt {
+    margin-top: 15px !important;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .products_table {
-    height: 2830px;
+    width: 180px;
+    height: 530px;
   }
   .products_table1 {
-    height: 890px;
+    width: 180px;
+    height: 850px;
+  }
+  .products_table2 {
+    width: 160px;
+    height:1300px!important;
+  }
+  .products_table3{
+    width: 160px;
+    height:1100px!important;
+
   }
 }

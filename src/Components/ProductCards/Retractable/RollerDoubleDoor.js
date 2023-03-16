@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
-import SingleSliderWithTrack from "../../../assets/Retractable Double Door/SingleSliderWithTrack.png";
+import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
 import MagneticNet from "../../../assets/Retractable Double Door/MagneticNet.png";
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
@@ -21,38 +21,11 @@ import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 function RollerDoubleDoor() {
-  const [PriceCard, setPriceCard] = useState(false);
   const [CallBackCard, setCallBackCard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
-  const isCard_1 = useMediaQuery({ query: "(min-width: 992px)" });
   const isCard_3 = useMediaQuery({ query: "(min-width: 576px)" });
-  const Items = [
-    {
-      value: "USD",
-      label: "Kilogram",
-    },
-    {
-      value: "EUR",
-      label: "Nos",
-    },
-    {
-      value: "BTC",
-      label: "Pieces",
-    },
-    {
-      value: "JPY",
-      label: "Tons",
-    },
-    {
-      value: "JP",
-      label: "Units",
-    },
-  ];
-  const [pricequote, setpricequote] = useState({
-    Email: "not_selected",
-    MobileNo: "not_selected",
-  });
+
   return (
     <>
       <div className="retractable">
@@ -99,16 +72,7 @@ function RollerDoubleDoor() {
                     <h5 className="Product_Name">
                       Retractable Roller Double Door System
                     </h5>
-                    <h5 className="Square">
-                      250 INR<code className="Square_txt">/Square Foot</code>
-                      <Button
-                        type="button"
-                        className="price_btn ms-4"
-                        onClick={() => setPriceCard(true)}
-                      >
-                        Get a Price/Quote
-                      </Button>
-                    </h5>
+
                     <h5 className="product_des mt-4">product description</h5>
                     <p className="Product_Exn mt-3">
                       Roller double door it is custom made for the existing
@@ -144,9 +108,6 @@ function RollerDoubleDoor() {
                       <li className="Product_Points">
                         Minimum Order Quantity 100 Square Foot
                       </li>
-                      <li className="Product_Points">
-                        Price 250 INR/Square Foot
-                      </li>
                     </ul>
                     <p className="Product_Feature mt-5">Trade Information</p>
                     <ul>
@@ -163,134 +124,16 @@ function RollerDoubleDoor() {
                       >
                         request to call back
                       </Button>
-                      <Button
-                        variant="contained"
-                        className="ENQUIRY_btn ms-5"
-                        onClick={() => setPriceCard(true)}
-                      >
-                        send inquiry
-                      </Button>
+                      <Link to="/contactus">
+                        <Button
+                          variant="contained"
+                          className="ENQUIRY_btn ms-5"
+                        >
+                          send inquiry
+                        </Button>
+                      </Link>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </>
-        )}
-        
-        {PriceCard && (
-          <>
-            <div className="Pricecard ms-1">
-              <div className="row">
-                <div className="col-12 text-end">
-                  <IconButton
-                    className="me-3 mt-2"
-                    onClick={() => setPriceCard(false)}
-                  >
-                    <CloseIcon />
-                  </IconButton>
-                </div>
-                <div className="col-12 text-center">
-                  <h5 className="Card_Title mt-5">
-                    Get A Price Quote For Retractable Roller Double Door System
-                  </h5>
-                </div>
-                <div className="col-lg-5 col-md-5 col-sm-5 col-10 ms-4">
-                  <TextField
-                    id="outlined-basic"
-                    fullWidth
-                    label="Email"
-                    variant="outlined"
-                    className="email_input ms-5 mt-4 pt-2"
-                    value={
-                      pricequote.Email !== "not_selected"
-                        ? pricequote.Email
-                        : ""
-                    }
-                    onBlur={(e) =>
-                      setpricequote({
-                        ...pricequote,
-                        Email: e.target.value,
-                      })
-                    }
-                    onChange={(e) =>
-                      setpricequote({
-                        ...pricequote,
-                        Email: e.target.value,
-                      })
-                    }
-                    error={!pricequote.Email}
-                    helperText={!pricequote.Email ? "Please enter Email" : ""}
-                  />
-                </div>
-                <div className="col-lg-5 col-md-5 col-sm-5 col-10 txt">
-                  <TextField
-                    id="outlined-basic"
-                    fullWidth
-                    label="Mobile No"
-                    variant="outlined"
-                    className="email_input ms-5 mt-4 pt-2"
-                    value={
-                      pricequote.MobileNo !== "not_selected"
-                        ? pricequote.MobileNo
-                        : ""
-                    }
-                    onBlur={(e) =>
-                      setpricequote({
-                        ...pricequote,
-                        MobileNo: e.target.value,
-                      })
-                    }
-                    onChange={(e) =>
-                      setpricequote({
-                        ...pricequote,
-                        MobileNo: e.target.value,
-                      })
-                    }
-                    error={!pricequote.MobileNo}
-                    helperText={
-                      !pricequote.MobileNo ? "Please enter MobileNo" : ""
-                    }
-                  />
-                </div>
-                <div className="col-lg-5 col-md-5 col-sm-5 col-10 ms-4">
-                  <TextField
-                    fullWidth
-                    id="outlined-number"
-                    label="Enter Quantity"
-                    type="number"
-                    className="email_input ms-5 mt-4 pt-2"
-                    InputLabelProps={{
-                      shrink: true,
-                    }}
-                  />
-                </div>
-                <div className="col-lg-5 col-md-5 col-sm-5 col-10 txt">
-                  <TextField
-                    id="outlined-select-currency"
-                    select
-                    fullWidth
-                    label="Select Unit"
-                    defaultValue=""
-                    className="email_input ms-5 mt-4 pt-2"
-                  >
-                    {Items.map((option) => (
-                      <MenuItem key={option.value} value={option.value}>
-                        {option.label}
-                      </MenuItem>
-                    ))}
-                  </TextField>
-                </div>
-                <div className="col-12 text-center">
-                  <Button variant="contained" className="Req_btn mt-5">
-                    Request Quote
-                  </Button>
-                </div>
-                <div className="col-12 text-center p-4">
-                  <h6 className="price_quotes">
-                    "We are accepting local inquiries mostly from Tamil Nadu &
-                    Karnataka."
-                  </h6>
                 </div>
               </div>
             </div>
@@ -339,9 +182,6 @@ function RollerDoubleDoor() {
                 <h5 className="Product_Name ms-3">
                   Retractable Roller Double Door System
                 </h5>
-                <h5 className="Square ms-3">
-                  250 INR<code className="Square_txt">/Square Foot</code>
-                </h5>
               </div>
               <div className="col-12 text-center mt-5">
                 <Video
@@ -356,15 +196,6 @@ function RollerDoubleDoor() {
                 >
                   <source src={RollerDoubleDrVideo} type="video/webm" />
                 </Video>
-                <div className="mt-5">
-                  <Button
-                    type="button"
-                    className="price_btn"
-                    onClick={() => setPriceCard(true)}
-                  >
-                    Get a Price/Quote
-                  </Button>
-                </div>
               </div>
             </div>
 
@@ -418,15 +249,14 @@ function RollerDoubleDoor() {
                 className="callback_btn mt-3"
                 onClick={() => setCallBackCard(true)}
               >
-                > request to call back
+                request to call back
               </Button>
-              <Button
-                variant="contained"
-                className="ENQUIRY_btn mt-4"
-                onClick={() => setPriceCard(true)}
-              >
-                send inquiry
-              </Button>
+              <Link to="/contactus" style={{textDecoration:"none"}}>
+                <Button variant="contained" className="ENQUIRY_btn mt-4"
+                  sx={{ width: "100%" }}>
+                  send inquiry
+                </Button>
+              </Link>
             </div>
           </>
         )}
@@ -451,9 +281,7 @@ function RollerDoubleDoor() {
                 <h4 className="otherproductcard_title mt-4">
                   Openable Window<br></br> System
                 </h4>
-                <h6 className="otherproductcard_des mt-3">
-                  250 INR/Square Foot
-                </h6>
+               
               </Link>
             </div>
           </div>
@@ -473,35 +301,13 @@ function RollerDoubleDoor() {
                     <h4 className="otherproductcard_title mt-4">
                       Single Slider With<br></br> Track
                     </h4>
-                    <h6 className="otherproductcard_des mt-3">
-                      250 INR/Square Foot
-                    </h6>
+                    
                   </Link>
                 </div>
               </div>
             </>
           )}
-          {isCard_1 && (
-            <>
-              <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-                <div className="otherproduct_card text-center">
-                  <Link to="/magneticnet" style={{ textDecoration: "none" }}>
-                    <img
-                      src={MagneticNet}
-                      alt=""
-                      className="img-fluid mt-2 pt-1"
-                    ></img>
-                    <h4 className="otherproductcard_title mt-4">
-                      Magnetic<br></br> Net
-                    </h4>
-                    <h6 className="otherproductcard_des mt-3">
-                      250 INR/Square Foot
-                    </h6>
-                  </Link>
-                </div>
-              </div>
-            </>
-          )}
+          
         </div>
         <div className="FOOTER">
           <Footer />

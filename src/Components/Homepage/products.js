@@ -1,12 +1,13 @@
 import "../../CSS/homepage/products.css";
-import MultiSlidingDoor from "../../assets/OurProducts/sliding dr.png";
+import MultiSlidingDoor from "../../assets/Windows Accessories/MultiSlidingDoor.png";
 import OpenableSingleDoor from "../../assets/OurProducts/openablesingledoor.png";
-import SlidingWindow from "../../assets/OurProducts/slidingwindow.png";
+import SlidingWindow from "../../assets/Windows Accessories/rollerwindow.png";
 import MagneticNet from "../../assets/OurProducts/magneticnet.png";
 import RetractableRollerDoubleDoor from "../../assets/OurProducts/retractablerollerdoubledoor.png";
-import MagneticInsectScreens from "../../assets/OurProducts/magneticinsectscreens.png";
 import DoubleSlidingDoorWithSingleTrack from "../../assets/OurProducts/doubleslidingdoorwithsingletrack.png";
 import RetractableDoubleDoor from "../../assets/OurProducts/retractabledoubledoor.png";
+import Openabledbdr from '../../assets/Retractable Double Door/OpenableDoubleDoor.png';
+import OpenableMulti from '../../assets/Retractable Double Door/multifolddoor.png'
 import { Link } from "react-router-dom";
 function Products() {
   return (
@@ -19,13 +20,13 @@ function Products() {
           <div className="col-4 d-flex flex-column pt-5 text-center">
             <div className="product_img ms-5">
               <div class="img-container text-center">
-                <Link to="/multislidingdr" style={{ textDecoration: "none" }}>
+                <Link to="/stainlesssteelwithmesh" style={{ textDecoration: "none" }}>
                   <img
-                    src={MultiSlidingDoor}
+                    src={MagneticNet}
                     alt=""
-                    className="img-fluid mb-5 zoom-img img_1"
+                    className="img-fluid zoom-img"
                   ></img>
-                  <div class="hover-text">multi sliding door</div>
+                  <div class="hover-text">Magnetic Net</div>
                 </Link>
               </div>
               <div class="img-container text-center">
@@ -33,36 +34,34 @@ function Products() {
                   <img
                     src={OpenableSingleDoor}
                     alt=""
-                    className="img-fluid mb-4 pt-3 zoom-img pimg_1"
+                    className="img-fluid mt-4 zoom-img"
                   ></img>
                   <div class="hover-text">openable single door system</div>
                 </Link>
               </div>
               <div class="img-container text-center">
-                <Link to="/slidingwindow" style={{ textDecoration: "none" }}>
+                <Link to="/multislidingdr" style={{ textDecoration: "none" }}>
                   <img
-                    src={SlidingWindow}
+                    src={MultiSlidingDoor}
                     alt=""
-                    className="img-fluid  zoom-img pimg_1"
+                    className="img-fluid mt-4 zoom-img"
                   ></img>
-                  <div class="hover-text">sliding window</div>
+                  <div class="hover-text">Multi Sliding Door</div>
                 </Link>
               </div>
+             
             </div>
           </div>
           <div className="col-4 d-flex flex-column pt-5 text-center">
             <div className="product_img">
-              <div class="img-container text-center">
-                <Link
-                  to="/magneticinsectscreens"
-                  style={{ textDecoration: "none" }}
-                >
+            <div class="img-container text-center">
+                <Link to="/slidingwindow" style={{ textDecoration: "none" }}>
                   <img
-                    src={MagneticNet}
+                    src={SlidingWindow}
                     alt=""
-                    className="img-fluid zoom-img pimg_2"
+                    className="img-fluid zoom-img"
                   ></img>
-                  <div class="hover-text">magnetic insect screen</div>
+                  <div class="hover-text">sliding window</div>
                 </Link>
               </div>
               <div class="img-container text-center">
@@ -70,47 +69,64 @@ function Products() {
                   <img
                     src={RetractableRollerDoubleDoor}
                     alt=""
-                    className="img-fluid mt-4 pt-3 zoom-img pimg_2"
+                    className="img-fluid mt-4 zoom-img"
                   ></img>
                   <div class="hover-text">Retractable roller double Door</div>
                 </Link>
               </div>
+              <div class="img-container text-center">
+                <Link to="/openabledoubledoor" style={{ textDecoration: "none" }}>
+                  <img
+                    src={Openabledbdr}
+                    alt=""
+                    className="img-fluid mt-4 zoom-img"
+                  ></img>
+                  <div class="hover-text">Openable Double Door</div>
+                </Link>
+              </div>
+             
             </div>
           </div>
           <div className="col-4 d-flex flex-column pt-5 text-center">
             <div className="product_img">
-              <div class="img-container text-center">
-                <Link to="/magneticnet" style={{ textDecoration: "none" }}>
-                  <img
-                    src={MagneticInsectScreens}
-                    alt=""
-                    className="img-fluid mb-5 pimg_3  zoom-img"
-                  ></img>
-                  <div class="hover-text txt1">Magnetic net</div>
-                </Link>
-              </div>
+              
               <div class="img-container text-center">
                 <Link to="/slidingdoor" style={{ textDecoration: "none" }}>
                   <img
                     src={DoubleSlidingDoorWithSingleTrack}
                     alt=""
-                    className="mb-4 img-fluid  zoom-img pimg_3"
+                    className="img-fluid  zoom-img"
                   ></img>
                   <div class="hover-text txt1"> Sliding door</div>
                 </Link>
               </div>
               <div class="img-container text-center">
                 <Link
-                  to="/doubleslidingwithsingletrack"
+                  to="/retractabledoubledoor"
                   style={{ textDecoration: "none" }}
                 >
                   <img
                     src={RetractableDoubleDoor}
                     alt=""
-                    className="img-fluid pt-1  zoom-img pimg_3"
+                    className="img-fluid zoom-img mt-4"
                   ></img>
                   <div class="hover-text txt1">
-                    double sliding door with single track
+                  Retractable Double Door
+                  </div>
+                </Link>
+              </div>
+              <div class="img-container text-center">
+                <Link
+                  to="/openablemultifolddoor"
+                  style={{ textDecoration: "none" }}
+                >
+                  <img
+                    src={OpenableMulti}
+                    alt=""
+                    className="img-fluid zoom-img mt-4"
+                  ></img>
+                  <div class="hover-text txt1">
+                  Openable MultiFol Door
                   </div>
                 </Link>
               </div>

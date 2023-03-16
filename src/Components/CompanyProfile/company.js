@@ -11,7 +11,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Navbar_1 from "../Navbar_1/navbar_1";
-function Company() {
+function Advantage() {
   const setting = {
     className: "center",
     infinite: true,
@@ -233,4 +233,4 @@ function Company() {
   );
 }
 
-export default Company;
+export default Advantage;

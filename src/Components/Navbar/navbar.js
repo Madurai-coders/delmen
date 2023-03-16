@@ -64,6 +64,34 @@ function Navbar() {
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
                         >
+                          <a href="#">Magnetic Net</a>
+                        </Link>
+                        <ul className="submenu_2">
+                          <li>
+                            <Link
+                              to="/magneticinsectscreens"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Magnetic Insect Screens with Fiber Glass Mesh</a>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/stainlesssteelwithmesh"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">
+                                Magnetic Net With Stainless Steel Mesh
+                              </a>
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <Link
+                          to="/ourproducts"
+                          style={{ textDecoration: "none" }}
+                        >
                           <a href="#">Retractable Double Door</a>
                         </Link>
                         <ul className="submenu_2">
@@ -72,15 +100,7 @@ function Navbar() {
                               to="/retractabledoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Retractable Double Door</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="/magneticnet"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">Magnetic Net</a>
+                              <a href="#"> Retractable Double Door</a>
                             </Link>
                           </li>
                           <li>
@@ -88,11 +108,83 @@ function Navbar() {
                               to="/rollerdoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">
-                                Retractable Roller Double Door System
-                              </a>
+                              <a href="#">Retractable Roller Double Door</a>
                             </Link>
                           </li>
+
+                          <li>
+                            <Link
+                              to="/rollerwindow"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Retractable Roller Window</a>
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <Link
+                          to="/ourproducts"
+                          style={{ textDecoration: "none" }}
+                        >
+                          <a href="#">Sliding System</a>
+                        </Link>
+                        <ul className="submenu_2">
+                        <li>
+                            <Link
+                              to="/slidingwindowsystem"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Sliding Window System</a>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/singlesliderwithtrack"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Single Slider With Track</a>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/slidingwindowmesh"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Sliding Window Mesh</a>
+                            
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/multislidingdr"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Multi Sliding Door</a>
+                            
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/slidingdoor"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Sliding Door</a>
+                            
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      
+                      <li>
+                        <Link
+                          to="/ourproducts"
+                          style={{ textDecoration: "none" }}
+                        >
+                          <a href="#">Openable System</a>
+                        </Link>
+                        <ul className="submenu_2">
                           <li>
                             <Link
                               to="/openablewindow"
@@ -106,23 +198,8 @@ function Navbar() {
                               to="/openablesingledr"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Openable Single Door System</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="/slidingwindow"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">Sliding window with mesh</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="/multislidingdr"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">Multi Sliding Door System</a>
+                              <a href="#">Openable Door System</a>
+                            
                             </Link>
                           </li>
                           <li>
@@ -130,83 +207,17 @@ function Navbar() {
                               to="/openabledoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Openable Double Door system</a>
+                              <a href="#">Openable Double Door</a>
+                            
                             </Link>
                           </li>
                           <li>
                             <Link
-                              to="/singlesliderwithtrack"
+                              to="/openablemultifolddoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Single slider with Track</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="/doubleslidingwithsingletrack"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">
-                                Double sliding Door with Single Track
-                              </a>
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <Link
-                          to="/ourproducts"
-                          style={{ textDecoration: "none" }}
-                        >
-                          <a href="#">Doors/Windows Accessories</a>
-                        </Link>
-                        <ul className="submenu_2">
-                          <li>
-                            <Link
-                              to="/slidingwindowsystem"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">Sliding Window system</a>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              to="/slidingdoor"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">Sliding Door</a>
-                            </Link>
-                          </li>
-
-                          <li>
-                            <Link
-                              to="/openabledoorwithmesh"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">
-                                Openable Door system with Stainless Steel Mesh
-                              </a>
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li>
-                        <Link
-                          to="/ourproducts"
-                          style={{ textDecoration: "none" }}
-                        >
-                          <a href="#">Magnetic Insect Screens</a>
-                        </Link>
-                        <ul className="submenu_2">
-                          <li>
-                            <Link
-                              to="/MagneticInsectScreens"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">
-                                Magnetic Insect Screens with Fiber Glass Mesh
-                              </a>
+                              <a href="#">Openable MultiFold Door</a>
+                            
                             </Link>
                           </li>
                         </ul>

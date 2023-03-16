@@ -73,9 +73,8 @@ function Landingpage() {
     setInputValue(suggestion);
     setSuggestions([]);
 
-    if(suggestion === "Sliding Window"){
+    if (suggestion === "Sliding Window") {
       navigate("./slidingwindowsystem");
-
     }
   };
   return (
@@ -129,7 +128,7 @@ function Landingpage() {
           <div className="row justify-content-center cards_row">
             <div className="col-4 text-center mt-5 card_gap">
               <Link
-                to="/openabledoorwithmesh"
+                to="/stainlesssteelwithmesh"
                 style={{ textDecoration: "none" }}
               >
                 <div className="card ms-5">

@@ -7,24 +7,25 @@ import OurProducts from "./Components/OurProducts/product";
 import CompanyProfile from "./Components/Advantage/advantage";
 import RetractableDoubleDoor from "./Components/ProductCards/Retractable/RetractableDoubleDoor";
 import RollerDoubleDoor from "./Components/ProductCards/Retractable/RollerDoubleDoor";
-import OpenableSingleDr from "./Components/ProductCards/Retractable/OpenableSingleDoor";
-import MultiSlidingDoor from "./Components/ProductCards/Retractable/MultiSlidingDoor";
-import SingleSliderWithTrack from "./Components/ProductCards/Retractable/SingleSliderWithTrack";
-import MagneticNet from "./Components/ProductCards/Retractable/MagneticNet";
-import OpenableWindow from "./Components/ProductCards/Retractable/OpenableWindow";
-import SlidingWindowSystem from "./Components/ProductCards/Retractable/SlidingWindowMesh";
-import OpenableDoubleDoor from "./Components/ProductCards/Retractable/OpenableDoubleDoor";
-import DoubleSlidingWithSingleTrack from "./Components/ProductCards/Retractable/DoubleSlidingWithSingleTrack";
+import OpenableSingleDr from "./Components/ProductCards/Openable System/OpenableSingleDoor";
+import MultiSlidingDoor from "./Components/ProductCards/Window/MultiSlidingDoor";
+import OpenableWindow from "./Components/ProductCards/Openable System/OpenableWindow";
+import OpenableDoubleDoor from "./Components/ProductCards/Openable System/OpenableDoubleDoor";
+import DoubleSlidingWithSingleTrack from "./Components/ProductCards/Window/DoubleSlidingWithSingleTrack";
 import SlidingSystem from "./Components/ProductCards/Window/SlidingWindowSystem";
 import SlidingDoor from "./Components/ProductCards/Window/SlidingDoor";
-import OpenableDoorSystemWithMesh from "./Components/ProductCards/Window/OpenableDoorSystemWithMesh";
 import MagneticInsect from "./Components/ProductCards/MagnetInsectScreen/MagneticInsect";
 import ScrollToTop from "./Components/script/script";
+import RollerWindow from "./Components/ProductCards/Retractable/RetractableRollerWindow";
+import StainlessSteelWithMesh from "./Components/ProductCards/MagnetInsectScreen/OpenableDoorSystemWithMesh";
+import SlidingWindowMesh from "./Components/ProductCards/Window/SlidingWindowMesh";
+import SingleSliderWithTrack from "./Components/ProductCards/Window/SingleSliderWithTrack";
+import OpenableMultiFold from "./Components/ProductCards/Openable System/OpenableMultiFold";
 function App() {
   return (
     <>
       <BrowserRouter>
-      <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/contactus" element={<Contact />}></Route>
@@ -35,6 +36,31 @@ function App() {
           ></Route>
           <Route path="/ourproducts" element={<OurProducts />}></Route>
           <Route path="/companyprofile" element={<CompanyProfile />}></Route>
+
+          <Route
+            path="/magneticinsectscreens"
+            element={<MagneticInsect />}
+          ></Route>
+          <Route
+            path="/stainlesssteelwithmesh"
+            element={<StainlessSteelWithMesh />}
+          ></Route>
+
+          <Route
+            path="/slidingwindowsystem"
+            element={<SlidingSystem />}
+          ></Route>
+          <Route
+            path="/slidingwindowmesh"
+            element={<SlidingWindowMesh />}
+          ></Route>
+          <Route
+            path="/singlesliderwithtrack"
+            element={<SingleSliderWithTrack />}
+          ></Route>
+          <Route path="/multislidingdr" element={<MultiSlidingDoor />}></Route>
+          <Route path="/slidingdoor" element={<SlidingDoor />}></Route>
+
           <Route
             path="/retractabledoubledoor"
             element={<RetractableDoubleDoor />}
@@ -43,41 +69,22 @@ function App() {
             path="/rollerdoubledoor"
             element={<RollerDoubleDoor />}
           ></Route>
+          <Route path="/rollerwindow" element={<RollerWindow />}></Route>
+
+          <Route path="/openablewindow" element={<OpenableWindow />}></Route>
+
           <Route
             path="/openablesingledr"
             element={<OpenableSingleDr />}
-          ></Route>
-          <Route path="/multislidingdr" element={<MultiSlidingDoor />}></Route>
-          <Route
-            path="/singlesliderwithtrack"
-            element={<SingleSliderWithTrack />}
-          ></Route>
-          <Route path="/magneticnet" element={<MagneticNet />}></Route>
-          <Route path="/openablewindow" element={<OpenableWindow />}></Route>
-          <Route
-            path="/slidingwindow"
-            element={<SlidingWindowSystem />}
           ></Route>
           <Route
             path="/openabledoubledoor"
             element={<OpenableDoubleDoor />}
           ></Route>
+
           <Route
-            path="/doubleslidingwithsingletrack"
-            element={<DoubleSlidingWithSingleTrack />}
-          ></Route>
-          <Route
-            path="/slidingwindowsystem"
-            element={<SlidingSystem />}
-          ></Route>
-          <Route path="/slidingdoor" element={<SlidingDoor />}></Route>
-          <Route
-            path="/openabledoorwithmesh"
-            element={<OpenableDoorSystemWithMesh />}
-          ></Route>
-          <Route
-            path="/magneticinsectscreens"
-            element={<MagneticInsect />}
+            path="/openablemultifolddoor"
+            element={<OpenableMultiFold />}
           ></Route>
         </Routes>
       </BrowserRouter>

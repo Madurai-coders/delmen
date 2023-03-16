@@ -27,8 +27,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
-  font-size: 19px;
-  line-height: 40%;
+  font-size: 20px;
   letter-spacing: 0.035em;
   text-transform: capitalize;
   color: #000000;
@@ -278,6 +277,12 @@ max-width: 1000px;
   }
   .advantage_quotes{
     margin-top: 0px!important;
+  }
+  .products-des{
+    padding-top:25px!important;
+  }
+  .products_points{
+    margin-top:25px;
   }
 }
 
