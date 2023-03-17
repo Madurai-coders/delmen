@@ -55,7 +55,7 @@ function Products() {
           <div className="col-4 d-flex flex-column pt-5 text-center">
             <div className="product_img">
             <div class="img-container text-center">
-                <Link to="/slidingwindow" style={{ textDecoration: "none" }}>
+                <Link to="/slidingwindowsystem" style={{ textDecoration: "none" }}>
                   <img
                     src={SlidingWindow}
                     alt=""
