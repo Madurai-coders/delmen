@@ -79,7 +79,7 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="col-lg-7 col-md-7 col-sm-12 col-12">
+        <div className="col-lg-7 col-md-7 col-sm-12 col-10">
           <div className="link">
             <Link to="/" style={{ textDecoration: "none" }}>
               <h6 className="navbar_list ms-5 mt-4 ">Home</h6>
