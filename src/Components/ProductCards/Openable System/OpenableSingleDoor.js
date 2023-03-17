@@ -81,13 +81,12 @@ function OpenableSingleDr() {
                       Openable Single Door System{" "}
                     </h5>
                     <p className="Product_Exn mt-3">
-                      It is made out of 2Aluminium Profile with SS 304 mesh It
-                      has Felt Grove to arrest gaps in the contact surface Easy
-                      to operate and remove the system for a wash It is
-                      assembled with double screw Joints to avoid breakage in
-                      the edges and Twist in the frame It is advisable to fix
-                      this kind of door, to your main door as well balcony and
-                      utility
+                      Open able Door It is custom Made for the existing Main
+                      door utility door as well Balcony, This product is mounted
+                      adjacent to your existing door. It is assembled with 2"
+                      aluminum Profile with double SS screw Joints and SS 304
+                      Mesh Rust Free This system has removable hinges and it can
+                      be removed from the hinges to wash the door and fix back
                     </p>
 
                     <p className="Product_Feature mt-5">Price And Quantity</p>
@@ -95,12 +94,12 @@ function OpenableSingleDr() {
                       <li className="Product_Points">
                         Minimum Order Quantity 100 Square Foot
                       </li>
-                      <li className="Product_Points">
-                        Price 250 INR/Square Foot
-                      </li>
                     </ul>
                     <p className="Product_Feature mt-5">Trade Information</p>
                     <ul>
+                      <li className="Product_Points">
+                        minimum Warranty is 5 years
+                      </li>
                       <li className="Product_Points">
                         Supply Ability 1000 Square Foot Per Day
                       </li>
@@ -173,9 +172,6 @@ function OpenableSingleDr() {
                 <h5 className="Product_Name ms-3">
                   Openable Single Door System
                 </h5>
-                <h5 className="Square ms-3">
-                  250 INR<code className="Square_txt">/Square Foot</code>
-                </h5>
               </div>
               <div className="col-12 text-center mt-5">
                 <Video
@@ -199,12 +195,12 @@ function OpenableSingleDr() {
                 Openable Single Door System{" "}
               </h5>
               <p className="Product_Exn mt-3">
-                It is made out of 2Aluminium Profile with SS mesh It has Felt
-                Grove to arrest gaps in the contact surface Easy to operate and
-                remove the system for a wash It is assembled with double screw
-                Joints to avoid breakage in the edges and Twist in the frame It
-                is advisable to fix this kind of door, to your main door as well
-                balcony and utility
+                Open able Door It is custom Made for the existing Main door
+                utility door as well Balcony, This product is mounted adjacent
+                to your existing door. It is assembled with 2" aluminum Profile
+                with double SS screw Joints and SS 304 Mesh Rust Free This
+                system has removable hinges and it can be removed from the
+                hinges to wash the door and fix back
               </p>
 
               <p className="Product_Feature mt-5">Price And Quantity</p>
@@ -212,10 +208,10 @@ function OpenableSingleDr() {
                 <li className="Product_Points">
                   Minimum Order Quantity 100 Square Foot
                 </li>
-                <li className="Product_Points">Price 250 INR/Square Foot</li>
               </ul>
               <p className="Product_Feature mt-5">Trade Information</p>
               <ul>
+                <li className="Product_Points">minimum Warranty is 5 years</li>
                 <li className="Product_Points">
                   Supply Ability 1000 Square Foot Per Day
                 </li>

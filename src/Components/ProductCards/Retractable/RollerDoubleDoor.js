@@ -75,9 +75,16 @@ function RollerDoubleDoor() {
 
                     <h5 className="product_des mt-4">product description</h5>
                     <p className="Product_Exn mt-3">
-                      Roller double door it is custom made for the existing
-                      french door as well sliding doors. This product is easy to
-                      operate and mounted adjacent to your existing French door.
+                      Retractable Roller Door It is custom Made for the existing
+                      doors this product can be installed to existing utility
+                      door, balcony door & backyard doors, The system is
+                      fabricated with aluminum Profiles & Fiberglass mesh( Stiff
+                      mesh). It has a brush to clean the mesh every time you
+                      operate the system. Advantage of it is it does not take
+                      much space and never keeps hanging around it is a
+                      retractable system. It is easy to operate It gives very
+                      high transparence in the mesh it looks very good and
+                      Durable
                     </p>
                     <h5 className="Product_Title mt-4">
                       Retractable Roller Double Door{" "}
@@ -202,9 +209,14 @@ function RollerDoubleDoor() {
             <div className="col-12 mt-5">
               <h5 className="product_des mt-4">product description</h5>
               <p className="Product_Exn mt-3">
-                Roller double door it is custom made for the existing french
-                door as well sliding doors. This product is easy to operate and
-                mounted adjacent to your existing French door.
+                Retractable Roller Door It is custom Made for the existing doors
+                this product can be installed to existing utility door, balcony
+                door & backyard doors, The system is fabricated with aluminum
+                Profiles & Fiberglass mesh( Stiff mesh). It has a brush to clean
+                the mesh every time you operate the system. Advantage of it is
+                it does not take much space and never keeps hanging around it is
+                a retractable system. It is easy to operate It gives very high
+                transparence in the mesh it looks very good and Durable
               </p>
               <h5 className="Product_Title mt-4">
                 Retractable Roller Double Door{" "}
@@ -251,9 +263,12 @@ function RollerDoubleDoor() {
               >
                 request to call back
               </Button>
-              <Link to="/contactus" style={{textDecoration:"none"}}>
-                <Button variant="contained" className="ENQUIRY_btn mt-4"
-                  sx={{ width: "100%" }}>
+              <Link to="/contactus" style={{ textDecoration: "none" }}>
+                <Button
+                  variant="contained"
+                  className="ENQUIRY_btn mt-4"
+                  sx={{ width: "100%" }}
+                >
                   send inquiry
                 </Button>
               </Link>
@@ -281,7 +296,6 @@ function RollerDoubleDoor() {
                 <h4 className="otherproductcard_title mt-4">
                   Openable Window<br></br> System
                 </h4>
-               
               </Link>
             </div>
           </div>
@@ -301,13 +315,11 @@ function RollerDoubleDoor() {
                     <h4 className="otherproductcard_title mt-4">
                       Single Slider With<br></br> Track
                     </h4>
-                    
                   </Link>
                 </div>
               </div>
             </>
           )}
-          
         </div>
         <div className="FOOTER">
           <Footer />

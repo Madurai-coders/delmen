@@ -74,21 +74,19 @@ function OpenableWindow() {
 
                     <h5 className="product_des mt-4">product description</h5>
                     <p className="Product_Exn mt-3">
-                      It is made out of 1Aluminium Profile with Stainless Steel
-                      mesh It has Felt Grove to arrest gaps in the contact
-                      surface Easy to operate and remove the system for a wash
-                      It is assembled with screw Joints to avoid breakage in the
-                      edges on a long Run
+                      Open able window It is custom-made for existing windows,
+                      It can be mounted on wooden windows as well on the
+                      aluminum Frames this product is assembled with 1" aluminum
+                      Profile.
                     </p>
                     <h5 className="Product_Title mt-4">
                       Openable Window System
                     </h5>
                     <p className="Product_Exn mt-3">
-                      It is made out of 1Aluminium Profile with Stainless Steel
-                      mesh It has Felt Grove to arrest gaps in the contact
-                      surface Easy to operate and remove the system for a wash
-                      It is assembled with screw Joints to avoid breakage in the
-                      edges on a long Run
+                      It is 45 degree cut and joined with SS screws, The use 304
+                      SS Mesh rust free .Advantage of the product it can be
+                      removed from the window and it can be washed and fixed
+                      back to the window.
                     </p>
 
                     <p className="Product_Feature mt-5">Price And Quantity</p>
@@ -96,9 +94,7 @@ function OpenableWindow() {
                       <li className="Product_Points">
                         Minimum Order Quantity 100 Square Foot
                       </li>
-                      <li className="Product_Points">
-                        Price 250 INR/Square Foot
-                      </li>
+                     
                     </ul>
                     <p className="Product_Feature mt-5">Trade Information</p>
                     <ul>
@@ -195,16 +191,15 @@ function OpenableWindow() {
             <div className="col-12 mt-5">
               <h5 className="product_des mt-4">product description</h5>
               <p className="Product_Exn mt-3">
-                45 degree cut and joined SS screws the mesh is also 304 SS mesh
-                advantage of the product it can be removed from the window and
-                it can be washed and fixed back to the window.
+                . Open able window It is custom-made for existing windows, It
+                can be mounted on wooden windows as well on the aluminum Frames
+                this product is assembled with 1" aluminum Profile.
               </p>
               <h5 className="Product_Title mt-4">Openable Window System</h5>
               <p className="Product_Exn mt-3">
-                It is made out of 1Aluminium Profile with Stainless Steel mesh
-                It has Felt Grove to arrest gaps in the contact surface Easy to
-                operate and remove the system for a wash It is assembled with
-                screw Joints to avoid breakage in the edges on a long Run
+                It is 45 degree cut and joined with SS screws, The use 304 SS
+                Mesh rust free .Advantage of the product it can be removed from
+                the window and it can be washed and fixed back to the window.
               </p>
 
               <p className="Product_Feature mt-5">Price And Quantity</p>
@@ -212,7 +207,6 @@ function OpenableWindow() {
                 <li className="Product_Points">
                   Minimum Order Quantity 100 Square Foot
                 </li>
-                <li className="Product_Points">Price 250 INR/Square Foot</li>
               </ul>
               <p className="Product_Feature mt-5">Trade Information</p>
               <ul>

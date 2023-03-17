@@ -283,7 +283,7 @@ function OurProduct() {
                         alt=""
                         className="img-fluid  mt-2 pt-1"
                       ></img>
-                      <h4 className="card1-title mt-4">Sliding Window Door</h4>
+                      <h4 className="card1-title mt-4">Multi Sliding Door</h4>
                     </Link>
                   </div>
                 </div>
@@ -318,6 +318,14 @@ function OurProduct() {
                   >
                     <h6 className="names">
                       Openable Double Door<br></br>System
+                    </h6>
+                  </Link>
+                  <Link
+                    to="/openablemultifolddoor"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <h6 className="names">
+                      Openable MultiFold Door<br></br>System
                     </h6>
                   </Link>
                 </div>
@@ -388,7 +396,7 @@ function OurProduct() {
                         className="img-fluid  mt-2 pt-1"
                       ></img>
                       <h4 className="card1-title mt-4">
-                        Openable Double Door<br></br> System
+                        Openable MultiFold Door<br></br> System
                       </h4>
                     </Link>
                   </div>

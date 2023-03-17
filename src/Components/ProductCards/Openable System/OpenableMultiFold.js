@@ -94,7 +94,6 @@ function OpenableMultiFold() {
 
                     <p className="Product_Feature mt-5">Price And Quantity</p>
                     <ul>
-                      <li className="Product_Points">5 years warranty </li>
 
                       <li className="Product_Points">
                         Minimum Order Quantity 100 Square Foot

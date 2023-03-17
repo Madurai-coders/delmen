@@ -90,9 +90,7 @@ function MagneticInsect() {
                       <li className="Product_Points">
                         Minimum Order Quantity 100 Square Foot
                       </li>
-                      <li className="Product_Points">
-                        Price 250 INR/Square Foot
-                      </li>
+                      
                     </ul>
                     <p className="Product_Feature mt-5">Trade Information</p>
                     <ul>
@@ -200,7 +198,6 @@ function MagneticInsect() {
                 <li className="Product_Points">
                   Minimum Order Quantity 100 Square Foot
                 </li>
-                <li className="Product_Points">Price 250 INR/Square Foot</li>
               </ul>
               <p className="Product_Feature mt-5">Trade Information</p>
               <ul>
