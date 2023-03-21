@@ -9,13 +9,14 @@ import Navbar from "../Navbar/navbar";
 import InputAdornment from "@mui/material/InputAdornment";
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
+import { event } from "jquery";
 
 const searchData = [
   "Door",
   "Mosquito Net For Window",
   "Retractable Door",
   "Mosquito Net",
-  "Magnet Net",
+  "Magnetic Net",
   "Sliding Door",
   "Sliding Window",
   "RetractableDoubleDoor",
@@ -25,6 +26,8 @@ const searchData = [
 function Landingpage() {
   const [inputValue, setInputValue] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+  const [suggestionbox, setsuggestionbox] = useState(true);
+
 
   const navigate = useNavigate();
 
@@ -35,7 +38,7 @@ function Landingpage() {
         item.toLowerCase().startsWith(event.target.value.toLowerCase())
       )
     );
-  };
+  }
   const Search = (event) => {
     if (
       inputValue === "Door" ||
@@ -49,8 +52,8 @@ function Landingpage() {
       navigate("./slidingwindowsystem");
     } else if (inputValue === "Sliding Door") {
       navigate("./slidingdoor");
-    } else if (inputValue === "Magnet Net") {
-      navigate("./magneticnet");
+    } else if (inputValue === "Magnetic Net") {
+      navigate("./stainlesssteelwithmesh");
     } else if (inputValue === "RetractableDoubleDoor") {
       navigate("./retractabledoubledoor");
     } else if (inputValue === "Retractable Roller Double Door") {
@@ -60,22 +63,32 @@ function Landingpage() {
     }
   };
 
-  const Add = (e) => {
-    if (e.key == "Enter" && inputValue === Search()) {
-      navigate("/ourproducts");
-    } else if (e.key == "Enter" && inputValue === "Sliding Door") {
-      navigate("/slidingdoor");
-    } else if (e.key == "Enter" && inputValue === "Sliding Window") {
-      navigate("./slidingwindowsystem");
-    }
-  };
+ 
   const handleSuggestionClick = (suggestion) => {
     setInputValue(suggestion);
-    setSuggestions([]);
-
-    if (suggestion === "Sliding Window") {
+    if (
+      suggestion === "Door" ||
+      suggestion === "Retractable Door" ||
+      suggestion === "Mosquito Net For Window" ||
+      suggestion === "Window" ||
+      suggestion === "Mosquito Net"
+    ) {
+      navigate("/ourproducts");
+    } else if (suggestion === "Sliding Window") {
       navigate("./slidingwindowsystem");
+    } else if (suggestion === "Sliding Door") {
+      navigate("./slidingdoor");
+    } else if (suggestion === "Magnetic Net") {
+      navigate("./stainlesssteelwithmesh");
+    } else if (suggestion === "RetractableDoubleDoor") {
+      navigate("./retractabledoubledoor");
+    } else if (suggestion === "Retractable Roller Double Door") {
+      navigate("./rollerdoubledoor");
+    } else if (suggestion === "Openable Single Door System") {
+      navigate("./openablesingledr");
     }
+
+    setSuggestions([]);
   };
   return (
     <>
@@ -91,7 +104,6 @@ function Landingpage() {
           <div className="col-lg-3 col-md-4 text-center">
             <div className="search mt-5">
               <InputBase
-                onKeyDown={(e) => Add(e)}
                 value={inputValue}
                 onChange={handleInputChange}
                 className="inputbase pe-1"
@@ -106,7 +118,7 @@ function Landingpage() {
                 }
               ></InputBase>
 
-              {suggestions.length > 0 && (
+              {inputValue &&(
                 <div className="search_autocomplete mt-1 ms-4">
                   <ul className="search_item">
                     {suggestions.map((suggestion) => (
@@ -115,7 +127,7 @@ function Landingpage() {
                         key={suggestion}
                         onClick={() => handleSuggestionClick(suggestion)}
                       >
-                        {suggestion}
+                        {inputValue ? suggestion : ""}
                       </li>
                     ))}
                   </ul>
