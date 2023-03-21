@@ -26,19 +26,22 @@ const searchData = [
 function Landingpage() {
   const [inputValue, setInputValue] = useState("");
   const [suggestions, setSuggestions] = useState([]);
-  const [suggestionbox, setsuggestionbox] = useState(true);
-
 
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
+
     setSuggestions(
       searchData.filter((item) =>
         item.toLowerCase().startsWith(event.target.value.toLowerCase())
       )
     );
-  }
+
+    if (suggestions.length === 0) {
+      document.getElementById("search").style.display = "none";
+    }
+  };
   const Search = (event) => {
     if (
       inputValue === "Door" ||
@@ -63,7 +66,6 @@ function Landingpage() {
     }
   };
 
- 
   const handleSuggestionClick = (suggestion) => {
     setInputValue(suggestion);
     if (
@@ -118,8 +120,8 @@ function Landingpage() {
                 }
               ></InputBase>
 
-              {inputValue &&(
-                <div className="search_autocomplete mt-1 ms-4">
+              {inputValue && (
+                <div className="search_autocomplete mt-1 ms-4" id="search">
                   <ul className="search_item">
                     {suggestions.map((suggestion) => (
                       <li
