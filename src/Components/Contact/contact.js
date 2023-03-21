@@ -3,7 +3,6 @@ import Navbar from "../Navbar/navbar";
 import TextField from "@mui/material/TextField";
 import Footer from "../Footer/footer";
 import React, { useState } from "react";
-import axios from "axios";
 
 function Contact() {
   // const [msg, setMsg] = useState("");
