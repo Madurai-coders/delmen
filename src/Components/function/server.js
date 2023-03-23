@@ -1,100 +1,52 @@
-// const express = require('express');
-// const nodemailer = require('nodemailer');
-// const app = express();
-
-// // Set up a route to handle form submissions
-// app.post('/send-email', (req, res) => {
-//   const { name, email, message } = req.body;
-
-//   // Create a transporter object using SMTP transport
-//   const transporter = nodemailer.createTransport({
-//     host: 'smtp.gmail.com',
-//     port: 587,
-//     secure: false,
-//     auth: {
-//       user: 'suddiselvam11@gmail.com',
-//       pass: 'Tamilpadma'
-//     }
-//   });
-
-//   // Set up the email options
-//   const mailOptions = {
-//     from: email,
-//     to: 'nilapriya5517@gmail.com',
-//     subject: `New message from ${name}`,
-//     text: message
-//   };
-
-//   // Send the email
-//   transporter.sendMail(mailOptions, (error, info) => {
-//     if (error) {
-//       console.log(error);
-//       res.send('error');
-//     } else {
-//       console.log('Email sent: ' + info.response);
-//       res.send('success');
-//     }
-//   });
-// });
 
 
+const nodemailer = require("nodemailer");
+const express = require("express");
+const app = express();
+const cors = require("cors");
+app.use(cors());
+const path = require("path");
+const buildPath = path.join(__dirname,  "..", "build");
+app.use(express.json());
+app.use(express.static(buildPath));
 
+app.post("/users", (req, res) => {
+       console.log(req.body)
+      
+  var transporter = nodemailer.createTransport({
+    host: "smtp.ethereal.email",
+    port: 587,
+    secure: false,
 
+    auth: {
+      user: "kaamil@larangel.com",
+      pass: "Sujitha312@",
+    },
+  });
 
+  var mailOptions = {
+    from: "nilapriya5517@gmail.com", // sender address
+    to: req.body.to, // list of receivers
+    subject: req.body.subject, // Subject line
 
+   
+  };
 
-// const path = require('path');
-// const express = require('express');
- 
-// const nodemailer = require('nodemailer');
-// const app = express();
-// const cors = require('cors')
-// app.use(cors())
-// const buildPath = path.join(__dirname, '..', 'build');
-// app.use(express.json());
-// app.use(express.static(buildPath)); 
- 
-// app.post('/users',(req,res)=>{
- 
-//     var transporter = nodemailer.createTransport({
-//         service: 'gmail',
-//         auth: {
-//           user: 'suddiselvam11@gmail.com',
-//           pass: 'Tamilpadma'
-//         }
-//     });
- 
-//     var mailOptions = {
-//         from: 'nilapriya5517@gmail.com',// sender address
-//         to: req.body.to, // list of receivers
-//         subject: req.body.subject, // Subject line
-//         text:req.body.description,
-//         html: `
-//         <div style="padding:10px;border-style: ridge">
-//         <p>You have a new contact request.</p>
-//         <h3>Contact Details</h3>
-//         <ul>
-//             <li>Email: ${req.body.to}</li>
-//             <li>Subject: ${req.body.subject}</li>
-//             <li>Message: ${req.body.description}</li>
-//         </ul>
-//         `
-//     };
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+res.json({ status: true, respMesg: "Email Sent Successfully" });
+    } else {
+res.json({ status: true, respMesg: "Email Sent Successfully" });
+    }
+  });
+});
+
      
-//     transporter.sendMail(mailOptions, function(error, info){
-//         if (error)
-//         {
-//           res.json({status: true, respMesg: 'Email Sent Successfully'})
-//         } 
-//         else
-//         {
-//           res.json({status: true, respMesg: 'Email Sent Successfully'})
-//         }
-     
-//       });
-// });
- 
-// // listen to the port
-// app.listen(5000, () => {
-//     console.log('server start on port 3030');
-//   });
+
+// listen to the port
+app.listen(9000, () => {
+  console.log("server start on port 9000");
+});
+
+
+

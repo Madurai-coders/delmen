@@ -3,26 +3,29 @@ import Navbar from "../Navbar/navbar";
 import TextField from "@mui/material/TextField";
 import Footer from "../Footer/footer";
 import React, { useState } from "react";
-
+import axios from "axios";
 function Contact() {
-  // const [msg, setMsg] = useState("");
-  // const [user, setUser] = useState({
-  //   to: "",
-  //   subject: "",
-  //   description: "",
-  // });
+  const [msg, setMsg] = useState("");
+  const [user, setUser] = useState({
+    to: "",
+    subject: "",
+  });
 
-  // const { to, subject, description } = user;
-  // const onInputChange = (e) => {
-  //   setUser({ ...user, [e.target.name]: e.target.value });
-  // };
+  const { to, subject } = user;
+  const onInputChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
 
-  // const onSubmit = async (e) => {
-  //   e.preventDefault();
-  //   await axios
-  //     .post("http://localhost:5000/users/", user)
-  //     .then((response) => setMsg(response.data.respMesg));
-  // };
+  const onSubmit = async (e) => {
+    e.preventDefault()
+    await axios
+      .post("http://localhost:9000/users/", user)
+      .then((response) => setMsg(response.data.respMesg));
+    console.log(user)
+  };
+
+ 
+  
   return (
     <>
       <div className="contact">
@@ -50,20 +53,26 @@ function Contact() {
               <div className="row ms-4 mt-4 EMAIL">
                 <div className="col-lg-5 col-md-5 col-sm-5 col-10 ms-3 ">
                   <TextField
+                    name="to"
                     id="outlined-basic"
                     fullWidth
                     label="Email"
                     variant="outlined"
                     className="email_input"
+                    value={user.to}
+                    onChange={onInputChange}
                   />
                 </div>
                 <div className="col-lg-5 col-md-5 col-sm-5 col-10 email ms-4">
                   <TextField
+                    name="subject"
                     id="outlined-basic"
                     fullWidth
                     label="Mobile No"
                     variant="outlined"
                     className="email_input"
+                    value={subject}
+                    onChange={onInputChange}
                   />
                 </div>
               </div>
@@ -71,6 +80,7 @@ function Contact() {
               <div className="row mt-5">
                 <div className="col-11 text-center mt-3">
                   <button
+                    onClick={onSubmit}
                     type="submit"
                     className="btn contact_sendinquiry"
                   >
@@ -92,7 +102,7 @@ function Contact() {
         <div className="mt-5 pt-5">
           <Footer />
         </div>
-      </div> 
+      </div>
       {/* <form id="contact-form">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required></input>
@@ -107,7 +117,7 @@ function Contact() {
       </form>
 
       <div id="message-container"></div> */}
-{/* 
+      {/* 
       <div className="container">
         <h3 className="text-center text-success mb-2 mt-4">
           Email Send using React and Node{" "}
