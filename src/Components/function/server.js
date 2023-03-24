@@ -14,10 +14,9 @@ app.post("/users", (req, res) => {
        console.log(req.body)
       
   var transporter = nodemailer.createTransport({
-    host: "protonsmtp.hostinger.com",
+    host: "smtp.hostinger.com",
     port: 587,
     secure: false,
-
     auth: {
       user: "kaamil@larangel.com",
       pass: "Sujitha312@",
@@ -25,18 +24,18 @@ app.post("/users", (req, res) => {
   });
 
   var mailOptions = {
-    from: "nilapriya5517@gmail.com", // sender address
-    to: 'suddiselvam11@gmail.com', // list of receivers
+    from: "kaamil@larangel.com", // sender address
+    to: 'kaamil312@gmail.com', // list of receivers
     subject: req.body.subject, // Subject line
-
+    text: 'Hi from your nodemailer project'
    
   };
 
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-res.json({ status: true, respMesg: "Email Sent Successfully" });
+  transporter.sendMail(mailOptions, function(err, data) {
+    if (err) {
+      console.log("Error " + err);
     } else {
-res.json({ status: true, respMesg: "Email Sent Successfully" });
+      console.log("Email sent successfully");
     }
   });
 });
