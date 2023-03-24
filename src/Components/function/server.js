@@ -14,7 +14,7 @@ app.post("/users", (req, res) => {
        console.log(req.body)
       
   var transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
+    host: "protonsmtp.hostinger.com",
     port: 587,
     secure: false,
 
@@ -26,7 +26,7 @@ app.post("/users", (req, res) => {
 
   var mailOptions = {
     from: "nilapriya5517@gmail.com", // sender address
-    to: req.body.to, // list of receivers
+    to: 'suddiselvam11@gmail.com', // list of receivers
     subject: req.body.subject, // Subject line
 
    
