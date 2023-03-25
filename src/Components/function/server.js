@@ -28,7 +28,6 @@ app.post("/users", (req, res) => {
     to: 'kaamil312@gmail.com', // list of receivers
     subject: req.body.subject, // Subject line
     text: 'Hi from your nodemailer project'
-   
   };
 
   transporter.sendMail(mailOptions, function(err, data) {
