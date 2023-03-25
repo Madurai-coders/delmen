@@ -31,6 +31,8 @@ function OpenableMultiFold() {
   return (
     <>
       <div className="RollerDr">
+      <div className="container">
+
         <Navbar_1 />
         {isTab && (
           <>
@@ -305,6 +307,7 @@ function OpenableMultiFold() {
               </div>
             </>
           )}
+        </div>
         </div>
         <div className="FOOTER">
           <Footer />

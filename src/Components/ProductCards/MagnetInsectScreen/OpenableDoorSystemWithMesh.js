@@ -29,6 +29,8 @@ function StainlessSteelWithMesh() {
   return (
     <>
       <div className="RollerDr">
+      <div className="container">
+
         <Navbar_1 />
         {isTab && (
           <>
@@ -296,6 +298,8 @@ function StainlessSteelWithMesh() {
             </>
           )}
         </div>
+        </div>
+
         <div className="FOOTER">
           <Footer />
         </div>

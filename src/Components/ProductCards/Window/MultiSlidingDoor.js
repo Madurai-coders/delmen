@@ -32,6 +32,8 @@ function MultiSlidingDoor() {
   return (
     <>
       <div className="RollerDr">
+      <div className="container">
+
         <Navbar_1 />
 
         {isTab && (
@@ -297,6 +299,8 @@ function MultiSlidingDoor() {
             </>
           )}
         </div>
+        </div>
+
         <div className="FOOTER">
           <Footer />
         </div>

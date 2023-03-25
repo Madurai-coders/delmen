@@ -27,6 +27,8 @@ function SlidingDoor() {
   return (
     <>
       <div className="RollerDr">
+      <div className="container">
+
         <Navbar_1 />
         {isTab && (
           <>
@@ -288,6 +290,8 @@ function SlidingDoor() {
           </div>
           <div className="col-3 text-center mt-5"></div>
         </div>
+        </div>
+
         <div className="FOOTER">
           <Footer />
         </div>

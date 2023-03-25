@@ -23,6 +23,8 @@ function MagneticInsect() {
   return (
     <>
       <div className="RollerDr">
+      <div className="container">
+
         <Navbar_1 />
         {isTab && (
           <>
@@ -158,6 +160,7 @@ function MagneticInsect() {
           </>
         )}
 
+
         {isMobile && (
           <>
             <div className="row cards_row mt-5">
@@ -225,6 +228,7 @@ function MagneticInsect() {
         )}
 
         <BuyingReq />
+        </div>
 
         <Footer />
       </div>

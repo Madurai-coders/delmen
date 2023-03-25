@@ -9,7 +9,6 @@ import Navbar from "../Navbar/navbar";
 import InputAdornment from "@mui/material/InputAdornment";
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import { event } from "jquery";
 
 const searchData = [
   "Door",
@@ -95,107 +94,115 @@ function Landingpage() {
   return (
     <>
       <div className="Navbar">
+      <div className="container">
         <Navbar />
-        <div className="row justify-content-center mt-5  cards_row">
-          <div className="col-12 text-center">
-            <h1 className="homepage_title mt-5">
-              Making your home free from<br></br> Mosquitoes, Flies and<br></br>{" "}
-              Insects
-            </h1>
-          </div>
-          <div className="col-lg-3 col-md-4 text-center">
-            <div className="search mt-5">
-              <InputBase
-                value={inputValue}
-                onChange={handleInputChange}
-                className="inputbase pe-1"
-                placeholder="Search"
-                inputProps={{ "aria-label": "search google maps" }}
-                endAdornment={
-                  <InputAdornment position="end">
-                    <IconButton className="iconbutton">
-                      <SearchIcon className="search_icon" onClick={Search} />
-                    </IconButton>
-                  </InputAdornment>
-                }
-              ></InputBase>
-
-              {inputValue && (
-                <div className="search_autocomplete mt-1 ms-4" id="search">
-                  <ul className="search_item">
-                    {suggestions.map((suggestion) => (
-                      <li
-                        className="search_list"
-                        key={suggestion}
-                        onClick={() => handleSuggestionClick(suggestion)}
-                      >
-                        {inputValue ? suggestion : ""}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-        <div className="cards">
+        
           <div className="row justify-content-center cards_row">
-            <div className="col-4 text-center mt-5 card_gap">
-              <Link
-                to="/stainlesssteelwithmesh"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="card ms-5">
-                  <div className="megaphone">
-                    <img
-                      src={Megaphone}
-                      alt=""
-                      className="mt-2 img-fluid latest_img"
-                    ></img>
-                  </div>
-                  <div className="megaphone_txt">
-                    <h6 className="latest_txt">Latest Products</h6>
-                  </div>
-                </div>
-              </Link>
+            <div className="col-12 text-center">
+              <h1 className="homepage_title mt-5 pt-5">
+                Making your home free from<br></br> Mosquitoes, Flies and
+                <br></br> Insects
+              </h1>
             </div>
-            <div className="col-4 text-center mt-5 card_gap">
-              <Link
-                to="/retractabledoubledoor"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="card ms-5">
-                  <div className="megaphone">
-                    <img
-                      src={New}
-                      alt=""
-                      className="mt-4 img-fluid latest_img1"
-                    ></img>
+            <div className="col-lg-3 col-md-5 col-sm-6 col-8 text-center">
+              <div className="search mt-5">
+                <InputBase
+                fullWidth
+                  value={inputValue}
+                  onChange={handleInputChange}
+                  className="inputbase pe-1"
+                  placeholder="Search"
+                  inputProps={{ "aria-label": "Search" }}
+                  endAdornment={
+                    <InputAdornment position="end">
+                      <IconButton className="iconbutton">
+                        <SearchIcon className="search_icon" onClick={Search} />
+                      </IconButton>
+                    </InputAdornment>
+                  }
+                ></InputBase>
+            
+           
+                {inputValue && (
+                  <div
+                    className="search_autocomplete arrow-top mt-3 ms-4"
+                    id="search"
+                  >
+                    <ul className="search_item">
+                      {suggestions.map((suggestion) => (
+                        <li
+                          className="search_list"
+                          key={suggestion}
+                          onClick={() => handleSuggestionClick(suggestion)}
+                        >
+                          {inputValue ? suggestion : ""}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <div className="megaphone_txt">
-                    <h6 className="latest_txt">New Products</h6>
-                  </div>
-                </div>
-              </Link>
+                )}
+               </div>
             </div>
-            <div className="col-4 text-center mt-5 card_gap">
-              <Link
-                to="/magneticinsectscreens"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="card ms-5">
-                  <div className="megaphone">
-                    <img
-                      src={Sale}
-                      alt=""
-                      className="mt-4 pt-2 img-fluid latest_img2"
-                    ></img>
+          </div>
+          <div className="cards">
+            <div className="row justify-content-center cards_row">
+              <div className="col-lg-3 col-md-3 col-sm-4 col-4 text-center mt-5 card_gap">
+                <Link
+                  to="/stainlesssteelwithmesh"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="card ms-5">
+                    <div className="megaphone">
+                      <img
+                        src={Megaphone}
+                        alt=""
+                        className="mt-2 img-fluid latest_img"
+                      ></img>
+                    </div>
+                    <div className="megaphone_txt">
+                      <h6 className="latest_txt">Latest Products</h6>
+                    </div>
                   </div>
-                  <div className="megaphone_txt">
-                    <h6 className="latest_txt">Hot Sale</h6>
+                </Link>
+              </div>
+              <div className="col-lg-3 col-md-3 col-sm-4 col-4 text-center mt-5 card_gap">
+                <Link
+                  to="/retractabledoubledoor"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="card ms-5">
+                    <div className="megaphone">
+                      <img
+                        src={New}
+                        alt=""
+                        className="mt-4 img-fluid latest_img1"
+                      ></img>
+                    </div>
+                    <div className="megaphone_txt">
+                      <h6 className="latest_txt">New Products</h6>
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
+              <div className="col-lg-3 col-md-3 col-sm-4 col-4 text-center mt-5 card_gap">
+                <Link
+                  to="/magneticinsectscreens"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div className="card ms-5">
+                    <div className="megaphone">
+                      <img
+                        src={Sale}
+                        alt=""
+                        className="mt-4 pt-2 img-fluid latest_img2"
+                      ></img>
+                    </div>
+                    <div className="megaphone_txt">
+                      <h6 className="latest_txt">Hot Sale</h6>
+                    </div>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

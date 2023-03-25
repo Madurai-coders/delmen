@@ -31,6 +31,8 @@ function OpenableDoubleDoor() {
   return (
     <>
       <div className="RollerDr">
+      <div className="container">
+
         <Navbar_1 />
         {isTab && (
           <>
@@ -307,6 +309,8 @@ function OpenableDoubleDoor() {
             </>
           )}
         </div>
+        </div>
+
         <div className="FOOTER">
           <Footer />
         </div>

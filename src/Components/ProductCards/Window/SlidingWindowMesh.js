@@ -32,6 +32,8 @@ function SlidingWindowMesh() {
   return (
     <>
       <div className="RollerDr">
+      <div className="container">
+
         <Navbar_1 />
         {isTab && (
           <>
@@ -328,6 +330,8 @@ function SlidingWindowMesh() {
             </>
           )}
         </div>
+        </div>
+
         <div className="FOOTER">
           <Footer />
         </div>

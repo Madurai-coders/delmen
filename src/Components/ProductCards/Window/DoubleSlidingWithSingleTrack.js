@@ -29,6 +29,8 @@ function DoubleSlidingWithSingleTrack() {
   return (
     <>
       <div className="RollerDr">
+      <div className="container">
+
         <Navbar_1 />
         {isTab && (
           <>
@@ -298,6 +300,8 @@ function DoubleSlidingWithSingleTrack() {
             </>
           )}
         </div>
+        </div>
+
         <div className="FOOTER">
           <Footer />
         </div>

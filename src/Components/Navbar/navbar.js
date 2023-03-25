@@ -7,8 +7,8 @@ import IconButton from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 function Navbar() {
-  const isMobile = useMediaQuery({ query: "(max-width: 1015px)" });
-  const isTab = useMediaQuery({ query: "(min-width: 1015px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1030px)" });
+  const isTab = useMediaQuery({ query: "(min-width: 1030px)" });
 
   function Open() {
     setisMenuopen(!isMenuopen);

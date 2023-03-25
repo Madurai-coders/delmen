@@ -143,12 +143,18 @@
   .contactcard_des {
     margin-left: 80px;
   }
+  .navbar_list{
+    font-size: 13px;
+  }
+  .footer_txt {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .contact_card {
+   .contact_card {
     background-size: 140% 150%;
-  }
+  } 
   .footer_txt {
     padding: 0px 0px;
     text-align: center;
@@ -164,6 +170,7 @@
     text-align: center;
     padding: 10px 20px;
     margin-top: 0px !important;
+   margin-left: 0px!important;
   }
   .link {
     display: flex;
@@ -228,9 +235,8 @@
   .company_title {
     font-size: 23px;
   }
-  .navbar_list {
-    font-size: 14px;
-  }
+ 
+ 
   .contactus_btn {
     padding: 5px 20px;
     font-size: 13px;
@@ -241,9 +247,9 @@
   
 .contactus_btn{
   position: relative;
-  bottom: 20px;
-  padding: 4px 15px;
-  font-size: 12px;
+  bottom: 13px;
+  padding: 4px 13px;
+  font-size: 11px;
 }
 .contactcard_title{
   font-size: 21px;
@@ -292,7 +298,7 @@
 
   .navbar_list {
     padding: 8px 6px;
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 0px!important;
   }
 
@@ -307,6 +313,7 @@
   
   .contactcard_address{
     font-size: 6px;
+    margin-top: 0px!important;
   }
   .contactcard_title{
     font-size: 17px;

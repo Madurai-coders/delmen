@@ -7,6 +7,15 @@
   background-size: 100% 100%;
   height: fit-content;
 }
+
+.NAVBAR {
+  max-width: 2200px;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 0 0;
+}
 .Nav {
   margin: 0 auto;
   display: flex;
@@ -46,14 +55,11 @@
   color: #ffffff;
   text-transform: uppercase;
 }
-.inputbase {
-  background-color: #ffffff;
-  border-radius: 32px;
-}
 
 .inputbase {
-  padding: 10px 50px;
-  margin-left: -20px;
+  padding: 10px 70px;
+  background-color: #ffffff;
+  border-radius: 32px;
 }
 .search_icon {
   color: #ffffff;
@@ -192,7 +198,7 @@
 }
 
 .cards {
-  padding: 30px 120px;
+  padding-top: 30px;
 }
 
 .cards_row {
@@ -293,18 +299,56 @@
   text-decoration: underline;
 }
 /* search */
+
+.search {
+  max-width: 380px;
+}
 .search_autocomplete {
-  width: 80%;
+  position: absolute;
+  /* top:490px;
+  left: 500px; */
+  cursor: pointer;
+  z-index: 2;
+  width: 200px;
+  max-width: 200px;
   background-color: #ffffff;
-  border-radius: 32px;
-  padding: 5px 2px;
+  padding: 5px 0px;
+  border-radius: 12px;
+  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.search_autocomplete.arrow-top:after {
+  content: " ";
+  position: absolute;
+  right: 110px;
+  top: -9px;
+  border-top: none;
+  border-right: 11px solid transparent;
+  border-left: 11px solid transparent;
+  border-bottom: 11px solid white;
+}
+.inputbase .css-yz9k0d-MuiInputBase-input {
+  padding: 4px 10px !important;
+  position: relative;
+  right: 50px;
 }
 .search_list {
+  font-weight: 300;
+  font-size: 13px;
   list-style-type: none;
   cursor: pointer;
-  text-align: left;
-  line-height: 30px;
+  text-align: start;
+  line-height: 40px;
   font-family: "Rubik";
+  color: #272727;
+  padding-left: 10px;
+}
+.search_item {
+  margin: 0px !important;
+  padding: 0 0;
+}
+.search_list:hover {
+  background: rgba(249, 223, 255, 0.18);
 }
 
 @media only screen and (max-width: 1177px) {
@@ -353,6 +397,13 @@
   .homepage_title {
     font-size: 38px;
   }
+  .Navbar {
+    background-image: url("../../assets/HomePage/homepage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: fit-content;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -379,8 +430,9 @@
 }
 @media only screen and (max-width: 500px) {
   .homepage_title {
-    font-size: 25px;
-    margin-top: 20px !important;
+    font-size: 23px;
+    margin-top: 0px !important;
+    padding-top: 40px!important;
   }
   .latest_img {
     width: 70px;
@@ -394,6 +446,7 @@
   }
   .card {
     height: 130px;
+    margin-bottom: 20px;
   }
   .cards {
     padding: 10px 10px;
@@ -414,16 +467,22 @@
   .search {
     margin-top: 20px !important;
   }
-  .inputbase {
-    padding: 6px 15px;
+  .card_gap{
+    margin-top: 30px!important;
   }
 }
 @media only screen and (max-width: 395px) {
   .homepage_title {
-    font-size: 20px;
+    font-size: 19px;
     margin-top: 20px !important;
   }
-
+  .inputbase {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .search_icon {
+    font-size: 17px !important;
+  }
   .latest_txt {
     font-size: 9px;
   }
@@ -457,7 +516,7 @@
     font-size: 25px !important;
   }
   .homepage_title {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 25px;
   }
   .cards {

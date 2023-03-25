@@ -31,7 +31,7 @@ function Company() {
           <div className="row justify-content-center mt-5 cards_row">
             {isTab && (
               <>
-                <div className="col-5 text-center mt-5">
+                <div className="col-lg-5 col-md-4 text-center mt-5">
                   <img src={Ourproducts} alt="" className="img-fluid"></img>
                 </div>
                 <div className="col-lg-6 col-md-7 col-sm-12 col-12 mt-5">
@@ -54,7 +54,8 @@ function Company() {
                       </li>
 
                       <li className="products_points">
-                        Retractable Roller System for existing Windows <br></br>and Doors
+                        Retractable Roller System for existing Windows <br></br>
+                        and Doors
                       </li>
                     </ul>
                   </div>
@@ -77,7 +78,7 @@ function Company() {
                       rates to the customers. Our premium quality
                     </p>
                     <ul className="mt-5 Products_Points">
-                    <li className="products_points">
+                      <li className="products_points">
                         Magnetic Insect Screens (With fiber glass mesh)
                       </li>
                       <li className="products_points">
@@ -102,16 +103,19 @@ function Company() {
               </h2>
             </div>
             <div className="col-10 text-center mt-4">
-              <p className="infrastructure_des">
-                Our infrastructure enables us to run our business operations
-                efficiently and effectively. We possess a production unit
-                consisting of modern machines including cut-off machines,
-                ceiling machines, working hand tools, etc. skilled workers and
-                qualified team of professionals, who together enable the company
-                to build a reputed standing in the global market. Led by an
-                efficient and quality conscious management.
-              </p>
+              <div className="infras">
+                <p className="infrastructure_des">
+                  Our infrastructure enables us to run our business operations
+                  efficiently and effectively. We possess a production unit
+                  consisting of modern machines including cut-off machines,
+                  ceiling machines, working hand tools, etc. skilled workers and
+                  qualified team of professionals, who together enable the
+                  company to build a reputed standing in the global market. Led
+                  by an efficient and quality conscious management.
+                </p>
+              </div>
             </div>
+
             <div className="col-10 text-center">
               <p className="advantage_quotes mt-5 pt-5">
                 "We are accepting local inquiries mostly from Tamil Nadu &

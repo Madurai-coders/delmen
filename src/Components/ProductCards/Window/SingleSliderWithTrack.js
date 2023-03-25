@@ -30,6 +30,8 @@ function SingleSliderWithTrack() {
   return (
     <>
       <div className="RollerDr">
+      <div className="container">
+
         <Navbar_1 />
         {isTab && (
           <>
@@ -295,6 +297,8 @@ function SingleSliderWithTrack() {
             </>
           )}
         </div>
+        </div>
+
         <div className="FOOTER">
           <Footer />
         </div>
