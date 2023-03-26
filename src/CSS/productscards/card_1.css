@@ -526,9 +526,9 @@
     position: absolute;
     left: 60px;
   }
-  .otherproductcard_title {
-    font-size: 12px;
-  }
+ .otherproduct_card{
+  height: 320px;
+ }
   .CARDS_3 {
     padding-bottom: 210px;
   }
@@ -649,6 +649,7 @@
     position: absolute;
     left: 50px;
   }
+ 
 }
 @media only screen and (max-width: 576px) {
   .Card_EMAIL {
@@ -679,8 +680,13 @@
   .otherproductcard_des {
     font-size: 15px;
   }
+  
   .Pricecard {
     height: 650px;
+  }
+  .otherproduct_card
+  {
+    height: 300px;
   }
   .Callback_btn {
     padding: 15px 45px !important;
@@ -715,8 +721,12 @@
     font-size: 14px;
     margin-top: 26px !important;
   }
+  .otherproductcard_title{
+    font-size: 13px;
+  }
   .otherproduct_card {
     width: 98%;
+    height: 270px;
     margin-left: 0px !important;
   }
   .Card_Title {
@@ -778,6 +788,9 @@
   .ShareProduct1 {
     position: absolute;
     bottom: 100px;
+  }
+  .otherproduct_card{
+    height: 250px;
   }
 }
 @media only screen and (max-width: 370px) {

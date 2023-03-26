@@ -510,6 +510,11 @@
   .megaphone{
     height: 80px;
   }
+  .inputbase.css-yz9k0d-MuiInputBase-input {
+   
+    position: relative;
+    right: 80px;
+  }
 }
 
 @media only screen and (max-width: 320px) {

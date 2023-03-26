@@ -24,7 +24,7 @@ function RetractableDoubleDoor() {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
   const isCard_1 = useMediaQuery({ query: "(min-width: 992px)" });
-  const isCard_3 = useMediaQuery({ query: "(min-width: 576px)" });
+  const isCard_3 = useMediaQuery({ query: "(min-width: 276px)" });
 
   const Items = [
     {
