@@ -69,6 +69,7 @@
   color: #3f3f3f;
   margin-top: 40px;
   cursor: pointer;
+  padding: 0 7px;
 }
 .names:hover {
   color: #c120e9;

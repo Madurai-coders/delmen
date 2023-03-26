@@ -25,20 +25,22 @@ const searchData = [
 function Landingpage() {
   const [inputValue, setInputValue] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+  const [result, setresult] = useState("");
 
   const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
-
-    setSuggestions(
-      searchData.filter((item) =>
-        item.toLowerCase().startsWith(event.target.value.toLowerCase())
-      )
+    var Result = searchData.filter((item) =>
+      item.toLowerCase().includes(event.target.value.toLowerCase())
     );
+    var result = Result.slice(0, 4);
 
-    if (suggestions.length === 0) {
-      document.getElementById("search").style.display = "none";
+    console.log(result);
+    if (result[0]) {
+      setSuggestions(result);
+    } else {
+      setSuggestions();
     }
   };
   const Search = (event) => {
@@ -128,15 +130,19 @@ function Landingpage() {
                     id="search"
                   >
                     <ul className="search_item">
-                      {suggestions.map((suggestion) => (
-                        <li
-                          className="search_list"
-                          key={suggestion}
-                          onClick={() => handleSuggestionClick(suggestion)}
-                        >
-                          {inputValue ? suggestion : ""}
-                        </li>
-                      ))}
+                      {suggestions &&
+                        suggestions.map((suggestion) => (
+                          <li
+                            className="search_list"
+                            key={suggestion}
+                            onClick={() => handleSuggestionClick(suggestion)}
+                          >
+                            {suggestion}
+                          </li>
+                        ))}
+                      {inputValue && !suggestions && (
+                        <li className="search_list">no result found</li>
+                      )}
                     </ul>
                   </div>
                 )}

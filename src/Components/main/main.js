@@ -5,14 +5,12 @@ import Landingpage from "../Homepage/landingpage";
 function Main() {
   return (
     <>
-    <div className="row justify-content-center">
-    <div style={{maxWidth:1900}}>
+
       <Landingpage />
       <OurProducts />
       <WeAre />
       <Footer />
-      </div>
-      </div>
+      
     </>
   );
 }

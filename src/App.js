@@ -24,6 +24,8 @@ import OpenableMultiFold from "./Components/ProductCards/Openable System/Openabl
 function App() {
   return (
     <>
+        <div className="row justify-content-center">
+    <div style={{maxWidth:1900}}>
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
@@ -88,6 +90,8 @@ function App() {
           ></Route>
         </Routes>
       </BrowserRouter>
+      </div>
+      </div>
     </>
   );
 }
