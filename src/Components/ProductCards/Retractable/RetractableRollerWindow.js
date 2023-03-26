@@ -261,7 +261,8 @@ function RollerWindow() {
                   request to call back
                 </Button>
                 <Link to="/contactus" style={{ textDecoration: "none" }}>
-                  <Button variant="contained" className="ENQUIRY_btn mt-4">
+                  <Button variant="contained" className="ENQUIRY_btn mt-4"
+                   sx={{ width: "100%" }}>
                     send inquiry
                   </Button>
                 </Link>

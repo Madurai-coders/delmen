@@ -183,6 +183,7 @@
   height: 150px;
 }
 .megaphone_txt {
+  height: 35px;
   background: #9100b7;
   color: #ffffff;
   border-bottom-left-radius: 28px;
@@ -193,7 +194,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 32px;
   margin-top: 15px;
 }
 
@@ -434,6 +435,9 @@
     margin-top: 0px !important;
     padding-top: 40px!important;
   }
+  .megaphone{
+    height: 100px;
+  }
   .latest_img {
     width: 70px;
     margin-top: 20px !important;
@@ -451,12 +455,10 @@
   .cards {
     padding: 10px 10px;
   }
-  .megaphone_txt {
-    height: 30px;
-  }
+  
   .latest_txt {
     font-size: 11px;
-    margin-top: 4px;
+    margin-top: 0px;
   }
   .logo {
     font-size: 14px;
@@ -504,6 +506,9 @@
 
   .menu_icon {
     font-size: 30px !important;
+  }
+  .megaphone{
+    height: 80px;
   }
 }
 

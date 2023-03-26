@@ -94,9 +94,9 @@ function Landingpage() {
   return (
     <>
       <div className="Navbar">
-      <div className="container">
-        <Navbar />
-        
+        <div className="container">
+          <Navbar />
+
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
               <h1 className="homepage_title mt-5 pt-5">
@@ -107,7 +107,7 @@ function Landingpage() {
             <div className="col-lg-3 col-md-5 col-sm-6 col-8 text-center">
               <div className="search mt-5">
                 <InputBase
-                fullWidth
+                  fullWidth
                   value={inputValue}
                   onChange={handleInputChange}
                   className="inputbase pe-1"
@@ -121,8 +121,7 @@ function Landingpage() {
                     </InputAdornment>
                   }
                 ></InputBase>
-            
-           
+
                 {inputValue && (
                   <div
                     className="search_autocomplete arrow-top mt-3 ms-4"
@@ -141,17 +140,17 @@ function Landingpage() {
                     </ul>
                   </div>
                 )}
-               </div>
+              </div>
             </div>
           </div>
           <div className="cards">
             <div className="row justify-content-center cards_row">
               <div className="col-lg-3 col-md-3 col-sm-4 col-4 text-center mt-5 card_gap">
-                <Link
-                  to="/stainlesssteelwithmesh"
-                  style={{ textDecoration: "none" }}
-                >
-                  <div className="card ms-5">
+                <div className="card ms-5">
+                  <Link
+                    to="/stainlesssteelwithmesh"
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="megaphone">
                       <img
                         src={Megaphone}
@@ -162,15 +161,15 @@ function Landingpage() {
                     <div className="megaphone_txt">
                       <h6 className="latest_txt">Latest Products</h6>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               </div>
               <div className="col-lg-3 col-md-3 col-sm-4 col-4 text-center mt-5 card_gap">
-                <Link
-                  to="/retractabledoubledoor"
-                  style={{ textDecoration: "none" }}
-                >
-                  <div className="card ms-5">
+                <div className="card ms-5">
+                  <Link
+                    to="/retractabledoubledoor"
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="megaphone">
                       <img
                         src={New}
@@ -181,15 +180,15 @@ function Landingpage() {
                     <div className="megaphone_txt">
                       <h6 className="latest_txt">New Products</h6>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               </div>
               <div className="col-lg-3 col-md-3 col-sm-4 col-4 text-center mt-5 card_gap">
-                <Link
-                  to="/magneticinsectscreens"
-                  style={{ textDecoration: "none" }}
-                >
-                  <div className="card ms-5">
+                <div className="card ms-5">
+                  <Link
+                    to="/magneticinsectscreens"
+                    style={{ textDecoration: "none" }}
+                  >
                     <div className="megaphone">
                       <img
                         src={Sale}
@@ -200,8 +199,8 @@ function Landingpage() {
                     <div className="megaphone_txt">
                       <h6 className="latest_txt">Hot Sale</h6>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
