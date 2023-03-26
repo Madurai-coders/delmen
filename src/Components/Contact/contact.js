@@ -6,24 +6,45 @@ import React, { useState } from "react";
 import axios from "axios";
 function Contact() {
   const [msg, setMsg] = useState("");
+  const [file, setFile] = useState();
+
   const [user, setUser] = useState({
-    to: "",
+    email: "",
+    no: "",
     subject: "",
   });
 
-  const { to, subject } = user;
+  const { email, no, subject } = user;
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios
-      .post("http://localhost:9000/users/", user)
-      .then((response) => setMsg(response.data.respMesg));
-    console.log(user);
-  };
+    // await axios
+    //   .post("http://localhost:9000/users/", user)
+    //   .then((response) => setMsg(response.data.respMesg));
+    // console.log(user);
+  
 
+    let fd = new FormData();
+    fd.append('myfile', file);
+    fd.append('email',user.email);
+    fd.append('no',user.no);
+    fd.append('subject',user.subject);
+
+
+    axios.post("http://localhost:9000/users", fd )
+     .then((response) => setMsg(response.data.respMesg));
+    // try {
+    //   await axios.post("http://localhost:9000/users", { file });
+    // }
+    // catch (error) {
+    //   console.log(error);
+    // }
+    // }
+    
+  }
   return (
     <>
       <div className="contact">
@@ -46,7 +67,17 @@ function Contact() {
                     inquiry.
                   </p>
                 </div>
-                <textarea className="text_area ml-5 mt-2"></textarea>
+                <textarea
+                  className="text_area ml-5 mt-2"
+                  name="subject"
+                  value={user.subject}
+                  onChange={(e) =>
+                    setUser({
+                      ...user,
+                      subject: e.target.value,
+                    })
+                  }
+                ></textarea>
                 <h6 className="attachment ml-5 mt-3">+ Add Attachment</h6>
 
                 <div className="row ms-4 mt-4 EMAIL">
@@ -58,8 +89,13 @@ function Contact() {
                       label="Email"
                       variant="outlined"
                       className="email_input"
-                      value={user.to}
-                      onChange={onInputChange}
+                      value={user.email}
+                      onChange={(e) =>
+                        setUser({
+                          ...user,
+                          email: e.target.value,
+                        })
+                      }
                     />
                   </div>
                   <div className="col-lg-5 col-md-5 col-sm-5 col-10 email ms-4">
@@ -70,11 +106,21 @@ function Contact() {
                       label="Mobile No"
                       variant="outlined"
                       className="email_input"
-                      value={subject}
-                      onChange={onInputChange}
+                      value={user.no}
+                      onChange={(e) =>
+                        setUser({
+                          ...user,
+                          no: e.target.value,
+                        })
+                      }
                     />
                   </div>
                 </div>
+                <input
+                  type="file"
+                  onChange={(e) => setFile(e.target.files[0])}
+                  required
+                />
 
                 <div className="row mt-5">
                   <div className="col-11 text-center mt-3">
