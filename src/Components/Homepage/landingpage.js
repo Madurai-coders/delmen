@@ -114,7 +114,7 @@ function Landingpage() {
                   onChange={handleInputChange}
                   className="inputbase pe-1"
                   placeholder="Search"
-                  inputProps={{ "aria-label": "Search" }}
+                  
                   endAdornment={
                     <InputAdornment position="end">
                       <IconButton className="iconbutton">

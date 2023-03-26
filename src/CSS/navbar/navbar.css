@@ -57,7 +57,7 @@
 }
 
 .inputbase {
-  padding: 10px 70px;
+  padding: 10px 30px;
   background-color: #ffffff;
   border-radius: 32px;
 }
@@ -328,11 +328,11 @@
   border-left: 11px solid transparent;
   border-bottom: 11px solid white;
 }
-.inputbase .css-yz9k0d-MuiInputBase-input {
+.inputbase.css-yz9k0d-MuiInputBase-input {
   padding: 4px 10px !important;
-  position: relative;
-  right: 50px;
+ text-align: start;
 }
+
 .search_list {
   font-weight: 300;
   font-size: 13px;
@@ -510,10 +510,7 @@
   .megaphone{
     height: 80px;
   }
-  .inputbase.css-yz9k0d-MuiInputBase-input {
-    position: relative;
-    right: 120px;
-  }
+  
 }
 
 @media only screen and (max-width: 320px) {
