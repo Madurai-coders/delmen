@@ -2,11 +2,33 @@ import "../../CSS/contact/contact.css";
 import Navbar from "../Navbar/navbar";
 import TextField from "@mui/material/TextField";
 import Footer from "../Footer/footer";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import Button from "@mui/material/Button";
+
+import Lottie from "react-lottie";
+import Email from "../Json/Email.json";
 function Contact() {
+  // const Email = useRef(null);
+  // useEffect(() => {
+  //   lottie.loadAnimation({
+  //     container: Email.current,
+  //     renderer: "svg",
+  //     autoplay: true,
+  //     loop: true,
+  //     animationData: require("../Json/Email.json"),
+  //   });
+  // }, []);
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: Email,
+  };
+
   const [msg, setMsg] = useState("");
   const [file, setFile] = useState();
+  const [errormsg, setErrormsg] = useState(false);
+  const [successmsg, setSuccessmsg] = useState(false);
 
   const [user, setUser] = useState({
     email: "",
@@ -15,27 +37,42 @@ function Contact() {
   });
 
   const { email, no, subject } = user;
-  const onInputChange = (e) => {
-    setUser({ ...user, [e.target.name]: e.target.value });
-  };
 
-  const onSubmit = async (e) => {
+  const OnSubmit = async (e) => {
     e.preventDefault();
-    // await axios
-    //   .post("http://localhost:9000/users/", user)
-    //   .then((response) => setMsg(response.data.respMesg));
-    // console.log(user);
   
+    if (user.email && user.no && user.subject !== "") {
+      setUser({
+        email: "",
+        no: "",
+        subject: "",
+      });
+      setErrormsg(false);
+      setSuccessmsg(true);
+      setTimeout(() => {
+        setSuccessmsg(false);
+      }, 4000);
+      await axios
+        .post("http://localhost:9000/users/", user)
+        .then((response) => setMsg(response.data.respMesg));
+      console.log(user);
+    
 
-    let fd = new FormData();
-    fd.append('myfile', file);
-    fd.append('email',user.email);
-    fd.append('no',user.no);
-    fd.append('subject',user.subject);
+     
+    } else {
+      setSuccessmsg(false);
+      setErrormsg(true);
+      console.log("fields are empty");
+    }
 
+    // let fd = new FormData();
+    // fd.append('myfile', file);
+    // fd.append('email',user.email);
+    // fd.append('no',user.no);
+    // fd.append('subject',user.subject);
 
-    axios.post("http://localhost:9000/users", fd )
-     .then((response) => setMsg(response.data.respMesg));
+    // axios.post("http://localhost:9000/users", fd )
+    //  .then((response) => setMsg(response.data.respMesg));
     // try {
     //   await axios.post("http://localhost:9000/users", { file });
     // }
@@ -43,8 +80,7 @@ function Contact() {
     //   console.log(error);
     // }
     // }
-    
-  }
+  };
   return (
     <>
       <div className="contact">
@@ -122,18 +158,47 @@ function Contact() {
                   required
                 />
 
-                <div className="row mt-5">
-                  <div className="col-11 text-center mt-3">
-                    <button
-                      onClick={onSubmit}
-                      type="submit"
-                      className="btn contact_sendinquiry"
-                    >
-                      Send Inquiry
-                    </button>
+                {successmsg && (
+                  <div className="Email">
+                  <div className="emailbox text-center">
+                    <div className="emailsend text-center">
+                      <div className="emailanimation mt-3">
+                        <Lottie options={defaultOptions}></Lottie>
+                      </div>
+                      <h5 className="msg mt-3">
+                        Your message has been delivered.
+                      </h5></div>
+                      </div>
+                      <div className="sendbox">
+
+                    </div>
+                  </div>
+                )}
+
+                <div className="row mt-5 cards_row">
+                  <div className="col-lg-3 col-md-2 col-sm-2 col-1"></div>
+                  <div className="col-lg-9 col-md-9 col-sm-9 col-11 text-center mt-3">
+                    {errormsg && (
+                      <h5 className="errormsg_txt ps-4">
+                        Some fields are incorrect. Please check and try again.
+                      </h5>
+                    )}
                   </div>
                 </div>
-                <div className="row mt-5">
+
+                <div className="row cards_row">
+                  <div className="col-11 text-center">
+                    <Button
+                      variant="contained"
+                      onClick={OnSubmit}
+                      type="submit"
+                      className="contact_sendinquiry"
+                    >
+                      Send Inquiry
+                    </Button>
+                  </div>
+                </div>
+                <div className="row mt-5 cards_row">
                   <div className="col-12 text-center">
                     <h6 className="contactus_txt">
                       "We are accepting local inquiries mostly from Tamil Nadu &
