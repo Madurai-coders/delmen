@@ -27,14 +27,14 @@ function Contact() {
     // console.log(user);
   
 
-    let fd = new FormData();
-    fd.append('myfile', file);
-    fd.append('email',user.email);
-    fd.append('no',user.no);
-    fd.append('subject',user.subject);
+    // let fd = new FormData();
+    // fd.append('myfile', file);
+    // fd.append('email',user.email);
+    // fd.append('no',user.no);
+    // fd.append('subject',user.subject);
 
 
-    axios.post("http://localhost:9000/users", fd )
+    axios.post("http://localhost:9000/users", user )
      .then((response) => setMsg(response.data.respMesg));
     // try {
     //   await axios.post("http://localhost:9000/users", { file });
@@ -45,6 +45,27 @@ function Contact() {
     // }
     
   }
+
+  function fileToBase64(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        const base64String = reader.result.split(',')[1];
+        resolve(base64String);
+      };
+      reader.onerror = (error) => reject(error);
+    });
+  }
+  const  onChange = async(event) => {
+
+    const selectedFile = event.target.files;
+    console.log(selectedFile)
+//     var base64= await fileToBase64(selectedFile)
+//     setUser({...user,image:base64})
+//   console.log(base64)
+  }
+
   return (
     <>
       <div className="contact">
@@ -117,10 +138,12 @@ function Contact() {
                   </div>
                 </div>
                 <input
-                  type="file"
-                  onChange={(e) => setFile(e.target.files[0])}
-                  required
-                />
+                multiple 
+                name='files[]'
+          type='file'
+          accept='.jpg, .png, .jpeg'
+          onChange={onChange}
+        />
 
                 <div className="row mt-5">
                   <div className="col-11 text-center mt-3">
