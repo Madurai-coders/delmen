@@ -1,5 +1,3 @@
-
-
 const nodemailer = require("nodemailer");
 const express = require("express");
 const app = express();
@@ -29,6 +27,31 @@ app.post("/users", (req, res) => {
       pass: "Sujitha312@",
     },
   });
+ 
+  
+  const emailBody = `<html>
+  <body>
+
+    <div style="padding:0px 20px;">
+    <h3 style="color:white;">Hi Sir,</h3>
+    <h4 style="color:white;">You have got a customer inquiry from your website delmennets.in</h4>
+    <p>Customer details are as follows</p></div>
+
+    <div style="border-style: ridge">
+    <ul style="list-style-type:none;line-height:20px">
+        <li>Email: ${req.body.email}</li> 
+        <li>  Mobile Number: ${req.body.no}</li> 
+        </ul>
+        <h4 style="margin-left:10px;color:white"> Customer Request is as follows</h4>
+        <h4 style="padding:0 30px">${req.body.subject}</h4> 
+    </div>
+    
+    <p style="color:white;line-height:10px">Regards,</p>
+    <p  style="color:white;line-height:10px">Larangel</p>
+    <p  style="color:white;line-height:10px">Your web technology partner</p>
+  
+  </body>
+</html>`;
 
   var mailOptions = {
     from: "kaamil@larangel.com", // sender address
@@ -69,7 +92,6 @@ app.post("/users", (req, res) => {
     </ul>
     `,
   };
-
   transporter.sendMail(mailOptions, function (err, data) {
     if (err) {
       console.log("Error " + err);
