@@ -28,9 +28,7 @@ function Contact() {
     subject: "",
   });
 
-  const [use, setUse] = useState({
-    name: "",
-  });
+  const [use, setUse] = useState();
 
   const OnSubmit = async (e) => {
     e.preventDefault();
@@ -48,8 +46,10 @@ function Contact() {
         setSuccessmsg(false);
       }, 4000);
 
+      console.log({...user, attachment: dataarray });
+
       await axios
-        .post("http://localhost:9000/users/", user, dataarray)
+        .post("http://localhost:9000/users/", {...user, attachment: dataarray })
         .then((response) => setMsg(response.data.respMesg));
       console.log(user);
     } else {
@@ -71,17 +71,22 @@ function Contact() {
   }
   const onChange = async (event) => {
     const selectedFile = event.target.files;
-    console.log(typeof selectedFile);
-    console.log(selectedFile);
+    var Buffer = require("buffer/").Buffer;
+    var arr = [];
+
+
 
     for (let i = 0; i < selectedFile.length; i++) {
       var base = await fileToBase64(selectedFile[i]);
       setFilemsg(true);
-      dataarray.push({ ...use, image: base });
+      arr.push({
+        name: selectedFile[i].name,
+        contentType: selectedFile[i].type,
+        content:base,
+      });
     }
-    console.log(dataarray);
-
-    console.log(dataarray[0].image);
+    console.log(arr);
+    setdataarray(arr);
   };
   return (
     <>

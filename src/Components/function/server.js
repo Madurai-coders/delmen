@@ -14,16 +14,16 @@ app.use(express.static(buildPath));
 
 app.post("/users", (req, res) => {
   console.log(req.body);
-  
 
-  // const imageDatas = req.body.image;
+  var arr = [];
+  var files = req.body.attachment;
 
-  // const imageBuffers = imageDatas.map((image) =>
- 
-  //   console.log(image)
-    
-  // );
-  
+  for (let i = 0; i < files.length; i++) {
+    arr.push({
+      ...files[i],
+      content: Buffer.from(files[i].content, "base64"),
+    });
+  }
 
   var transporter = nodemailer.createTransport({
     host: "smtp.hostinger.com",
@@ -60,23 +60,16 @@ app.post("/users", (req, res) => {
 </html>`;
 
   var mailOptions = {
-    from: "kaamil@larangel.com", // sender address
-    to: "nilapriya5517@gmail.com", // list of receivers
+    from: "kaamil@larangel.com", // sender address/no reply mail id
+    to: "kaamil312@gmail.com", // list of receivers/delmen mail id
     subject: "You have a new Contact Request",
     html: emailBody,
-    attachments: [
-      {
-        filename: "img" + ".jpg",
-        contentType: "image/jpeg",
-        content: Buffer.from(req.body.image[0],'bases')
-
-      },
-    ],
+    attachments: [...arr],
   };
- 
+
   var ClientmailOptions = {
     from: "kaamil@larangel.com", // sender address
-    
+
     to: req.body.email, // list of receivers
     subject: "Request Confirmation from Delmen",
 
