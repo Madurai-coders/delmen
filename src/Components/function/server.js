@@ -2,9 +2,9 @@ const nodemailer = require("nodemailer");
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const bodyParser = require('body-parser');
-app.use(bodyParser.json({ limit: '10mb', extended: true }))
-app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }))
+const bodyParser = require("body-parser");
+app.use(bodyParser.json({ limit: "10mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
 
 app.use(cors());
 const path = require("path");
@@ -14,9 +14,16 @@ app.use(express.static(buildPath));
 
 app.post("/users", (req, res) => {
   console.log(req.body);
-  array.forEach(element => {
+  
+
+  // const imageDatas = req.body.image;
+
+  // const imageBuffers = imageDatas.map((image) =>
+ 
+  //   console.log(image)
     
-  });
+  // );
+  
 
   var transporter = nodemailer.createTransport({
     host: "smtp.hostinger.com",
@@ -27,8 +34,7 @@ app.post("/users", (req, res) => {
       pass: "Sujitha312@",
     },
   });
- 
-  
+
   const emailBody = `<html>
   <body>
 
@@ -55,31 +61,24 @@ app.post("/users", (req, res) => {
 
   var mailOptions = {
     from: "kaamil@larangel.com", // sender address
-    to: "kaamil312@gmail.com", // list of receivers
-   subject:'You have a new Contact Request',
-    html: `
-    <div style="padding:10px;border-style: ridge">
-    <p>New contact request.</p>
-    <h3>Contact Details</h3>
-    <ul>
-        <li>Email: ${req.body.email}</li>
-        <li>Mob No: ${req.body.no}</li>
-        <li>Subject: ${req.body.subject}</li>
-    </ul>
-    `,
+    to: "nilapriya5517@gmail.com", // list of receivers
+    subject: "You have a new Contact Request",
+    html: emailBody,
     attachments: [
-        {
-        filename: 'img' + ".jpg",
-        contentType:  'image/jpeg',
-        content: Buffer.from(req.body.image, 'base64'),
-        }
-    ]
-  };
+      {
+        filename: "img" + ".jpg",
+        contentType: "image/jpeg",
+        content: Buffer.from(req.body.image[0],'bases')
 
+      },
+    ],
+  };
+ 
   var ClientmailOptions = {
     from: "kaamil@larangel.com", // sender address
-    to: "kaamil312@gmail.com", // list of receivers
-    subject:'Request Confirmation from Delmen',
+    
+    to: req.body.email, // list of receivers
+    subject: "Request Confirmation from Delmen",
 
     html: `
     <div style="padding:10px;border-style: ridge">

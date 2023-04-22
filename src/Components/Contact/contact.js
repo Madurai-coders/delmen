@@ -9,16 +9,6 @@ import Button from "@mui/material/Button";
 import Lottie from "react-lottie";
 import Email from "../Json/Email.json";
 function Contact() {
-  // const Email = useRef(null);
-  // useEffect(() => {
-  //   lottie.loadAnimation({
-  //     container: Email.current,
-  //     renderer: "svg",
-  //     autoplay: true,
-  //     loop: true,
-  //     animationData: require("../Json/Email.json"),
-  //   });
-  // }, []);
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -29,6 +19,8 @@ function Contact() {
   const [file, setFile] = useState();
   const [errormsg, setErrormsg] = useState(false);
   const [successmsg, setSuccessmsg] = useState(false);
+  const [dataarray, setdataarray] = useState([]);
+  const [filemsg, setFilemsg] = useState(false);
 
   const [user, setUser] = useState({
     email: "",
@@ -36,72 +28,61 @@ function Contact() {
     subject: "",
   });
 
-  const { email, no, subject } = user;
+  const [use, setUse] = useState({
+    name: "",
+  });
 
   const OnSubmit = async (e) => {
     e.preventDefault();
-  
-    if (user.email && user.no && user.subject !== "") {
+
+    if (user.email && user.no && user.subject !== "" && dataarray.length >= 0) {
       setUser({
         email: "",
         no: "",
         subject: "",
       });
+      setFilemsg(false);
       setErrormsg(false);
       setSuccessmsg(true);
       setTimeout(() => {
         setSuccessmsg(false);
       }, 4000);
+
       await axios
-        .post("http://localhost:9000/users/", user)
+        .post("http://localhost:9000/users/", user, dataarray)
         .then((response) => setMsg(response.data.respMesg));
       console.log(user);
-    
-
-    // let fd = new FormData();
-    // fd.append('myfile', file);
-    // fd.append('email',user.email);
-    // fd.append('no',user.no);
-    // fd.append('subject',user.subject);
-
-    // let fd = new FormData();
-    // fd.append('myfile', file);
-    // fd.append('email',user.email);
-    // fd.append('no',user.no);
-    // fd.append('subject',user.subject);
-
-    axios.post("http://localhost:9000/users", user )
-     .then((response) => setMsg(response.data.respMesg));
-    // try {
-    //   await axios.post("http://localhost:9000/users", { file });
-    // }
-    // catch (error) {
-    //   console.log(error);
-    // }
-    // }
-    
-  }
+    } else {
+      setErrormsg(true);
+      setSuccessmsg(false);
+    }
+  };
 
   function fileToBase64(file) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.readAsDataURL(file);
       reader.onload = () => {
-        const base64String = reader.result.split(',')[1];
+        const base64String = reader.result.split(",")[1];
         resolve(base64String);
       };
       reader.onerror = (error) => reject(error);
     });
   }
-  const  onChange = async(event) => {
-
+  const onChange = async (event) => {
     const selectedFile = event.target.files;
-    console.log(selectedFile)
-//     var base64= await fileToBase64(selectedFile)
-//     setUser({...user,image:base64})
-//   console.log(base64)
-  }
+    console.log(typeof selectedFile);
+    console.log(selectedFile);
 
+    for (let i = 0; i < selectedFile.length; i++) {
+      var base = await fileToBase64(selectedFile[i]);
+      setFilemsg(true);
+      dataarray.push({ ...use, image: base });
+    }
+    console.log(dataarray);
+
+    console.log(dataarray[0].image);
+  };
   return (
     <>
       <div className="contact">
@@ -124,19 +105,30 @@ function Contact() {
                     inquiry.
                   </p>
                 </div>
-                <textarea
-                  className="text_area ml-5 mt-2"
-                  name="subject"
-                  value={user.subject}
-                  onChange={(e) =>
-                    setUser({
-                      ...user,
-                      subject: e.target.value,
-                    })
-                  }
-                ></textarea>
-                <h6 className="attachment ml-5 mt-3">+ Add Attachment</h6>
-
+                <div>
+                  <textarea
+                    className="text_area ml-5 mt-2"
+                    name="subject"
+                    value={user.subject}
+                    onChange={(e) =>
+                      setUser({
+                        ...user,
+                        subject: e.target.value,
+                      })
+                    }
+                  ></textarea>
+                </div>
+                <label className="attachment ms-5 ps-1 mt-2">
+                  <input
+                    multiple
+                    name="files[]"
+                    type="file"
+                    accept=".jpg, .png, .jpeg"
+                    onChange={onChange}
+                  />
+                  + Add Attachment
+                </label>{" "}
+                {filemsg && <span className="file me-5">{user.name}</span>}
                 <div className="row ms-4 mt-4 EMAIL">
                   <div className="col-lg-5 col-md-5 col-sm-5 col-10 ms-3 ">
                     <TextField
@@ -173,31 +165,21 @@ function Contact() {
                     />
                   </div>
                 </div>
-                <input
-                multiple 
-                name='files[]'
-          type='file'
-          accept='.jpg, .png, .jpeg'
-          onChange={onChange}
-        />
-
                 {successmsg && (
                   <div className="Email">
-                  <div className="emailbox text-center">
-                    <div className="emailsend text-center">
-                      <div className="emailanimation mt-3">
-                        <Lottie options={defaultOptions}></Lottie>
+                    <div className="emailbox text-center">
+                      <div className="emailsend text-center">
+                        <div className="emailanimation mt-3">
+                          <Lottie options={defaultOptions}></Lottie>
+                        </div>
+                        <h5 className="msg mt-3">
+                          Your message has been delivered.
+                        </h5>
                       </div>
-                      <h5 className="msg mt-3">
-                        Your message has been delivered.
-                      </h5></div>
-                      </div>
-                      <div className="sendbox">
-
                     </div>
+                    <div className="sendbox"></div>
                   </div>
                 )}
-
                 <div className="row mt-5 cards_row">
                   <div className="col-lg-3 col-md-2 col-sm-2 col-1"></div>
                   <div className="col-lg-9 col-md-9 col-sm-9 col-11 text-center mt-3">
@@ -208,7 +190,6 @@ function Contact() {
                     )}
                   </div>
                 </div>
-
                 <div className="row cards_row">
                   <div className="col-11 text-center">
                     <Button
