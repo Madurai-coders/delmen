@@ -118,6 +118,9 @@
   text-transform: capitalize;
   color: #000000;
 }
+.name{
+  display: none;
+}
 @media only screen and (max-width: 1400px) {
   .products_table {
     width: 133%;

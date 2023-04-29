@@ -33,7 +33,7 @@ function Contact() {
   const OnSubmit = async (e) => {
     e.preventDefault();
 
-    if (user.email && user.no && user.subject !== "" && dataarray.length >= 0) {
+    if (user.email && user.no !== "") {
       setUser({
         email: "",
         no: "",
@@ -46,10 +46,13 @@ function Contact() {
         setSuccessmsg(false);
       }, 4000);
 
-      console.log({...user, attachment: dataarray });
+      console.log({ ...user, attachment: dataarray });
 
       await axios
-        .post("http://localhost:9000/users/", {...user, attachment: dataarray })
+        .post("http://localhost:9000/users/", {
+          ...user,
+          attachment: dataarray,
+        })
         .then((response) => setMsg(response.data.respMesg));
       console.log(user);
     } else {
@@ -74,15 +77,13 @@ function Contact() {
     var Buffer = require("buffer/").Buffer;
     var arr = [];
 
-
-
     for (let i = 0; i < selectedFile.length; i++) {
       var base = await fileToBase64(selectedFile[i]);
       setFilemsg(true);
       arr.push({
         name: selectedFile[i].name,
         contentType: selectedFile[i].type,
-        content:base,
+        content: base,
       });
     }
     console.log(arr);
@@ -133,7 +134,8 @@ function Contact() {
                   />
                   + Add Attachment
                 </label>{" "}
-                {filemsg && <span className="file me-5">{user.name}</span>}
+                {filemsg && <span className="file me-5"> File({dataarray.length})</span>}
+                <p className="note_msg ms-5">NOTE: Press CTRL to Select Mutliple Files</p>
                 <div className="row ms-4 mt-4 EMAIL">
                   <div className="col-lg-5 col-md-5 col-sm-5 col-10 ms-3 ">
                     <TextField

@@ -20,6 +20,7 @@ import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
+import Callback from "../../card_section/Callback";
 function RollerDoubleDoor() {
   const [CallBackCard, setCallBackCard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -149,38 +150,12 @@ function RollerDoubleDoor() {
           )}
 
           {CallBackCard && (
-            <>
-              <div className="callbackcard text-center">
-                <div className="row justify-content-center">
-                  <div className="col-12 text-end">
-                    <IconButton
-                      className="me-3 mt-1"
-                      onClick={() => setCallBackCard(false)}
-                    >
-                      <CloseIcon />
-                    </IconButton>
-                  </div>
-                  <h5 className="callback_title mt-2">
-                    Add a Mobile Number To Receive Call From<br></br> "DELMEN
-                    MOSQUITO SCREENS"
-                  </h5>
-                  <div className="col-lg-6 col-md-8 col-sm-8 col-10 mt-3">
-                    <TextField
-                      fullWidth
-                      id="outlined-basic"
-                      label="Mobile No"
-                      variant="outlined"
-                      className="mobile_input mt-4 pt-2"
-                    />
-                  </div>
-                  <div className="col-lg-7 col-md-8 col-sm-8 col-10 text-center mt-5">
-                    <Button type="button" className="Callback_btn me-2">
-                      Request To Call Back
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </>
+            <Callback
+              icon={
+                <CloseIcon onClick={() => setCallBackCard(false)}></CloseIcon>
+              }
+              name="Retractable Roller Double Door System"
+            />
           )}
 
           {isMobile && (

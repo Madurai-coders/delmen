@@ -7,7 +7,7 @@ import {
   validation_details
 } from "../Functions/functions";
 
-function BuyingReq(props) {
+function BuyingReq() {
   const [BuyingDetails, setBuyingDetails] = useState([]);
 
   const [buyingreq, setbuyingreq] = useState({

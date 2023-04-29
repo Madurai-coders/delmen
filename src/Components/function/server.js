@@ -61,7 +61,7 @@ app.post("/users", (req, res) => {
 
   var mailOptions = {
     from: "kaamil@larangel.com", // sender address/no reply mail id
-    to: "kaamil312@gmail.com", // list of receivers/delmen mail id
+    to: "nilapriya5517@gmail.com", // list of receivers/delmen mail id
     subject: "You have a new Contact Request",
     html: emailBody,
     attachments: [...arr],
@@ -69,10 +69,8 @@ app.post("/users", (req, res) => {
 
   var ClientmailOptions = {
     from: "kaamil@larangel.com", // sender address
-
     to: req.body.email, // list of receivers
     subject: "Request Confirmation from Delmen",
-
     html: `
     <div style="padding:10px;border-style: ridge">
     <p>I can confirm that we have received your request</p>

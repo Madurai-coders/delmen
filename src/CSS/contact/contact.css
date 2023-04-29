@@ -77,6 +77,8 @@
 }
 .file{
   font-size: 14px;
+  font-family: "Rubik";
+  font-style: normal;
 }
 
 
@@ -174,6 +176,14 @@ input[type="file"] {
   text-align: center;
   line-height: 24px;
   letter-spacing: 0.035em;
+}
+.note_msg{
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.035em;
+  margin-top: -10px;
 }
 
 @media only screen and (max-width: 1230px) {
@@ -285,6 +295,10 @@ input[type="file"] {
   }
   .attachment {
     margin-left: 24px !important;
+  }
+  .note_msg {
+    margin-left: 24px !important;
+    font-size: 10px;
   }
   .text_area {
     margin-left: 25px !important;
