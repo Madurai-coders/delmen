@@ -108,7 +108,7 @@ function Company() {
                   Our infrastructure enables us to run our business operations
                   efficiently and effectively. We possess a production unit
                   consisting of modern machines including cut-off machines,
-                  ceiling machines, working hand tools, etc. skilled workers and
+                  slot milling and drilling. Skilled workers and
                   qualified team of professionals, who together enable the
                   company to build a reputed standing in the global market. Led
                   by an efficient and quality conscious management.

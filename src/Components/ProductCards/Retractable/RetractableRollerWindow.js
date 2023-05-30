@@ -83,30 +83,28 @@ function RollerWindow() {
                         not it will be in the roll form inside the net box This
                         Product comes with Fiberglass Stiff mesh only
                       </p>
-                      <h5 className="Product_Title mt-4">
+                      {/* <h5 className="Product_Title mt-4">
                         Retractable Roller Window{" "}
                       </h5>
                       <p className="Product_Exn mt-3">
                         We are the manufacturers of Retractable Roller Window
                         systems
-                      </p>
+                      </p> */}
                       <p className="Product_Feature mt-5">
                         Advantage of the Roller Window system:
                       </p>
                       <ul>
                         <li className="Product_Points">
-                          This can be used on to any existing Doors, which is
-                          made out of wood UPVC or Aluminium
+                          This system can be operatable only when your existing window is kept open.
                         </li>
-                        <li className="Product_Points">
+                        {/* <li className="Product_Points">
                           It can be operated from left to right or Right to left
-                        </li>
+                        </li> */}
                         <li className="Product_Points">
-                          Easy to operate, it has self cleaning Brush to clean
-                          the mesh
+                          When not in use , it can be rolled into the net box
                         </li>
                       </ul>
-                      <p className="Product_Feature mt-5">Price And Quantity</p>
+                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
 
                       <ul>
                         <li className="Product_Points">
@@ -119,7 +117,7 @@ function RollerWindow() {
                           Supply Ability 1000 Square Foot Per Day
                         </li>
                         <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul>
+                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"

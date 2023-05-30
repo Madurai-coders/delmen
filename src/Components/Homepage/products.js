@@ -71,7 +71,7 @@ function Products() {
                     alt=""
                     className="img-fluid mt-4 zoom-img"
                   ></img>
-                  <div class="hover-text">Retractable roller double Door</div>
+                  <div class="hover-text">Retractable roller Door</div>
                 </Link>
               </div>
               <div class="img-container text-center">
@@ -126,7 +126,7 @@ function Products() {
                     className="img-fluid zoom-img mt-4"
                   ></img>
                   <div class="hover-text txt1">
-                  Openable MultiFol Door
+                  Openable MultiFold Door
                   </div>
                 </Link>
               </div>

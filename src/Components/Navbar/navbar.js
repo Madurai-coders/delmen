@@ -29,7 +29,7 @@ function Navbar() {
             <div className="Nav text-center">
               <Link to="/" style={{ textDecoration: "none" }}>
                 <h5 className="logo mt-4" style={{ cursor: "pointer" }}>
-                  Delmen Mosquito<br></br>Screen
+                  Delmen Mosquito<br></br>Screens
                 </h5>
               </Link>
 
@@ -75,7 +75,7 @@ function Navbar() {
                               <a href="#">Magnetic Insect Screens with Fiber Glass Mesh</a>
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link
                               to="/stainlesssteelwithmesh"
                               style={{ textDecoration: "none" }}
@@ -84,7 +84,7 @@ function Navbar() {
                                 Magnetic Net With Stainless Steel Mesh
                               </a>
                             </Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
                       <li>
@@ -108,7 +108,7 @@ function Navbar() {
                               to="/rollerdoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Retractable Roller Double Door</a>
+                              <a href="#">Retractable Roller Door</a>
                             </Link>
                           </li>
 
@@ -199,6 +199,15 @@ function Navbar() {
                               style={{ textDecoration: "none" }}
                             >
                               <a href="#">Openable Door System</a>
+                            
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/fixedopenable"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Fixed Openable</a>
                             
                             </Link>
                           </li>

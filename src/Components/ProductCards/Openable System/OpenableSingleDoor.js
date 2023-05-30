@@ -83,15 +83,15 @@ function OpenableSingleDr() {
                       </h5>
                       <p className="Product_Exn mt-3">
                         Open able Door It is custom Made for the existing Main
-                        door utility door as well Balcony, This product is
-                        mounted adjacent to your existing door. It is assembled
+                        door ,utility door as well Balcony Door, This product is
+                        mounted adjacent to your existing doors. It is assembled
                         with 2" aluminum Profile with double SS screw Joints and
-                        SS 304 Mesh Rust Free This system has removable hinges
+                        SS 304 Mesh Rust Free. This system has removable hinges
                         and it can be removed from the hinges to wash the door
-                        and fix back
+                        and fix back. This system sticks on magnetv while closing.
                       </p>
 
-                      <p className="Product_Feature mt-5">Price And Quantity</p>
+                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
                       <ul>
                         <li className="Product_Points">
                           Minimum Order Quantity 100 Square Foot
@@ -106,7 +106,7 @@ function OpenableSingleDr() {
                           Supply Ability 1000 Square Foot Per Day
                         </li>
                         <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul>
+                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"

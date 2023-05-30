@@ -72,7 +72,7 @@ function RollerDoubleDoor() {
                   <div className="col-7">
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">
-                        Retractable Roller Double Door System
+                        Retractable Roller Door System
                       </h5>
 
                       <h5 className="product_des mt-4">product description</h5>
@@ -85,16 +85,16 @@ function RollerDoubleDoor() {
                         you operate the system. Advantage of it is it does not
                         take much space and never keeps hanging around it is a
                         retractable system. It is easy to operate It gives very
-                        high transparence in the mesh it looks very good and
+                        high transparency in the mesh it looks very good and
                         Durable
                       </p>
-                      <h5 className="Product_Title mt-4">
+                      {/* <h5 className="Product_Title mt-4">
                         Retractable Roller Double Door{" "}
                       </h5>
                       <p className="Product_Exn mt-3">
                         We are the manufacturers of Retractable Roller Door
                         systems
-                      </p>
+                      </p> */}
                       <p className="Product_Feature mt-5">
                         Advantage of the Roller door system:
                       </p>
@@ -106,12 +106,12 @@ function RollerDoubleDoor() {
                         <li className="Product_Points">
                           It can be operated from left to right or Right to left
                         </li>
-                        <li className="Product_Points">
+                        {/* <li className="Product_Points">
                           Easy to operate, it has self cleaning Brush to clean
                           the mesh
-                        </li>
+                        </li> */}
                       </ul>
-                      <p className="Product_Feature mt-5">Price And Quantity</p>
+                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
 
                       <ul>
                         <li className="Product_Points">
@@ -124,7 +124,7 @@ function RollerDoubleDoor() {
                           Supply Ability 1000 Square Foot Per Day
                         </li>
                         <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul>
+                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"

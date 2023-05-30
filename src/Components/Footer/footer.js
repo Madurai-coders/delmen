@@ -12,28 +12,46 @@ function Footer() {
         <div className="row links cards_row">
           <div className="contact_card col-12">
             <div className="d-flex flex-row">
-              <div className="col-6">
+              <div className="col-5">
                 <div className="contactcard_des">
                   <h3 className="contactcard_title mt-5">Contact Us</h3>
-                  <h6 className="contactcard_address">
-                    Mr. L. K. Chandrashekar (Proprietor)
-                  </h6>
+                  <h5 className="contactcard_tit pt-4 mt-3">
+                  <p><b>Delmen Mosquito screens</b></p>
+                    <p>Mr. L. K. Chandrashekar (Proprietor)</p>
+                  </h5>
                   <h6 className="mt-3 callicon">
                     <CallIcon className="CALL" />
-                    <span className="ms-1 call_no">8035063278</span>
+                    <span className="ms-1 call_no">9845374254</span>
                   </h6>
                   <h6 className="contactcard_address mt-3">
                     No.- 6 First Cross, Raghavendra Layout,<br></br> Silver
                     Spring Road, Opp. to Saroj Residency,<br></br>Munekolala,
-                    Bengaluru - 560037,<br></br> Karnataka, India
+                    Bengaluru - 560037
                   </h6>
                 </div>
               </div>
 
-              <div className="dealer mt-4 col-6">
-                <h4 className="contactcard_tit pt-4 mt-3">
+              <div className="dealer mt-4 col-3">
+                <h6 className="contactcard_tit pt-4 mt-3">
+                  Delmen Mosquito screens
+                  Branch Office
+                </h6>
+                <h6 className="contactcard_addr pt-1">Nanjappa</h6>
+                <h6 className="callicon1 mt-3 pt-1">
+                  <CallIcon className="CALL" />
+                  <span className="ms-1 call_no">8095116488</span>
+                </h6>
+                <h6 className="contactcard_address mt-3">
+                  31,1st block,2nd main, Bhavani lauout<br>
+                  </br>
+                  Banashankari 3rd stage ,<br></br>Bangalore-85
+                </h6>
+              </div>
+
+              <div className="dealer mt-4 col-4">
+                <h6 className="contactcard_tit pt-4 mt-3">
                   Our Authorized Dealer
-                </h4>
+                </h6>
                 <h6 className="contactcard_addr pt-1">Kandaswamy</h6>
                 <h6 className="callicon1 mt-3 pt-1">
                   <CallIcon className="CALL" />
@@ -45,6 +63,7 @@ function Footer() {
                   147a roja street,sathya narayana puram,<br></br>mowlivakkkam,porur
                 </h6>
               </div>
+
             </div>
             <div className="col-lg-10 col-md-11 col-12 text-end contactus_btncol">
               <Link to="/contactus" style={{ textDecoration: "none" }}>

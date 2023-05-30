@@ -42,7 +42,7 @@ function Advantage() {
                   mosquito nets in India. We are among the most reputable
                   importers, manufacturers, and suppliers of Retractable Roller
                   Systems and Magnetic Insect Screens for existing doors and
-                  windows. We develop mosquito and bug screens that can be put
+                  windows. We develop mosquito nets that can be put
                   over doors and windows. We design the offered products closely
                   with the market to guarantee they match client needs.
                 </h6>
@@ -52,15 +52,16 @@ function Advantage() {
                   quality. Every production step undergoes quality testing- From
                   material purchase to insulation. Our infrastructure helps us
                   operate efficiently. We have a sophisticated manufacturing
-                  facility with cut-off machines, hand tools, ceiling machines,
+                  facility with cut-off machines, hand tools, slot milling and drilling,
                   etc., competent employees, and more.
                 </h6>
               </div>
             </div>
-            <div className="col-1 mt-5 pt-5">
+            </div>
+            {/* <div className="col-1 mt-5 pt-5">
               <img src={Design_1} alt="" className="img-fluid design_1"></img>
             </div>
-          </div>
+          
           <div className="row justify-content-center mt-5 cards_row">
             <div className="col-lg-4 col-md-4 col-sm-4 col-6 text-center mt-5 pt-5 Glassmesh">
               <img src={GlassMesh} alt="" className="img-fluid"></img>
@@ -226,7 +227,7 @@ function Advantage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="mt-5 pt-4">
           <Footer />

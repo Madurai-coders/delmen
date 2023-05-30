@@ -72,24 +72,18 @@ function StainlessSteelWithMesh() {
                   <div className="col-7">
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">
-                        Magnetic Net With Stainless Steel Mesh
+                        Magnetic Net With Fiber Glass Mesh
                       </h5>
 
                       <h5 className="product_des mt-4">product description</h5>
                       <h5 className="Product_Title mt-4">
-                        Magnetic Net With Stainless Steel Mesh
+                        Magnetic Net With Fiber Glass Mesh
                       </h5>
                       <p className="Product_Exn mt-3">
-                        Magnetic Net with Stainless Steel Mesh is considered to
-                        be the best option for allowing entry of natural light
-                        while keeping the door locked. It is ideal for use in
-                        residential apartments, bungalows, and houses. This is a
-                        type of double door system which comprises one normal &
-                        one mesh door. It can be installed in hassle-free manner
-                        during new construction & renovation. Openable Door
-                        system with Stainless Steel Mesh has been equipped with
-                        high quality metal hinges that ensure smooth & silent
-                        movement.
+                        Magnetic Net with fiber glass Mesh is used in magenetic net to
+                        have no wrinkle , no sag while mounted. It does not accumalate dust and this 
+                        fiber glass mesh does not have static charge. Due to that dust adhereness is very low.
+
                       </p>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
@@ -98,23 +92,23 @@ function StainlessSteelWithMesh() {
                         </li>
                         <li className="Product_Points">Highly durable</li>
                         <li className="Product_Points">
-                          Comprises a bolt latch for locking
+                          Higher transparency level compared to other systems
                         </li>
                       </ul>
 
-                      <p className="Product_Feature mt-5">Price And Quantity</p>
+                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
                       <ul>
                         <li className="Product_Points">
                           Minimum Order Quantity 100 Square Foot
                         </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
+                      </ul> */}
+                      {/* <p className="Product_Feature mt-5">Trade Information</p>
                       <ul>
                         <li className="Product_Points">
                           Supply Ability 1000 Square Foot Per Day
                         </li>
                         <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul>
+                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"

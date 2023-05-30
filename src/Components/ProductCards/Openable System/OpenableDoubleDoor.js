@@ -79,18 +79,31 @@ function OpenableDoubleDoor() {
                       <h5 className="product_des mt-4">product description</h5>
                       <p className="Product_Exn mt-3">
                         Openable Door it is custom made for the existing Main
-                        Door utility door as well balcony
+                        Door, utility door, as well balcony
                       </p>
                       <h5 className="Product_Title mt-4">
                         Openable Double Door System
                       </h5>
                       <p className="Product_Exn mt-3">
-                        It is made out of 2Aluminium Profile with SS 304 mesh It
-                        has Felt Grove to arrest gaps in the contact surface
+                        It is made out of 2 inch Aluminium Profile with SS 304 mesh It
+                        has Felt Grove to arrest gaps in the contact surface.
                         Easy to operate and remove the system for a wash
                       </p>
 
-                      <p className="Product_Feature mt-5">Price And Quantity</p>
+                      <p className="Product_Feature mt-5">
+                        Advantage of the Openable double door system:
+                      </p>
+                      <ul>
+                        <li className="Product_Points">
+                         When you have a door and if it is main door having a single door , it's operational issue.
+                         So better to use double fold.
+                        </li>
+                        <li className="Product_Points">
+                          Easier to operate  
+                        </li>
+                        </ul>
+
+                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
                       <ul>
                         <li className="Product_Points">5 years warranty </li>
 
@@ -104,7 +117,7 @@ function OpenableDoubleDoor() {
                           Supply Ability 1000 Square Foot Per Day
                         </li>
                         <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul>
+                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"

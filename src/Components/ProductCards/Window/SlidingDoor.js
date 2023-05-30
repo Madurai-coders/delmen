@@ -76,30 +76,24 @@ function SlidingDoor() {
                         Sliding Door System{" "}
                       </h5>
                       <p className="Product_Exn mt-3">
-                        Sliding Door offered by us is made having robust &
-                        beautiful PVC frame with double glazed window panes. It
-                        is highly appreciated for having ability to maintain
-                        optimum internal temperature according to weather
-                        conditions. This door is completely suitable to be
-                        employed in houses, bungalows, resorts, and residential
-                        apartments. It is hassle-free to install and has been
-                        equipped with superior quality bearings & wheels for
-                        ensuring smooth & silent movement. Sliding Door is
-                        available in different colors & designs as requested by
-                        our respected clients.
-                      </p>
+                        Sliding door system is made out of aluminium 2inch profiles . This system can be fabricated
+                        to your precised size as per your existing sliding door system. This system comes with stainless 
+                        steel mesh grade 304 and can be installed on your existing track or a track can be created adjacent to your 
+                        sliding door system.
+                      </p> 
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
-                          Good weather resistance
+                          The mesh and the system has high durability
                         </li>
                         <li className="Product_Points">
-                          Easy to clean & maintain with help of soft cloth
+                          By having the mesh mounted very tight and firm on the profile , the transparency
+                          of the system is very high
                         </li>
-                        <li className="Product_Points">Highly durable</li>
+                        {/* <li className="Product_Points">Highly durable</li> */}
                       </ul>
 
-                      <p className="Product_Feature mt-5">Price And Quantity</p>
+                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
                       <ul>
                         <li className="Product_Points">
                           Minimum Order Quantity 100 Square Foot
@@ -111,7 +105,7 @@ function SlidingDoor() {
                           Supply Ability 1000 Square Foot Per Day
                         </li>
                         <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul>
+                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"

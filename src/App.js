@@ -5,6 +5,7 @@ import Contact from "./Components/Contact/contact";
 import Advantage from "./Components/CompanyProfile/company";
 import OurProducts from "./Components/OurProducts/product";
 import CompanyProfile from "./Components/Advantage/advantage";
+import FixedOpenable from "./Components/ProductCards/Openable System/fixedopenable";
 import RetractableDoubleDoor from "./Components/ProductCards/Retractable/RetractableDoubleDoor";
 import RollerDoubleDoor from "./Components/ProductCards/Retractable/RollerDoubleDoor";
 import OpenableSingleDr from "./Components/ProductCards/Openable System/OpenableSingleDoor";
@@ -38,6 +39,7 @@ function App() {
           ></Route>
           <Route path="/ourproducts" element={<OurProducts />}></Route>
           <Route path="/companyprofile" element={<CompanyProfile />}></Route>
+          <Route path="/fixedopenable" element={<FixedOpenable />}></Route>  
 
           <Route
             path="/magneticinsectscreens"

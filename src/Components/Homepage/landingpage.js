@@ -101,10 +101,17 @@ function Landingpage() {
 
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
-              <h1 className="homepage_title mt-5 pt-5">
+              <h1 className="homepage_title">
+                Delmen Mosquito screens 
+                </h1>  
+                <h4 style={{color:'white'}}>
+                Import and export of Magnetic Net and Roller Mosquito Screens
+                </h4>
+                <h3 style={{color:'white'}}>
                 Making your home free from<br></br> Mosquitoes, Flies and
                 <br></br> Insects
-              </h1>
+                </h3> 
+                
             </div>
             <div className="col-lg-3 col-md-5 col-sm-6 col-8 text-center">
               <div className="search mt-5">
@@ -112,7 +119,7 @@ function Landingpage() {
                   fullWidth
                   value={inputValue}
                   onChange={handleInputChange}
-                  className="inputbase pe-1"
+                  className="inputbase pe-1 mb-4"
                   placeholder="Search"
                   
                   endAdornment={
@@ -149,7 +156,7 @@ function Landingpage() {
               </div>
             </div>
           </div>
-          <div className="cards">
+          {/* <div className="cards">
             <div className="row justify-content-center cards_row">
               <div className="col-lg-3 col-md-3 col-sm-4 col-4 text-center mt-5 card_gap">
                 <div className="card ms-5">
@@ -209,7 +216,7 @@ function Landingpage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

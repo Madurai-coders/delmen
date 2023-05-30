@@ -1,6 +1,5 @@
 import Footer from "../../Footer/footer";
 import Navbar_1 from "../../Navbar_1/navbar_1";
-import MultiSlidingDr from "../../../assets/OurProducts/sliding dr.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -9,24 +8,22 @@ import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
-import RetractableDoubleDoor from "../../../assets/Retractable Double Door/RetractableDoubleDoor.png";
-import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
-import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
+import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
+import MagneticNet from "../../../assets/Retractable Double Door/MagneticNet.png";
+import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
-import ProductVideo from "../../../assets/ProductsVideo/multislidingdr.mp4";
+import OpenableDrVideo from "../../../assets/ProductsVideo/openablesingledr.mp4";
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
+import BuyingReq from "../../card_section/Buyingreq";
 import MenuItem from "@mui/material/MenuItem";
 import CloseIcon from "@mui/icons-material/Close";
-import BuyingReq from "../../card_section/Buyingreq";
 import Callback from "../../card_section/Callback";
-function MultiSlidingDoor() {
+function FixedOpenable() {
   const [CallBackCard, setCallBackCard] = useState(false);
-
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
-  const isCard_1 = useMediaQuery({ query: "(min-width: 992px)" });
   const isCard_3 = useMediaQuery({ query: "(min-width: 576px)" });
 
   return (
@@ -34,10 +31,9 @@ function MultiSlidingDoor() {
       <div className="RollerDr">
         <div className="container">
           <Navbar_1 />
-
           {isTab && (
             <>
-              <div className="CARDS_2">
+              <div className="CARDS_3">
                 <div className="row mt-5 cards_row">
                   <div className="col-5">
                     <div className="Card_1">
@@ -51,7 +47,7 @@ function MultiSlidingDoor() {
                           "Fullscreen",
                         ]}
                       >
-                        <source src={ProductVideo} type="video/webm" />
+                        <source src={OpenableDrVideo} type="video/webm" />
                       </Video>
 
                       <div className="share p-5">
@@ -76,34 +72,19 @@ function MultiSlidingDoor() {
                   <div className="col-7">
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">
-                        Multi Sliding Door System
+                        {" "}
+                        Fixed Openable Window System{" "}
                       </h5>
 
                       <h5 className="product_des mt-4">product description</h5>
+
                       <h5 className="Product_Title mt-4">
-                        Multi Sliding Door System{" "}
+                      Fixed Openable Window System{" "}
                       </h5>
                       <p className="Product_Exn mt-3">
-                        It is made out of 2 inch Aluminium Profile with Stainless
-                        Steel mesh 304 grade. It has Felt Grove to arrest gaps in the
-                        contact surface . It is assembled with double screw Joints
-                        to avoid breakage in the edges and Twist in the frame. It
-                        is advisable to fix this kind of Sliding door, to your
-                        UPVC Multi Sliding doors and Aluminium Multi Sliding
-                        Doors. This can be mounted adjacent to your existing muldi sliding glass Door
-                        with additional track.
-
-                        <p className="Product_Feature mt-5">
-                        Advantage of the Multi sliding door system:
-                      </p>
-                      <ul>
-                        <li className="Product_Points">
-                         Rodent Free since it is SS mesh
-                        </li>
-                        <li className="Product_Points">
-                          The Mesh is very stiff and steady in our system 
-                        </li>
-                        </ul>
+                        This is made out of 1 inch profile and with stainless steel mesh . This can be removed
+                        and washed and refixed. It has magnetic strip right around the frame and a magnetic strip will be pasted around
+                        the window frame and this just gets stuck to the aligned position.
                       </p>
 
                       {/* <p className="Product_Feature mt-5">Price And Quantity</p>
@@ -114,6 +95,9 @@ function MultiSlidingDoor() {
                       </ul>
                       <p className="Product_Feature mt-5">Trade Information</p>
                       <ul>
+                        <li className="Product_Points">
+                          minimum Warranty is 5 years
+                        </li>
                         <li className="Product_Points">
                           Supply Ability 1000 Square Foot Per Day
                         </li>
@@ -133,7 +117,8 @@ function MultiSlidingDoor() {
                         >
                           <Button
                             variant="contained"
-                            className="ENQUIRY_btn ms-5"
+                            className="ENQUIRY_btn ms-5 "
+                            sx={{ width: "100%" }}
                           >
                             send inquiry
                           </Button>
@@ -145,12 +130,13 @@ function MultiSlidingDoor() {
               </div>
             </>
           )}
+
           {CallBackCard && (
             <Callback
               icon={
                 <CloseIcon onClick={() => setCallBackCard(false)}></CloseIcon>
               }
-              name="Multi Sliding Door System"
+              name="Openable Single Door System"
             />
           )}
 
@@ -159,7 +145,7 @@ function MultiSlidingDoor() {
               <div className="row cards_row mt-5">
                 <div className="col-12 mt-3">
                   <h5 className="Product_Name ms-3">
-                    Multi Sliding Door System
+                    Openable Single Door System
                   </h5>
                 </div>
                 <div className="col-12 text-center mt-5">
@@ -173,7 +159,7 @@ function MultiSlidingDoor() {
                       "Fullscreen",
                     ]}
                   >
-                    <source src={ProductVideo} type="video/webm" />
+                    <source src={OpenableDrVideo} type="video/webm" />
                   </Video>
                 </div>
               </div>
@@ -181,15 +167,15 @@ function MultiSlidingDoor() {
               <div className="col-12 mt-5">
                 <h5 className="product_des mt-4">product description</h5>
                 <h5 className="Product_Title mt-4">
-                  Multi Sliding Door System{" "}
+                  Openable Single Door System{" "}
                 </h5>
                 <p className="Product_Exn mt-3">
-                  It is made out of 2Aluminium Profile with Stainless Steel mesh
-                  It has Felt Grove to arrest gaps in the contact surface It is
-                  assembled with double screw Joints to avoid breakage in the
-                  edges and Twist in the frame It is advisable to fix this kind
-                  of Sliding door, to your UPVC Multi Sliding doors and
-                  Aluminium Multi Sliding Doors
+                  Open able Door It is custom Made for the existing Main door
+                  utility door as well Balcony, This product is mounted adjacent
+                  to your existing door. It is assembled with 2" aluminum
+                  Profile with double SS screw Joints and SS 304 Mesh Rust Free
+                  This system has removable hinges and it can be removed from
+                  the hinges to wash the door and fix back
                 </p>
 
                 <p className="Product_Feature mt-5">Price And Quantity</p>
@@ -200,6 +186,9 @@ function MultiSlidingDoor() {
                 </ul>
                 <p className="Product_Feature mt-5">Trade Information</p>
                 <ul>
+                  <li className="Product_Points">
+                    minimum Warranty is 5 years
+                  </li>
                   <li className="Product_Points">
                     Supply Ability 1000 Square Foot Per Day
                   </li>
@@ -214,15 +203,9 @@ function MultiSlidingDoor() {
                 >
                   request to call back
                 </Button>
-                <Link to="/contactus" style={{ textDecoration: "none" }}>
-                  <Button
-                    variant="contained"
-                    className="ENQUIRY_btn mt-4"
-                    sx={{ width: "100%" }}
-                  >
-                    send inquiry
-                  </Button>
-                </Link>
+                <Button variant="contained" className="ENQUIRY_btn mt-4">
+                  send inquiry
+                </Button>
               </div>
             </>
           )}
@@ -238,58 +221,35 @@ function MultiSlidingDoor() {
                 Minimum Order Quantity : 100
               </h5>
             </div>
-            {isCard_3 && (
-              <>
-                <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-                  <div className="otherproduct_card  text-center">
-                    <Link
-                      to="/retractabledoubledoor"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={RetractableDoubleDoor}
-                        alt=""
-                        className="img-fluid  mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        Retractable Double Door
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-              </>
-            )}
-
             <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
-              <div className="otherproduct_card text-center">
-                <Link to="/rollerdoubledoor" style={{ textDecoration: "none" }}>
+              <div className="otherproduct_card text-center ms-5">
+                <Link to="/openablewindow" style={{ textDecoration: "none" }}>
                   <img
-                    src={RetractableRollerDoubleDoor}
+                    src={OpenableWindowSystem}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                    Retractable Roller Double Door<br></br>System
+                    Openable Window<br></br> System
                   </h4>
                 </Link>
               </div>
             </div>
-
-            {isCard_1 && (
+            {isCard_3 && (
               <>
-                <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
-                  <div className="otherproduct_card  text-center">
+                <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
+                  <div className="otherproduct_card text-center ms-4">
                     <Link
-                      to="/openablesingledr"
+                      to="/singlesliderwithtrack"
                       style={{ textDecoration: "none" }}
                     >
                       <img
-                        src={OpenableSingleDoorSystem}
+                        src={SingleSliderWithTrack}
                         alt=""
-                        className="img-fluid mt-2 pt-1"
+                        className="img-fluid  mt-2 pt-1"
                       ></img>
                       <h4 className="otherproductcard_title mt-4">
-                        openable single door<br></br> system
+                        Single Slider With<br></br> Track
                       </h4>
                     </Link>
                   </div>
@@ -298,7 +258,6 @@ function MultiSlidingDoor() {
             )}
           </div>
         </div>
-
         <div className="FOOTER">
           <Footer />
         </div>
@@ -306,4 +265,4 @@ function MultiSlidingDoor() {
     </>
   );
 }
-export default MultiSlidingDoor;
+export default FixedOpenable;

@@ -65,29 +65,21 @@ function MagneticInsect() {
                         Magnetic Insect Screens
                       </h5>
                       <p className="Product_Exn mt-3">
-                        Magnetic Insect Screens with Fiber Glass Mesh offered by
-                        us is highly appreciated for assuring easy installation
-                        with long service life. It is applied on windows so as
-                        to prevent mosquito entry to the house while reducing
-                        chances of dengue & malaria. This insect screen is made
-                        of superior quality fiberglass mesh for being
-                        structurally strong, UV stable, & flexible in nature. It
-                        is highly durable in nature and requires no special
-                        maintenance. Magnetic Insect Screens with Fiber Glass
-                        Mesh can be availed in customized configurations at
-                        reasonable prices for our trusted clients.
+                        Magnetic Insect screen is fabricated with fiber glass mesh and it is custom made for
+                        existing windows made out of wooden , aluminium or UPVC . They form a complete seal around the window using flexible magnetic
+                        strip with fiber glass mesh. This product has no wrinkles, dust accumulation or does not sag when installed.
                       </p>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
-                        <li className="Product_Points">Uniform mesh size</li>
-                        <li className="Product_Points">Easy to maintain</li>
+                        <li className="Product_Points">Easy to clean and fix back to window</li>
+                        {/* <li className="Product_Points">Easy to maintain</li>
                         <li className="Product_Points">
                           Maintains proper air flow while preventing mosquitoes
                           entry
-                        </li>
+                        </li> */}
                       </ul>
 
-                      <p className="Product_Feature mt-5">Price And Quantity</p>
+                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
                       <ul>
                         <li className="Product_Points">
                           Minimum Order Quantity 100 Square Foot
@@ -99,7 +91,7 @@ function MagneticInsect() {
                           Supply Ability 1000 Square Foot Per Day
                         </li>
                         <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul>
+                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
