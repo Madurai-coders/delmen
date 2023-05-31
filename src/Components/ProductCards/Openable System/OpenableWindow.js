@@ -175,7 +175,11 @@ function OpenableWindow() {
                   request to call back
                 </Button>
                 <Link to="/contactus" style={{ textDecoration: "none" }}>
-                  <Button variant="contained" className="ENQUIRY_btn mt-4">
+                  <Button
+                    variant="contained"
+                    className="ENQUIRY_btn mt-4"
+                    sx={{ width: "100%" }}
+                  >
                     send inquiry
                   </Button>
                 </Link>
@@ -201,7 +205,7 @@ function OpenableWindow() {
                   style={{ textDecoration: "none" }}
                 >
                   <img
-                  src={RetractableRollerDoubleDoor}
+                    src={RetractableRollerDoubleDoor}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
@@ -220,9 +224,8 @@ function OpenableWindow() {
                       style={{ textDecoration: "none" }}
                     >
                       <img
-                                          src={Slidingdr}
-
-               alt=""
+                        src={Slidingdr}
+                        alt=""
                         className="img-fluid  mt-2 pt-1"
                       ></img>
                       <h4 className="otherproductcard_title mt-4">

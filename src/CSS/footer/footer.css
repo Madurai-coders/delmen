@@ -24,6 +24,7 @@
 .links {
   padding: 0px 0px;
   justify-content: center;
+  
 }
 .footer_content {
   padding: 0 90px;
@@ -40,6 +41,8 @@
   line-height: 23px;
   letter-spacing: 0.035em;
   color: #ffffff;
+  position: relative;
+  bottom: 15px;
 }
 .navbar_list:hover {
   text-decoration: underline;
@@ -51,12 +54,11 @@
   background-size: contain;
   background-position: center;
   position: relative;
-  bottom: 200px;
+  bottom: 150px;
   width: 1200px;
+  flex-direction: row;
 }
-.contactcard_des {
-  margin-left: 140px;
-}
+
 .CALL {
   color: #8d1fa8;
   margin-top: -6px;
@@ -100,16 +102,34 @@
     font-size: 30px;
   }
 }
+
+@media only screen and (max-width: 1115px) {
+  .contactcard_address {
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 30px;
+  }
+  .dealer {
+    position: relative;
+    top: 30px;
+  }
+  .contactcard_des {
+    position: relative;
+    top: 20px;
+  }
+  .contactcard_tit {
+    padding-top: 0px !important;
+  }
+}
 @media only screen and (max-width: 1058px) {
   .company_title {
     font-size: 25px;
   }
   .contactcard_title {
     font-size: 26px;
-    margin-top: 20px !important;
   }
   .contactcard_address {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 18px;
   }
   .contactcard_addr {
@@ -117,10 +137,12 @@
     line-height: 18px;
   }
   .contactcard_tit {
-    font-size: 19px;
+    font-size: 18px;
   }
   .contactus_btn {
     padding: 7px 25px;
+    position: relative;
+    bottom: 40px;
   }
   .footer_txt {
     font-size: 17px;
@@ -135,26 +157,42 @@
   .contactcard_des {
     margin-left: 130px;
   }
-  .dealer {
-    margin-top: 0px !important;
-  }
 }
 @media only screen and (max-width: 940px) {
   .contactcard_des {
-    margin-left: 80px;
+    margin-left: 30px !important;
+    margin-top: 60px !important;
   }
-  .navbar_list{
+  .navbar_list {
     font-size: 13px;
   }
   .footer_txt {
     font-size: 16px;
   }
+  .dealer {
+    margin-right: 10px !important;
+    position: relative;
+    top: 70px;
+  }
+  .contactus_btn {
+    position: relative;
+    bottom: 50px;
+    padding: 6px 17px;
+    font-size: 12px;
+  }
+  .contactcard_tit {
+    font-size: 15px;
+    margin-top: 0px !important;
+  }
+  .contactcard_title {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-   .contact_card {
-    background-size: 140% 150%;
-  } 
+  .contact_card {
+    background-size: 140% 100%;
+  }
   .footer_txt {
     padding: 0px 0px;
     text-align: center;
@@ -170,19 +208,15 @@
     text-align: center;
     padding: 10px 20px;
     margin-top: 0px !important;
-   margin-left: 0px!important;
+    margin-left: 0px !important;
   }
   .link {
     display: flex;
     justify-content: center;
-    position: relative;
-    bottom: 30px;
+    
   }
 
-  .contactus_btn {
-    position: relative;
-    bottom: 0px;
-  }
+
   .contactcard_address {
     font-size: 12px;
   }
@@ -190,34 +224,52 @@
     font-size: 12px;
   }
   .contactcard_des {
-    margin-left: 20px;
+    margin-left: 10px!important;
+    padding: 0 0!important;
+    position: relative;
+    top: 5px;
   }
   .call_no {
-    font-size: 13px;
+    font-size: 12px;
   }
   .CALL {
     font-size: 19px !important;
   }
- 
+  .dealer{
+    margin-right: 20px!important;
+    margin-top: 15px!important;
+  }
+  .contactcard_tit{
+    font-size: 12px;
+  }
+  .contactcard_title{
+    margin-top: 0px!important;
+  
+  }
+  .contactcard_address{
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 500;
+  }
+  .contactus_btn {
+    position: relative;
+    bottom: 40px;
+   
+  }
+  
+
 }
 
 @media only screen and (max-width: 590px) {
   .contactcard_title {
-    font-size: 23px;
-    margin-top: 0px !important;
-    position: relative;
-    top: 25px;
+    font-size: 20px;
+   
   }
   .contactcard_tit {
-    font-size: 17px;
-    padding-top: 25px !important;
+    font-size: 10px;
   }
   .contactcard_address {
-    font-size: 10px;
-    position: relative;
-    top: 10px;
-    margin-top: 0px !important;
-    margin-bottom: 20px;
+    font-size: 9px;
     line-height: 12px;
   }
   .contactcard_addr {
@@ -231,63 +283,60 @@
   }
   .contactcard_des {
     padding: 0px 0px;
+    margin-left: 5px!important;
   }
   .company_title {
     font-size: 23px;
   }
- 
- 
+.call_no{
+  font-size: 9px;
+  font-weight:bolder;
+}
   .contactus_btn {
-    padding: 5px 20px;
-    font-size: 13px;
+    padding: 5px 17px;
+    font-size: 11px;
+    position: relative;
+    bottom: 55px;
   }
 }
 
 @media only screen and (max-width: 493px) {
-  
-.contactus_btn{
-  position: relative;
-  bottom: 13px;
-  padding: 4px 13px;
-  font-size: 11px;
-}
-.contactcard_title{
-  font-size: 21px;
-}
-.contactcard_address{
-  font-size: 7px;
-  font-weight: 500;
-  line-height: 10px;
-}
-.contactcard_addr{
-  font-size: 7px;
-  font-weight: 500;
-  line-height: 10px;
 
-}
-.contactcard_tit{
-  font-size: 15px;
-  padding-top: 27px !important;
+  .contact_card {
+    background-size: 180% 100%;
+  }
+  .contactus_btn {
+   
+    padding: 4px 13px;
+    font-size: 10px;
+  }
+  .contactcard_title {
+    font-size: 19px;
+  }
+  .contactcard_address {
+    font-size: 7px;
+    font-weight: 500;
+    line-height: 10px;
+  }
+  .contactcard_addr {
+    font-size: 7px;
+    font-weight: 500;
+    line-height: 10px;
+  }
+  .contactcard_tit {
+    font-size: 10px;
+  }
+  .call_no {
+    font-size: 7px;
+  }
+  .CALL {
+    font-size: 13px !important;
+  }
+  .callicon1 {
+    margin-top: 12px !important;
+  }
+ 
 
-  
-}
-.call_no{
-  font-size: 10px;
-}
-.CALL{
-  font-size: 14px!important;
-}
-.callicon1{
-  margin-top: 12px!important;
-}
-.contactcard_des{
-  position: relative;
-  top: 5px;
-}
-.dealer{
-  position: relative;
-  top: 5px;
-}
   .footer_txt {
     font-size: 14px;
     line-height: 20px;
@@ -299,33 +348,31 @@
   .navbar_list {
     padding: 8px 6px;
     font-size: 12px;
-    margin-left: 0px!important;
+    margin-left: 0px !important;
   }
 
-  .footer_content {
-    position: relative;
-    bottom: 110px;
-  }
   
+  .links{
+    height: 250px;
+  }
 }
 
 @media only screen and (max-width: 395px) {
-  
-  .contactcard_address{
-    font-size: 6px;
-    margin-top: 0px!important;
-  }
-  .contactcard_title{
-    font-size: 17px;
-  }
-  .contactcard_tit{
-    font-size: 13px;
-  }
+.contactcard_tit{
+  font-size: 9px;
+}
   .navbar_list {
     font-size: 10px;
   }
- .contact_card{
-  background-size: 150% 150%;
- }
- 
+  .contact_card {
+    background-size: 200% 100%;
+    position: relative;
+    bottom: 230px!important;
+  }
+  .call_no {
+    font-size: 6px;
+  }
+  .links{
+    height: 200px;
+  }
 }

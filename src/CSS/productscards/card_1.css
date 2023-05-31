@@ -726,7 +726,7 @@
   }
   .otherproduct_card {
     width: 98%;
-    height: 270px;
+    height: 320px;
     margin-left: 0px !important;
   }
   .Card_Title {
@@ -789,9 +789,7 @@
     position: absolute;
     bottom: 100px;
   }
-  .otherproduct_card{
-    height: 250px;
-  }
+ 
 }
 @media only screen and (max-width: 370px) {
   .ee {

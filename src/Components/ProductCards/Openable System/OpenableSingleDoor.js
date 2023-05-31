@@ -175,7 +175,11 @@ function OpenableSingleDr() {
                 >
                   request to call back
                 </Button>
-                <Button variant="contained" className="ENQUIRY_btn mt-4">
+                <Button
+                  variant="contained"
+                  className="ENQUIRY_btn mt-4"
+                  sx={{ width: "100%" }}
+                >
                   send inquiry
                 </Button>
               </div>
@@ -189,7 +193,6 @@ function OpenableSingleDr() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Double Door' category
               </h5>
-              
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
               <div className="otherproduct_card text-center ms-5">

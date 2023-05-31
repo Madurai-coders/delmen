@@ -7,13 +7,13 @@ function Footer() {
   const isTab = useMediaQuery({ query: "(min-width: 768px)" });
 
   return (
-    <div className="footer pt-5">
+    <div className="footer">
       <div className="container">
         <div className="row links cards_row">
           <div className="contact_card col-12">
-            <div className="d-flex flex-row">
+            <div className="d-flex flex-row p-0 m-0">
               <div className="col-5">
-                <div className="contactcard_des">
+                <div className="contactcard_des ms-5 ps-3">
                   <h3 className="contactcard_title mt-5">Contact Us</h3>
                   <h5 className="contactcard_tit pt-4 mt-3">
                   <p><b>Delmen Mosquito screens</b></p>
@@ -31,7 +31,7 @@ function Footer() {
                 </div>
               </div>
 
-              <div className="dealer mt-4 col-3">
+              <div className="dealer mt-4 col-3 me-3 p-0">
                 <h6 className="contactcard_tit pt-4 mt-3">
                   Delmen Mosquito screens
                   Branch Office
@@ -48,7 +48,7 @@ function Footer() {
                 </h6>
               </div>
 
-              <div className="dealer mt-4 col-4">
+              <div className="dealer mt-4 col-3 p-0">
                 <h6 className="contactcard_tit pt-4 mt-3">
                   Our Authorized Dealer
                 </h6>
@@ -57,7 +57,7 @@ function Footer() {
                   <CallIcon className="CALL" />
                   <span className="ms-1 call_no">8056035572,9442031069</span>
                 </h6>
-                <h6 className="contactcard_address mt-3">
+                <h6 className="contactcard_address mt-3 pr-3">
                   AVM Life Style Porur,<br>
                   </br>
                   147a roja street,sathya narayana puram,<br></br>mowlivakkkam,porur
@@ -92,17 +92,19 @@ function Footer() {
                   <h2 className="company_title">DELMEN MOSQUITO SCREENS</h2>
                 </>
               )}
-              <p className="footer_txt mt-4">
+              <p className="footer_txt">
                 "We are accepting local inquiries<br></br> mostly from Tamil
                 Nadu &<br></br>
                 Karnataka."
               </p>
             </div>
-          </div>
+          </div></div>
+          <div className="row cards_row">
+
           <div className="col-lg-7 col-md-7 col-sm-12 col-12">
             <div className="link">
               <Link to="/" style={{ textDecoration: "none" }}>
-                <h6 className="navbar_list ms-5 mt-4 ">Home</h6>
+                <h6 className="navbar_list ms-5">Home</h6>
               </Link>
               <Link to="/companyprofile" style={{ textDecoration: "none" }}>
                 <h6 className="navbar_list ">Company Profile</h6>
