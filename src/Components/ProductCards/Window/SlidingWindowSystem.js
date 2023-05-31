@@ -15,8 +15,9 @@ import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
-import SlidingDoor from "../../../assets/Windows Accessories/WindowSystem.png";
-import StainlessSteel from "../../../assets/Magnetic Insect Screens/stainlesssteel.png";
+import SlidingDoor from "../../../assets/Windows Accessories/rollerdr.png";
+import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
+
 import Callback from "../../card_section/Callback";
 function SlidingWindowSystem() {
   const [CallBackCard, setCallBackCard] = useState(false);
@@ -75,35 +76,27 @@ function SlidingWindowSystem() {
                         Sliding Window System{" "}
                       </h5>
                       <p className="Product_Exn mt-3">
-                        Sliding Window can be installed to your existing sliding window either inside the house
-                        or outside the house. It can be mounted with your existing track or we can create a track adjacent to
-                        your sliding system.
+                        Sliding Window can be installed to your existing sliding
+                        window either inside the house or outside the house. It
+                        can be mounted with your existing track or we can create
+                        a track adjacent to your sliding system.
                       </p>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
-                          Hassle-free fixed without any screws 
+                          Hassle-free fixed without any screws
                         </li>
-                        <li className="Product_Points">Locked only with silicon and it has felt groves to make sure 
-                        there is no gaps between the glass track and the mesh track</li>
                         <li className="Product_Points">
-                          The mesh is with stainless steel 304 grade , rust free, long lasting 
+                          Locked only with silicon and it has felt groves to
+                          make sure there is no gaps between the glass track and
+                          the mesh track
+                        </li>
+                        <li className="Product_Points">
+                          The mesh is with stainless steel 304 grade , rust
+                          free, long lasting
                         </li>
                       </ul>
 
-                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -164,35 +157,24 @@ function SlidingWindowSystem() {
                 <h5 className="product_des mt-4">product description</h5>
                 <h5 className="Product_Title mt-4">Sliding Window System </h5>
                 <p className="Product_Exn mt-3">
-                  Sliding Window System offered by us completely suitable to be
-                  installed in both commercial & residential sectors. It is
-                  greatly admired for enhancing existing beauty of building
-                  while providing airtight & moisture tight closing. This window
-                  system made of superior quality thermoplastic polymer and is
-                  provided with metal wheels for smooth sliding. It is suitable
-                  for installation in dining hall, bedroom, and office cabins.
-                  Sliding Window System also comprises a great high quality lock
-                  for assuring high safety level.
+                  Sliding Window can be installed to your existing sliding
+                  window either inside the house or outside the house. It can be
+                  mounted with your existing track or we can create a track
+                  adjacent to your sliding system.
                 </p>
                 <p className="Product_Feature mt-5">Features</p>
                 <ul>
-                  <li className="Product_Points">Hassle-free to install</li>
-                  <li className="Product_Points">Good UV stability</li>
-                  <li className="Product_Points">Weather resistant property</li>
-                </ul>
-
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-                <ul>
                   <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
+                    Hassle-free fixed without any screws
                   </li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
                   <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
+                    Locked only with silicon and it has felt groves to make sure
+                    there is no gaps between the glass track and the mesh track
                   </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
+                  <li className="Product_Points">
+                    The mesh is with stainless steel 304 grade , rust free, long
+                    lasting
+                  </li>
                 </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
@@ -245,23 +227,24 @@ function SlidingWindowSystem() {
                 </div>
               </>
             )}
-            <div className="col-lg-3 col-md-4 col-sm-4 col-10 text-center mt-5">
+           <div className="col-lg-3 col-md-4 col-sm-4 col-10 text-center mt-5">
               <div className="otherproduct_card text-center">
                 <Link
-                  to="/openabledoorwithmesh"
+                  to="/singlesliderwithtrack"
                   style={{ textDecoration: "none" }}
                 >
                   <img
-                    src={StainlessSteel}
+                    src={SingleSliderWithTrack}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                    Openable Door System<br></br>With Stainless Steel Mesh
+                  Single Slider With Track
                   </h4>
                 </Link>
               </div>
             </div>
+
           </div>
         </div>
 

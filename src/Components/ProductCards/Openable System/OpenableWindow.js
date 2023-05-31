@@ -20,6 +20,8 @@ import BuyingReq from "../../card_section/Buyingreq";
 import MenuItem from "@mui/material/MenuItem";
 import CloseIcon from "@mui/icons-material/Close";
 import Callback from "../../card_section/Callback";
+import Slidingdr from "../../../assets/Windows Accessories/rollerdr.png";
+
 function OpenableWindow() {
   const [CallBackCard, setCallBackCard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -90,22 +92,6 @@ function OpenableWindow() {
                         fixed back to the window.
                       </p>
 
-                      <p className="Product_Feature mt-5">Price And Quantity</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          minimum Warranty is 5 years
-                        </li>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul>
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -179,23 +165,6 @@ function OpenableWindow() {
                   from the window and it can be washed and fixed back to the
                   window.
                 </p>
-
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-                <ul>
-                  <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
-                  </li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">
-                    minimum Warranty is 5 years
-                  </li>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
-                </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -219,7 +188,7 @@ function OpenableWindow() {
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
               <h5 className="other_txt">
-                Other Products in 'Retractable Double Door' category
+                Other Products in 'Retractable Door' category
               </h5>
               <h5 className="other_subtxt mt-4">
                 Minimum Order Quantity : 100
@@ -232,7 +201,7 @@ function OpenableWindow() {
                   style={{ textDecoration: "none" }}
                 >
                   <img
-                    src={RetractableDoubleDoor}
+                  src={RetractableRollerDoubleDoor}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
@@ -251,12 +220,13 @@ function OpenableWindow() {
                       style={{ textDecoration: "none" }}
                     >
                       <img
-                        src={RetractableRollerDoubleDoor}
-                        alt=""
+                                          src={Slidingdr}
+
+               alt=""
                         className="img-fluid  mt-2 pt-1"
                       ></img>
                       <h4 className="otherproductcard_title mt-4">
-                        Retractable Roller Double Door<br></br>System
+                        Retractable Roller Door<br></br>System
                       </h4>
                     </Link>
                   </div>

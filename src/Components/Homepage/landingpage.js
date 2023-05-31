@@ -101,7 +101,7 @@ function Landingpage() {
 
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
-              <h1 className="homepage_title">
+              <h1 className="homepage_title mt-5 mb-3">
                 Delmen Mosquito screens 
                 </h1>  
                 <h4 style={{color:'white'}}>
@@ -114,12 +114,12 @@ function Landingpage() {
                 
             </div>
             <div className="col-lg-3 col-md-5 col-sm-6 col-8 text-center">
-              <div className="search mt-5">
+              <div className="search mt-4 mb-5">
                 <InputBase
                   fullWidth
                   value={inputValue}
                   onChange={handleInputChange}
-                  className="inputbase pe-1 mb-4"
+                  className="inputbase pe-1 mb-2"
                   placeholder="Search"
                   
                   endAdornment={
@@ -133,7 +133,7 @@ function Landingpage() {
 
                 {inputValue && (
                   <div
-                    className="search_autocomplete arrow-top mt-3 ms-4"
+                    className="search_autocomplete arrow-top ms-4"
                     id="search"
                   >
                     <ul className="search_item">

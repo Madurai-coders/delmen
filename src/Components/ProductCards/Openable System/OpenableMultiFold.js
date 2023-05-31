@@ -75,12 +75,12 @@ function OpenableMultiFold() {
                   </div>
                   <div className="col-7">
                     <div className="Product_Detail mt-3">
-                      <h5 className="Product_Name">Openable MultiFold Door</h5>
+                      <h5 className="Product_Name">Openable Folding Door</h5>
 
                       <h5 className="product_des mt-4">product description</h5>
 
                       <h5 className="Product_Title mt-4">
-                        Openable MultiFold Door
+                        Openable Folding Door
                       </h5>
                       <p className="Product_Exn mt-3">
                         Open able Folding Door: This product is mounted adjacent
@@ -98,19 +98,7 @@ function OpenableMultiFold() {
                         wide opening.
                       </p>
 
-                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul> */}
+                     
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -152,7 +140,7 @@ function OpenableMultiFold() {
               <div className="row cards_row mt-5">
                 <div className="col-12 mt-3">
                   <h5 className="Product_Name ms-3">
-                    Openable Double Door System
+                  Openable Folding Door
                   </h5>
                 </div>
                 <div className="col-12 text-center mt-5">
@@ -174,34 +162,24 @@ function OpenableMultiFold() {
               <div className="col-12 mt-5">
                 <h5 className="product_des mt-4">product description</h5>
 
-                <h5 className="Product_Title mt-4">Openable MultiFold Door</h5>
+                <h5 className="Product_Title mt-4">Openable Folding Door</h5>
                 <p className="Product_Exn mt-3">
-                  Open able Folding Door This product is mounted adjacent to
-                  your existing Main door. It is assembled with 2" Aluminum
-                  Profile and double SS screw Joint, The Mesh is SS 304 Mesh
-                  (Rust Free) This system has removable hinges and it can be
-                  removed from the hinges to wash the door and fix back, In
-                  general the main doors are made up of wood and the size will
-                  be width 3'6" feet X 7 feet Hight. Handling mesh door is a
-                  little complicated, We design as per customer request 1' feet
-                  to 1.5'feet width one fold. and the other fold 2'feet to
-                  2.5'feet Advantages of the product both folds can be opened
-                  when required.
+                Open able Folding Door: This product is mounted adjacent
+                        to your existing Main door and balcony folding doors. It is assembled with 2"
+                        Aluminum Profile and double SS screw Joint, The Mesh is
+                        SS 304 Mesh (Rust Free) . This system has removable hinges
+                        and it can be removed from the hinges to wash the door
+                        and fix back, In general the main doors are made up of
+                        wood and the size will be width 3'6" feet X 7 feet
+                        Height. Handling mesh door is a little complicated, We
+                        design as per customer request 1' feet to 1.5'feet width
+                        one fold. and the other fold 2'feet to 2.5'feet
+                        Advantages of the product both folds can be opened when
+                        required. Similar can be done at your balcony doors which has 
+                        wide opening.
                 </p>
 
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-                <ul>
-                  <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
-                  </li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
-                </ul>
+              
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button

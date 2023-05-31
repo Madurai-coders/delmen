@@ -11,6 +11,8 @@ import TextField from "@mui/material/TextField";
 import RetractableDoubleDoor from "../../../assets/Retractable Double Door/RetractableDoubleDoor.png";
 import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
 import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
+import Slidingdr from "../../../assets/Windows Accessories/rollerdr.png";
+
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import SingleSliderVideo from "../../../assets/ProductsVideo/singleslider.mp4";
@@ -174,20 +176,7 @@ function SingleSliderWithTrack() {
                   Systems
                 </p>
 
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-                <ul>
-                  <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
-                  </li>
-                  <li className="Product_Points">Price 250 INR/Square Foot</li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
-                </ul>
+              
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -217,9 +206,7 @@ function SingleSliderWithTrack() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Double Door' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+              
             </div>
             {isCard_3 && (
               <>
@@ -230,7 +217,7 @@ function SingleSliderWithTrack() {
                       style={{ textDecoration: "none" }}
                     >
                       <img
-                        src={RetractableDoubleDoor}
+                         src={RetractableRollerDoubleDoor}
                         alt=""
                         className="img-fluid  mt-2 pt-1"
                       ></img>
@@ -246,12 +233,13 @@ function SingleSliderWithTrack() {
               <div className="otherproduct_card text-center">
                 <Link to="/rollerdoubledoor" style={{ textDecoration: "none" }}>
                   <img
-                    src={RetractableRollerDoubleDoor}
+                                         src={Slidingdr}
+
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                    Retractable Roller Double Door<br></br>System
+                    Retractable Roller Door<br></br>System
                   </h4>
                 </Link>
               </div>

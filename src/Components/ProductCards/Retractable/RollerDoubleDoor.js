@@ -11,11 +11,10 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-import MagneticNet from "../../../assets/Retractable Double Door/MagneticNet.png";
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
-import RollerDoubleDrVideo from "../../../assets/ProductsVideo/rollerdoubledr.mp4";
+import RollerDrVideo from "../../../assets/ProductsVideo/rollerdr.mp4";
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
@@ -48,7 +47,7 @@ function RollerDoubleDoor() {
                           "Fullscreen",
                         ]}
                       >
-                        <source src={RollerDoubleDrVideo} type="video/webm" />
+                        <source src={RollerDrVideo} type="video/webm" />
                       </Video>
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
@@ -88,13 +87,7 @@ function RollerDoubleDoor() {
                         high transparency in the mesh it looks very good and
                         Durable
                       </p>
-                      {/* <h5 className="Product_Title mt-4">
-                        Retractable Roller Double Door{" "}
-                      </h5>
-                      <p className="Product_Exn mt-3">
-                        We are the manufacturers of Retractable Roller Door
-                        systems
-                      </p> */}
+
                       <p className="Product_Feature mt-5">
                         Advantage of the Roller door system:
                       </p>
@@ -106,25 +99,8 @@ function RollerDoubleDoor() {
                         <li className="Product_Points">
                           It can be operated from left to right or Right to left
                         </li>
-                        {/* <li className="Product_Points">
-                          Easy to operate, it has self cleaning Brush to clean
-                          the mesh
-                        </li> */}
                       </ul>
-                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
 
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -163,7 +139,7 @@ function RollerDoubleDoor() {
               <div className="row cards_row mt-5">
                 <div className="col-12 mt-3">
                   <h5 className="Product_Name ms-3">
-                    Retractable Roller Double Door System
+                    Retractable Roller Door System
                   </h5>
                 </div>
                 <div className="col-12 text-center mt-5">
@@ -177,7 +153,7 @@ function RollerDoubleDoor() {
                       "Fullscreen",
                     ]}
                   >
-                    <source src={RollerDoubleDrVideo} type="video/webm" />
+                    <source src={RollerDrVideo} type="video/webm" />
                   </Video>
                 </div>
               </div>
@@ -192,15 +168,10 @@ function RollerDoubleDoor() {
                   brush to clean the mesh every time you operate the system.
                   Advantage of it is it does not take much space and never keeps
                   hanging around it is a retractable system. It is easy to
-                  operate It gives very high transparence in the mesh it looks
+                  operate It gives very high transparency in the mesh it looks
                   very good and Durable
                 </p>
-                <h5 className="Product_Title mt-4">
-                  Retractable Roller Double Door{" "}
-                </h5>
-                <p className="Product_Exn mt-3">
-                  We are the manufacturers of Retractable Roller Door systems
-                </p>
+
                 <p className="Product_Feature mt-5">
                   Advantage of the Roller door system:
                 </p>
@@ -212,25 +183,6 @@ function RollerDoubleDoor() {
                   <li className="Product_Points">
                     It can be operated from left to right or Right to left
                   </li>
-                  <li className="Product_Points">
-                    Easy to operate, it has self cleaning Brush to clean the
-                    mesh
-                  </li>
-                </ul>
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-
-                <ul>
-                  <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
-                  </li>
-                  <li className="Product_Points">Price 250 INR/Square Foot</li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
                 </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
@@ -259,11 +211,9 @@ function RollerDoubleDoor() {
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
               <h5 className="other_txt">
-                Other Products in 'Retractable Double Door' category
+                Other Products in 'Retractable Door' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+             
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
               <div className="otherproduct_card text-center ms-5">

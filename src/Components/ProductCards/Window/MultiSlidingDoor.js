@@ -1,6 +1,5 @@
 import Footer from "../../Footer/footer";
 import Navbar_1 from "../../Navbar_1/navbar_1";
-import MultiSlidingDr from "../../../assets/OurProducts/sliding dr.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -84,41 +83,28 @@ function MultiSlidingDoor() {
                         Multi Sliding Door System{" "}
                       </h5>
                       <p className="Product_Exn mt-3">
-                        It is made out of 2 inch Aluminium Profile with Stainless
-                        Steel mesh 304 grade. It has Felt Grove to arrest gaps in the
-                        contact surface . It is assembled with double screw Joints
-                        to avoid breakage in the edges and Twist in the frame. It
-                        is advisable to fix this kind of Sliding door, to your
-                        UPVC Multi Sliding doors and Aluminium Multi Sliding
-                        Doors. This can be mounted adjacent to your existing muldi sliding glass Door
-                        with additional track.
-
+                        It is made out of 2 inch Aluminium Profile with
+                        Stainless Steel mesh 304 grade. It has Felt Grove to
+                        arrest gaps in the contact surface . It is assembled
+                        with double screw Joints to avoid breakage in the edges
+                        and Twist in the frame. It is advisable to fix this kind
+                        of Sliding door, to your UPVC Multi Sliding doors and
+                        Aluminium Multi Sliding Doors. This can be mounted
+                        adjacent to your existing muldi sliding glass Door with
+                        additional track.
                         <p className="Product_Feature mt-5">
-                        Advantage of the Multi sliding door system:
-                      </p>
-                      <ul>
-                        <li className="Product_Points">
-                         Rodent Free since it is SS mesh
-                        </li>
-                        <li className="Product_Points">
-                          The Mesh is very stiff and steady in our system 
-                        </li>
+                          Advantage of the Multi sliding door system:
+                        </p>
+                        <ul>
+                          <li className="Product_Points">
+                            Rodent Free since it is SS mesh
+                          </li>
+                          <li className="Product_Points">
+                            The Mesh is very stiff and steady in our system
+                          </li>
                         </ul>
                       </p>
 
-                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -184,27 +170,26 @@ function MultiSlidingDoor() {
                   Multi Sliding Door System{" "}
                 </h5>
                 <p className="Product_Exn mt-3">
-                  It is made out of 2Aluminium Profile with Stainless Steel mesh
-                  It has Felt Grove to arrest gaps in the contact surface It is
-                  assembled with double screw Joints to avoid breakage in the
-                  edges and Twist in the frame It is advisable to fix this kind
-                  of Sliding door, to your UPVC Multi Sliding doors and
-                  Aluminium Multi Sliding Doors
+                  It is made out of 2 inch Aluminium Profile with Stainless
+                  Steel mesh 304 grade. It has Felt Grove to arrest gaps in the
+                  contact surface . It is assembled with double screw Joints to
+                  avoid breakage in the edges and Twist in the frame. It is
+                  advisable to fix this kind of Sliding door, to your UPVC Multi
+                  Sliding doors and Aluminium Multi Sliding Doors. This can be
+                  mounted adjacent to your existing muldi sliding glass Door
+                  with additional track.
+                  <p className="Product_Feature mt-5">
+                    Advantage of the Multi sliding door system:
+                  </p>
+                  <ul>
+                    <li className="Product_Points">
+                      Rodent Free since it is SS mesh
+                    </li>
+                    <li className="Product_Points">
+                      The Mesh is very stiff and steady in our system
+                    </li>
+                  </ul>
                 </p>
-
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-                <ul>
-                  <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
-                  </li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
-                </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -234,9 +219,7 @@ function MultiSlidingDoor() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Double Door' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+              
             </div>
             {isCard_3 && (
               <>
@@ -247,7 +230,7 @@ function MultiSlidingDoor() {
                       style={{ textDecoration: "none" }}
                     >
                       <img
-                        src={RetractableDoubleDoor}
+                        src={RetractableRollerDoubleDoor}
                         alt=""
                         className="img-fluid  mt-2 pt-1"
                       ></img>
@@ -264,7 +247,7 @@ function MultiSlidingDoor() {
               <div className="otherproduct_card text-center">
                 <Link to="/rollerdoubledoor" style={{ textDecoration: "none" }}>
                   <img
-                    src={RetractableRollerDoubleDoor}
+                    src={RetractableDoubleDoor }
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>

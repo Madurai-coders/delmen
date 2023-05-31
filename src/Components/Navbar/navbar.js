@@ -75,16 +75,7 @@ function Navbar() {
                               <a href="#">Magnetic Insect Screens with Fiber Glass Mesh</a>
                             </Link>
                           </li>
-                          {/* <li>
-                            <Link
-                              to="/stainlesssteelwithmesh"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">
-                                Magnetic Net With Stainless Steel Mesh
-                              </a>
-                            </Link>
-                          </li> */}
+                          
                         </ul>
                       </li>
                       <li>

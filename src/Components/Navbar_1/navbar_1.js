@@ -77,14 +77,7 @@ function Navbar_1() {
                             </Link>
                           </li>
                           <li>
-                            <Link
-                              to="/stainlesssteelwithmesh"
-                              style={{ textDecoration: "none" }}
-                            >
-                              <a href="#">
-                                Magnetic Net With Stainless Steel Mesh
-                              </a>
-                            </Link>
+                           
                           </li>
                         </ul>
                       </li>
@@ -110,7 +103,7 @@ function Navbar_1() {
                               to="/rollerdoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Retractable Roller Double Door</a>
+                              <a href="#">Retractable Roller Door</a>
                             </Link>
                           </li>
 
@@ -197,6 +190,15 @@ function Navbar_1() {
                               style={{ textDecoration: "none" }}
                             >
                               <a href="#">Openable Door System</a>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/fixedopenable"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#">Fixed Openable</a>
+                            
                             </Link>
                           </li>
                           <li>

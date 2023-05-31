@@ -19,8 +19,8 @@ import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuItem from "@mui/material/MenuItem";
-import SlidingDoor from "../../../assets/Windows Accessories/WindowSystem.png";
-import StainlessSteel from "../../../assets/Magnetic Insect Screens/stainlesssteel.png";
+import SlidingDoor from "../../../assets/Windows Accessories/rollerdr.png";
+import MagneticInsect from "../../../assets/Magnetic Insect Screens/magneticinsect.png";
 import Callback from "../../card_section/Callback";
 function SlidingWindowMesh() {
   const [CallBackCard, setCallBackCard] = useState(false);
@@ -99,19 +99,8 @@ function SlidingWindowMesh() {
                         windows as well aluminium sliding systems
                       </p>
 
-                      <p className="Product_Feature mt-5">Price And Quantity</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul>
+                      
+                      
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -156,9 +145,7 @@ function SlidingWindowMesh() {
                     Sliding Window Mesh System
                   </h5>
 
-                  <h5 className="Square ms-3">
-                    250 INR<code className="Square_txt">/Square Foot</code>
-                  </h5>
+                 
                 </div>
                 <div className="col-12 text-center mt-5">
                   <Video
@@ -196,19 +183,8 @@ function SlidingWindowMesh() {
                   aluminium sliding systems
                 </p>
 
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-                <ul>
-                  <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
-                  </li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
-                </ul>
+
+               
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -236,11 +212,9 @@ function SlidingWindowMesh() {
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
               <h5 className="other_txt">
-                Other Products in 'Retractable Double Door' category
+                Other Products in 'Retractable Door' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+              
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6 col-8 text-center mt-5">
               <div className="otherproduct_card  text-center">
@@ -249,7 +223,8 @@ function SlidingWindowMesh() {
                   style={{ textDecoration: "none" }}
                 >
                   <img
-                    src={RetractableDoubleDoor}
+                                          src={RetractableRollerDoubleDoor}
+
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
@@ -268,7 +243,8 @@ function SlidingWindowMesh() {
                       style={{ textDecoration: "none" }}
                     >
                       <img
-                        src={RetractableRollerDoubleDoor}
+                                          src={RetractableDoubleDoor}
+
                         alt=""
                         className="img-fluid  mt-2 pt-1"
                       ></img>

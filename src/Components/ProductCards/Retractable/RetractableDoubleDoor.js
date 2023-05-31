@@ -1,7 +1,6 @@
 import "../../../CSS/productscards/card_1.css";
 import Navbar_1 from "../../Navbar_1/navbar_1";
 import Footer from "../../Footer/footer";
-import RetractabledoubleDoor from "../../../assets/CardsImg/retractabledr.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -12,13 +11,16 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-import MagneticNet from "../../../assets/Retractable Double Door/MagneticNet.png";
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 import Callback from "../../card_section/Callback";
+import RollerDoubleDrVideo from "../../../assets/ProductsVideo/rollerdoubledr.mp4";
+
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
 function RetractableDoubleDoor() {
   const [PriceCard, setPriceCard] = useState(false);
   const [CallBackCard, setCallBackCard] = useState(false);
@@ -65,11 +67,18 @@ function RetractableDoubleDoor() {
                 <div className="row mt-5 cards_row">
                   <div className="col-5">
                     <div className="Card_1">
-                      <img
-                        src={RetractabledoubleDoor}
-                        alt=""
-                        className="img-fluid"
-                      ></img>
+                    <Video
+                        loop
+                        controls={[
+                          "PlayPause",
+                          "Seek",
+                          "Time",
+                          "Volume",
+                          "Fullscreen",
+                        ]}
+                      >
+                        <source src={RollerDoubleDrVideo} type="video/webm" />
+                      </Video>
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
                         <div className="Icons d-flex flex-row">
@@ -116,19 +125,7 @@ function RetractableDoubleDoor() {
                         </li>
                         <li className="Product_Points">Hassle Free</li>
                       </ul>
-                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul> */}
+                    
                       <div className="d-flex flex-row">
                         <Button
                           variant="outlined"
@@ -175,11 +172,18 @@ function RetractableDoubleDoor() {
                   </h5>
                 </div>
                 <div className="col-12 text-center mt-5">
-                  <img
-                    src={RetractabledoubleDoor}
-                    alt=""
-                    className="img-fluid"
-                  ></img>
+                <Video
+                        loop
+                        controls={[
+                          "PlayPause",
+                          "Seek",
+                          "Time",
+                          "Volume",
+                          "Fullscreen",
+                        ]}
+                      >
+                        <source src={RollerDoubleDrVideo} type="video/webm" />
+                      </Video>
                 </div>
               </div>
 
@@ -189,33 +193,23 @@ function RetractableDoubleDoor() {
                   Double Retractable Roller Door{" "}
                 </h5>
                 <p className="Product_Exn mt-3">
-                  We are specialized in manufacturing superior quality double
-                  doors, which can be mounted to your existing french windows
-                  The maximum size which can be fabricated (Hieght 2500mm x
-                  Width 3000mm )This system works vertically from left to Right
-                  or Right to Left
-                </p>
-                <p className="Product_Feature mt-5">Features</p>
-                <ul>
-                  <li className="Product_Points">
-                    Equipped with strong brass hinges & handles
-                  </li>
-                  <li className="Product_Points">Good moisture resistance</li>
-                  <li className="Product_Points">High durability</li>
-                </ul>
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-                <ul>
-                  <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
-                  </li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
-                </ul>
+                        We are specialized in manufacturing superior quality
+                        double doors, which can be mounted to your existing
+                        french windows. This system comes with only fiber glass mesh (stiff mesh) . The maximum size which can be fabricated
+                        (Hieght 3000mm x Width 3500mm )This system works
+                        vertically from left to Right or Right to Left
+                      </p>
+                      <p className="Product_Feature mt-5">Features</p>
+                      <ul>
+                        <li className="Product_Points">
+                          It doesnt take any additional space. Mounted with 2 inch box section , left and right side vertically.
+                        </li>
+                        <li className="Product_Points">
+                          Easy to operate
+                        </li>
+                        <li className="Product_Points">Hassle Free</li>
+                      </ul>                
+              
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -245,9 +239,7 @@ function RetractableDoubleDoor() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Double Door' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+             
             </div>
             {isCard_1 && (
               <>

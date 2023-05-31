@@ -8,16 +8,14 @@ import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
-import WindowSystem from "../../../assets/Windows Accessories/WindowSystem.png";
+import WindowSystem from "../../../assets/Windows Accessories/rollerdr.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
-import SlidingDrVideo from "../../../assets/ProductsVideo/slidingdr.mp4";
-import { DefaultPlayer as Video } from "react-html5video";
-import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuItem from "@mui/material/MenuItem";
-import StainlessSteel from "../../../assets/Magnetic Insect Screens/stainlesssteel.png";
+import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
+
 import Callback from "../../card_section/Callback";
 function SlidingDoor() {
   const [CallBackCard, setCallBackCard] = useState(false);
@@ -36,18 +34,8 @@ function SlidingDoor() {
                 <div className="row mt-5 cards_row">
                   <div className="col-5">
                     <div className="Card_1">
-                      <Video
-                        loop
-                        controls={[
-                          "PlayPause",
-                          "Seek",
-                          "Time",
-                          "Volume",
-                          "Fullscreen",
-                        ]}
-                      >
-                        <source src={SlidingDrVideo} type="video/webm" />
-                      </Video>
+                    {/*  */}
+                  
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
                         <div className="Icons d-flex flex-row">
@@ -76,36 +64,24 @@ function SlidingDoor() {
                         Sliding Door System{" "}
                       </h5>
                       <p className="Product_Exn mt-3">
-                        Sliding door system is made out of aluminium 2inch profiles . This system can be fabricated
-                        to your precised size as per your existing sliding door system. This system comes with stainless 
-                        steel mesh grade 304 and can be installed on your existing track or a track can be created adjacent to your 
-                        sliding door system.
-                      </p> 
+                        Sliding door system is made out of aluminium 2inch
+                        profiles . This system can be fabricated to your
+                        precised size as per your existing sliding door system.
+                        This system comes with stainless steel mesh grade 304
+                        and can be installed on your existing track or a track
+                        can be created adjacent to your sliding door system.
+                      </p>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
                           The mesh and the system has high durability
                         </li>
                         <li className="Product_Points">
-                          By having the mesh mounted very tight and firm on the profile , the transparency
-                          of the system is very high
+                          By having the mesh mounted very tight and firm on the
+                          profile , the transparency of the system is very high
                         </li>
-                        {/* <li className="Product_Points">Highly durable</li> */}
                       </ul>
 
-                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -149,18 +125,7 @@ function SlidingDoor() {
                   <h5 className="Product_Name ms-3">Sliding Door System</h5>
                 </div>
                 <div className="col-12 text-center mt-5">
-                  <Video
-                    loop
-                    controls={[
-                      "PlayPause",
-                      "Seek",
-                      "Time",
-                      "Volume",
-                      "Fullscreen",
-                    ]}
-                  >
-                    <source src={SlidingDrVideo} type="video/webm" />
-                  </Video>
+                 {/* video */}
                 </div>
               </div>
 
@@ -168,32 +133,22 @@ function SlidingDoor() {
                 <h5 className="product_des mt-4">product description</h5>
                 <h5 className="Product_Title mt-4">Sliding Door System </h5>
                 <p className="Product_Exn mt-3">
-                  Sliding Door offered by us is made having robust & beautiful
-                  PVC frame with double glazed window panes. It is highly
-                  appreciated for having ability to maintain optimum internal
-                  temperature according to weather conditions. This door is
-                  completely suitable to be employed in houses, bungalows,
-                  resorts, and residential apartments. It is hassle-free to
-                  install and has been equipped with superior quality bearings &
-                  wheels for ensuring smooth & silent movement. Sliding Door is
-                  available in different colors & designs as requested by our
-                  respected clients.
+                  Sliding door system is made out of aluminium 2inch profiles .
+                  This system can be fabricated to your precised size as per
+                  your existing sliding door system. This system comes with
+                  stainless steel mesh grade 304 and can be installed on your
+                  existing track or a track can be created adjacent to your
+                  sliding door system.
                 </p>
                 <p className="Product_Feature mt-5">Features</p>
                 <ul>
-                  <li className="Product_Points">Good weather resistance</li>
                   <li className="Product_Points">
-                    Easy to clean & maintain with help of soft cloth
+                    The mesh and the system has high durability
                   </li>
-                  <li className="Product_Points">Highly durable</li>
-                </ul>
-
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-                <ul>
                   <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
+                    By having the mesh mounted very tight and firm on the
+                    profile , the transparency of the system is very high
                   </li>
-                  <li className="Product_Points">Price 250 INR/Square Foot</li>
                 </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
@@ -224,9 +179,7 @@ function SlidingDoor() {
               <h5 className="other_txt">
                 Other Products in 'Doors/Windows Accessories' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+             
             </div>
             <div className="col-2"></div>
             {isCard_3 && (
@@ -253,16 +206,16 @@ function SlidingDoor() {
             <div className="col-lg-4 col-md-4 col-sm-4 col-10 text-center mt-5">
               <div className="otherproduct_card text-center">
                 <Link
-                  to="/openabledoorwithmesh"
+                  to="/singlesliderwithtrack"
                   style={{ textDecoration: "none" }}
                 >
                   <img
-                    src={StainlessSteel}
+                    src={SingleSliderWithTrack}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                    Openable Door System<br></br>With Stainless Steel Mesh
+                  Single Slider With Track
                   </h4>
                 </Link>
               </div>

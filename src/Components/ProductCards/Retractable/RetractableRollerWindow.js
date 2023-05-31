@@ -11,7 +11,6 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-import MagneticNet from "../../../assets/Retractable Double Door/MagneticNet.png";
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
@@ -83,41 +82,21 @@ function RollerWindow() {
                         not it will be in the roll form inside the net box This
                         Product comes with Fiberglass Stiff mesh only
                       </p>
-                      {/* <h5 className="Product_Title mt-4">
-                        Retractable Roller Window{" "}
-                      </h5>
-                      <p className="Product_Exn mt-3">
-                        We are the manufacturers of Retractable Roller Window
-                        systems
-                      </p> */}
+
                       <p className="Product_Feature mt-5">
                         Advantage of the Roller Window system:
                       </p>
                       <ul>
                         <li className="Product_Points">
-                          This system can be operatable only when your existing window is kept open.
+                          This system can be operatable only when your existing
+                          window is kept open.
                         </li>
-                        {/* <li className="Product_Points">
-                          It can be operated from left to right or Right to left
-                        </li> */}
+
                         <li className="Product_Points">
                           When not in use , it can be rolled into the net box
                         </li>
                       </ul>
-                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
 
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -181,49 +160,29 @@ function RollerWindow() {
 
               <div className="col-12 mt-5">
                 <h5 className="product_des mt-4">product description</h5>
+                <h5 className="Product_Title mt-4">
+                  Retractable Roller Window{" "}
+                </h5>
                 <p className="Product_Exn mt-3">
                   Roller window this product can be installed on the existing
                   wooden windows as well on UPVC Casement windows advantage of
                   this product it can be used as in need if not it will be in
                   the roll form inside the net box This Product comes with
                   Fiberglass Stiff mesh only
-                </p>
-                <h5 className="Product_Title mt-4">
-                  Retractable Roller Window{" "}
-                </h5>
-                <p className="Product_Exn mt-3">
-                  We are the manufacturers of Retractable Roller Window systems
-                </p>
-                <p className="Product_Feature mt-5">
-                  Advantage of the Roller Window system:
-                </p>
-                <ul>
-                  <li className="Product_Points">
-                    This can be used on to any existing Doors, which is made out
-                    of wood UPVC or Aluminium
-                  </li>
-                  <li className="Product_Points">
-                    It can be operated from left to right or Right to left
-                  </li>
-                  <li className="Product_Points">
-                    Easy to operate, it has self cleaning Brush to clean the
-                    mesh
-                  </li>
-                </ul>
-                <p className="Product_Feature mt-5">Price And Quantity</p>
+                  <p className="Product_Feature mt-5">
+                    Advantage of the Roller Window system:
+                  </p>
+                  <ul>
+                    <li className="Product_Points">
+                      This system can be operatable only when your existing
+                      window is kept open.
+                    </li>
 
-                <ul>
-                  <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
-                  </li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
-                </ul>
+                    <li className="Product_Points">
+                      When not in use , it can be rolled into the net box
+                    </li>
+                  </ul>
+                </p>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -253,9 +212,7 @@ function RollerWindow() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Double Door' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+            
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
               <div className="otherproduct_card text-center ms-5">

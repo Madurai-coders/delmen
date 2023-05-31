@@ -85,9 +85,10 @@ function OpenableDoubleDoor() {
                         Openable Double Door System
                       </h5>
                       <p className="Product_Exn mt-3">
-                        It is made out of 2 inch Aluminium Profile with SS 304 mesh It
-                        has Felt Grove to arrest gaps in the contact surface.
-                        Easy to operate and remove the system for a wash
+                        It is made out of 2 inch Aluminium Profile with SS 304
+                        mesh It has Felt Grove to arrest gaps in the contact
+                        surface. Easy to operate and remove the system for a
+                        wash
                       </p>
 
                       <p className="Product_Feature mt-5">
@@ -95,29 +96,13 @@ function OpenableDoubleDoor() {
                       </p>
                       <ul>
                         <li className="Product_Points">
-                         When you have a door and if it is main door having a single door , it's operational issue.
-                         So better to use double fold.
+                          When you have a door and if it is main door having a
+                          single door , it's operational issue. So better to use
+                          double fold.
                         </li>
-                        <li className="Product_Points">
-                          Easier to operate  
-                        </li>
-                        </ul>
-
-                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
-                      <ul>
-                        <li className="Product_Points">5 years warranty </li>
-
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
+                        <li className="Product_Points">Easier to operate</li>
                       </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul> */}
+
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -160,9 +145,6 @@ function OpenableDoubleDoor() {
                   <h5 className="Product_Name ms-3">
                     Openable Double Door System
                   </h5>
-                  <h5 className="Square ms-3">
-                    250 INR<code className="Square_txt">/Square Foot</code>
-                  </h5>
                 </div>
                 <div className="col-12 text-center mt-5">
                   <Video
@@ -183,32 +165,27 @@ function OpenableDoubleDoor() {
               <div className="col-12 mt-5">
                 <h5 className="product_des mt-4">product description</h5>
                 <p className="Product_Exn mt-3">
-                  Openable Door it is custom made for the existing Main Door
-                  utility door as well balcony
+                  Openable Door it is custom made for the existing Main Door,
+                  utility door, as well balcony
                 </p>
                 <h5 className="Product_Title mt-4">
                   Openable Double Door System
                 </h5>
                 <p className="Product_Exn mt-3">
-                  It is made out of 2Aluminium Profile with SS 304 mesh It has
-                  Felt Grove to arrest gaps in the contact surface Easy to
+                  It is made out of 2 inch Aluminium Profile with SS 304 mesh It
+                  has Felt Grove to arrest gaps in the contact surface. Easy to
                   operate and remove the system for a wash
                 </p>
 
-                <p className="Product_Feature mt-5">Price And Quantity</p>
+                <p className="Product_Feature mt-5">
+                  Advantage of the Openable double door system:
+                </p>
                 <ul>
                   <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
+                    When you have a door and if it is main door having a single
+                    door , it's operational issue. So better to use double fold.
                   </li>
-                  <li className="Product_Points">Price 250 INR/Square Foot</li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">5 years warranty </li>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
+                  <li className="Product_Points">Easier to operate</li>
                 </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
@@ -239,9 +216,7 @@ function OpenableDoubleDoor() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Double Door' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+              
             </div>
             {isCard_3 && (
               <>
@@ -252,7 +227,7 @@ function OpenableDoubleDoor() {
                       style={{ textDecoration: "none" }}
                     >
                       <img
-                        src={RetractableDoubleDoor}
+                        src={RetractableRollerDoubleDoor}
                         alt=""
                         className="img-fluid  mt-2 pt-1"
                       ></img>
@@ -269,7 +244,7 @@ function OpenableDoubleDoor() {
               <div className="otherproduct_card text-center">
                 <Link to="/rollerdoubledoor" style={{ textDecoration: "none" }}>
                   <img
-                    src={RetractableRollerDoubleDoor}
+                    src={RetractableDoubleDoor}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>

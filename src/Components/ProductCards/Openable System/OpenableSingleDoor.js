@@ -9,7 +9,6 @@ import Button from "@mui/material/Button";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-import MagneticNet from "../../../assets/Retractable Double Door/MagneticNet.png";
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
@@ -88,25 +87,10 @@ function OpenableSingleDr() {
                         with 2" aluminum Profile with double SS screw Joints and
                         SS 304 Mesh Rust Free. This system has removable hinges
                         and it can be removed from the hinges to wash the door
-                        and fix back. This system sticks on magnetv while closing.
+                        and fix back. This system sticks on magnetv while
+                        closing.
                       </p>
 
-                      {/* <p className="Product_Feature mt-5">Price And Quantity</p>
-                      <ul>
-                        <li className="Product_Points">
-                          Minimum Order Quantity 100 Square Foot
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Trade Information</p>
-                      <ul>
-                        <li className="Product_Points">
-                          minimum Warranty is 5 years
-                        </li>
-                        <li className="Product_Points">
-                          Supply Ability 1000 Square Foot Per Day
-                        </li>
-                        <li className="Product_Points">Delivery Time 1 Week</li>
-                      </ul> */}
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -175,29 +159,13 @@ function OpenableSingleDr() {
                 </h5>
                 <p className="Product_Exn mt-3">
                   Open able Door It is custom Made for the existing Main door
-                  utility door as well Balcony, This product is mounted adjacent
-                  to your existing door. It is assembled with 2" aluminum
-                  Profile with double SS screw Joints and SS 304 Mesh Rust Free
-                  This system has removable hinges and it can be removed from
-                  the hinges to wash the door and fix back
+                  ,utility door as well Balcony Door, This product is mounted
+                  adjacent to your existing doors. It is assembled with 2"
+                  aluminum Profile with double SS screw Joints and SS 304 Mesh
+                  Rust Free. This system has removable hinges and it can be
+                  removed from the hinges to wash the door and fix back. This
+                  system sticks on magnetv while closing.
                 </p>
-
-                <p className="Product_Feature mt-5">Price And Quantity</p>
-                <ul>
-                  <li className="Product_Points">
-                    Minimum Order Quantity 100 Square Foot
-                  </li>
-                </ul>
-                <p className="Product_Feature mt-5">Trade Information</p>
-                <ul>
-                  <li className="Product_Points">
-                    minimum Warranty is 5 years
-                  </li>
-                  <li className="Product_Points">
-                    Supply Ability 1000 Square Foot Per Day
-                  </li>
-                  <li className="Product_Points">Delivery Time 1 Week</li>
-                </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -221,9 +189,7 @@ function OpenableSingleDr() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Double Door' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+              
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
               <div className="otherproduct_card text-center ms-5">

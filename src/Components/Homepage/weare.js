@@ -36,7 +36,7 @@ function Weare() {
                 </p>
                 <Link
                   to={{
-                    pathname: "/advantage",
+                    pathname: "/Readmore",
                   }}
                   style={{ textDecoration: "none" }}
                 >

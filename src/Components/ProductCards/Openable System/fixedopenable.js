@@ -9,7 +9,6 @@ import Button from "@mui/material/Button";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-import MagneticNet from "../../../assets/Retractable Double Door/MagneticNet.png";
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";

@@ -7,15 +7,14 @@ import OpenableSingleDoorSystem from "../../assets/Retractable Double Door/Opena
 import SingleSliderWithTrack from "../../assets/Windows Accessories/SingleSlidingWithTrack.png";
 import OpenableWindowSystem from "../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import SlidingWindowSystem from "../../assets/Retractable Double Door/SlidingWindowSystem.png";
-import SlidingDoor from "../../assets/Windows Accessories/WindowSystem.png";
-import MESH from "../../assets/Magnetic Insect Screens/MESH.png";
 import Navbar_1 from "../Navbar_1/navbar_1";
-import RollerWindow from "../../assets/Windows Accessories/rollerwindow.png";
 import SlidingWindowMesh from "../../assets/Windows Accessories/slidingwindowmesh.png";
-import StainlessSteel from "../../assets/Magnetic Insect Screens/stainlesssteel.png";
+import MagneticInsect from "../../assets/Magnetic Insect Screens/magneticinsect.png";
 import OpenableDoubleDoor from "../../assets/Retractable Double Door/OpenableDoubleDoor.png";
 import OpenableMultiFoldDoor from "../../assets/Retractable Double Door/multifolddoor.png";
 import MultiSlidingDoor from "../../assets/Windows Accessories/MultiSlidingDoor.png";
+import Slidingdr from "../../assets/Windows Accessories/rollerdr.png";
+
 function OurProduct() {
   return (
     <>
@@ -36,28 +35,19 @@ function OurProduct() {
                         Magnetic Net With Fiber Glass Mesh
                       </h6>
                     </Link>
-                    <Link
-                      to="/stainlesssteelwithmesh"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <h6 className="names">
-                        {" "}
-                        Magnetic Net With Stainless Steel Mesh
-                      </h6>
-                    </Link>
                   </div>
                 </div>
               </div>
               <div className="LISTS_1 ms-5 ps-5">
                 <div className="row mt-5 justify-content-center product_list">
                   <div className="col-lg-4 col-md-6 col-sm-12 col-12 card_list">
-                    <div className="card-1 text-center ms-5">
+                    <div className="card-1 text-center">
                       <Link
                         to="/MagneticInsectScreens"
                         style={{ textDecoration: "none" }}
                       >
                         <img
-                          src={MESH}
+                          src={MagneticInsect}
                           alt=""
                           className="img-fluid  mt-2 pt-1"
                         ></img>
@@ -67,23 +57,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 card_list cc">
-                    <div className="card-1 text-center ms-5">
-                      <Link
-                        to="/stainlesssteelwithmesh"
-                        style={{ textDecoration: "none" }}
-                      >
-                        <img
-                          src={StainlessSteel}
-                          alt=""
-                          className="img-fluid  mt-2 pt-1"
-                        ></img>
-                        <h4 className="card1-title mt-4">
-                          Magnetic Net with<br></br> Stainless Steel Mesh
-                        </h4>
-                      </Link>
-                    </div>
-                  </div>
+                  <div className="col-4 text-center"></div>{" "}
                   <div className="col-4 text-center"></div>
                 </div>
               </div>
@@ -108,7 +82,7 @@ function OurProduct() {
                       to="/rollerdoubledoor"
                       style={{ textDecoration: "none" }}
                     >
-                      <h6 className="names">Retractable Roller Double Door</h6>
+                      <h6 className="names">Retractable Roller Door</h6>
                     </Link>
 
                     <Link to="/rollerwindow" style={{ textDecoration: "none" }}>
@@ -126,7 +100,7 @@ function OurProduct() {
                         style={{ textDecoration: "none" }}
                       >
                         <img
-                          src={RetractableDoubleDoor}
+                          src={RetractableRollerDoubleDoor}
                           alt=""
                           className="img-fluid  mt-2 pt-1"
                         ></img>
@@ -144,12 +118,12 @@ function OurProduct() {
                         style={{ textDecoration: "none" }}
                       >
                         <img
-                          src={RetractableRollerDoubleDoor}
+                          src={Slidingdr}
                           alt=""
                           className="img-fluid  mt-2 pt-1"
                         ></img>
                         <h4 className="card1-title mt-4">
-                          Retractable roller double<br></br> Door
+                          Retractable roller <br></br> Door
                         </h4>
                       </Link>
                     </div>
@@ -161,7 +135,7 @@ function OurProduct() {
                         style={{ textDecoration: "none" }}
                       >
                         <img
-                          src={RollerWindow}
+                         
                           alt=""
                           className="img-fluid  mt-2 pt-1"
                         ></img>
@@ -251,11 +225,11 @@ function OurProduct() {
                         to="/slidingdoor"
                         style={{ textDecoration: "none" }}
                       >
-                        <img
+                        {/* <img
                           src={SlidingDoor}
                           alt=""
                           className="img-fluid mt-2 pt-1"
-                        ></img>
+                        ></img> */}
                         <h4 className="card1-title mt-4">
                           Sliding <br></br>Door
                         </h4>
@@ -318,10 +292,13 @@ function OurProduct() {
                     <Link
                       to="/openablesingledr"
                       style={{ textDecoration: "none" }}
+                    ></Link>
+
+                    <Link
+                      to="/fixedopenable"
+                      style={{ textDecoration: "none" }}
                     >
-                      <h6 className="names">
-                        Openable Single Door <br></br>System
-                      </h6>
+                      <h6 className="names">Fixed Openable</h6>
                     </Link>
 
                     <Link
