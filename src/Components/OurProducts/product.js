@@ -14,7 +14,7 @@ import OpenableDoubleDoor from "../../assets/Retractable Double Door/OpenableDou
 import OpenableMultiFoldDoor from "../../assets/Retractable Double Door/multifolddoor.png";
 import MultiSlidingDoor from "../../assets/Windows Accessories/MultiSlidingDoor.png";
 import Slidingdr from "../../assets/Windows Accessories/rollerdr.png";
-
+import SlidingDoor from '../../assets/Retractable Double Door/slidingdoor.png';
 function OurProduct() {
   return (
     <>
@@ -225,11 +225,13 @@ function OurProduct() {
                         to="/slidingdoor"
                         style={{ textDecoration: "none" }}
                       >
-                        {/* <img
+                        <img
                           src={SlidingDoor}
                           alt=""
                           className="img-fluid mt-2 pt-1"
-                        ></img> */}
+                        ></img>
+
+
                         <h4 className="card1-title mt-4">
                           Sliding <br></br>Door
                         </h4>

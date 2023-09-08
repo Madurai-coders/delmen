@@ -15,8 +15,10 @@ import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuItem from "@mui/material/MenuItem";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-
 import Callback from "../../card_section/Callback";
+import SlidingVideo from "../../../assets/ProductsVideo/slidingdoor.mp4";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
 function SlidingDoor() {
   const [CallBackCard, setCallBackCard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -34,7 +36,18 @@ function SlidingDoor() {
                 <div className="row mt-5 cards_row">
                   <div className="col-5">
                     <div className="Card_1">
-                    {/*  */}
+                    <Video
+                    loop
+                    controls={[
+                      "PlayPause",
+                      "Seek",
+                      "Time",
+                      "Volume",
+                      "Fullscreen",
+                    ]}
+                  >
+                    <source src={SlidingVideo} type="video/webm" />
+                  </Video>
                   
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
