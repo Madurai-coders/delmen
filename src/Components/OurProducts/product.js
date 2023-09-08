@@ -296,12 +296,12 @@ function OurProduct() {
                       style={{ textDecoration: "none" }}
                     ></Link>
 
-                    <Link
+                    {/* <Link
                       to="/fixedopenable"
                       style={{ textDecoration: "none" }}
                     >
                       <h6 className="names">Fixed Openable</h6>
-                    </Link>
+                    </Link> */}
 
                     <Link
                       to="/openabledoubledoor"
