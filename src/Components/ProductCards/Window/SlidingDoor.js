@@ -36,19 +36,19 @@ function SlidingDoor() {
                 <div className="row mt-5 cards_row">
                   <div className="col-5">
                     <div className="Card_1">
-                    <Video
-                    loop
-                    controls={[
-                      "PlayPause",
-                      "Seek",
-                      "Time",
-                      "Volume",
-                      "Fullscreen",
-                    ]}
-                  >
-                    <source src={SlidingVideo} type="video/webm" />
-                  </Video>
-                  
+                      <Video
+                        loop
+                        controls={[
+                          "PlayPause",
+                          "Seek",
+                          "Time",
+                          "Volume",
+                          "Fullscreen",
+                        ]}
+                      >
+                        <source src={SlidingVideo} type="video/webm" />
+                      </Video>
+
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
                         <div className="Icons d-flex flex-row">
@@ -72,27 +72,35 @@ function SlidingDoor() {
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">Sliding Door System </h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
-                      <h5 className="Product_Title mt-4">
-                        Sliding Door System{" "}
-                      </h5>
                       <p className="Product_Exn mt-3">
-                        Sliding door system is made out of aluminium 2inch
-                        profiles . This system can be fabricated to your
-                        precised size as per your existing sliding door system.
-                        This system comes with stainless steel mesh grade 304
-                        and can be installed on your existing track or a track
-                        can be created adjacent to your sliding door system.
+                        Aluminum two-inch profiles are used to make the sliding
+                        door system.This system can be built to fit your exact
+                        specifications based on the sliding door system you
+                        currently have.This framework may be installed on your
+                        current track or a new track can be built next to your
+                        sliding door system.It comes with grade 304 stainless
+                        steel mesh.
                       </p>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
-                          The mesh and the system has high durability
+                          Both the mechanism and the mesh have high durability.
                         </li>
                         <li className="Product_Points">
-                          By having the mesh mounted very tight and firm on the
-                          profile , the transparency of the system is very high
+                          The system has a very high degree of transparency
+                          since the mesh is firmly and tightly attached to the
+                          profile.
                         </li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Color Options</p>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement. Our
+                        main-color options are listed below.
+                      </h6>
+                      <ul>
+                        <li className="Product_Points">White</li>
+                        <li className="Product_Points">Bronze</li>
+                        <li className="Product_Points">Wood finish</li>
                       </ul>
 
                       <div className="d-flex flex-row mt-5 pt-3">
@@ -138,30 +146,51 @@ function SlidingDoor() {
                   <h5 className="Product_Name ms-3">Sliding Door System</h5>
                 </div>
                 <div className="col-12 text-center mt-5">
-                 {/* video */}
+                 
+                    <Video
+                      loop
+                      controls={[
+                        "PlayPause",
+                        "Seek",
+                        "Time",
+                        "Volume",
+                        "Fullscreen",
+                      ]}
+                    >
+                      <source src={SlidingVideo} type="video/webm" />
+                    </Video>
+                 
                 </div>
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
-                <h5 className="Product_Title mt-4">Sliding Door System </h5>
                 <p className="Product_Exn mt-3">
-                  Sliding door system is made out of aluminium 2inch profiles .
-                  This system can be fabricated to your precised size as per
-                  your existing sliding door system. This system comes with
-                  stainless steel mesh grade 304 and can be installed on your
-                  existing track or a track can be created adjacent to your
-                  sliding door system.
+                  Aluminum two-inch profiles are used to make the sliding door
+                  system.This system can be built to fit your exact
+                  specifications based on the sliding door system you currently
+                  have.This framework may be installed on your current track or
+                  a new track can be built next to your sliding door system.It
+                  comes with grade 304 stainless steel mesh.
                 </p>
                 <p className="Product_Feature mt-5">Features</p>
                 <ul>
                   <li className="Product_Points">
-                    The mesh and the system has high durability
+                    Both the mechanism and the mesh have high durability.
                   </li>
                   <li className="Product_Points">
-                    By having the mesh mounted very tight and firm on the
-                    profile , the transparency of the system is very high
+                    The system has a very high degree of transparency since the
+                    mesh is firmly and tightly attached to the profile.
                   </li>
+                </ul>
+                <p className="Product_Feature mt-5">Color Options</p>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement. Our
+                  main-color options are listed below.
+                </h6>
+                <ul>
+                  <li className="Product_Points">White</li>
+                  <li className="Product_Points">Bronze</li>
+                  <li className="Product_Points">Wood finish</li>
                 </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
@@ -192,7 +221,6 @@ function SlidingDoor() {
               <h5 className="other_txt">
                 Other Products in 'Doors/Windows Accessories' category
               </h5>
-             
             </div>
             <div className="col-2"></div>
             {isCard_3 && (
@@ -228,7 +256,7 @@ function SlidingDoor() {
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                  Single Slider With Track
+                    Single Slider With Track
                   </h4>
                 </Link>
               </div>

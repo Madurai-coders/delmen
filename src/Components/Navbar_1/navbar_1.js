@@ -189,7 +189,7 @@ function Navbar_1() {
                               to="/openablesingledr"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Openable Door System</a>
+                              <a href="#">Openable Single Door System</a>
                             </Link>
                           </li>
                           {/* <li>
@@ -209,14 +209,14 @@ function Navbar_1() {
                               <a href="#">Openable Double Door</a>
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link
                               to="/openablemultifolddoor"
                               style={{ textDecoration: "none" }}
                             >
                               <a href="#">Openable MultiFold Door</a>
                             </Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
                     </ul>

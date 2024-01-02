@@ -75,22 +75,42 @@ function OpenableSingleDr() {
                         Openable Single Door System{" "}
                       </h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
-
-                      <h5 className="Product_Title mt-4">
-                        Openable Single Door System{" "}
-                      </h5>
                       <p className="Product_Exn mt-3">
-                        Open able Door It is custom Made for the existing Main
-                        door ,utility door as well Balcony Door, This product is
-                        mounted adjacent to your existing doors. It is assembled
-                        with 2" aluminum Profile with double SS screw Joints and
-                        SS 304 Mesh Rust Free. This system has removable hinges
-                        and it can be removed from the hinges to wash the door
-                        and fix back. This system sticks on magnetv while
-                        closing.
+                        Openable doors are custom made for the existing utility
+                        door, main door and balcony door.This product is mounted
+                        adjacent to your existing doors.It is assembled together
+                        by using a 2inch aluminum profile, double SS screw
+                        joints, and rust-free SS 304 mesh.This system sticks on
+                        the magnet while closing.
                       </p>
-
+                      <p className="Product_Feature mt-5">Features</p>
+                      <ul>
+                        <li className="Product_Points">Rust Free</li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Advantages</p>
+                      <ul>
+                        <li className="Product_Points">
+                          This system has removable hinges
+                        </li>
+                        <li className="Product_Points">
+                          It can be washed easily and fixed back without any
+                          issue
+                        </li>
+                        <li className="Product_Points">
+                          Excellent airflow as this system is specifically used
+                          for main doors, utility doors and balcony doors.
+                        </li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Color Options</p>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement. Our
+                        main-color options are listed below.
+                      </h6>
+                      <ul>
+                        <li className="Product_Points">White</li>
+                        <li className="Product_Points">Bronze</li>
+                        <li className="Product_Points">Wood finish</li>
+                      </ul>
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -153,19 +173,41 @@ function OpenableSingleDr() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
-                <h5 className="Product_Title mt-4">
-                  Openable Single Door System{" "}
-                </h5>
                 <p className="Product_Exn mt-3">
-                  Open able Door It is custom Made for the existing Main door
-                  ,utility door as well Balcony Door, This product is mounted
-                  adjacent to your existing doors. It is assembled with 2"
-                  aluminum Profile with double SS screw Joints and SS 304 Mesh
-                  Rust Free. This system has removable hinges and it can be
-                  removed from the hinges to wash the door and fix back. This
-                  system sticks on magnetv while closing.
+                  Openable doors are custom made for the existing utility door,
+                  main door and balcony door.This product is mounted adjacent to
+                  your existing doors.It is assembled together by using a 2inch
+                  aluminum profile, double SS screw joints, and rust-free SS 304
+                  mesh.This system sticks on the magnet while closing.
                 </p>
+                <p className="Product_Feature mt-5">Features</p>
+                      <ul>
+                        <li className="Product_Points">Rust Free</li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Advantages</p>
+                      <ul>
+                        <li className="Product_Points">
+                          This system has removable hinges
+                        </li>
+                        <li className="Product_Points">
+                          It can be washed easily and fixed back without any
+                          issue
+                        </li>
+                        <li className="Product_Points">
+                          Excellent airflow as this system is specifically used
+                          for main doors, utility doors and balcony doors.
+                        </li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Color Options</p>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement. Our
+                        main-color options are listed below.
+                      </h6>
+                      <ul>
+                        <li className="Product_Points">White</li>
+                        <li className="Product_Points">Bronze</li>
+                        <li className="Product_Points">Wood finish</li>
+                      </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button

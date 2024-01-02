@@ -74,31 +74,44 @@ function RollerDoubleDoor() {
                         Retractable Roller Door System
                       </h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
                       <p className="Product_Exn mt-3">
-                        Retractable Roller Door It is custom Made for the
-                        existing doors this product can be installed to existing
-                        utility door, balcony door & backyard doors, The system
-                        is fabricated with aluminum Profiles & Fiberglass mesh(
-                        Stiff mesh). It has a brush to clean the mesh every time
-                        you operate the system. Advantage of it is it does not
-                        take much space and never keeps hanging around it is a
-                        retractable system. It is easy to operate It gives very
-                        high transparency in the mesh it looks very good and
-                        Durable
+                        Retractable Roller Door System is specifically designed
+                        to fit the existing doors.This product can be installed
+                        on already-existing backyard doors, balcony doors, and
+                        utility doors.Fiberglass mesh (stiff mesh) and aluminum
+                        profiles are used in the fabrication of the system.
+                        Every time you use the system, a brush is incorporated
+                        to clean the mesh.
                       </p>
 
-                      <p className="Product_Feature mt-5">
-                        Advantage of the Roller door system:
-                      </p>
+                      <p className="Product_Feature mt-5">Advantages</p>
                       <ul>
                         <li className="Product_Points">
-                          This can be used on to any existing Doors, which is
-                          made out of wood UPVC or Aluminium
+                          It is a system that doesn't take up much space.
                         </li>
                         <li className="Product_Points">
-                          It can be operated from left to right or Right to left
+                          It's quite simple to use, provides a high level of
+                          transparency in the mesh, and has a nice, sturdy
+                          appearance.
                         </li>
+                        <li className="Product_Points">
+                          This system is compatible with any type of door,
+                          whether it is made of wood, UPVC, or aluminum.
+                        </li>
+                        <li className="Product_Points">
+                          It can be operated from left to right or right to
+                          left.
+                        </li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Color Options</p>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement. Our
+                        main-color options are listed below.
+                      </h6>
+                      <ul>
+                        <li className="Product_Points">White</li>
+                        <li className="Product_Points">Bronze</li>
+                        <li className="Product_Points">Wood finish</li>
                       </ul>
 
                       <div className="d-flex flex-row mt-5 pt-3">
@@ -159,30 +172,41 @@ function RollerDoubleDoor() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
                 <p className="Product_Exn mt-3">
-                  Retractable Roller Door It is custom Made for the existing
-                  doors this product can be installed to existing utility door,
-                  balcony door & backyard doors, The system is fabricated with
-                  aluminum Profiles & Fiberglass mesh( Stiff mesh). It has a
-                  brush to clean the mesh every time you operate the system.
-                  Advantage of it is it does not take much space and never keeps
-                  hanging around it is a retractable system. It is easy to
-                  operate It gives very high transparency in the mesh it looks
-                  very good and Durable
+                  Retractable Roller Door System is specifically designed to fit
+                  the existing doors.This product can be installed on
+                  already-existing backyard doors, balcony doors, and utility
+                  doors.Fiberglass mesh (stiff mesh) and aluminum profiles are
+                  used in the fabrication of the system. Every time you use the
+                  system, a brush is incorporated to clean the mesh.
                 </p>
 
-                <p className="Product_Feature mt-5">
-                  Advantage of the Roller door system:
-                </p>
+                <p className="Product_Feature mt-5">Advantages</p>
                 <ul>
                   <li className="Product_Points">
-                    This can be used on to any existing Doors, which is made out
-                    of wood UPVC or Aluminium
+                    It is a system that doesn't take up much space.
                   </li>
                   <li className="Product_Points">
-                    It can be operated from left to right or Right to left
+                    It's quite simple to use, provides a high level of
+                    transparency in the mesh, and has a nice, sturdy appearance.
                   </li>
+                  <li className="Product_Points">
+                    This system is compatible with any type of door, whether it
+                    is made of wood, UPVC, or aluminum.
+                  </li>
+                  <li className="Product_Points">
+                    It can be operated from left to right or right to left.
+                  </li>
+                </ul>
+                <p className="Product_Feature mt-5">Color Options</p>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement. Our
+                  main-color options are listed below.
+                </h6>
+                <ul>
+                  <li className="Product_Points">White</li>
+                  <li className="Product_Points">Bronze</li>
+                  <li className="Product_Points">Wood finish</li>
                 </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
@@ -213,7 +237,6 @@ function RollerDoubleDoor() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Door' category
               </h5>
-             
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
               <div className="otherproduct_card text-center ms-5">

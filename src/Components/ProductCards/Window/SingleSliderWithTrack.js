@@ -76,10 +76,7 @@ function SingleSliderWithTrack() {
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">Single Slider With Track</h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
-                      <h5 className="Product_Title mt-4">
-                        Single Slider With Track System{" "}
-                      </h5>
+                     
                       <p className="Product_Exn mt-3">
                         It is made out of 2Aluminium Profile with SS mesh It has
                         Felt Grove to arrest gaps in the contact surface It is
@@ -163,10 +160,7 @@ function SingleSliderWithTrack() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
-                <h5 className="Product_Title mt-4">
-                  Single Slider With Track System{" "}
-                </h5>
+               
                 <p className="Product_Exn mt-3">
                   It is made out of 2Aluminium Profile with SS mesh It has Felt
                   Grove to arrest gaps in the contact surface It is assembled

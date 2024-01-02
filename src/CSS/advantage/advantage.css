@@ -23,6 +23,9 @@
   text-transform: capitalize;
   color: #000000;
 }
+.pd{
+  padding: 0 250px;
+}
 .products_points {
   font-family: "Rubik";
   font-style: normal;
@@ -198,9 +201,13 @@
   }
   .products_points {
     font-size: 18px;
+    margin-top: 25px!important;
   }
   .products_details {
     font-size: 19px;
+  }
+  .pd{
+    padding: 0 170px;
   }
 }
 
@@ -228,6 +235,9 @@
   .homepage_menu {
     margin-left: 0px !important;
   }
+  .pd{
+    padding: 0 120px;
+  }
  
   .card-description {
     font-size: 13px;
@@ -249,9 +259,7 @@
   .products-des{
     padding-top: 10px!important;
   }
-  .products_details {
-    padding: 0 10px;
-  }
+
   .ourproducts-title {
     padding: 0 10px;
     margin-top: 0px !important;
@@ -290,16 +298,18 @@
 
 @media only screen and (max-width: 767px) {
   .ourproducts-title{
-    font-size: 47px;
+    font-size: 38px;
   }
   .products_details{
-    padding-left: 90px;
-    padding-right: 50px;
     font-size: 19px;
 
   }
   .products_points{
     margin-left: 80px;
+    font-size: 16px;
+  }
+  .pd{
+    padding: 0 20px;
   }
   .aa{
     margin-top: -50px!important;
@@ -317,6 +327,7 @@
   }
   .infrastructure_title{
     padding-top: 0px!important;
+    font-size: 38px;
   }
   .advantage_quotes{
     margin-top: 0px!important;
@@ -337,23 +348,24 @@
   .Quality_img{
     height: 240px;
   }
+  .pd{
+    margin-left: 0px!important;
+  }
+  .products_points{
+margin-left: 60px!important;
+  }
 }
 @media only screen and (max-width: 568px) {
   .ourproducts-title{
-    font-size: 40px;
+    font-size: 35px;
   }
   .products_details{
-    padding-left: 30px;
-    padding-right: 30px;
     font-size: 16px;
-
+margin-left: 20px!important;
   }
-  .Products_Points{
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+ 
   .products_points{
-    margin-left: 10px;
+   margin-left: 20px!important;
     margin-top: 20px!important;
     line-height: 130%;
   }
@@ -385,7 +397,7 @@
     line-height: 25px;
   }
   .infrastructure_title{
-    font-size: 30px;
+    font-size: 35px;
   }
   .infrastructure_title{
     margin-top: 20px!important;
@@ -393,16 +405,21 @@
   .advantage_quotes{
     font-size: 16px;
   }
+  .pd{
+    padding: 0 10px;
+  }
 }
 
 
 @media only screen and (max-width: 361px) {
   .ourproducts-title{
-    font-size: 37px;
+    font-size: 34px;
+  }
+  .infrastructure_title{
+    font-size: 34px;
   }
   .products_details{
-    padding-left: 20px;
-    padding-right: 20px;
+   
     font-size: 15px;
 
   }

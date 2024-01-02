@@ -67,7 +67,7 @@ function RetractableDoubleDoor() {
                 <div className="row mt-5 cards_row">
                   <div className="col-5">
                     <div className="Card_1">
-                    <Video
+                      <Video
                         loop
                         controls={[
                           "PlayPause",
@@ -104,28 +104,41 @@ function RetractableDoubleDoor() {
                         Retractable Double Door System
                       </h5>
                       <div></div>
-                      <h5 className="product_des mt-4">product description</h5>
-                      <h5 className="Product_Title mt-4">
-                        Double Retractable Roller Door{" "}
-                      </h5>
+
                       <p className="Product_Exn mt-3">
-                        We are specialized in manufacturing superior quality
-                        double doors, which can be mounted to your existing
-                        french windows. This system comes with only fiber glass mesh (stiff mesh) . The maximum size which can be fabricated
-                        (Hieght 3000mm x Width 3500mm )This system works
-                        vertically from left to Right or Right to Left
+                        Our specialty is producing top-notch double doors that
+                        may be installed on your existing French doors. This
+                        system can only be designed with fiber glass mesh (stiff
+                        mesh).The largest size that may be produced is 3metre by
+                        3.5metre in height and width. This mechanism has a
+                        magnet in the middle to secure it.
                       </p>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
-                          It doesnt take any additional space. Mounted with 2 inch box section , left and right side vertically.
+                          Mounted vertically on the left and right sides using a
+                          2-inch box section
                         </li>
-                        <li className="Product_Points">
-                          Easy to operate
-                        </li>
-                        <li className="Product_Points">Hassle Free</li>
                       </ul>
-                    
+                      <p className="Product_Feature mt-5">Advantages</p>
+                      <ul>
+                        <li className="Product_Points">Easy to operate</li>
+                        <li className="Product_Points">Hassel free</li>
+                        <li className="Product_Points">
+                          It does not take any additional space.
+                        </li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Color Options</p>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement. Our
+                        main-color options are listed below.
+                      </h6>
+                      <ul>
+                        <li className="Product_Points">White</li>
+                        <li className="Product_Points">Bronze</li>
+                        <li className="Product_Points">Wood finish</li>
+                      </ul>
+
                       <div className="d-flex flex-row">
                         <Button
                           variant="outlined"
@@ -172,44 +185,55 @@ function RetractableDoubleDoor() {
                   </h5>
                 </div>
                 <div className="col-12 text-center mt-5">
-                <Video
-                        loop
-                        controls={[
-                          "PlayPause",
-                          "Seek",
-                          "Time",
-                          "Volume",
-                          "Fullscreen",
-                        ]}
-                      >
-                        <source src={RollerDoubleDrVideo} type="video/webm" />
-                      </Video>
+                  <Video
+                    loop
+                    controls={[
+                      "PlayPause",
+                      "Seek",
+                      "Time",
+                      "Volume",
+                      "Fullscreen",
+                    ]}
+                  >
+                    <source src={RollerDoubleDrVideo} type="video/webm" />
+                  </Video>
                 </div>
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
-                <h5 className="Product_Title mt-4">
-                  Double Retractable Roller Door{" "}
-                </h5>
                 <p className="Product_Exn mt-3">
-                        We are specialized in manufacturing superior quality
-                        double doors, which can be mounted to your existing
-                        french windows. This system comes with only fiber glass mesh (stiff mesh) . The maximum size which can be fabricated
-                        (Hieght 3000mm x Width 3500mm )This system works
-                        vertically from left to Right or Right to Left
-                      </p>
-                      <p className="Product_Feature mt-5">Features</p>
-                      <ul>
-                        <li className="Product_Points">
-                          It doesnt take any additional space. Mounted with 2 inch box section , left and right side vertically.
-                        </li>
-                        <li className="Product_Points">
-                          Easy to operate
-                        </li>
-                        <li className="Product_Points">Hassle Free</li>
-                      </ul>                
-              
+                  Our specialty is producing top-notch double doors that may be
+                  installed on your existing French doors. This system can only
+                  be designed with fiber glass mesh (stiff mesh).The largest
+                  size that may be produced is 3metre by 3.5metre in height and
+                  width. This mechanism has a magnet in the middle to secure it.
+                </p>
+                <p className="Product_Feature mt-5">Features</p>
+                <ul>
+                  <li className="Product_Points">
+                    Mounted vertically on the left and right sides using a
+                    2-inch box section
+                  </li>
+                </ul>
+                <p className="Product_Feature mt-5">Advantages</p>
+                <ul>
+                  <li className="Product_Points">Easy to operate</li>
+                  <li className="Product_Points">Hassel free</li>
+                  <li className="Product_Points">
+                    It does not take any additional space.
+                  </li>
+                </ul>
+
+                <p className="Product_Feature mt-5">Color Options</p>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement. Our
+                  main-color options are listed below.
+                </h6>
+                <ul>
+                  <li className="Product_Points">White</li>
+                  <li className="Product_Points">Bronze</li>
+                  <li className="Product_Points">Wood finish</li>
+                </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -239,7 +263,6 @@ function RetractableDoubleDoor() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Double Door' category
               </h5>
-             
             </div>
             {isCard_1 && (
               <>

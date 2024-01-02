@@ -1,7 +1,7 @@
 import "../../CSS/homepage/weare.css";
 import Since from "../../assets/HomePage/about.svg";
 import { Link } from "react-router-dom";
-import '../script/script';
+import "../script/script";
 function Weare() {
   return (
     <>
@@ -12,27 +12,26 @@ function Weare() {
           </div>
           <div className="col-9">
             <div className="aboutus d-flex flex-column mt-5 pt-5 ms-2">
-              <h2 className="about_title mt-5">WHO WE ARE?</h2>
+              <h2 className="about_title mt-5">ABOUT US</h2>
               <div className="about_content mt-4">
                 <p className="about_des">
-                  We, Delmen Mosquito ScreensTM, started our business in the
-                  year 1999. We are the first people to introduce magnetic
-                  mosquito nets in India to offer quality products and have
-                  become one of the most trusted manufacturers, importers and
-                  suppliers of Magnetic Insect Screens and Retractable Roller
-                  System for existing Windows and Doors.
+                  Our company, Delmen Mosquito ScreensTM, was founded in 1999.
+                  We are the first in India to introduce magnetic mosquito nets,
+                  and we have since grown to become one of the most reputable
+                  manufacturers of Magnetic Insect Screens, retractable roller
+                  systems and sliding and openable system for Windows and Doors.
                 </p>
 
                 <p className="about_des1">
-                  We are expertise in designing insects screens, which can be
-                  installed over the Windows and Doors to restrict unwanted
-                  entry of mosquitoes and insects. In pursuit of excellence, we
-                  always perform product development in close interaction with
-                  the market and ensure that our products meet the specific
-                  requirements of the customers. Our team of product development
-                  is on continual mission to review the existing products and
-                  improve/substitute them with superior alternatives as
-                  available.
+                  Customized, end to end solutions for insect screens are
+                  offered by Delmen Mosquito Screens. We specialize in
+                  installing mosquito screens for doors and windows. We
+                  constantly conduct product development in close consultation
+                  with the market in an effort to achieve perfection, making
+                  sure that our products and services meet the specific
+                  requirements of our clients. Our product development team is
+                  on continual mission to review the existing products and
+                  improvise them with superior alternatives as available.
                 </p>
                 <Link
                   to={{

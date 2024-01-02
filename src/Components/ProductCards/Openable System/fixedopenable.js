@@ -75,11 +75,7 @@ function FixedOpenable() {
                         Fixed Openable Window System{" "}
                       </h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
-
-                      <h5 className="Product_Title mt-4">
-                      Fixed Openable Window System{" "}
-                      </h5>
+                  
                       <p className="Product_Exn mt-3">
                         This is made out of 1 inch profile and with stainless steel mesh . This can be removed
                         and washed and refixed. It has magnetic strip right around the frame and a magnetic strip will be pasted around

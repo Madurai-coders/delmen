@@ -180,6 +180,15 @@
   letter-spacing: 0.045em;
   color: #000000;
 }
+.product_customize{
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 136%;
+  letter-spacing: 0.045em;
+  color: #000000; 
+}
 .Product_Points {
   font-family: "Rubik";
   font-style: normal;

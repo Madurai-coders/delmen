@@ -40,7 +40,7 @@ function App() {
                 path="/companyprofile"
                 element={<CompanyProfile />}
               ></Route>
-              <Route path="/fixedopenable" element={<FixedOpenable />}></Route>
+              {/* <Route path="/fixedopenable" element={<FixedOpenable />}></Route> */}
 
               <Route
                 path="/magneticinsectscreens"
@@ -90,10 +90,10 @@ function App() {
                 element={<OpenableDoubleDoor />}
               ></Route>
 
-              <Route
+              {/* <Route
                 path="/openablemultifolddoor"
                 element={<OpenableMultiFold />}
-              ></Route>
+              ></Route> */}
             </Routes>
           </BrowserRouter>
         </div>

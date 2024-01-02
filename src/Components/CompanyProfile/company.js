@@ -27,18 +27,46 @@ function Company() {
           <div className="row justify-content-center mt-5 cards_row">
             {isTab && (
               <>
-                <div className="col-lg-5 col-md-4 text-center mt-5">
-                  <img src={Ourproducts} alt="" className="img-fluid"></img>
+                <div className="col-12 text-center">
+                  <h2 className="infrastructure_title mt-5 pt-5">
+                    Our Infrastructure
+                  </h2>
                 </div>
-                <div className="col-lg-6 col-md-7 col-sm-12 col-12 mt-5">
-                  <div className="products-des me-5 pt-5">
-                    <h4 className="ourproducts-title mt-5">Our Products</h4>
-                    <p className="products_details mt-4">
-                      Our cost down production techniques and streamlined
-                      production process ensure products at the most affordable
-                      rates to the customers. Our premium quality products are
+                <div className="col-11 text-center mt-4">
+                  <div className="infras">
+                    <h5 className="in">
+                      Our infrastructure enables us to successfully and
+                      efficiently manage our business operations.
+                    </h5>
+                    <p className="infrastructure_des mt-4">
+                      Our production unit is equipped with cutting edge
+                      machinery such as slot milling, drilling, and cut-off
+                      equipment. The company has established a trustworthy track
+                      record in the global industry because of the efforts of
+                      its trained team of professionals and skilled workforce
+                      led by an efficient and quality conscious management.
                     </p>
-                    <ul className="mt-4 Products_Points">
+                  </div>
+                </div>
+                {/* <div className="col-lg-5 col-md-4 text-center mt-5">
+                  <img src={Ourproducts} alt="" className="img-fluid"></img>
+                </div> */}
+                <div className="col-12 mt-5">
+                  <div className="products-des pt-5">
+                    <h4 className="ourproducts-title mt-5 text-center me-5">
+                      Our Products
+                    </h4>
+                  </div>
+                </div>
+                <div className="col-12 mt-5">
+                  <div className="pd">
+                    <p className="products_details ms-4">
+                      Our streamlined production process and cost-cutting
+                      techniques guarantee that customers receive products at
+                      the most affordable possible prices. Our premium quality
+                      products include:
+                    </p>
+                    <ul className="mt-4 Products_Points ms-5">
                       <li className="products_points">
                         Magnetic Insect Screens (With fiber glass mesh)
                       </li>
@@ -60,18 +88,38 @@ function Company() {
             )}
             {isMobile && (
               <>
+                <div className="col-12 text-center">
+                  <h2 className="infrastructure_title mt-5 pt-5">
+                    Our Infrastructure
+                  </h2>
+                </div>
+                <div className="col-10 text-center mt-4">
+                  <div className="infras">
+                    <p className="infrastructure_des">
+                      Our infrastructure enables us to successfully and
+                      efficiently manage our business operations. Our production
+                      unit is equipped with cutting edge machinery such as slot
+                      milling, drilling, and cut-off equipment. The company has
+                      established a trustworthy track record in the global
+                      industry because of the efforts of its trained team of
+                      professionals and skilled workforce led by an efficient
+                      and quality conscious management.
+                    </p>
+                  </div>
+                </div>
                 <div className="col-12 mt-5 text-center">
                   <h4 className="ourproducts-title mt-5">Our Products</h4>
                 </div>
-                <div className="col-12 text-center mt-5">
+                {/* <div className="col-12 text-center mt-5">
                   <img src={Ourproducts} alt="" className="img-fluid"></img>
-                </div>
+                </div> */}
                 <div className="col-12 mt-3">
-                  <div className="products-des">
-                    <p className="products_details mt-4">
-                      Our cost down production techniques and streamlined
-                      production process ensure products at the most affordable
-                      rates to the customers. Our premium quality
+                  <div className="pd">
+                    <p className="products_details mt-4 ms-5">
+                      Our streamlined production process and cost-cutting
+                      techniques guarantee that customers receive products at
+                      the most affordable possible prices. Our premium quality
+                      products include:
                     </p>
                     <ul className="mt-5 Products_Points">
                       <li className="products_points">
@@ -93,7 +141,7 @@ function Company() {
               </>
             )}
 
-            <div className="col-12 text-center">
+            {/* <div className="col-12 text-center">
               <h2 className="infrastructure_title mt-5 pt-5">
                 Our Infrastructure
               </h2>
@@ -110,7 +158,7 @@ function Company() {
                   by an efficient and quality conscious management.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="col-10 text-center">
               <p className="advantage_quotes mt-5 pt-5">

@@ -8,7 +8,7 @@ import OpenableMulti from "../../assets/Retractable Double Door/multifolddoor.pn
 import RollerDoor from "../../assets/Windows Accessories/rollerdr.png";
 import SlidingDoor from "../../assets/Retractable Double Door/slidingdoor.png";
 import SlidingWindow from "../../assets/Retractable Double Door/SlidingWindowSystem.png";
-
+import OpenableWindow from '../../assets/Retractable Double Door/OpenableWindowSystem.png';
 import { Link } from "react-router-dom";
 function Products() {
   return (
@@ -123,15 +123,15 @@ function Products() {
               </div>
               <div class="img-container text-center">
                 <Link
-                  to="/openablemultifolddoor"
+                  to="/openablewindow"
                   style={{ textDecoration: "none" }}
                 >
                   <img
-                    src={OpenableMulti}
+                    src={OpenableWindow }
                     alt=""
                     className="img-fluid zoom-img mt-4"
                   ></img>
-                  <div class="hover-text txt1">Openable Folding Door</div>
+                  <div class="hover-text txt1">Openable Window</div>
                 </Link>
               </div>
             </div>

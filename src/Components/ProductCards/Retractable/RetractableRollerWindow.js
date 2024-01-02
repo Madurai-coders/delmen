@@ -74,7 +74,6 @@ function RollerWindow() {
                         Retractable Roller Window
                       </h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
                       <p className="Product_Exn mt-3">
                         Roller window this product can be installed on the
                         existing wooden windows as well on UPVC Casement windows
@@ -84,7 +83,7 @@ function RollerWindow() {
                       </p>
 
                       <p className="Product_Feature mt-5">
-                        Advantage of the Roller Window system:
+                        Advantages
                       </p>
                       <ul>
                         <li className="Product_Points">
@@ -159,10 +158,7 @@ function RollerWindow() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
-                <h5 className="Product_Title mt-4">
-                  Retractable Roller Window{" "}
-                </h5>
+               
                 <p className="Product_Exn mt-3">
                   Roller window this product can be installed on the existing
                   wooden windows as well on UPVC Casement windows advantage of
@@ -170,7 +166,7 @@ function RollerWindow() {
                   the roll form inside the net box This Product comes with
                   Fiberglass Stiff mesh only
                   <p className="Product_Feature mt-5">
-                    Advantage of the Roller Window system:
+                    Advantage
                   </p>
                   <ul>
                     <li className="Product_Points">

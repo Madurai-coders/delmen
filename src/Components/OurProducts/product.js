@@ -14,7 +14,7 @@ import OpenableDoubleDoor from "../../assets/Retractable Double Door/OpenableDou
 import OpenableMultiFoldDoor from "../../assets/Retractable Double Door/multifolddoor.png";
 import MultiSlidingDoor from "../../assets/Windows Accessories/MultiSlidingDoor.png";
 import Slidingdr from "../../assets/Windows Accessories/rollerdr.png";
-import SlidingDoor from '../../assets/Retractable Double Door/slidingdoor.png';
+import SlidingDoor from "../../assets/Retractable Double Door/slidingdoor.png";
 function OurProduct() {
   return (
     <>
@@ -134,11 +134,7 @@ function OurProduct() {
                         to="/rollerwindow"
                         style={{ textDecoration: "none" }}
                       >
-                        <img
-                         
-                          alt=""
-                          className="img-fluid  mt-2 pt-1"
-                        ></img>
+                        <img alt="" className="img-fluid  mt-2 pt-1"></img>
                         <h4 className="card1-title mt-4">
                           Retractable roller Window
                         </h4>
@@ -178,6 +174,12 @@ function OurProduct() {
                       style={{ textDecoration: "none" }}
                     >
                       <h6 className="names">Sliding Window Mesh</h6>
+                    </Link>
+                    <Link
+                      to="/slidingwindowmesh"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <h6 className="names">Multi Sliding Door</h6>
                     </Link>
                   </div>
                 </div>
@@ -230,7 +232,6 @@ function OurProduct() {
                           alt=""
                           className="img-fluid mt-2 pt-1"
                         ></img>
-
 
                         <h4 className="card1-title mt-4">
                           Sliding <br></br>Door
@@ -294,15 +295,11 @@ function OurProduct() {
                     <Link
                       to="/openablesingledr"
                       style={{ textDecoration: "none" }}
-                    ></Link>
-
-                    {/* <Link
-                      to="/fixedopenable"
-                      style={{ textDecoration: "none" }}
                     >
-                      <h6 className="names">Fixed Openable</h6>
-                    </Link> */}
-
+                      <h6 className="names">
+                        Openable Single Door<br></br>System
+                      </h6>
+                    </Link>
                     <Link
                       to="/openabledoubledoor"
                       style={{ textDecoration: "none" }}
@@ -311,14 +308,22 @@ function OurProduct() {
                         Openable Double Door<br></br>System
                       </h6>
                     </Link>
-                    <Link
+                    {/* <Link
+                      to="/fixedopenable"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <h6 className="names">Fixed Openable</h6>
+                    </Link> */}
+
+                   
+                    {/* <Link
                       to="/openablemultifolddoor"
                       style={{ textDecoration: "none" }}
                     >
                       <h6 className="names">
                         Openable MultiFold Door<br></br>System
                       </h6>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -375,7 +380,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc mt-5">
+                  {/* <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc mt-5">
                     <div className="card-1 text-center ms-5">
                       <Link
                         to="/openablemultifolddoor"
@@ -391,9 +396,8 @@ function OurProduct() {
                         </h4>
                       </Link>
                     </div>
-                  </div>
-                  <div className="col-4"></div>
-                  <div className="col-4"></div>
+                  </div> */}
+                  
                 </div>
               </div>
             </div>

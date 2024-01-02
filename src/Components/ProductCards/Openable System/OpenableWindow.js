@@ -75,16 +75,7 @@ function OpenableWindow() {
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">Openable Window System</h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
-                      <p className="Product_Exn mt-3">
-                        Open able window It is custom-made for existing windows,
-                        It can be mounted on wooden windows as well on the
-                        aluminum Frames this product is assembled with 1"
-                        aluminum Profile.
-                      </p>
-                      <h5 className="Product_Title mt-4">
-                        Openable Window System
-                      </h5>
+                     
                       <p className="Product_Exn mt-3">
                         It is 45 degree cut and joined with SS screws, The use
                         304 SS Mesh rust free .Advantage of the product it can
@@ -152,13 +143,7 @@ function OpenableWindow() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
-                <p className="Product_Exn mt-3">
-                  . Open able window It is custom-made for existing windows, It
-                  can be mounted on wooden windows as well on the aluminum
-                  Frames this product is assembled with 1" aluminum Profile.
-                </p>
-                <h5 className="Product_Title mt-4">Openable Window System</h5>
+               
                 <p className="Product_Exn mt-3">
                   It is 45 degree cut and joined with SS screws, The use 304 SS
                   Mesh rust free .Advantage of the product it can be removed

@@ -8,7 +8,6 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 147%;
-  text-align: center;
   letter-spacing: 0.075em;
   text-transform: capitalize;
   color: #000000;
@@ -27,8 +26,47 @@
   text-transform: capitalize;
   color: #000000;
 }
+.about_delmen2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 147%;
+  text-align: center;
+  letter-spacing: 0.075em;
+  text-transform:uppercase;
+  color: #000000;
+}
+.advantages_points {
+  list-style: none;
+  font-size: 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+text-align: start;
+margin-top: 7px;
+}
+
+
+.advantages_points::before {
+  content: '\2022'; /* Unicode character for a bullet point */
+  display: inline-block;
+  width: 1em; /* Adjust the width to control spacing between the bullet and text */
+  
+}
+
+.advatanges_txt{
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 147%;
+  letter-spacing: 0.075em;
+  text-transform:uppercase;
+  color: #000000;
+}
 .design_1 {
-  margin-top: 250px;
+  margin-top: 600px;
 }
 .Mesh_title {
   font-family: "Rubik";
@@ -217,15 +255,15 @@
 }
 @media only screen and (max-width: 760px) {
   .about_delmen {
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 0px !important;
   }
   .about_delmen1 {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .design_1 {
-    margin-top: 290px;
+    margin-top: 660px;
   }
   .Mesh_title {
     font-size: 11px;
@@ -270,16 +308,26 @@
 
 @media only screen and (max-width: 576px) {
   .about_delmen {
-    font-size: 11px;
+    font-size: 15px;
     padding-top: 10px !important;
   }
   .about_delmen1 {
-    font-size: 11px;
+    font-size: 15px;
     margin-top: 20px !important;
   }
-
+  .about_delmen2 {
+    font-size: 19px;
+  }
+  .advantages_points{
+   margin-top: 15px!important;
+  
+  }
+  .advatanges_txt{
+    text-align: center;
+  }
+ 
   .design_1 {
-    margin-top: 220px;
+    margin-top: 640px;
   }
   .Mesh_title {
     font-weight: 400;
@@ -319,7 +367,14 @@
     display: none;
   }
 }
-
+@media only screen and (max-width: 480px) {
+  .design_1 {
+    margin-top: 780px;
+  } 
+  .about_delmen2 {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 414px) {
   .about_delmen1 {
     font-size: 9px;
@@ -328,10 +383,14 @@
   .about_delmen {
     font-size: 9px;
     font-weight: 400;
+    margin-top: 0px!important;
   }
-
+  .about_delmen2 {
+    font-size: 15px;
+    margin-top: 26px!important;
+  }
   .design_1 {
-    margin-top: 160px;
+    margin-top: 500px;
   }
   .Delmen {
     padding: 5px 0px;

@@ -71,30 +71,36 @@ function SlidingWindowSystem() {
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">Sliding Window System </h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
-                      <h5 className="Product_Title mt-4">
-                        Sliding Window System{" "}
-                      </h5>
                       <p className="Product_Exn mt-3">
-                        Sliding Window can be installed to your existing sliding
-                        window either inside the house or outside the house. It
-                        can be mounted with your existing track or we can create
-                        a track adjacent to your sliding system.
+                        The sliding window is a feasible system which can be
+                        installed to your existing sliding window or we have an
+                        option of creating a track adjacent to your sliding
+                        system. You may install this system both inside and
+                        outside of your home.
                       </p>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
+                        <li className="Product_Points">Hassle-free system </li>
+                        <li className="Product_Points">No screws are fixed</li>
                         <li className="Product_Points">
-                          Hassle-free fixed without any screws
+                          The mesh is made of 304-grade stainless steel, which
+                          is rust-free and durable.
                         </li>
                         <li className="Product_Points">
-                          Locked only with silicon and it has felt groves to
-                          make sure there is no gaps between the glass track and
-                          the mesh track
+                          Our sliding system has felt grove to ensure that there
+                          are no spaces between the mesh track and the glass
+                          track.
                         </li>
-                        <li className="Product_Points">
-                          The mesh is with stainless steel 304 grade , rust
-                          free, long lasting
-                        </li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Color Options</p>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement. Our
+                        main-color options are listed below.
+                      </h6>
+                      <ul>
+                        <li className="Product_Points">White</li>
+                        <li className="Product_Points">Bronze</li>
+                        <li className="Product_Points">Wood finish</li>
                       </ul>
 
                       <div className="d-flex flex-row mt-5 pt-3">
@@ -154,27 +160,34 @@ function SlidingWindowSystem() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
-                <h5 className="Product_Title mt-4">Sliding Window System </h5>
                 <p className="Product_Exn mt-3">
-                  Sliding Window can be installed to your existing sliding
-                  window either inside the house or outside the house. It can be
-                  mounted with your existing track or we can create a track
-                  adjacent to your sliding system.
+                  The sliding window is a feasible system which can be installed
+                  to your existing sliding window or we have an option of
+                  creating a track adjacent to your sliding system. You may
+                  install this system both inside and outside of your home.
                 </p>
                 <p className="Product_Feature mt-5">Features</p>
                 <ul>
+                  <li className="Product_Points">Hassle-free system </li>
+                  <li className="Product_Points">No screws are fixed</li>
                   <li className="Product_Points">
-                    Hassle-free fixed without any screws
+                    The mesh is made of 304-grade stainless steel, which is
+                    rust-free and durable.
                   </li>
                   <li className="Product_Points">
-                    Locked only with silicon and it has felt groves to make sure
-                    there is no gaps between the glass track and the mesh track
+                    Our sliding system has felt grove to ensure that there are
+                    no spaces between the mesh track and the glass track.
                   </li>
-                  <li className="Product_Points">
-                    The mesh is with stainless steel 304 grade , rust free, long
-                    lasting
-                  </li>
+                </ul>
+                <p className="Product_Feature mt-5">Color Options</p>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement. Our
+                  main-color options are listed below.
+                </h6>
+                <ul>
+                  <li className="Product_Points">White</li>
+                  <li className="Product_Points">Bronze</li>
+                  <li className="Product_Points">Wood finish</li>
                 </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
@@ -227,7 +240,7 @@ function SlidingWindowSystem() {
                 </div>
               </>
             )}
-           <div className="col-lg-3 col-md-4 col-sm-4 col-10 text-center mt-5">
+            <div className="col-lg-3 col-md-4 col-sm-4 col-10 text-center mt-5">
               <div className="otherproduct_card text-center">
                 <Link
                   to="/singlesliderwithtrack"
@@ -239,12 +252,11 @@ function SlidingWindowSystem() {
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                  Single Slider With Track
+                    Single Slider With Track
                   </h4>
                 </Link>
               </div>
             </div>
-
           </div>
         </div>
 

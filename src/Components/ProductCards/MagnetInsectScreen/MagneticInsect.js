@@ -69,23 +69,39 @@ function MagneticInsect() {
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">Magnetic Insect Screens</h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
+                      {/* <h5 className="product_des mt-4">product description</h5>
                       <h5 className="Product_Title mt-4">
                         Magnetic Insect Screens
-                      </h5>
+                      </h5> */}
                       <p className="Product_Exn mt-3">
-                        Magnetic Insect screen is fabricated with fiber glass
-                        mesh and it is custom made for existing windows made out
-                        of wooden , aluminium or UPVC . They form a complete
-                        seal around the window using flexible magnetic strip
-                        with fiber glass mesh. This product has no wrinkles,
-                        dust accumulation or does not sag when installed.
+                        Magnetic Insect Screen is fabricated with fiber glass
+                        mesh. It is specifically designed to fit existing
+                        wooden, aluminum, or UPVC windows. Using a flexible
+                        magnetic strip with fiber glass mesh, they create a
+                        complete seal around the window.
                       </p>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
-                          Easy to clean and fix back to window
+                          Easy to clean and reattach it back to on window
                         </li>
+                        <li className="Product_Points">
+                          No wrinkles on the mesh
+                        </li>
+                        <li className="Product_Points">
+                          No dust accumulation due to no static charge in fiber
+                          glass mesh.
+                        </li>
+                        <li className="Product_Points">Does not sag</li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Color Options</p>
+
+                      <ul>
+                        <li className="Product_Points">Black</li>
+                        <li className="Product_Points">White</li>
+                        <h6 className="Product_Featur">
+                          Can be customized as per the client’s requirement.
+                        </h6>
                       </ul>
 
                       <div className="d-flex flex-row mt-5 pt-3">
@@ -131,18 +147,18 @@ function MagneticInsect() {
                   <h5 className="Product_Name ms-5">Magnetic Insect Screens</h5>
                 </div>
                 <div className="col-12 text-center mt-5">
-                <Video
-                        loop
-                        controls={[
-                          "PlayPause",
-                          "Seek",
-                          "Time",
-                          "Volume",
-                          "Fullscreen",
-                        ]}
-                      >
-                        <source src={MagneticInsectVideo} type="video/webm" />
-                      </Video>
+                  <Video
+                    loop
+                    controls={[
+                      "PlayPause",
+                      "Seek",
+                      "Time",
+                      "Volume",
+                      "Fullscreen",
+                    ]}
+                  >
+                    <source src={MagneticInsectVideo} type="video/webm" />
+                  </Video>
                 </div>
               </div>
 

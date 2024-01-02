@@ -81,15 +81,7 @@ function SlidingWindowMesh() {
                         Sliding Window Mesh System
                       </h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
-                      <p className="Product_Exn mt-3">
-                        Sliding Window Mesh it is custom made for the existing
-                        sliding window.we can create track adjacent to your
-                        existing window
-                      </p>
-                      <h5 className="Product_Title mt-4">
-                        Sliding Window System
-                      </h5>
+                    
                       <p className="Product_Exn mt-3">
                         It is made out of 2Aluminium Profile with SS 304 mesh It
                         has Felt Grove to arrest gaps in the contact surface It
@@ -164,16 +156,7 @@ function SlidingWindowMesh() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
-                <p className="Product_Exn mt-3">
-                  Sliding Window Mesh it is custom made for the existing sliding
-                  window.we can create track adjacent to your existing window
-                </p>
-                <p className="Product_Exn mt-3">
-                  Sliding Window Mesh System it is custom made for existing
-                  Sliding Window.
-                </p>
-                <h5 className="Product_Title mt-4">Sliding Window System</h5>
+       
                 <p className="Product_Exn mt-3">
                   It is made out of 2Aluminium Profile with SS 304 mesh It has
                   Felt Grove to arrest gaps in the contact surface It is

@@ -7,8 +7,8 @@ function Main() {
     <>
 
       <Landingpage />
-      <OurProducts />
       <WeAre />
+      <OurProducts />
       <Footer />
       
     </>

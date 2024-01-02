@@ -76,31 +76,35 @@ function OpenableDoubleDoor() {
                         Openable Double Door System
                       </h5>
 
-                      <h5 className="product_des mt-4">product description</h5>
                       <p className="Product_Exn mt-3">
-                        Openable Door it is custom made for the existing Main
-                        Door, utility door, as well balcony
-                      </p>
-                      <h5 className="Product_Title mt-4">
-                        Openable Double Door System
-                      </h5>
-                      <p className="Product_Exn mt-3">
-                        It is made out of 2 inch Aluminium Profile with SS 304
-                        mesh It has Felt Grove to arrest gaps in the contact
-                        surface. Easy to operate and remove the system for a
-                        wash
+                        Custom made for the existing main door, utility door and
+                        balcony door.It has a felt grove to stop gaps in the
+                        contact surface and is constructed from a 2-inch
+                        aluminum profile with SS 304 mesh. If this product has
+                        to be used for main door (which has a double door) in
+                        such cases, it is advisable to use this openable double
+                        fold door system.This system is recommended for doors
+                        having width above 4 feet.
                       </p>
 
                       <p className="Product_Feature mt-5">
-                        Advantage of the Openable double door system:
+                        Advantages
                       </p>
                       <ul>
                         <li className="Product_Points">
-                          When you have a door and if it is main door having a
-                          single door , it's operational issue. So better to use
-                          double fold.
+                          Simple to use; You can take the system apart from the
+                          hinges to wash and re-attach.
                         </li>
-                        <li className="Product_Points">Easier to operate</li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Color Options</p>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement. Our
+                        main-color options are listed below.
+                      </h6>
+                      <ul>
+                        <li className="Product_Points">White</li>
+                        <li className="Product_Points">Bronze</li>
+                        <li className="Product_Points">Wood finish</li>
                       </ul>
 
                       <div className="d-flex flex-row mt-5 pt-3">
@@ -163,29 +167,37 @@ function OpenableDoubleDoor() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
-                <p className="Product_Exn mt-3">
-                  Openable Door it is custom made for the existing Main Door,
-                  utility door, as well balcony
-                </p>
                 <h5 className="Product_Title mt-4">
                   Openable Double Door System
                 </h5>
                 <p className="Product_Exn mt-3">
-                  It is made out of 2 inch Aluminium Profile with SS 304 mesh It
-                  has Felt Grove to arrest gaps in the contact surface. Easy to
-                  operate and remove the system for a wash
+                  Custom made for the existing main door, utility door and
+                  balcony door.It has a felt grove to stop gaps in the contact
+                  surface and is constructed from a 2-inch aluminum profile with
+                  SS 304 mesh. If this product has to be used for main door
+                  (which has a double door) in such cases, it is advisable to
+                  use this openable double fold door system.This system is
+                  recommended for doors having width above 4 feet.
                 </p>
 
                 <p className="Product_Feature mt-5">
-                  Advantage of the Openable double door system:
+                  Advantages
                 </p>
                 <ul>
                   <li className="Product_Points">
-                    When you have a door and if it is main door having a single
-                    door , it's operational issue. So better to use double fold.
+                    Simple to use; You can take the system apart from the hinges
+                    to wash and re-attach.
                   </li>
-                  <li className="Product_Points">Easier to operate</li>
+                </ul>
+                <p className="Product_Feature mt-5">Color Options</p>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement. Our
+                  main-color options are listed below.
+                </h6>
+                <ul>
+                  <li className="Product_Points">White</li>
+                  <li className="Product_Points">Bronze</li>
+                  <li className="Product_Points">Wood finish</li>
                 </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
@@ -216,7 +228,6 @@ function OpenableDoubleDoor() {
               <h5 className="other_txt">
                 Other Products in 'Retractable Double Door' category
               </h5>
-              
             </div>
             {isCard_3 && (
               <>
