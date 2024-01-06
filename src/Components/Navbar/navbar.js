@@ -103,14 +103,14 @@ function Navbar() {
                             </Link>
                           </li>
 
-                          <li>
+                          {/* <li>
                             <Link
                               to="/rollerwindow"
                               style={{ textDecoration: "none" }}
                             >
                               <a href="#">Retractable Roller Window</a>
                             </Link>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
 
@@ -130,15 +130,15 @@ function Navbar() {
                               <a href="#">Sliding Window System</a>
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link
                               to="/singlesliderwithtrack"
                               style={{ textDecoration: "none" }}
                             >
                               <a href="#">Single Slider With Track</a>
                             </Link>
-                          </li>
-                          <li>
+                          </li> */}
+                          {/* <li>
                             <Link
                               to="/slidingwindowmesh"
                               style={{ textDecoration: "none" }}
@@ -146,7 +146,7 @@ function Navbar() {
                               <a href="#">Sliding Window Mesh</a>
                             
                             </Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link
                               to="/multislidingdr"
@@ -176,14 +176,14 @@ function Navbar() {
                           <a href="#">Openable System</a>
                         </Link>
                         <ul className="submenu_2">
-                          <li>
+                          {/* <li>
                             <Link
                               to="/openablewindow"
                               style={{ textDecoration: "none" }}
                             >
                               <a href="#">Openable Window System</a>
                             </Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link
                               to="/openablesingledr"

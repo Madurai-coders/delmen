@@ -15,27 +15,21 @@
   height: 380px;
   width: 100%;
 }
-.products_table1 {
+.products_table2 {
   background: #ffffff;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   height: 380px;
   width: 100%;
 }
-.products_table2 {
-  background: #ffffff;
-  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-  height: 750px;
-  width: 100%;
-}
 .products_table3 {
   background: #ffffff;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  height: 750px;
+  height: 380px;
   width: 100%;
 }
+
 .tables {
   width: 20vw;
 }
@@ -118,7 +112,7 @@
   text-transform: capitalize;
   color: #000000;
 }
-.name{
+.name {
   display: none;
 }
 @media only screen and (max-width: 1400px) {
@@ -138,6 +132,12 @@
     width: 140%;
   }
   .products_table1 {
+    width: 140%;
+  }
+  .products_table2 {
+    width: 140%;
+  }
+  .products_table3 {
     width: 140%;
   }
 
@@ -174,16 +174,11 @@
   .products_table {
     width: 247px;
   }
-  .products_table1 {
-    height: 700px;
-    width: 247px;
-  }
   .products_table2 {
-    height: 1170px;
     width: 247px;
   }
   .products_table3 {
-    height: 780px;
+    height: 730px;
     width: 247px;
   }
   .mt {
@@ -199,22 +194,17 @@
     font-size: 12px;
   }
   .products_table {
-    height: 840px;
-  }
-  .products_table1 {
-    height:1260px;
+    height: 420px;
   }
   .products_table2 {
-    height: 2200px!important;
+    height: 850px;
   }
-  .products_table3{
-    height: 1800px!important;
-
+  .products_table3 {
+    height: 1250px;
   }
-  .mt {
+  .cc {
     margin-top: 48px;
   }
-
   .card-1 img {
     margin-top: 15px !important;
     width: 80%;
@@ -225,59 +215,24 @@
     height: fit-content;
     padding-bottom: 10px;
   }
-  .cc {
-    margin-top: 48px;
-  }
   .container-fluid {
     padding: 0 30px;
   }
 }
-@media only screen and (max-width: 730px) {
-  .products_table {
-    height: 740px;
-  }
-  .products_table1 {
-    height:1060px;
-  }
-  .products_table2 {
-    height: 2000px!important;
-  }
-  .products_table3{
-    height: 1700px!important;
 
-  }
-}
 @media only screen and (max-width: 670px) {
   .products_table {
-    height: 640px;
+    height: 340px;
   }
-  .products_table1 {
-    height:960px;
-  }
-  .products_table2 {
-    height: 1900px!important;
-  }
-  .products_table3{
-    height: 1600px!important;
 
+  .products_table2 {
+    height: 700px;
+  }
+  .products_table3 {
+    height: 1050px;
   }
 }
 
-@media only screen and (max-width: 620px) {
-  .products_table {
-    height: 540px;
-  }
-  .products_table1 {
-    height:860px;
-  }
-  .products_table2 {
-    height: 1800px!important;
-  }
-  .products_table3{
-    height: 1500px!important;
-
-  }
-}
 @media only screen and (max-width: 576px) {
   .container-fluid {
     padding-left: 10px;
@@ -287,19 +242,15 @@
   }
   .products_table {
     width: 230px;
-    height: 650px;
   }
-  .products_table1 {
-    height: 1050px;
+
+  .products_table2 {
+    height: 670px;
     width: 230px;
   }
-  .products_table2 {
-    height: 350px;
-    width: 220px;
-  }
   .products_table3 {
-    height: 390px;
-    width: 220px;
+    height: 980px;
+    width: 230px;
   }
   .products_name {
     font-size: 15px;
@@ -312,20 +263,15 @@
 @media only screen and (max-width: 470px) {
   .products_table {
     width: 180px;
-    height: 630px;
-  }
-  .products_table1 {
-    width: 180px;
-    height: 950px;
+    height: 340px;
   }
   .products_table2 {
-    width: 160px;
-    height:1600px!important;
+    width: 180px;
+    height: 600px;
   }
-  .products_table3{
-    width: 160px;
-    height:1400px!important;
-
+  .products_table3 {
+    width: 180px;
+    height: 900px;
   }
   .names {
     font-size: 11px;
@@ -354,20 +300,12 @@
 
 @media only screen and (max-width: 400px) {
   .products_table {
-    width: 180px;
-    height: 530px;
-  }
-  .products_table1 {
-    width: 180px;
-    height: 850px;
+    height: 250px;
   }
   .products_table2 {
-    width: 160px;
-    height:1300px!important;
+    height: 520px;
   }
-  .products_table3{
-    width: 160px;
-    height:1100px!important;
-
+  .products_table3 {
+    height: 750px;
   }
 }

@@ -1,17 +1,17 @@
 import "../../CSS/ourproducts/products.css";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/footer";
-import RetractableDoubleDoor from "../../assets/Retractable Double Door/RetractableDoubleDoor.png";
+// import RetractableDoubleDoor from "../../assets/Retractable Double Door/RetractableDoubleDoor.png";
 import RetractableRollerDoubleDoor from "../../assets/Retractable Double Door/RollerDoubledr.png";
 import OpenableSingleDoorSystem from "../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
-import SingleSliderWithTrack from "../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-import OpenableWindowSystem from "../../assets/Retractable Double Door/OpenableWindowSystem.png";
+// import SingleSliderWithTrack from "../../assets/Windows Accessories/SingleSlidingWithTrack.png";
+// import OpenableWindowSystem from "../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import SlidingWindowSystem from "../../assets/Retractable Double Door/SlidingWindowSystem.png";
 import Navbar_1 from "../Navbar_1/navbar_1";
-import SlidingWindowMesh from "../../assets/Windows Accessories/slidingwindowmesh.png";
+// import SlidingWindowMesh from "../../assets/Windows Accessories/slidingwindowmesh.png";
 import MagneticInsect from "../../assets/Magnetic Insect Screens/magneticinsect.png";
 import OpenableDoubleDoor from "../../assets/Retractable Double Door/OpenableDoubleDoor.png";
-import OpenableMultiFoldDoor from "../../assets/Retractable Double Door/multifolddoor.png";
+// import OpenableMultiFoldDoor from "../../assets/Retractable Double Door/multifolddoor.png";
 import MultiSlidingDoor from "../../assets/Windows Accessories/MultiSlidingDoor.png";
 import Slidingdr from "../../assets/Windows Accessories/rollerdr.png";
 import SlidingDoor from "../../assets/Retractable Double Door/slidingdoor.png";
@@ -67,7 +67,7 @@ function OurProduct() {
           <div className="container-fluid mt-5">
             <div className="d-flex flex-row mt-5">
               <div className="tables ms-5 mt-5">
-                <div className="products_table1">
+                <div className="products_table2">
                   <div className="ms-4">
                     <h5 className="products_name pt-3">
                       Retractable Double Door
@@ -85,9 +85,9 @@ function OurProduct() {
                       <h6 className="names">Retractable Roller Door</h6>
                     </Link>
 
-                    <Link to="/rollerwindow" style={{ textDecoration: "none" }}>
+                    {/* <Link to="/rollerwindow" style={{ textDecoration: "none" }}>
                       <h6 className="names">Retractable Roller Window</h6>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -128,7 +128,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12  card_list mt">
+                  {/* <div className="col-lg-4 col-md-6 col-sm-12 col-12  card_list mt">
                     <div className="card-1 text-center cc">
                       <Link
                         to="/rollerwindow"
@@ -140,7 +140,7 @@ function OurProduct() {
                         </h4>
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="col-4 text-center"></div>
                 </div>
               </div>
@@ -150,7 +150,7 @@ function OurProduct() {
           <div className="container-fluid mt-5">
             <div className="d-flex flex-row">
               <div className="tables1 ms-5 mt-5">
-                <div className="products_table2">
+                <div className="products_table3">
                   <div className="ms-4">
                     <h5 className="products_name pt-3">Sliding System</h5>
                     <Link
@@ -159,22 +159,22 @@ function OurProduct() {
                     >
                       <h6 className="names">Sliding Window System</h6>
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/singlesliderwithtrack"
                       style={{ textDecoration: "none" }}
                     >
                       <h6 className="names">Single slider with Track</h6>
-                    </Link>
+                    </Link> */}
 
                     <Link to="/slidingdoor" style={{ textDecoration: "none" }}>
                       <h6 className="names">Sliding door</h6>
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/slidingwindowmesh"
                       style={{ textDecoration: "none" }}
                     >
                       <h6 className="names">Sliding Window Mesh</h6>
-                    </Link>
+                    </Link> */}
                     <Link
                       to="/slidingwindowmesh"
                       style={{ textDecoration: "none" }}
@@ -186,7 +186,7 @@ function OurProduct() {
               </div>
               <div className="LISTS_1 ms-5 ps-5">
                 <div className="row mt-5 justify-content-center product_list">
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc">
+                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center">
                     <div className="card-1 text-center ms-5">
                       <Link
                         to="/slidingwindowsystem"
@@ -203,7 +203,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc">
+                  {/* <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc">
                     <div className="card-1 text-center ms-4">
                       <Link
                         to="/singlesliderwithtrack"
@@ -219,9 +219,9 @@ function OurProduct() {
                         </h4>
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12  card_list mt">
+                  <div className="col-lg-4 col-md-6 col-sm-12 col-12  card_list">
                     <div className="card-1 text-center cc">
                       <Link
                         to="/slidingdoor"
@@ -239,7 +239,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-
+{/* 
                   <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center mt-5 mt">
                     <div className="card-1 text-center ms-4 cc">
                       <Link
@@ -256,9 +256,9 @@ function OurProduct() {
                         </h4>
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center mt-5 cc">
+                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc mt">
                     <div className="card-1 text-center ms-4">
                       <Link
                         to="/multislidingdr"
@@ -273,8 +273,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-4"></div>
-                  <div className="col-4"></div>
+                 
                 </div>
               </div>
             </div>
@@ -283,15 +282,15 @@ function OurProduct() {
           <div className="container-fluid mt-5">
             <div className="d-flex flex-row">
               <div className="tables1 ms-5 mt-5">
-                <div className="products_table3">
+                <div className="products_table2">
                   <div className="ms-4">
                     <h5 className="products_name pt-3">Openable System</h5>
-                    <Link
+                    {/* <Link
                       to="/openablewindow"
                       style={{ textDecoration: "none" }}
                     >
                       <h6 className="names">Openable Window System</h6>
-                    </Link>
+                    </Link> */}
                     <Link
                       to="/openablesingledr"
                       style={{ textDecoration: "none" }}
@@ -329,7 +328,7 @@ function OurProduct() {
               </div>
               <div className="LISTS_1 ms-5 ps-5">
                 <div className="row mt-5 justify-content-center product_list">
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc">
+                  {/* <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc">
                     <div className="card-1 text-center ms-5">
                       <Link
                         to="/openablewindow"
@@ -345,8 +344,8 @@ function OurProduct() {
                         </h4>
                       </Link>
                     </div>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc">
+                  </div> */}
+                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center">
                     <div className="card-1 text-center ms-4">
                       <Link
                         to="/openablesingledr"
@@ -363,7 +362,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc mt">
+                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc">
                     <div className="card-1 text-center ms-5">
                       <Link
                         to="/openabledoubledoor"
@@ -380,6 +379,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
+                  <div className="col-4"></div>
                   {/* <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc mt-5">
                     <div className="card-1 text-center ms-5">
                       <Link

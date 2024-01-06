@@ -44,6 +44,26 @@
   cursor: pointer;
   width: 80%;
 }
+.hover-text1 {
+  position: absolute; /* position the text on top of the image */
+  top: 60%; /* center the text vertically */
+  left: 50%; /* center the text horizontally */
+  transform: translate(-50%, -50%); /* adjust the position of the text */
+  background-color: transparent; /* give the text a semi-transparent black background */
+  padding: 10px 10px; /* add some padding to the text */
+  border-radius: 5px; /* give the text rounded corners */
+  visibility: hidden; /* hide the text by default */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.035em;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: 80%;
+}
 
 .hover-text:hover {
   text-decoration: underline;
@@ -57,12 +77,20 @@
   background-color: rgb(18, 18, 18, 0.2);
 }
 
+.hover-text1:hover {
+  text-decoration: underline;
+}
+.img-container:hover .hover-text1 {
+  visibility: visible; /* show the text when hovering over the image */
+  color: #8d1fa8;
+}
+
 @media only screen and (max-width: 1479px) {
   .pimg_3 {
     margin-bottom: 26px !important;
   }
   .ourproducts {
-    padding: 20px 40px !important;
+    padding: 20px 40px;
   }
 }
 @media only screen and (max-width: 1250px) {
@@ -78,7 +106,7 @@
 }
 @media only screen and (max-width: 1190px) {
   .ourproducts {
-    padding: 20px 80px !important;
+    padding: 20px 20px;
   }
   .pimg_2 {
     padding-left: 15px;
@@ -86,24 +114,25 @@
   .hover-text {
     font-size: 18px;
   }
-}
-@media only screen and (max-width: 1050px) {
-  .ourproducts {
-    padding: 20px 30px !important;
+  .hover-text1 {
+    font-size: 18px;
+  }
+  .zoom-img {
+    width: 88%;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .ourproducts {
-    padding: 20px 50px;
-  }
-}
+
+
 @media only screen and (max-width: 945px) {
   .zoom-img {
-    width: 80%;
     height: 200px;
   }
   .hover-text {
+    font-size: 14px;
+    padding: 10px 0px;
+  }
+  .hover-text1 {
     font-size: 14px;
     padding: 10px 0px;
   }
@@ -111,17 +140,20 @@
     margin-left: 10px !important;
   }
 }
-
-@media only screen and (max-width: 570px) {
-  .hover-text {
-    font-size: 12px;
-    line-height: 20px;
-    margin-top: 12px;
-  }
+@media only screen and (max-width: 767px) {
   .zoom-img {
-    height: 120px;
+  width: 90%;
+  }
+  .hover-text {
+    font-size: 17px;
+    padding: 10px 0px;
+  }
+  .hover-text1 {
+    font-size: 17px;
+    padding: 10px 0px;
   }
 }
+
 
 @media only screen and (max-width: 425px) {
   .ourproducts {
@@ -137,16 +169,17 @@
   .zoom-img {
     height: 100px;
   }
- 
-}
-@media only screen and (max-width: 370px) {
- 
   .hover-text {
-    font-size: 11px;
-    line-height: 16px;
-    width: 90%;
+    font-size: 12px;
   }
+  .hover-text1 {
+    font-size: 12px;
+    line-height: 18px;
+    top: 65%;
+  }
+ 
 }
+
 
 @media only screen and (max-width: 310px) {
   .product_title {

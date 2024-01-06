@@ -51,7 +51,7 @@ function App() {
                 path="/slidingwindowsystem"
                 element={<SlidingSystem />}
               ></Route>
-              <Route
+              {/* <Route
               
                 path="/slidingwindowmesh"
                 element={<SlidingWindowMesh />}
@@ -59,7 +59,7 @@ function App() {
               <Route
                 path="/singlesliderwithtrack"
                 element={<SingleSliderWithTrack />}
-              ></Route>
+              ></Route> */}
               <Route
                 path="/multislidingdr"
                 element={<MultiSlidingDoor />}
@@ -74,12 +74,12 @@ function App() {
                 path="/rollerdoubledoor"
                 element={<RollerDoubleDoor />}
               ></Route>
-              <Route path="/rollerwindow" element={<RollerWindow />}></Route>
+              {/* <Route path="/rollerwindow" element={<RollerWindow />}></Route> */}
 
-              <Route
+              {/* <Route
                 path="/openablewindow"
                 element={<OpenableWindow />}
-              ></Route>
+              ></Route> */}
 
               <Route
                 path="/openablesingledr"
