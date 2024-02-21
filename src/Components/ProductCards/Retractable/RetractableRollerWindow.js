@@ -1,5 +1,5 @@
 import "../../../CSS/productscards/card_1.css";
-import Navbar_1 from "../../Navbar_1/navbar_1";
+import Navbar1 from "../../Navbar_1/navbar_1";
 import Footer from "../../Footer/footer";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
@@ -8,8 +8,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
@@ -30,7 +28,7 @@ function RollerWindow() {
     <>
       <div className="retractable">
         <div className="container">
-          <Navbar_1></Navbar_1>
+          <Navbar1/>
           {isTab && (
             <>
               <div className="CARDS_4">

@@ -1,5 +1,5 @@
 import Footer from "../../Footer/footer";
-import Navbar_1 from "../../Navbar_1/navbar_1";
+import Navbar1 from "../../Navbar_1/navbar_1";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -7,7 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import TextField from "@mui/material/TextField";
+// import TextField from "@mui/material/TextField";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import SlidingWindowVideo from "../../../assets/ProductsVideo/slidingwindow.mp4";
@@ -29,7 +29,7 @@ function SlidingWindowSystem() {
     <>
       <div className="RollerDr">
         <div className="container">
-          <Navbar_1 />
+          <Navbar1 />
           {isTab && (
             <>
               <div className="CARDS_2">

@@ -1,5 +1,5 @@
 import "../../../CSS/productscards/card_1.css";
-import Navbar_1 from "../../Navbar_1/navbar_1";
+import Navbar1 from "../../Navbar_1/navbar_1";
 import Footer from "../../Footer/footer";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
@@ -8,8 +8,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
@@ -22,45 +20,44 @@ import RollerDoubleDrVideo from "../../../assets/ProductsVideo/rollerdoubledr.mp
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 function RetractableDoubleDoor() {
-  const [PriceCard, setPriceCard] = useState(false);
   const [CallBackCard, setCallBackCard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
   const isCard_1 = useMediaQuery({ query: "(min-width: 992px)" });
   const isCard_3 = useMediaQuery({ query: "(min-width: 276px)" });
 
-  const Items = [
-    {
-      value: "USD",
-      label: "Kilogram",
-    },
-    {
-      value: "EUR",
-      label: "Nos",
-    },
-    {
-      value: "BTC",
-      label: "Pieces",
-    },
-    {
-      value: "JPY",
-      label: "Tons",
-    },
-    {
-      value: "JP",
-      label: "Units",
-    },
-  ];
-  const [pricequote, setpricequote] = useState({
-    Email: "not_selected",
-    MobileNo: "not_selected",
-  });
+  // const Items = [
+  //   {
+  //     value: "USD",
+  //     label: "Kilogram",
+  //   },
+  //   {
+  //     value: "EUR",
+  //     label: "Nos",
+  //   },
+  //   {
+  //     value: "BTC",
+  //     label: "Pieces",
+  //   },
+  //   {
+  //     value: "JPY",
+  //     label: "Tons",
+  //   },
+  //   {
+  //     value: "JP",
+  //     label: "Units",
+  //   },
+  // ];
+  // const [pricequote, setpricequote] = useState({
+  //   Email: "not_selected",
+  //   MobileNo: "not_selected",
+  // });
 
   return (
     <>
       <div className="retractable">
         <div className="container">
-          <Navbar_1></Navbar_1>
+          <Navbar1/>
           {isTab && (
             <>
               <div className="CARDS_3">

@@ -7,7 +7,7 @@ import OpenableSingleDoorSystem from "../../assets/Retractable Double Door/Opena
 // import SingleSliderWithTrack from "../../assets/Windows Accessories/SingleSlidingWithTrack.png";
 // import OpenableWindowSystem from "../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import SlidingWindowSystem from "../../assets/Retractable Double Door/SlidingWindowSystem.png";
-import Navbar_1 from "../Navbar_1/navbar_1";
+import Navbar1 from "../Navbar_1/navbar_1";
 // import SlidingWindowMesh from "../../assets/Windows Accessories/slidingwindowmesh.png";
 import MagneticInsect from "../../assets/Magnetic Insect Screens/magneticinsect.png";
 import OpenableDoubleDoor from "../../assets/Retractable Double Door/OpenableDoubleDoor.png";
@@ -15,12 +15,13 @@ import OpenableDoubleDoor from "../../assets/Retractable Double Door/OpenableDou
 import MultiSlidingDoor from "../../assets/Windows Accessories/MultiSlidingDoor.png";
 import Slidingdr from "../../assets/Windows Accessories/rollerdr.png";
 import SlidingDoor from "../../assets/Retractable Double Door/slidingdoor.png";
+
 function OurProduct() {
   return (
     <>
       <div className="ourProducts">
         <div className="container">
-          <Navbar_1></Navbar_1>
+          <Navbar1></Navbar1>
           <div className="container-fluid mt-5">
             <div className="d-flex flex-row mt-5">
               <div className="tables1 ms-5 mt-5">

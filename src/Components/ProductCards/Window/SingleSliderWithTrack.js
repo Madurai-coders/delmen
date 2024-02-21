@@ -1,5 +1,5 @@
 import Footer from "../../Footer/footer";
-import Navbar_1 from "../../Navbar_1/navbar_1";
+import Navbar1 from "../../Navbar_1/navbar_1";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -7,8 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import TextField from "@mui/material/TextField";
-import RetractableDoubleDoor from "../../../assets/Retractable Double Door/RetractableDoubleDoor.png";
+// import RetractableDoubleDoor from "../../../assets/Retractable Double Door/RetractableDoubleDoor.png";
 import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
 import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
 import Slidingdr from "../../../assets/Windows Accessories/rollerdr.png";
@@ -18,7 +17,6 @@ import { Link } from "react-router-dom";
 import SingleSliderVideo from "../../../assets/ProductsVideo/singleslider.mp4";
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
-import MenuItem from "@mui/material/MenuItem";
 import CloseIcon from "@mui/icons-material/Close";
 import BuyingReq from "../../card_section/Buyingreq";
 import Callback from "../../card_section/Callback";
@@ -33,7 +31,7 @@ function SingleSliderWithTrack() {
     <>
       <div className="RollerDr">
         <div className="container">
-          <Navbar_1 />
+          <Navbar1 />
           {isTab && (
             <>
               <div className="CARDS">

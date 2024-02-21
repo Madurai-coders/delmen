@@ -7,7 +7,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import TextField from "@mui/material/TextField";
 import RetractableDoubleDoor from "../../../assets/Retractable Double Door/RetractableDoubleDoor.png";
 import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
 import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
@@ -17,7 +16,6 @@ import OpenableWindowVideo from "../../../assets/ProductsVideo/openablewindow.mp
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
-import MenuItem from "@mui/material/MenuItem";
 import CloseIcon from "@mui/icons-material/Close";
 import Callback from "../../card_section/Callback";
 import Slidingdr from "../../../assets/Windows Accessories/rollerdr.png";
@@ -33,7 +31,7 @@ function OpenableWindow() {
     <>
       <div className="RollerDr">
         <div className="container">
-          <Navbar_1 />
+          <Navbar1 />
           {isTab && (
             <>
               <div className="CARDS_2">

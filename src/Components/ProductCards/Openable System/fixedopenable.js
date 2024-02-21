@@ -1,5 +1,5 @@
 import Footer from "../../Footer/footer";
-import Navbar_1 from "../../Navbar_1/navbar_1";
+import Navbar1 from "../../Navbar_1/navbar_1";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -7,7 +7,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import TextField from "@mui/material/TextField";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
 import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
@@ -16,7 +15,6 @@ import OpenableDrVideo from "../../../assets/ProductsVideo/openablesingledr.mp4"
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
-import MenuItem from "@mui/material/MenuItem";
 import CloseIcon from "@mui/icons-material/Close";
 import Callback from "../../card_section/Callback";
 function FixedOpenable() {
@@ -29,7 +27,7 @@ function FixedOpenable() {
     <>
       <div className="RollerDr">
         <div className="container">
-          <Navbar_1 />
+          <Navbar1 />
           {isTab && (
             <>
               <div className="CARDS_3">
