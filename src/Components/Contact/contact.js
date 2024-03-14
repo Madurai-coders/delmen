@@ -2,7 +2,7 @@ import "../../CSS/contact/contact.css";
 import Navbar from "../Navbar/navbar";
 import TextField from "@mui/material/TextField";
 import Footer from "../Footer/footer";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Button from "@mui/material/Button";
 
@@ -16,7 +16,7 @@ function Contact() {
   };
 
   const [msg, setMsg] = useState("");
-  const [file, setFile] = useState();
+  // const [file, setFile] = useState();
   const [errormsg, setErrormsg] = useState(false);
   const [successmsg, setSuccessmsg] = useState(false);
   const [dataarray, setdataarray] = useState([]);
@@ -28,7 +28,7 @@ function Contact() {
     subject: "",
   });
 
-  const [use, setUse] = useState();
+  // const [use, setUse] = useState();
 
   const OnSubmit = async (e) => {
     e.preventDefault();
@@ -209,14 +209,14 @@ function Contact() {
                     </Button>
                   </div>
                 </div>
-                <div className="row mt-5 cards_row">
+                {/* <div className="row mt-5 cards_row">
                   <div className="col-12 text-center">
                     <h6 className="contactus_txt">
                       "We are accepting local inquiries mostly from Tamil Nadu &
                       Karnataka."
                     </h6>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

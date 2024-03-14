@@ -110,7 +110,7 @@ function Company() {
                       the most affordable possible prices. Our premium quality
                       products include:
                     </p>
-                    <ul className="mt-4 Products_Points ms-5">
+                    <ul className="mt-4 Products_Points">
                       <li className="products_points">
                         Magnetic Insect Screens (With fiber glass mesh)
                       </li>
