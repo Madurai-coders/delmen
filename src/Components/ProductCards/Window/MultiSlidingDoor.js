@@ -76,17 +76,26 @@ function MultiSlidingDoor() {
                         Multi Sliding Door System
                       </h5>
 
-                      <p className="Product_Exn mt-3">
-                        It is constructed from 2-inch aluminum profile and
-                        304-grade stainless steel mesh.In order to close gaps in
-                        the contact surface, it has felt grove. Double screw
-                        joints are used during assembly to prevent twisting in
-                        the frame and breaking of the edges.It is advisable to
-                        install this type of sliding door on your aluminum and
-                        UPVC multi-sliding doors.With an extra track, this can
-                        be installed next to your current multi-sliding glass
-                        door.
-                      </p>
+                      <ul className="pr-5">
+                        <li className="Product_Points">
+                          It is constructed from 2-inch aluminum profile and
+                          304-grade stainless steel mesh.
+                        </li>
+                        <li className="Product_Points">
+                          In order to close gaps in the contact surface, it has
+                          felt grove. Double screw joints are used during
+                          assembly to prevent twisting in the frame and breaking
+                          of the edges.
+                        </li>
+                        <li className="Product_Points">
+                          It is advisable to install this type of sliding door
+                          on your aluminum and UPVC multi-sliding doors.
+                        </li>
+                        <li className="Product_Points">
+                          With an extra track, this can be installed next to
+                          your current multi-sliding glass door.
+                        </li>
+                      </ul>
                       <p className="Product_Feature mt-5">Advantages</p>
                       <ul>
                         <li className="Product_Points">
@@ -168,16 +177,25 @@ function MultiSlidingDoor() {
               </div>
 
               <div className="col-12 mt-5">
-                <p className="Product_Exn mt-3">
-                  It is constructed from 2-inch aluminum profile and 304-grade
-                  stainless steel mesh.In order to close gaps in the contact
-                  surface, it has felt grove. Double screw joints are used
-                  during assembly to prevent twisting in the frame and breaking
-                  of the edges.It is advisable to install this type of sliding
-                  door on your aluminum and UPVC multi-sliding doors.With an
-                  extra track, this can be installed next to your current
-                  multi-sliding glass door.
-                </p>
+                <ul className="pr-5">
+                  <li className="Product_Points">
+                    It is constructed from 2-inch aluminum profile and 304-grade
+                    stainless steel mesh.
+                  </li>
+                  <li className="Product_Points">
+                    In order to close gaps in the contact surface, it has felt
+                    grove. Double screw joints are used during assembly to
+                    prevent twisting in the frame and breaking of the edges.
+                  </li>
+                  <li className="Product_Points">
+                    It is advisable to install this type of sliding door on your
+                    aluminum and UPVC multi-sliding doors.
+                  </li>
+                  <li className="Product_Points">
+                    With an extra track, this can be installed next to your
+                    current multi-sliding glass door.
+                  </li>
+                </ul>
                 <p className="Product_Feature mt-5">Advantages</p>
                 <ul>
                   <li className="Product_Points">

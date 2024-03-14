@@ -167,7 +167,6 @@
   font-size: 17.15px;
   line-height: 145.5%;
   letter-spacing: 0.045em;
-  text-transform: capitalize;
   color: #000000;
   padding-right: 20px;
 }
@@ -180,23 +179,33 @@
   letter-spacing: 0.045em;
   color: #000000;
 }
-.product_customize{
+.Product_req {
   font-family: "Rubik";
   font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 17px;
   line-height: 136%;
   letter-spacing: 0.045em;
-  color: #000000; 
+  color: #000000;
+}
+.product_customize {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 136%;
+  letter-spacing: 0.045em;
+  color: #000000;
 }
 .Product_Points {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
   font-size: 17.15px;
-  line-height: 167%;
+  line-height: 26px;
   letter-spacing: 0.045em;
   color: #000000;
+  margin-top: 10px;
 }
 .callback_btn {
   padding: 15px 60px !important;
@@ -360,9 +369,9 @@
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
   border-radius: 7px;
 }
-.email_input1 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+/* .email_input1 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
   margin-top: 7.5px !important;
-}
+} */
 .email_input1
   .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
   .MuiOutlinedInput-notchedOutline {
@@ -482,7 +491,7 @@
     height: 800px;
   }
   .ENQUIRY_btn {
-    padding: 12px 80px !important;
+    padding: 12px 65px !important;
   }
   .callback_btn {
     padding: 12px 40px !important;
@@ -510,16 +519,22 @@
   .Card_1 img {
     height: 760px;
   }
-  .ENQUIRY_btn {
+  .ENQUIRY_btn{
     padding: 12px 45px !important;
+    font-size: 12px!important;
   }
   .callback_btn {
     padding: 12px 20px !important;
+    font-size: 12px!important;
+
   }
   .Product_Exn {
     font-size: 15px;
   }
 
+  .Product_req {
+    font-size: 13px;
+  }
   .Product_Points {
     font-size: 15px;
   }
@@ -535,11 +550,11 @@
     position: absolute;
     left: 60px;
   }
- .otherproduct_card{
-  height: 320px;
- }
+  .otherproduct_card {
+    height: 320px;
+  }
   .CARDS_3 {
-    padding-bottom: 210px;
+    padding-bottom: 300px;
   }
   .Product_Detail {
     position: absolute;
@@ -566,6 +581,9 @@
   .callbackcard {
     position: absolute;
     left: 140px;
+  }
+  .product_customize {
+    font-size: 13px;
   }
 }
 
@@ -658,7 +676,10 @@
     position: absolute;
     left: 50px;
   }
- 
+
+  .product_customize {
+    font-size: 11px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .Card_EMAIL {
@@ -689,17 +710,16 @@
   .otherproductcard_des {
     font-size: 15px;
   }
-  
+
   .Pricecard {
     height: 650px;
   }
-  .otherproduct_card
-  {
+  .otherproduct_card {
     height: 300px;
   }
   .Callback_btn {
     padding: 15px 45px !important;
-    font-size: 12px!important;
+    font-size: 12px !important;
   }
 }
 
@@ -716,7 +736,7 @@
   }
   .Product_Points {
     font-size: 13px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .Card_Title {
     font-size: 14px;
@@ -730,7 +750,7 @@
     font-size: 14px;
     margin-top: 26px !important;
   }
-  .otherproductcard_title{
+  .otherproductcard_title {
     font-size: 13px;
   }
   .otherproduct_card {
@@ -767,7 +787,7 @@
     padding: 12px 20px !important;
   }
   .email_input1 {
-    margin-top: 10px !important;
+    margin-top: 5px !important;
   }
   .Pricecard {
     height: 670px;
@@ -789,7 +809,7 @@
   }
   .callbackcard {
     position: absolute;
-  
+
     top: 1200px;
   }
 }
@@ -798,7 +818,6 @@
     position: absolute;
     bottom: 100px;
   }
- 
 }
 @media only screen and (max-width: 370px) {
   .ee {

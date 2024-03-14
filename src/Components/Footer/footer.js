@@ -16,25 +16,26 @@ function Footer() {
                 <div className="contactcard_des ms-5 ps-3">
                   <h3 className="contactcard_title mt-5">Contact Us</h3>
                   <h5 className="contactcard_tit pt-4 mt-3">
-                  <p><b>Delmen Mosquito screens</b></p>
-                    <p>Mr. L. K. Chandrashekar (Proprietor)</p>
+                    <p>
+                      <b>Delmen Mosquito screens</b>
+                    </p>
+                    <p>Mr. L. K. Chandrasekar (Proprietor)</p>
                   </h5>
                   <h6 className="mt-3 callicon">
                     <CallIcon className="CALL" />
                     <span className="ms-1 call_no">9845374254</span>
                   </h6>
                   <h6 className="contactcard_address mt-3">
-                    No.- 6 First Cross, Raghavendra Layout,<br></br> Silver
-                    Spring Road, Opp. to Saroj Residency,<br></br>Munekolala,
-                    Bengaluru - 560037
+                    No. 6, First Cross, Raghavendra Layout,<br></br> Silver
+                    Spring Road, Munekolala, Marathahalli,<br></br> Opp. to Saroj
+                    Residency, Bengaluru, Karnataka 560037
                   </h6>
                 </div>
               </div>
 
               <div className="dealer mt-4 col-3 me-3 p-0">
                 <h6 className="contactcard_tit pt-4 mt-3">
-                  Delmen Mosquito screens
-                  Branch Office
+                  Delmen Mosquito screens Branch Office
                 </h6>
                 <h6 className="contactcard_addr pt-1">Nanjappa</h6>
                 <h6 className="callicon1 mt-3 pt-1">
@@ -42,8 +43,7 @@ function Footer() {
                   <span className="ms-1 call_no">8095116488</span>
                 </h6>
                 <h6 className="contactcard_address mt-3">
-                  31,1st block,2nd main, Bhavani lauout<br>
-                  </br>
+                  31,1st block,2nd main, Bhavani layout<br></br>
                   Banashankari 3rd stage ,<br></br>Bangalore-85
                 </h6>
               </div>
@@ -58,12 +58,11 @@ function Footer() {
                   <span className="ms-1 call_no">8056035572,9442031069</span>
                 </h6>
                 <h6 className="contactcard_address mt-3 pr-3">
-                  AVM Life Style Porur,<br>
-                  </br>
-                  147a roja street,sathya narayana puram,<br></br>mowlivakkkam,porur
+                  AVM Life Style Porur,<br></br>
+                  147a roja street,sathya narayana puram,<br></br>
+                  mowlivakkkam,porur
                 </h6>
               </div>
-
             </div>
             <div className="col-lg-10 col-md-11 col-12 text-end contactus_btncol">
               <Link to="/contactus" style={{ textDecoration: "none" }}>
@@ -98,9 +97,9 @@ function Footer() {
                 Karnataka."
               </p>
             </div>
-          </div></div>
-          <div className="row cards_row">
-
+          </div>
+        </div>
+        <div className="row cards_row">
           <div className="col-lg-7 col-md-7 col-sm-12 col-12">
             <div className="link">
               <Link to="/" style={{ textDecoration: "none" }}>

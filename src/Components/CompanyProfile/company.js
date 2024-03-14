@@ -1,28 +1,19 @@
 import "../../CSS/advantage/advantage.css";
 import Footer from "../Footer/footer";
-import Card from "../card_section/card";
-import Ourproducts from "../../assets/company/ourproduct.png";
-import { Link } from "react-router-dom";
+// import Card from "../card_section/card";
 import { useMediaQuery } from "react-responsive";
-import Slider from "react-slick";
 import React from "react";
-import Navbar_1 from "../Navbar_1/navbar_1";
+import Navbar1 from "../Navbar_1/navbar_1";
 import "../script/script";
 function Company() {
-  var settings = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: true,
-  };
+ 
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
 
   return (
     <>
       <div className="advantage" id="readmore">
-        <Navbar_1 />
+        <Navbar1 />
         <div className="OurProducts mt-5">
           <div className="row justify-content-center mt-5 cards_row">
             {isTab && (
@@ -71,14 +62,14 @@ function Company() {
                         Magnetic Insect Screens (With fiber glass mesh)
                       </li>
                       <li className="products_points">
-                        Openable windows and doors with stainless steel mesh
+                        Openable Windows and Doors with Stainless Steel Mesh
                       </li>
                       <li className="products_points">
-                        Sliding doors with stainless steel mesh
+                        Sliding Doors with Stainless Steel Mesh
                       </li>
 
                       <li className="products_points">
-                        Retractable Roller System for existing Windows <br></br>
+                        Retractable Roller System for Existing Windows <br></br>
                         and Doors
                       </li>
                     </ul>
@@ -110,30 +101,29 @@ function Company() {
                 <div className="col-12 mt-5 text-center">
                   <h4 className="ourproducts-title mt-5">Our Products</h4>
                 </div>
-                {/* <div className="col-12 text-center mt-5">
-                  <img src={Ourproducts} alt="" className="img-fluid"></img>
-                </div> */}
+               
                 <div className="col-12 mt-3">
-                  <div className="pd">
-                    <p className="products_details mt-4 ms-5">
+                <div className="pd">
+                    <p className="products_details ms-4">
                       Our streamlined production process and cost-cutting
                       techniques guarantee that customers receive products at
                       the most affordable possible prices. Our premium quality
                       products include:
                     </p>
-                    <ul className="mt-5 Products_Points">
+                    <ul className="mt-4 Products_Points ms-5">
                       <li className="products_points">
                         Magnetic Insect Screens (With fiber glass mesh)
                       </li>
                       <li className="products_points">
-                        Openable windows and doors with stainless steel mesh
+                        Openable Windows and Doors with Stainless Steel Mesh
                       </li>
                       <li className="products_points">
-                        Sliding doors with stainless steel mesh
+                        Sliding Doors with Stainless Steel Mesh
                       </li>
 
                       <li className="products_points">
-                        Retractable Roller System for existing Windows and Doors
+                        Retractable Roller System for Existing Windows <br></br>
+                        and Doors
                       </li>
                     </ul>
                   </div>
@@ -141,31 +131,8 @@ function Company() {
               </>
             )}
 
-            {/* <div className="col-12 text-center">
-              <h2 className="infrastructure_title mt-5 pt-5">
-                Our Infrastructure
-              </h2>
-            </div>
-            <div className="col-10 text-center mt-4">
-              <div className="infras">
-                <p className="infrastructure_des">
-                  Our infrastructure enables us to run our business operations
-                  efficiently and effectively. We possess a production unit
-                  consisting of modern machines including cut-off machines,
-                  slot milling and drilling. Skilled workers and
-                  qualified team of professionals, who together enable the
-                  company to build a reputed standing in the global market. Led
-                  by an efficient and quality conscious management.
-                </p>
-              </div>
-            </div> */}
+        
 
-            <div className="col-10 text-center">
-              <p className="advantage_quotes mt-5 pt-5">
-                "We are accepting local inquiries mostly from Tamil Nadu &
-                Karnataka."
-              </p>
-            </div>
           </div>
         </div>
         <Footer />

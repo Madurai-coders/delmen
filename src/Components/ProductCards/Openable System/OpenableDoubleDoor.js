@@ -73,21 +73,28 @@ function OpenableDoubleDoor() {
                       <h5 className="Product_Name">
                         Openable Double Door System
                       </h5>
+                      <ul className="pr-5">
+                        <li className="Product_Points">
+                          Custom made for the existing main door, utility door
+                          and balcony door.
+                        </li>
+                        <li className="Product_Points">
+                          It has a felt grove to stop gaps in the contact
+                          surface and is constructed from a 2-inch aluminum
+                          profile with SS 304 mesh.
+                        </li>
+                        <li className="Product_Points">
+                          If this product has to be used for main door (which
+                          has a double door) in such cases, it is advisable to
+                          use this openable double fold door system.
+                        </li>
+                        <li className="Product_Points">
+                          This system is recommended for doors having width
+                          above 4 feet.
+                        </li>
+                      </ul>
 
-                      <p className="Product_Exn mt-3">
-                        Custom made for the existing main door, utility door and
-                        balcony door.It has a felt grove to stop gaps in the
-                        contact surface and is constructed from a 2-inch
-                        aluminum profile with SS 304 mesh. If this product has
-                        to be used for main door (which has a double door) in
-                        such cases, it is advisable to use this openable double
-                        fold door system.This system is recommended for doors
-                        having width above 4 feet.
-                      </p>
-
-                      <p className="Product_Feature mt-5">
-                        Advantages
-                      </p>
+                      <p className="Product_Feature mt-5">Advantages</p>
                       <ul>
                         <li className="Product_Points">
                           Simple to use; You can take the system apart from the
@@ -168,19 +175,28 @@ function OpenableDoubleDoor() {
                 <h5 className="Product_Title mt-4">
                   Openable Double Door System
                 </h5>
-                <p className="Product_Exn mt-3">
-                  Custom made for the existing main door, utility door and
-                  balcony door.It has a felt grove to stop gaps in the contact
-                  surface and is constructed from a 2-inch aluminum profile with
-                  SS 304 mesh. If this product has to be used for main door
-                  (which has a double door) in such cases, it is advisable to
-                  use this openable double fold door system.This system is
-                  recommended for doors having width above 4 feet.
-                </p>
+                <ul className="pr-5">
+                  <li className="Product_Points">
+                    Custom made for the existing main door, utility door and
+                    balcony door.
+                  </li>
+                  <li className="Product_Points">
+                    It has a felt grove to stop gaps in the contact surface and
+                    is constructed from a 2-inch aluminum profile with SS 304
+                    mesh.
+                  </li>
+                  <li className="Product_Points">
+                    If this product has to be used for main door (which has a
+                    double door) in such cases, it is advisable to use this
+                    openable double fold door system.
+                  </li>
+                  <li className="Product_Points">
+                    This system is recommended for doors having width above 4
+                    feet.
+                  </li>
+                </ul>
 
-                <p className="Product_Feature mt-5">
-                  Advantages
-                </p>
+                <p className="Product_Feature mt-5">Advantages</p>
                 <ul>
                   <li className="Product_Points">
                     Simple to use; You can take the system apart from the hinges

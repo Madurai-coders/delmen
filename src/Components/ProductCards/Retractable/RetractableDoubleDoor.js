@@ -26,38 +26,11 @@ function RetractableDoubleDoor() {
   const isCard_1 = useMediaQuery({ query: "(min-width: 992px)" });
   const isCard_3 = useMediaQuery({ query: "(min-width: 276px)" });
 
-  // const Items = [
-  //   {
-  //     value: "USD",
-  //     label: "Kilogram",
-  //   },
-  //   {
-  //     value: "EUR",
-  //     label: "Nos",
-  //   },
-  //   {
-  //     value: "BTC",
-  //     label: "Pieces",
-  //   },
-  //   {
-  //     value: "JPY",
-  //     label: "Tons",
-  //   },
-  //   {
-  //     value: "JP",
-  //     label: "Units",
-  //   },
-  // ];
-  // const [pricequote, setpricequote] = useState({
-  //   Email: "not_selected",
-  //   MobileNo: "not_selected",
-  // });
-
   return (
     <>
       <div className="retractable">
         <div className="container">
-          <Navbar1/>
+          <Navbar1 />
           {isTab && (
             <>
               <div className="CARDS_3">
@@ -101,15 +74,24 @@ function RetractableDoubleDoor() {
                         Retractable Double Door System
                       </h5>
                       <div></div>
-
-                      <p className="Product_Exn mt-3">
-                        Our specialty is producing top-notch double doors that
-                        may be installed on your existing French doors. This
-                        system can only be designed with fiber glass mesh (stiff
-                        mesh).The largest size that may be produced is 3metre by
-                        3.5metre in height and width. This mechanism has a
-                        magnet in the middle to secure it.
-                      </p>
+                      <ul className="pr-5">
+                        <li className="Product_Points">
+                          Our specialty is producing top-notch double doors that
+                          may be installed on your existing French doors.
+                        </li>
+                        <li className="Product_Points">
+                          This system can only be designed with fiber glass mesh
+                          (stiff mesh)
+                        </li>
+                        <li className="Product_Points">
+                          The largest size that may be produced is 3metre by
+                          3.5metre in height and width.
+                        </li>
+                        <li className="Product_Points">
+                          This mechanism has a magnet in the middle to secure
+                          it.
+                        </li>
+                      </ul>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
@@ -198,13 +180,23 @@ function RetractableDoubleDoor() {
               </div>
 
               <div className="col-12 mt-5">
-                <p className="Product_Exn mt-3">
-                  Our specialty is producing top-notch double doors that may be
-                  installed on your existing French doors. This system can only
-                  be designed with fiber glass mesh (stiff mesh).The largest
-                  size that may be produced is 3metre by 3.5metre in height and
-                  width. This mechanism has a magnet in the middle to secure it.
-                </p>
+                <ul className="pr-5">
+                  <li className="Product_Points">
+                    Our specialty is producing top-notch double doors that may
+                    be installed on your existing French doors.
+                  </li>
+                  <li className="Product_Points">
+                    This system can only be designed with fiber glass mesh
+                    (stiff mesh)
+                  </li>
+                  <li className="Product_Points">
+                    The largest size that may be produced is 3metre by 3.5metre
+                    in height and width.
+                  </li>
+                  <li className="Product_Points">
+                    This mechanism has a magnet in the middle to secure it.
+                  </li>
+                </ul>
                 <p className="Product_Feature mt-5">Features</p>
                 <ul>
                   <li className="Product_Points">

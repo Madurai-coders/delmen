@@ -9,7 +9,6 @@
   font-size: 20px;
   line-height: 147%;
   letter-spacing: 0.075em;
-  text-transform: capitalize;
   color: #000000;
 }
 .Delmen {
@@ -23,7 +22,6 @@
   line-height: 147%;
   text-align: center;
   letter-spacing: 0.075em;
-  text-transform: capitalize;
   color: #000000;
 }
 .about_delmen2 {
@@ -63,7 +61,7 @@ margin-top: 7px;
   line-height: 147%;
   letter-spacing: 0.075em;
   text-transform:uppercase;
-  color: #000000;
+  color: #80069E;
 }
 .design_1 {
   margin-top: 600px;

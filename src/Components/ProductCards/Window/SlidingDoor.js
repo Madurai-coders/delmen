@@ -69,16 +69,26 @@ function SlidingDoor() {
                   <div className="col-7">
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">Sliding Door System </h5>
+                      <ul className="pr-5">
+                        <li className="Product_Points">
+                          Aluminum two-inch profiles are used to make the
+                          sliding door system.
+                        </li>
+                        <li className="Product_Points">
+                          This system can be built to fit your exact
+                          specifications based on the sliding door system you
+                          currently have.
+                        </li>
+                        <li className="Product_Points">
+                          This framework may be installed on your current track
+                          or a new track can be built next to your sliding door
+                          system.
+                        </li>
+                        <li className="Product_Points">
+                          It comes with grade 304 stainless steel mesh.
+                        </li>
+                      </ul>
 
-                      <p className="Product_Exn mt-3">
-                        Aluminum two-inch profiles are used to make the sliding
-                        door system.This system can be built to fit your exact
-                        specifications based on the sliding door system you
-                        currently have.This framework may be installed on your
-                        current track or a new track can be built next to your
-                        sliding door system.It comes with grade 304 stainless
-                        steel mesh.
-                      </p>
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
@@ -144,32 +154,40 @@ function SlidingDoor() {
                   <h5 className="Product_Name ms-3">Sliding Door System</h5>
                 </div>
                 <div className="col-12 text-center mt-5">
-                 
-                    <Video
-                      loop
-                      controls={[
-                        "PlayPause",
-                        "Seek",
-                        "Time",
-                        "Volume",
-                        "Fullscreen",
-                      ]}
-                    >
-                      <source src={SlidingVideo} type="video/webm" />
-                    </Video>
-                 
+                  <Video
+                    loop
+                    controls={[
+                      "PlayPause",
+                      "Seek",
+                      "Time",
+                      "Volume",
+                      "Fullscreen",
+                    ]}
+                  >
+                    <source src={SlidingVideo} type="video/webm" />
+                  </Video>
                 </div>
               </div>
 
               <div className="col-12 mt-5">
-                <p className="Product_Exn mt-3">
-                  Aluminum two-inch profiles are used to make the sliding door
-                  system.This system can be built to fit your exact
-                  specifications based on the sliding door system you currently
-                  have.This framework may be installed on your current track or
-                  a new track can be built next to your sliding door system.It
-                  comes with grade 304 stainless steel mesh.
-                </p>
+                <ul className="pr-5">
+                  <li className="Product_Points">
+                    Aluminum two-inch profiles are used to make the sliding door
+                    system.
+                  </li>
+                  <li className="Product_Points">
+                    This system can be built to fit your exact specifications
+                    based on the sliding door system you currently have.
+                  </li>
+                  <li className="Product_Points">
+                    This framework may be installed on your current track or a
+                    new track can be built next to your sliding door system.
+                  </li>
+                  <li className="Product_Points">
+                    It comes with grade 304 stainless steel mesh.
+                  </li>
+                </ul>
+
                 <p className="Product_Feature mt-5">Features</p>
                 <ul>
                   <li className="Product_Points">

@@ -28,7 +28,7 @@ function RollerDoubleDoor() {
     <>
       <div className="retractable">
         <div className="container">
-          <Navbar1/>
+          <Navbar1 />
           {isTab && (
             <>
               <div className="CARDS_4">
@@ -71,16 +71,22 @@ function RollerDoubleDoor() {
                       <h5 className="Product_Name">
                         Retractable Roller Door System
                       </h5>
-
-                      <p className="Product_Exn mt-3">
-                        Retractable Roller Door System is specifically designed
-                        to fit the existing doors.This product can be installed
-                        on already-existing backyard doors, balcony doors, and
-                        utility doors.Fiberglass mesh (stiff mesh) and aluminum
-                        profiles are used in the fabrication of the system.
-                        Every time you use the system, a brush is incorporated
-                        to clean the mesh.
-                      </p>
+                      <ul className="pr-5">
+                        <li className="Product_Points">
+                          Retractable Roller Door System is specifically
+                          designed to fit the existing doors.{" "}
+                        </li>
+                        <li className="Product_Points">
+                          This product can be installed on already-existing
+                          backyard doors, balcony doors, and utility doors.
+                        </li>
+                        <li className="Product_Points">
+                          Fiberglass mesh (stiff mesh) and aluminum profiles are
+                          used in the fabrication of the system. Every time you
+                          use the system, a brush is incorporated to clean the
+                          mesh.
+                        </li>
+                      </ul>
 
                       <p className="Product_Feature mt-5">Advantages</p>
                       <ul>
@@ -170,15 +176,21 @@ function RollerDoubleDoor() {
               </div>
 
               <div className="col-12 mt-5">
-                <p className="Product_Exn mt-3">
-                  Retractable Roller Door System is specifically designed to fit
-                  the existing doors.This product can be installed on
-                  already-existing backyard doors, balcony doors, and utility
-                  doors.Fiberglass mesh (stiff mesh) and aluminum profiles are
-                  used in the fabrication of the system. Every time you use the
-                  system, a brush is incorporated to clean the mesh.
-                </p>
-
+                <ul className="pr-5">
+                  <li className="Product_Points">
+                    Retractable Roller Door System is specifically designed to
+                    fit the existing doors.{" "}
+                  </li>
+                  <li className="Product_Points">
+                    This product can be installed on already-existing backyard
+                    doors, balcony doors, and utility doors.
+                  </li>
+                  <li className="Product_Points">
+                    Fiberglass mesh (stiff mesh) and aluminum profiles are used
+                    in the fabrication of the system. Every time you use the
+                    system, a brush is incorporated to clean the mesh.
+                  </li>
+                </ul>
                 <p className="Product_Feature mt-5">Advantages</p>
                 <ul>
                   <li className="Product_Points">

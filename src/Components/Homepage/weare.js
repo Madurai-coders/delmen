@@ -15,22 +15,23 @@ function Weare() {
               <h2 className="about_title mt-5">ABOUT US</h2>
               <div className="about_content mt-4">
                 <p className="about_des">
-                  Our company, Delmen Mosquito ScreensTM, was founded in 1999.
-                  We are the first in India to introduce magnetic mosquito nets,
+                  Our company, Delmen Mosquito Screens™, was founded in 1999. We
+                  are the first in India to introduce magnetic mosquito nets,
                   and we have since grown to become one of the most reputable
-                  manufacturers of Magnetic Insect Screens, retractable roller
-                  systems and sliding and openable system for Windows and Doors.
+                  manufacturers of magnetic insect screens, retractable roller
+                  systems, and sliding and openable systems for windows and
+                  doors.
                 </p>
 
                 <p className="about_des1">
-                  Customized, end to end solutions for insect screens are
+                  Customized, end-to-end solutions for insect screens are
                   offered by Delmen Mosquito Screens. We specialize in
                   installing mosquito screens for doors and windows. We
                   constantly conduct product development in close consultation
                   with the market in an effort to achieve perfection, making
                   sure that our products and services meet the specific
                   requirements of our clients. Our product development team is
-                  on continual mission to review the existing products and
+                  on a continual mission to review the existing products and
                   improvise them with superior alternatives as available.
                 </p>
                 <Link

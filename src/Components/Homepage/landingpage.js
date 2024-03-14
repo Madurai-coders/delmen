@@ -82,7 +82,7 @@ function Landingpage() {
     } else if (suggestion === "Sliding Door") {
       navigate("./slidingdoor");
     } else if (suggestion === "Magnetic Net") {
-      navigate("./stainlesssteelwithmesh");
+      navigate("./magneticinsectscreens");
     } else if (suggestion === "RetractableDoubleDoor") {
       navigate("./retractabledoubledoor");
     } else if (suggestion === "Retractable Roller Double Door") {

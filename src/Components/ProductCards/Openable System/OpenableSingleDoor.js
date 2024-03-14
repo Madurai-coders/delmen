@@ -73,19 +73,29 @@ function OpenableSingleDr() {
                         Openable Single Door System{" "}
                       </h5>
 
-                      <p className="Product_Exn mt-3">
-                        Openable doors are custom made for the existing utility
-                        door, main door and balcony door.This product is mounted
-                        adjacent to your existing doors.It is assembled together
-                        by using a 2inch aluminum profile, double SS screw
-                        joints, and rust-free SS 304 mesh.This system sticks on
-                        the magnet while closing.
-                      </p>
-                      <p className="Product_Feature mt-5">Features</p>
+                      <ul className="pr-5">
+                        <li className="Product_Points">
+                          Openable doors are custom made for the existing
+                          utility door, main door and balcony door.
+                        </li>
+                        <li className="Product_Points">
+                          This product is mounted adjacent to your existing
+                          doors.
+                        </li>
+                        <li className="Product_Points">
+                          It is assembled together by using a 2inch aluminum
+                          profile, double SS screw joints, and rust-free SS 304
+                          mesh.
+                        </li>
+                        <li className="Product_Points">
+                          This system sticks on the magnet while closing.
+                        </li>
+                      </ul>
+                      <p className="Product_Feature mt-3">Features</p>
                       <ul>
                         <li className="Product_Points">Rust Free</li>
                       </ul>
-                      <p className="Product_Feature mt-5">Advantages</p>
+                      <p className="Product_Feature mt-3">Advantages</p>
                       <ul>
                         <li className="Product_Points">
                           This system has removable hinges
@@ -99,7 +109,7 @@ function OpenableSingleDr() {
                           for main doors, utility doors and balcony doors.
                         </li>
                       </ul>
-                      <p className="Product_Feature mt-5">Color Options</p>
+                      <p className="Product_Feature mt-3">Color Options</p>
                       <h6 className="product_customize mt-3">
                         Can be customized as per the client’s requirement. Our
                         main-color options are listed below.
@@ -171,41 +181,49 @@ function OpenableSingleDr() {
               </div>
 
               <div className="col-12 mt-5">
-                <p className="Product_Exn mt-3">
-                  Openable doors are custom made for the existing utility door,
-                  main door and balcony door.This product is mounted adjacent to
-                  your existing doors.It is assembled together by using a 2inch
-                  aluminum profile, double SS screw joints, and rust-free SS 304
-                  mesh.This system sticks on the magnet while closing.
-                </p>
+                <ul className="pr-5">
+                  <li className="Product_Points">
+                    Openable doors are custom made for the existing utility
+                    door, main door and balcony door.
+                  </li>
+                  <li className="Product_Points">
+                    This product is mounted adjacent to your existing doors.
+                  </li>
+                  <li className="Product_Points">
+                    It is assembled together by using a 2inch aluminum profile,
+                    double SS screw joints, and rust-free SS 304 mesh.
+                  </li>
+                  <li className="Product_Points">
+                    This system sticks on the magnet while closing.
+                  </li>
+                </ul>
                 <p className="Product_Feature mt-5">Features</p>
-                      <ul>
-                        <li className="Product_Points">Rust Free</li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Advantages</p>
-                      <ul>
-                        <li className="Product_Points">
-                          This system has removable hinges
-                        </li>
-                        <li className="Product_Points">
-                          It can be washed easily and fixed back without any
-                          issue
-                        </li>
-                        <li className="Product_Points">
-                          Excellent airflow as this system is specifically used
-                          for main doors, utility doors and balcony doors.
-                        </li>
-                      </ul>
-                      <p className="Product_Feature mt-5">Color Options</p>
-                      <h6 className="product_customize mt-3">
-                        Can be customized as per the client’s requirement. Our
-                        main-color options are listed below.
-                      </h6>
-                      <ul>
-                        <li className="Product_Points">White</li>
-                        <li className="Product_Points">Bronze</li>
-                        <li className="Product_Points">Wood finish</li>
-                      </ul>
+                <ul>
+                  <li className="Product_Points">Rust Free</li>
+                </ul>
+                <p className="Product_Feature mt-5">Advantages</p>
+                <ul>
+                  <li className="Product_Points">
+                    This system has removable hinges
+                  </li>
+                  <li className="Product_Points">
+                    It can be washed easily and fixed back without any issue
+                  </li>
+                  <li className="Product_Points">
+                    Excellent airflow as this system is specifically used for
+                    main doors, utility doors and balcony doors.
+                  </li>
+                </ul>
+                <p className="Product_Feature mt-5">Color Options</p>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement. Our
+                  main-color options are listed below.
+                </h6>
+                <ul>
+                  <li className="Product_Points">White</li>
+                  <li className="Product_Points">Bronze</li>
+                  <li className="Product_Points">Wood finish</li>
+                </ul>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
