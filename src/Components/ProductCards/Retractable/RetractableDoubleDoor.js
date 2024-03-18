@@ -47,7 +47,7 @@ function RetractableDoubleDoor() {
                           "Fullscreen",
                         ]}
                       >
-                        <source src={RollerDoubleDrVideo} type="video/webm" />
+                        <source src={RollerDoubleDrVideo} type="video/mp4" />
                       </Video>
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>

@@ -55,7 +55,7 @@ function Footer() {
                 <h6 className="contactcard_addr pt-1">Kandaswamy</h6>
                 <h6 className="callicon1 mt-3 pt-1">
                   <CallIcon className="CALL" />
-                  <span className="ms-1 call_no">8056035572,9442031069</span>
+                  <span className="ms-1 call_no">8056035572</span>
                 </h6>
                 <h6 className="contactcard_address mt-3 pr-3">
                   AVM Life Style Porur,<br></br>

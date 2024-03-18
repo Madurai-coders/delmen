@@ -326,7 +326,7 @@
   .contactcard_tit {
     font-size: 10px;
   }
-  .call_no {
+  /* .call_no {
     font-size: 7px;
   }
   .CALL {
@@ -335,7 +335,7 @@
   .callicon1 {
     margin-top: 12px !important;
   }
- 
+  */
 
   .footer_txt {
     font-size: 14px;
@@ -370,9 +370,15 @@
     bottom: 230px!important;
   }
   .call_no {
-    font-size: 6px;
+    font-size: 7px;
+    position: relative;
+    bottom: 3.5px;
+    right: 2px;
   }
   .links{
     height: 200px;
   }
+ .CALL{
+  font-size: 15px!important;
+ }
 }

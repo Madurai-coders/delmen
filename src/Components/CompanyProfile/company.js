@@ -51,7 +51,7 @@ function Company() {
                 </div>
                 <div className="col-12 mt-5">
                   <div className="pd">
-                    <p className="products_details ms-4">
+                    <p className="infrastructure_des ms-4">
                       Our streamlined production process and cost-cutting
                       techniques guarantee that customers receive products at
                       the most affordable possible prices. Our premium quality
@@ -104,7 +104,7 @@ function Company() {
                
                 <div className="col-12 mt-3">
                 <div className="pd">
-                    <p className="products_details ms-4">
+                    <p className="infrastructure_des ms-4">
                       Our streamlined production process and cost-cutting
                       techniques guarantee that customers receive products at
                       the most affordable possible prices. Our premium quality
