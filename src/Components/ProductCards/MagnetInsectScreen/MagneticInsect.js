@@ -42,7 +42,7 @@ function MagneticInsect() {
                           "Fullscreen",
                         ]}
                       >
-                        <source src={MagneticInsectVideo} type="video/webm" />
+                        <source src={MagneticInsectVideo} type="video/mp4" />
                       </Video>
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
@@ -151,7 +151,7 @@ function MagneticInsect() {
                       "Fullscreen",
                     ]}
                   >
-                    <source src={MagneticInsectVideo} type="video/webm" />
+                    <source src={MagneticInsectVideo} type="video/mp4" />
                   </Video>
                 </div>
               </div>

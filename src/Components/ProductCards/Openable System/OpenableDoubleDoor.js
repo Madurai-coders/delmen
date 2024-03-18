@@ -7,9 +7,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import RetractableDoubleDoor from "../../../assets/Retractable Double Door/RetractableDoubleDoor.png";
 import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
-import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
+
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import OpenableDoubleDrVideo from "../../../assets/ProductsVideo/openabledoubledr.mp4";
@@ -23,8 +22,6 @@ function OpenableDoubleDoor() {
 
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
-  const isCard_1 = useMediaQuery({ query: "(min-width: 992px)" });
-  const isCard_3 = useMediaQuery({ query: "(min-width: 576px)" });
 
   return (
     <>
@@ -47,7 +44,7 @@ function OpenableDoubleDoor() {
                           "Fullscreen",
                         ]}
                       >
-                        <source src={OpenableDoubleDrVideo} type="video/webm" />
+                        <source src={OpenableDoubleDrVideo} type="video/mp4" />
                       </Video>
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
@@ -166,7 +163,7 @@ function OpenableDoubleDoor() {
                       "Fullscreen",
                     ]}
                   >
-                    <source src={OpenableDoubleDrVideo} type="video/webm" />
+                    <source src={OpenableDoubleDrVideo} type="video/mp4" />
                   </Video>
                 </div>
               </div>
@@ -240,67 +237,24 @@ function OpenableDoubleDoor() {
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
               <h5 className="other_txt">
-                Other Products in 'Retractable Double Door' category
+                Other Products in 'Openable System' category
               </h5>
             </div>
-            {isCard_3 && (
-              <>
-                <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-                  <div className="otherproduct_card  text-center">
-                    <Link
-                      to="/retractabledoubledoor"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={RetractableRollerDoubleDoor}
-                        alt=""
-                        className="img-fluid  mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        Retractable Double Door
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-              </>
-            )}
 
-            <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
+            <div className="col-lg-3 col-md-5 col-sm-5 col-10 text-center mt-5">
               <div className="otherproduct_card text-center">
-                <Link to="/rollerdoubledoor" style={{ textDecoration: "none" }}>
+                <Link to="/openablesingledr" style={{ textDecoration: "none" }}>
                   <img
-                    src={RetractableDoubleDoor}
+                    src={OpenableSingleDoorSystem}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                    Retractable Roller Double Door<br></br>System
+                    Openable Single Door<br></br>System
                   </h4>
                 </Link>
               </div>
             </div>
-
-            {isCard_1 && (
-              <>
-                <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
-                  <div className="otherproduct_card  text-center">
-                    <Link
-                      to="/openablesingledr"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={OpenableSingleDoorSystem}
-                        alt=""
-                        className="img-fluid mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        openable single door<br></br> system
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-              </>
-            )}
           </div>
         </div>
 

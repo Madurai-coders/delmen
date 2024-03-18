@@ -16,7 +16,7 @@ import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 import SlidingDoor from "../../../assets/Windows Accessories/rollerdr.png";
-import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
+import SlidingDr from "../../../assets/Retractable Double Door/slidingdoor.png";
 
 import Callback from "../../card_section/Callback";
 function SlidingWindowSystem() {
@@ -46,7 +46,7 @@ function SlidingWindowSystem() {
                           "Fullscreen",
                         ]}
                       >
-                        <source src={SlidingWindowVideo} type="video/webm" />
+                        <source src={SlidingWindowVideo} type="video/mp4" />
                       </Video>
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
@@ -154,7 +154,7 @@ function SlidingWindowSystem() {
                       "Fullscreen",
                     ]}
                   >
-                    <source src={SlidingWindowVideo} type="video/webm" />
+                    <source src={SlidingWindowVideo} type="video/mp4" />
                   </Video>
                 </div>
               </div>
@@ -218,17 +218,14 @@ function SlidingWindowSystem() {
               <h5 className="other_txt mt-5">
                 Other Products in 'Doors/Windows Accessories' category
               </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
-              </h5>
+             
             </div>
-            {isCard_3 && (
-              <>
-                <div className="col-lg-3 col-md-4 col-sm-4 col-10 text-center mt-5">
+         
+                <div className="col-lg-3 col-md-5 col-sm-5 col-10 text-center mt-5">
                   <div className="otherproduct_card text-center">
                     <Link to="/slidingdoor" style={{ textDecoration: "none" }}>
                       <img
-                        src={SlidingDoor}
+                        src={SlidingDr}
                         alt=""
                         className="img-fluid mt-2 pt-1"
                       ></img>
@@ -238,25 +235,8 @@ function SlidingWindowSystem() {
                     </Link>
                   </div>
                 </div>
-              </>
-            )}
-            <div className="col-lg-3 col-md-4 col-sm-4 col-10 text-center mt-5">
-              <div className="otherproduct_card text-center">
-                <Link
-                  to="/singlesliderwithtrack"
-                  style={{ textDecoration: "none" }}
-                >
-                  <img
-                    src={SingleSliderWithTrack}
-                    alt=""
-                    className="img-fluid  mt-2 pt-1"
-                  ></img>
-                  <h4 className="otherproductcard_title mt-4">
-                    Single Slider With Track
-                  </h4>
-                </Link>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
 

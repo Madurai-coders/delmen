@@ -9,13 +9,13 @@ import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
 import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 import Callback from "../../card_section/Callback";
 import RollerDoubleDrVideo from "../../../assets/ProductsVideo/rollerdoubledr.mp4";
+import Slidingdr from "../../../assets/Windows Accessories/rollerdr.png";
 
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
@@ -23,8 +23,7 @@ function RetractableDoubleDoor() {
   const [CallBackCard, setCallBackCard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
-  const isCard_1 = useMediaQuery({ query: "(min-width: 992px)" });
-  const isCard_3 = useMediaQuery({ query: "(min-width: 276px)" });
+
 
   return (
     <>
@@ -250,51 +249,29 @@ function RetractableDoubleDoor() {
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
               <h5 className="other_txt">
-                Other Products in 'Retractable Double Door' category
+                Other Products in 'Retractable Door' category
               </h5>
             </div>
-            {isCard_1 && (
-              <>
+            
                 <div className="col-lg-3 col-md-6 col-sm-6 text-center mt-5">
                   <div className="otherproduct_card  text-center ms-5">
                     <Link
-                      to="/openablewindow"
+                      to="/rollerdoubledoor"
                       style={{ textDecoration: "none" }}
                     >
                       <img
-                        src={OpenableWindowSystem}
+                        src={Slidingdr}
                         alt=""
                         className="img-fluid  mt-2 pt-1"
                       ></img>
                       <h4 className="otherproductcard_title mt-4">
-                        Openable Window<br></br> System
+                        Retractable Roller<br></br>Door
                       </h4>
                     </Link>
                   </div>
                 </div>
-              </>
-            )}
-            {isCard_3 && (
-              <>
-                <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-                  <div className="otherproduct_card  text-center ms-4">
-                    <Link
-                      to="/singlesliderwithtrack"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={SingleSliderWithTrack}
-                        alt=""
-                        className="img-fluid  mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        Single Slider With<br></br> Track
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-              </>
-            )}
+            
+            
           </div>
         </div>
 

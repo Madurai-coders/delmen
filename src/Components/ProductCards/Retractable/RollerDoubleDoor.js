@@ -8,8 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import SingleSliderWithTrack from "../../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-import OpenableWindowSystem from "../../../assets/Retractable Double Door/OpenableWindowSystem.png";
+import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import RollerDrVideo from "../../../assets/ProductsVideo/rollerdr.mp4";
@@ -45,7 +44,7 @@ function RollerDoubleDoor() {
                           "Fullscreen",
                         ]}
                       >
-                        <source src={RollerDrVideo} type="video/webm" />
+                        <source src={RollerDrVideo} type="video/mp4" />
                       </Video>
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
@@ -170,7 +169,7 @@ function RollerDoubleDoor() {
                       "Fullscreen",
                     ]}
                   >
-                    <source src={RollerDrVideo} type="video/webm" />
+                    <source src={RollerDrVideo} type="video/mp4" />
                   </Video>
                 </div>
               </div>
@@ -250,39 +249,21 @@ function RollerDoubleDoor() {
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
               <div className="otherproduct_card text-center ms-5">
-                <Link to="/openablewindow" style={{ textDecoration: "none" }}>
+                <Link to="/retractabledoubledoor" style={{ textDecoration: "none" }}>
                   <img
-                    src={OpenableWindowSystem}
+                    src={RetractableRollerDoubleDoor}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                    Openable Window<br></br> System
+                    Retractable Double<br></br>Door
                   </h4>
                 </Link>
               </div>
             </div>
-            {isCard_3 && (
-              <>
-                <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-                  <div className="otherproduct_card text-center ms-4">
-                    <Link
-                      to="/singlesliderwithtrack"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={SingleSliderWithTrack}
-                        alt=""
-                        className="img-fluid  mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        Single Slider With<br></br> Track
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-              </>
-            )}
+            
+              
+           
           </div>
         </div>
 

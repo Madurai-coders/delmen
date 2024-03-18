@@ -71,7 +71,7 @@ function OurProduct() {
                 <div className="products_table2">
                   <div className="ms-4">
                     <h5 className="products_name pt-3">
-                      Retractable Double Door
+                      Retractable Door
                     </h5>
                     <Link
                       to="/retractabledoubledoor"
@@ -177,7 +177,7 @@ function OurProduct() {
                       <h6 className="names">Sliding Window Mesh</h6>
                     </Link> */}
                     <Link
-                      to="/slidingwindowmesh"
+                      to="/multislidingdr"
                       style={{ textDecoration: "none" }}
                     >
                       <h6 className="names">Multi Sliding Door</h6>
