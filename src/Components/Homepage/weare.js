@@ -16,23 +16,23 @@ function Weare() {
               <div className="about_content mt-4">
                 <p className="about_des">
                   Our company, Delmen Mosquito Screens™, was founded in 1999. We
-                  are the first in India to introduce magnetic mosquito nets,
-                  and we have since grown to become one of the most reputable
+                  are the first in India to introduce magnetic mosquito nets and
+                  have since grown to become one of the most reputable
                   manufacturers of magnetic insect screens, retractable roller
                   systems, and sliding and openable systems for windows and
                   doors.
                 </p>
 
                 <p className="about_des1">
-                  Customized, end-to-end solutions for insect screens are
-                  offered by Delmen Mosquito Screens. We specialize in
-                  installing mosquito screens for doors and windows. We
-                  constantly conduct product development in close consultation
-                  with the market in an effort to achieve perfection, making
-                  sure that our products and services meet the specific
-                  requirements of our clients. Our product development team is
-                  on a continual mission to review the existing products and
-                  improvise them with superior alternatives as available.
+                  Customized end-to-end solutions for insect screens are offered
+                  by Delmen Mosquito Screens. We specialize in installing
+                  mosquito screens for doors and windows. We constantly conduct
+                  product development in close consultation with the market in
+                  an effort to achieve perfection, making sure that our products
+                  and services meet the specific requirements of our clients.
+                  Our product development team is on a continual mission to
+                  review the existing products and improvise them with superior
+                  alternatives as available.
                 </p>
                 <Link
                   to={{

@@ -73,11 +73,15 @@ function RollerDoubleDoor() {
                       <ul className="pr-5">
                         <li className="Product_Points">
                           Retractable Roller Door System is specifically
-                          designed to fit the existing doors.{" "}
+                          designed to fit the existing doors.
                         </li>
                         <li className="Product_Points">
                           This product can be installed on already-existing
-                          backyard doors, balcony doors, and utility doors.
+                          backyard, balcony and utility doors.
+                        </li>
+                        <li className="Product_Points">
+                          This system is compatible with any type of door,
+                          whether it is made of wood, UPVC, or aluminum.
                         </li>
                         <li className="Product_Points">
                           Fiberglass mesh (stiff mesh) and aluminum profiles are
@@ -107,16 +111,15 @@ function RollerDoubleDoor() {
                         </li>
                       </ul>
                       <p className="Product_Feature mt-5">Color Options</p>
-                      <h6 className="product_customize mt-3">
-                        Can be customized as per the client’s requirement. Our
-                        main-color options are listed below.
-                      </h6>
+
                       <ul>
                         <li className="Product_Points">White</li>
                         <li className="Product_Points">Bronze</li>
                         <li className="Product_Points">Wood finish</li>
                       </ul>
-
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement.
+                      </h6>
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -178,11 +181,15 @@ function RollerDoubleDoor() {
                 <ul className="pr-5">
                   <li className="Product_Points">
                     Retractable Roller Door System is specifically designed to
-                    fit the existing doors.{" "}
+                    fit the existing doors.
                   </li>
                   <li className="Product_Points">
-                    This product can be installed on already-existing backyard
-                    doors, balcony doors, and utility doors.
+                    This product can be installed on already-existing backyard,
+                    balcony and utility doors.
+                  </li>
+                  <li className="Product_Points">
+                    This system is compatible with any type of door, whether it
+                    is made of wood, UPVC, or aluminum.
                   </li>
                   <li className="Product_Points">
                     Fiberglass mesh (stiff mesh) and aluminum profiles are used
@@ -208,15 +215,15 @@ function RollerDoubleDoor() {
                   </li>
                 </ul>
                 <p className="Product_Feature mt-5">Color Options</p>
-                <h6 className="product_customize mt-3">
-                  Can be customized as per the client’s requirement. Our
-                  main-color options are listed below.
-                </h6>
+
                 <ul>
                   <li className="Product_Points">White</li>
                   <li className="Product_Points">Bronze</li>
                   <li className="Product_Points">Wood finish</li>
                 </ul>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement.
+                </h6>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -249,7 +256,10 @@ function RollerDoubleDoor() {
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
               <div className="otherproduct_card text-center ms-5">
-                <Link to="/retractabledoubledoor" style={{ textDecoration: "none" }}>
+                <Link
+                  to="/retractabledoubledoor"
+                  style={{ textDecoration: "none" }}
+                >
                   <img
                     src={RetractableRollerDoubleDoor}
                     alt=""
@@ -261,9 +271,6 @@ function RollerDoubleDoor() {
                 </Link>
               </div>
             </div>
-            
-              
-           
           </div>
         </div>
 

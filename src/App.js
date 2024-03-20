@@ -10,13 +10,13 @@ import RetractableDoubleDoor from "./Components/ProductCards/Retractable/Retract
 import RollerDoubleDoor from "./Components/ProductCards/Retractable/RollerDoubleDoor";
 import OpenableSingleDr from "./Components/ProductCards/Openable System/OpenableSingleDoor";
 import MultiSlidingDoor from "./Components/ProductCards/Window/MultiSlidingDoor";
-// import OpenableWindow from "./Components/ProductCards/Openable System/OpenableWindow";
+import OpenableWindow from "./Components/ProductCards/Openable System/OpenableWindow";
 import OpenableDoubleDoor from "./Components/ProductCards/Openable System/OpenableDoubleDoor";
 import SlidingSystem from "./Components/ProductCards/Window/SlidingWindowSystem";
 import SlidingDoor from "./Components/ProductCards/Window/SlidingDoor";
 import MagneticInsect from "./Components/ProductCards/MagnetInsectScreen/MagneticInsect";
 import ScrollToTop from "./Components/script/script";
-// import RollerWindow from "./Components/ProductCards/Retractable/RetractableRollerWindow";
+import RollerWindow from "./Components/ProductCards/Retractable/RetractableRollerWindow";
 // import SlidingWindowMesh from "./Components/ProductCards/Window/SlidingWindowMesh";
 // import SingleSliderWithTrack from "./Components/ProductCards/Window/SingleSliderWithTrack";
 // import OpenableMultiFold from "./Components/ProductCards/Openable System/OpenableMultiFold";
@@ -74,12 +74,12 @@ function App() {
                 path="/rollerdoubledoor"
                 element={<RollerDoubleDoor />}
               ></Route>
-              {/* <Route path="/rollerwindow" element={<RollerWindow />}></Route> */}
+              <Route path="/rollerwindow" element={<RollerWindow />}></Route>
 
-              {/* <Route
+              <Route
                 path="/openablewindow"
                 element={<OpenableWindow />}
-              ></Route> */}
+              ></Route>
 
               <Route
                 path="/openablesingledr"

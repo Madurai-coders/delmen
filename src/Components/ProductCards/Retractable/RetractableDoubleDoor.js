@@ -24,7 +24,6 @@ function RetractableDoubleDoor() {
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
 
-
   return (
     <>
       <div className="retractable">
@@ -107,15 +106,14 @@ function RetractableDoubleDoor() {
                         </li>
                       </ul>
                       <p className="Product_Feature mt-5">Color Options</p>
-                      <h6 className="product_customize mt-3">
-                        Can be customized as per the client’s requirement. Our
-                        main-color options are listed below.
-                      </h6>
+
                       <ul>
                         <li className="Product_Points">White</li>
                         <li className="Product_Points">Bronze</li>
-                        <li className="Product_Points">Wood finish</li>
                       </ul>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement.
+                      </h6>
 
                       <div className="d-flex flex-row">
                         <Button
@@ -213,15 +211,14 @@ function RetractableDoubleDoor() {
                 </ul>
 
                 <p className="Product_Feature mt-5">Color Options</p>
-                <h6 className="product_customize mt-3">
-                  Can be customized as per the client’s requirement. Our
-                  main-color options are listed below.
-                </h6>
+
                 <ul>
                   <li className="Product_Points">White</li>
                   <li className="Product_Points">Bronze</li>
-                  <li className="Product_Points">Wood finish</li>
                 </ul>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement.
+                </h6>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -252,26 +249,21 @@ function RetractableDoubleDoor() {
                 Other Products in 'Retractable Door' category
               </h5>
             </div>
-            
-                <div className="col-lg-3 col-md-6 col-sm-6 text-center mt-5">
-                  <div className="otherproduct_card  text-center ms-5">
-                    <Link
-                      to="/rollerdoubledoor"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={Slidingdr}
-                        alt=""
-                        className="img-fluid  mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        Retractable Roller<br></br>Door
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-            
-            
+
+            <div className="col-lg-3 col-md-6 col-sm-6 text-center mt-5">
+              <div className="otherproduct_card  text-center ms-5">
+                <Link to="/rollerdoubledoor" style={{ textDecoration: "none" }}>
+                  <img
+                    src={Slidingdr}
+                    alt=""
+                    className="img-fluid  mt-2 pt-1"
+                  ></img>
+                  <h4 className="otherproductcard_title mt-4">
+                    Retractable Roller<br></br>Door
+                  </h4>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -93,15 +93,15 @@ function SlidingWindowSystem() {
                         </li>
                       </ul>
                       <p className="Product_Feature mt-5">Color Options</p>
-                      <h6 className="product_customize mt-3">
-                        Can be customized as per the client’s requirement. Our
-                        main-color options are listed below.
-                      </h6>
+
                       <ul>
                         <li className="Product_Points">White</li>
                         <li className="Product_Points">Bronze</li>
                         <li className="Product_Points">Wood finish</li>
                       </ul>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement.
+                      </h6>
 
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
@@ -180,15 +180,15 @@ function SlidingWindowSystem() {
                   </li>
                 </ul>
                 <p className="Product_Feature mt-5">Color Options</p>
-                <h6 className="product_customize mt-3">
-                  Can be customized as per the client’s requirement. Our
-                  main-color options are listed below.
-                </h6>
+
                 <ul>
                   <li className="Product_Points">White</li>
                   <li className="Product_Points">Bronze</li>
                   <li className="Product_Points">Wood finish</li>
                 </ul>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement.
+                </h6>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -218,25 +218,22 @@ function SlidingWindowSystem() {
               <h5 className="other_txt mt-5">
                 Other Products in 'Doors/Windows Accessories' category
               </h5>
-             
             </div>
-         
-                <div className="col-lg-3 col-md-5 col-sm-5 col-10 text-center mt-5">
-                  <div className="otherproduct_card text-center">
-                    <Link to="/slidingdoor" style={{ textDecoration: "none" }}>
-                      <img
-                        src={SlidingDr}
-                        alt=""
-                        className="img-fluid mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        Sliding <br></br>Door
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-            
-            
+
+            <div className="col-lg-3 col-md-5 col-sm-5 col-10 text-center mt-5">
+              <div className="otherproduct_card text-center">
+                <Link to="/slidingdoor" style={{ textDecoration: "none" }}>
+                  <img
+                    src={SlidingDr}
+                    alt=""
+                    className="img-fluid mt-2 pt-1"
+                  ></img>
+                  <h4 className="otherproductcard_title mt-4">
+                    Sliding <br></br>Door
+                  </h4>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 

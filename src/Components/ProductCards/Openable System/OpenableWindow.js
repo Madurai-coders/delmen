@@ -1,5 +1,5 @@
 import Footer from "../../Footer/footer";
-import Navbar_1 from "../../Navbar_1/navbar_1";
+import Navbar1 from "../../Navbar_1/navbar_1";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -7,18 +7,16 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import RetractableDoubleDoor from "../../../assets/Retractable Double Door/RetractableDoubleDoor.png";
-import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
-import RetractableRollerDoubleDoor from "../../../assets/Retractable Double Door/RollerDoubledr.png";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
-import OpenableWindowVideo from "../../../assets/ProductsVideo/openablewindow.mp4";
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 import Callback from "../../card_section/Callback";
 import Slidingdr from "../../../assets/Windows Accessories/rollerdr.png";
+import OpenableWindowVideo from "../../../assets/ProductsVideo/openabledoubledr.mp4";
+import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
 
 function OpenableWindow() {
   const [CallBackCard, setCallBackCard] = useState(false);
@@ -73,13 +71,47 @@ function OpenableWindow() {
                     <div className="Product_Detail mt-3">
                       <h5 className="Product_Name">Openable Window System</h5>
 
-                     
-                      <p className="Product_Exn mt-3">
-                        It is 45 degree cut and joined with SS screws, The use
-                        304 SS Mesh rust free .Advantage of the product it can
-                        be removed from the window and it can be washed and
-                        fixed back to the window.
-                      </p>
+                      <ul className="pr-5">
+                        <li className="Product_Points">
+                          Openable window system can be installed to your wooden
+                          windows and casement window in UPVC.
+                        </li>
+                        <li className="Product_Points">
+                          The system is specially designed with screw joints to
+                          all four edges of the window frame.
+                        </li>
+                        <li className="Product_Points">
+                          We use SS 304 grade mesh.
+                        </li>
+                        <li className="Product_Points">
+                          This system is mounted with nylon hinges.
+                        </li>
+                        <li className="Product_Points">
+                          Our system of mounting the mesh to the window is
+                          different from what is available in the market.
+                        </li>
+                      </ul>
+                      <p className="Product_Feature mt-5">Features</p>
+                      <ul>
+                        <li className="Product_Points">
+                          The mesh remains stiff and steady.
+                        </li>
+                        <li className="Product_Points">Easy to operate.</li>
+
+                        <li className="Product_Points">
+                          Easy to wash and re-attach back on your window.
+                        </li>
+                      </ul>
+
+                      <p className="Product_Feature mt-5">Color Options</p>
+
+                      <ul>
+                        <li className="Product_Points">Bronze anodized</li>
+                        <li className="Product_Points">Powder coated white</li>
+                      </ul>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement.
+                      </h6>
 
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
@@ -124,7 +156,7 @@ function OpenableWindow() {
                 <div className="col-12 mt-3">
                   <h5 className="Product_Name ms-3">Openable Window System</h5>
                 </div>
-                <div className="col-12 text-center mt-5">
+                {/* <div className="col-12 text-center mt-5">
                   <Video
                     loop
                     controls={[
@@ -137,17 +169,49 @@ function OpenableWindow() {
                   >
                     <source src={OpenableWindowVideo} type="video/webm" />
                   </Video>
-                </div>
+                </div> */}
               </div>
 
               <div className="col-12 mt-5">
-               
-                <p className="Product_Exn mt-3">
-                  It is 45 degree cut and joined with SS screws, The use 304 SS
-                  Mesh rust free .Advantage of the product it can be removed
-                  from the window and it can be washed and fixed back to the
-                  window.
-                </p>
+                <ul className="pr-5">
+                  <li className="Product_Points">
+                    Openable window system can be installed to your wooden
+                    windows and casement window in UPVC.
+                  </li>
+                  <li className="Product_Points">
+                    The system is specially designed with screw joints to all
+                    four edges of the window frame.
+                  </li>
+                  <li className="Product_Points">We use SS 304 grade mesh.</li>
+                  <li className="Product_Points">
+                    This system is mounted with nylon hinges.
+                  </li>
+                  <li className="Product_Points">
+                    Our system of mounting the mesh to the window is different
+                    from what is available in the market.
+                  </li>
+                </ul>
+                <p className="Product_Feature mt-5">Features</p>
+                <ul>
+                  <li className="Product_Points">
+                    The mesh remains stiff and steady.
+                  </li>
+                  <li className="Product_Points">Easy to operate.</li>
+
+                  <li className="Product_Points">
+                    Easy to wash and re-attach back on your window.
+                  </li>
+                </ul>
+
+                <p className="Product_Feature mt-5">Color Options</p>
+
+                <ul>
+                  <li className="Product_Points">Bronze anodized</li>
+                  <li className="Product_Points">Powder coated white</li>
+                </ul>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement.
+                </h6>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -171,75 +235,27 @@ function OpenableWindow() {
           )}
 
           <BuyingReq />
-
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
               <h5 className="other_txt">
-                Other Products in 'Retractable Door' category
-              </h5>
-              <h5 className="other_subtxt mt-4">
-                Minimum Order Quantity : 100
+                Other Products in 'Openable System' category
               </h5>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-8 text-center mt-5">
-              <div className="otherproduct_card  text-center">
-                <Link
-                  to="/retractabledoubledoor"
-                  style={{ textDecoration: "none" }}
-                >
+
+            <div className="col-lg-3 col-md-5 col-sm-5 col-10 text-center mt-5">
+              <div className="otherproduct_card text-center">
+                <Link to="/openablesingledr" style={{ textDecoration: "none" }}>
                   <img
-                    src={RetractableRollerDoubleDoor}
+                    src={OpenableSingleDoorSystem}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                    Retractable Double Door
+                    Openable Single Door<br></br>System
                   </h4>
                 </Link>
               </div>
             </div>
-            {isCard_3 && (
-              <>
-                <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-                  <div className="otherproduct_card text-center">
-                    <Link
-                      to="/rollerdoubledoor"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={Slidingdr}
-                        alt=""
-                        className="img-fluid  mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        Retractable Roller Door<br></br>System
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-              </>
-            )}
-            {isCard_1 && (
-              <>
-                <div className="col-lg-3 col-md-6 col-6 text-center mt-5">
-                  <div className="otherproduct_card  text-center">
-                    <Link
-                      to="/openablesingledr"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={OpenableSingleDoorSystem}
-                        alt=""
-                        className="img-fluid mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        openable single door<br></br> system
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-              </>
-            )}
           </div>
         </div>
 

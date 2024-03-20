@@ -80,11 +80,7 @@ function OpenableDoubleDoor() {
                           surface and is constructed from a 2-inch aluminum
                           profile with SS 304 mesh.
                         </li>
-                        <li className="Product_Points">
-                          If this product has to be used for main door (which
-                          has a double door) in such cases, it is advisable to
-                          use this openable double fold door system.
-                        </li>
+                        
                         <li className="Product_Points">
                           This system is recommended for doors having width
                           above 4 feet.
@@ -99,15 +95,15 @@ function OpenableDoubleDoor() {
                         </li>
                       </ul>
                       <p className="Product_Feature mt-5">Color Options</p>
-                      <h6 className="product_customize mt-3">
-                        Can be customized as per the client’s requirement. Our
-                        main-color options are listed below.
-                      </h6>
+                     
                       <ul>
                         <li className="Product_Points">White</li>
                         <li className="Product_Points">Bronze</li>
                         <li className="Product_Points">Wood finish</li>
                       </ul>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement. 
+                      </h6>
 
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
@@ -182,11 +178,7 @@ function OpenableDoubleDoor() {
                     is constructed from a 2-inch aluminum profile with SS 304
                     mesh.
                   </li>
-                  <li className="Product_Points">
-                    If this product has to be used for main door (which has a
-                    double door) in such cases, it is advisable to use this
-                    openable double fold door system.
-                  </li>
+                 
                   <li className="Product_Points">
                     This system is recommended for doors having width above 4
                     feet.
@@ -201,15 +193,15 @@ function OpenableDoubleDoor() {
                   </li>
                 </ul>
                 <p className="Product_Feature mt-5">Color Options</p>
-                <h6 className="product_customize mt-3">
-                  Can be customized as per the client’s requirement. Our
-                  main-color options are listed below.
-                </h6>
+               
                 <ul>
                   <li className="Product_Points">White</li>
                   <li className="Product_Points">Bronze</li>
                   <li className="Product_Points">Wood finish</li>
                 </ul>
+                <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement. 
+                      </h6>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button

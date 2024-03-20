@@ -127,12 +127,12 @@ function BuyingReq() {
                 </button>
               </div>
             </div>
-            <div className="col-12 text-center mt-5">
+            {/* <div className="col-12 text-center mt-5">
               <h6 className="contactus_txt1">
                 "We are accepting local inquiries mostly from Tamil Nadu &
                 Karnataka."
               </h6>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

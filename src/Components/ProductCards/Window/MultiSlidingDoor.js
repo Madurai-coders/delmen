@@ -94,6 +94,10 @@ function MultiSlidingDoor() {
                           With an extra track, this can be installed next to
                           your current multi-sliding glass door.
                         </li>
+                        <li className="Product_Points">
+                          Reinforcement is given in the center to ensure
+                          steadiness of the frame and stiffness of the mesh.
+                        </li>
                       </ul>
                       <p className="Product_Feature mt-5">Advantages</p>
                       <ul>
@@ -106,16 +110,15 @@ function MultiSlidingDoor() {
                         </li>
                       </ul>
                       <p className="Product_Feature mt-5">Color Options</p>
-                      <h6 className="product_customize mt-3">
-                        Can be customized as per the client’s requirement. Our
-                        main-color options are listed below.
-                      </h6>
+
                       <ul>
                         <li className="Product_Points">White</li>
                         <li className="Product_Points">Bronze</li>
                         <li className="Product_Points">Wood finish</li>
                       </ul>
-
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement.
+                      </h6>
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
                           variant="outlined"
@@ -205,15 +208,15 @@ function MultiSlidingDoor() {
                   </li>
                 </ul>
                 <p className="Product_Feature mt-5">Color Options</p>
-                <h6 className="product_customize mt-3">
-                  Can be customized as per the client’s requirement. Our
-                  main-color options are listed below.
-                </h6>
+
                 <ul>
                   <li className="Product_Points">White</li>
                   <li className="Product_Points">Bronze</li>
                   <li className="Product_Points">Wood finish</li>
                 </ul>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement.
+                </h6>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -244,24 +247,24 @@ function MultiSlidingDoor() {
                 Other Products in 'Sliding Door' category
               </h5>
             </div>
-          
-                <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-                  <div className="otherproduct_card  text-center">
-                    <Link
-                      to="/slidingwindowsystem"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={SlidingWindowSystem }
-                        alt=""
-                        className="img-fluid  mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                       Sliding Window System
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
+
+            <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
+              <div className="otherproduct_card  text-center">
+                <Link
+                  to="/slidingwindowsystem"
+                  style={{ textDecoration: "none" }}
+                >
+                  <img
+                    src={SlidingWindowSystem}
+                    alt=""
+                    className="img-fluid  mt-2 pt-1"
+                  ></img>
+                  <h4 className="otherproductcard_title mt-4">
+                    Sliding Window System
+                  </h4>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 

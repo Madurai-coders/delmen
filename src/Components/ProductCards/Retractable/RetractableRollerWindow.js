@@ -18,6 +18,8 @@ import "react-html5video/dist/styles.css";
 import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 import Callback from "../../card_section/Callback";
+import Slidingdr from "../../../assets/Windows Accessories/rollerdr.png";
+
 function RollerWindow() {
   const [CallBackCard, setCallBackCard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -28,7 +30,7 @@ function RollerWindow() {
     <>
       <div className="retractable">
         <div className="container">
-          <Navbar1/>
+          <Navbar1 />
           {isTab && (
             <>
               <div className="CARDS_4">
@@ -73,26 +75,34 @@ function RollerWindow() {
                       </h5>
 
                       <p className="Product_Exn mt-3">
-                        Roller window this product can be installed on the
-                        existing wooden windows as well on UPVC Casement windows
-                        advantage of this product it can be used as in need if
-                        not it will be in the roll form inside the net box This
-                        Product comes with Fiberglass Stiff mesh only
+                        This product is manufactured with aluminum profiles and
+                        fiber glass mesh. It is designed to mount on wooden,
+                        aluminum and UPVC windows.
                       </p>
 
-                      <p className="Product_Feature mt-5">
-                        Advantages
-                      </p>
+                      <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
-                          This system can be operatable only when your existing
-                          window is kept open.
+                          This retractable roller window can be used only when
+                          required.
                         </li>
 
                         <li className="Product_Points">
-                          When not in use , it can be rolled into the net box
+                          It has a brush to clean the mesh every time the system
+                          is operated.
+                        </li>
+                        <li className="Product_Points">
+                          This system comes with fiberglass mesh only.
                         </li>
                       </ul>
+                      <p className="Product_Feature mt-5">Color Options</p>
+
+                      <ul>
+                        <li className="Product_Points">Bronze anodized</li>
+                      </ul>
+                      <h6 className="product_customize mt-3">
+                        Can be customized as per the client’s requirement.
+                      </h6>
 
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
@@ -156,27 +166,35 @@ function RollerWindow() {
               </div>
 
               <div className="col-12 mt-5">
-               
                 <p className="Product_Exn mt-3">
-                  Roller window this product can be installed on the existing
-                  wooden windows as well on UPVC Casement windows advantage of
-                  this product it can be used as in need if not it will be in
-                  the roll form inside the net box This Product comes with
-                  Fiberglass Stiff mesh only
-                  <p className="Product_Feature mt-5">
-                    Advantage
-                  </p>
-                  <ul>
-                    <li className="Product_Points">
-                      This system can be operatable only when your existing
-                      window is kept open.
-                    </li>
-
-                    <li className="Product_Points">
-                      When not in use , it can be rolled into the net box
-                    </li>
-                  </ul>
+                  This product is manufactured with aluminum profiles and fiber
+                  glass mesh. It is designed to mount on wooden, aluminum and
+                  UPVC windows.
                 </p>
+
+                <p className="Product_Feature mt-5">Features</p>
+                <ul>
+                  <li className="Product_Points">
+                    This retractable roller window can be used only when
+                    required.
+                  </li>
+
+                  <li className="Product_Points">
+                    It has a brush to clean the mesh every time the system is
+                    operated.
+                  </li>
+                  <li className="Product_Points">
+                    This system comes with fiberglass mesh only.
+                  </li>
+                </ul>
+                <p className="Product_Feature mt-5">Color Options</p>
+
+                <ul>
+                  <li className="Product_Points">Bronze anodized</li>
+                </ul>
+                <h6 className="product_customize mt-3">
+                  Can be customized as per the client’s requirement.
+                </h6>
               </div>
               <div className="col-12 text-center d-flex flex-column">
                 <Button
@@ -204,45 +222,23 @@ function RollerWindow() {
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
               <h5 className="other_txt">
-                Other Products in 'Retractable Double Door' category
+                Other Products in 'Retractable Door' category
               </h5>
-            
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6 col-10 text-center mt-5">
-              <div className="otherproduct_card text-center ms-5">
-                <Link to="/openablewindow" style={{ textDecoration: "none" }}>
+            <div className="col-lg-3 col-md-6 col-sm-6 text-center mt-5">
+              <div className="otherproduct_card  text-center ms-5">
+                <Link to="/rollerdoubledoor" style={{ textDecoration: "none" }}>
                   <img
-                    src={OpenableWindowSystem}
+                    src={Slidingdr}
                     alt=""
                     className="img-fluid  mt-2 pt-1"
                   ></img>
                   <h4 className="otherproductcard_title mt-4">
-                    Openable Window<br></br> System
+                    Retractable Roller<br></br>Door
                   </h4>
                 </Link>
               </div>
             </div>
-            {isCard_3 && (
-              <>
-                <div className="col-lg-3 col-md-6 col-sm-6 col-6 text-center mt-5">
-                  <div className="otherproduct_card text-center ms-4">
-                    <Link
-                      to="/singlesliderwithtrack"
-                      style={{ textDecoration: "none" }}
-                    >
-                      <img
-                        src={SingleSliderWithTrack}
-                        alt=""
-                        className="img-fluid  mt-2 pt-1"
-                      ></img>
-                      <h4 className="otherproductcard_title mt-4">
-                        Single Slider With<br></br> Track
-                      </h4>
-                    </Link>
-                  </div>
-                </div>
-              </>
-            )}
           </div>
         </div>
         <div className="FOOTER">

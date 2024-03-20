@@ -157,7 +157,6 @@ function MagneticInsect() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="product_des mt-4">product description</h5>
                 <h5 className="Product_Title mt-4">Magnetic Insect Screens</h5>
                 <p className="Product_Exn mt-3">
                   Magnetic insect screen is fabricated with fiberglass mesh. It

@@ -102,7 +102,7 @@ function Contact() {
             <div className="col-lg-9 col-md-10 col-sm-11 col-11">
               <div className="contactform">
                 <h4 className="contactus_des pl-5 pt-5">
-                  Describe Your BUYING Requirement
+                Describe your buying requirement.
                 </h4>
                 <div className="des">
                   <p className="contactus_detail pl-5">
@@ -135,7 +135,7 @@ function Contact() {
                   + Add Attachment
                 </label>{" "}
                 {filemsg && <span className="file me-5"> File({dataarray.length})</span>}
-                <p className="note_msg ms-5">NOTE: Press CTRL to Select Mutliple Files</p>
+                <p className="note_msg ms-5">NOTE: Press CTRL to select mutliple files</p>
                 <div className="row ms-4 mt-4 EMAIL">
                   <div className="col-lg-5 col-md-5 col-sm-5 col-10 ms-3 ">
                     <TextField

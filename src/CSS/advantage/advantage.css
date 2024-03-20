@@ -334,6 +334,9 @@
   .infras{
     padding: 0 0;
   }
+  .in{
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 610px) {
   .quality_des{
@@ -356,6 +359,7 @@ margin-left: 60px!important;
 @media only screen and (max-width: 568px) {
   .ourproducts-title{
     font-size: 35px;
+    margin-right: 17px!important;
   }
   .products_details{
     font-size: 16px;
@@ -393,6 +397,8 @@ margin-left: 20px!important;
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
+    margin-top: 20px!important;
+    margin-left: 14px!important;
   }
   .infrastructure_title{
     font-size: 35px;
@@ -405,6 +411,9 @@ margin-left: 20px!important;
   }
   .pd{
     padding: 0 10px;
+  }
+  .products-des{
+    padding-top: 0px!important;
   }
 }
 

@@ -16,16 +16,16 @@ function Readmore() {
             <div className="col-10 mt-5">
               <h6 className="about_delmen pt-5 text-center">
                 Our specialty is manufacturing high-quality mosquito screens
-                that are mounted to windows and doors to prevent unwanted
-                insects and mosquitoes from entering.
+                that are mounted to existing windows and doors to prevent
+                unwanted insects and mosquitoes from entering.
               </h6>
               <h6 className="about_delmen2 mt-5">
-                As a Business, we value Quality.
+                As a Business, we value Quality and consistency.
               </h6>
               <h6 className="about_delmen1 mt-5">
-                Quality testing is done at every stage of the production
-                process, from the procurement of raw materials to installation.
-                Our infrastructure aids in our efficient operations. We have the
+                Quality testing is done at every stage of the production process
+                from the procurement of raw materials to installation. Our
+                infrastructure aids in our efficient operations. We have the
                 most sophisticated manufacturing facility with skilled workers,
                 cut-off machines, hand tools, slot milling, and drilling, etc.
               </h6>
@@ -33,25 +33,26 @@ function Readmore() {
               <div className="ad">
                 <ul className="mt-4">
                   <li className="advantages_points about_delmen1">
-                  Tailor-made solution to fit various types of windows and doors perfectly
+                    Tailor-made solutions to fit various types of windows and
+                    doors perfectly.
                   </li>
                   <li className="advantages_points about_delmen1">
-                  High durability & longevity
+                    High durability and longevity.
                   </li>
                   <li className="advantages_points about_delmen1">
-                  Quality commitment
+                    Quality commitment.
                   </li>
                   <li className="advantages_points about_delmen1">
-                  Well-made fixtures enhance the interior design
+                    Well-made fixtures enhance the interior design.
                   </li>
                   <li className="advantages_points about_delmen1">
-                  High transparency of the mesh
+                    High transparency of the mesh.
                   </li>
                   <li className="advantages_points about_delmen1">
-                  Excellent and reliable after-sales support
+                    Excellent and reliable after-sales support.
                   </li>
                   <li className="advantages_points about_delmen1">
-                  We do not nail on your windows or doors
+                    We do not nail on your windows or doors.
                   </li>
                 </ul>
               </div>

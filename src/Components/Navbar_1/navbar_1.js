@@ -107,14 +107,14 @@ function Navbar_1() {
                             </Link>
                           </li>
 
-                          {/* <li>
+                          <li>
                             <Link
                               to="/rollerwindow"
                               style={{ textDecoration: "none" }}
                             >
                               <a href="#">Retractable Roller Window</a>
                             </Link>
-                          </li> */}
+                          </li>
                         </ul>
                       </li>
 
@@ -176,14 +176,14 @@ function Navbar_1() {
                           <a href="#">Openable System</a>
                         </Link>
                         <ul className="Submenu_2">
-                          {/* <li>
+                          <li>
                             <Link
                               to="/openablewindow"
                               style={{ textDecoration: "none" }}
                             >
                               <a href="#">Openable Window System</a>
                             </Link>
-                          </li> */}
+                          </li>
                           <li>
                             <Link
                               to="/openablesingledr"
