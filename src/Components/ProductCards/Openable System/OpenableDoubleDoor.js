@@ -165,9 +165,7 @@ function OpenableDoubleDoor() {
               </div>
 
               <div className="col-12 mt-5">
-                <h5 className="Product_Title mt-4">
-                  Openable Double Door System
-                </h5>
+               
                 <ul className="pr-5">
                   <li className="Product_Points">
                     Custom made for the existing main door, utility door and
