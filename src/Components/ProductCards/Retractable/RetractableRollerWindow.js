@@ -47,7 +47,7 @@ function RollerWindow() {
                           "Fullscreen",
                         ]}
                       >
-                        <source src={RollerWindowVideo} type="video/webm" />
+                        <source src={RollerWindowVideo} type="video/mp4" />
                       </Video>
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
@@ -160,7 +160,7 @@ function RollerWindow() {
                       "Fullscreen",
                     ]}
                   >
-                    <source src={RollerWindowVideo} type="video/webm" />
+                    <source src={RollerWindowVideo} type="video/mp4" />
                   </Video>
                 </div>
               </div>

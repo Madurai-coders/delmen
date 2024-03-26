@@ -15,7 +15,7 @@ import BuyingReq from "../../card_section/Buyingreq";
 import CloseIcon from "@mui/icons-material/Close";
 import Callback from "../../card_section/Callback";
 import Slidingdr from "../../../assets/Windows Accessories/rollerdr.png";
-import OpenableWindowVideo from "../../../assets/ProductsVideo/openabledoubledr.mp4";
+import OpenableWindowVideo from "../../../assets/ProductsVideo/openablewindow.mp4";
 import OpenableSingleDoorSystem from "../../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
 
 function OpenableWindow() {
@@ -46,7 +46,7 @@ function OpenableWindow() {
                           "Fullscreen",
                         ]}
                       >
-                        <source src={OpenableWindowVideo} type="video/webm" />
+                        <source src={OpenableWindowVideo} type="video/mp4" />
                       </Video>
                       <div className="share p-5">
                         <h6 className="share_txt">Share Your Product</h6>
@@ -156,7 +156,7 @@ function OpenableWindow() {
                 <div className="col-12 mt-3">
                   <h5 className="Product_Name ms-3">Openable Window System</h5>
                 </div>
-                {/* <div className="col-12 text-center mt-5">
+                <div className="col-12 text-center mt-5">
                   <Video
                     loop
                     controls={[
@@ -167,9 +167,9 @@ function OpenableWindow() {
                       "Fullscreen",
                     ]}
                   >
-                    <source src={OpenableWindowVideo} type="video/webm" />
+                    <source src={OpenableWindowVideo} type="video/mp4" />
                   </Video>
-                </div> */}
+                </div>
               </div>
 
               <div className="col-12 mt-5">

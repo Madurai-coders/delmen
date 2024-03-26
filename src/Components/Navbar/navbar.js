@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 function Navbar() {
   const isMobile = useMediaQuery({ query: "(max-width: 1030px)" });
   const isTab = useMediaQuery({ query: "(min-width: 1030px)" });
@@ -37,7 +36,7 @@ function Navbar() {
                 <ul className="menu mt-2">
                   <li>
                     <Link to="/" style={{ textDecoration: "none" }}>
-                      <a href="#" className="contacttrans">
+                      <a href="#/" className="contacttrans">
                         Home Page
                       </a>
                     </Link>
@@ -47,14 +46,14 @@ function Navbar() {
                       to="/companyprofile"
                       style={{ textDecoration: "none" }}
                     >
-                      <a href="#" className="contacttrans">
+                      <a href="#companyprofile" className="contacttrans">
                         Company Profiles
                       </a>
                     </Link>
                   </li>
                   <li>
                     <Link to="/ourproducts" style={{ textDecoration: "none" }}>
-                      <a href="#" className="contacttrans">
+                      <a href="#ourproducts" className="contacttrans">
                         Our Products
                       </a>
                     </Link>
@@ -64,7 +63,7 @@ function Navbar() {
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
                         >
-                          <a href="#">Magnetic Net</a>
+                          <a href="#ourproducts">Magnetic Net</a>
                         </Link>
                         <ul className="submenu_2">
                           <li>
@@ -72,10 +71,21 @@ function Navbar() {
                               to="/magneticinsectscreens"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Magnetic Insect Screens with Fiber Glass Mesh</a>
+                              <a href="#magneticinsectscreens">
+                                Magnetic Insect Screens with Fiber Glass Mesh
+                              </a>
                             </Link>
                           </li>
-                          
+                          <li>
+                            <Link
+                              to="/PatioSpace"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#PatioSpace">
+                                Stainless steel Mesh with Frame for Patio Space
+                              </a>
+                            </Link>
+                          </li>
                         </ul>
                       </li>
                       <li>
@@ -83,7 +93,7 @@ function Navbar() {
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
                         >
-                          <a href="#">Retractable Double Door</a>
+                          <a href="#ourproducts">Retractable Double Door</a>
                         </Link>
                         <ul className="submenu_2">
                           <li>
@@ -91,7 +101,7 @@ function Navbar() {
                               to="/retractabledoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#"> Retractable Double Door</a>
+                              <a href="#retractabledoubledoor"> Retractable Double Door</a>
                             </Link>
                           </li>
                           <li>
@@ -99,7 +109,7 @@ function Navbar() {
                               to="/rollerdoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Retractable Roller Door</a>
+                              <a href="#rollerdoubledoor">Retractable Roller Door</a>
                             </Link>
                           </li>
 
@@ -108,7 +118,7 @@ function Navbar() {
                               to="/rollerwindow"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Retractable Roller Window</a>
+                              <a href="#rollerwindow">Retractable Roller Window</a>
                             </Link>
                           </li>
                         </ul>
@@ -119,15 +129,15 @@ function Navbar() {
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
                         >
-                          <a href="#">Sliding System</a>
+                          <a href="#ourproducts">Sliding System</a>
                         </Link>
                         <ul className="submenu_2">
-                        <li>
+                          <li>
                             <Link
                               to="/slidingwindowsystem"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Sliding Window System</a>
+                              <a href="#slidingwindowsystem">Sliding Window System</a>
                             </Link>
                           </li>
                           {/* <li>
@@ -152,8 +162,7 @@ function Navbar() {
                               to="/multislidingdr"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Multi Sliding Door</a>
-                            
+                              <a href="#multislidingdr">Multi Sliding Door</a>
                             </Link>
                           </li>
                           <li>
@@ -161,19 +170,18 @@ function Navbar() {
                               to="/slidingdoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Sliding Door</a>
-                            
+                              <a href="#slidingdoor">Sliding Door</a>
                             </Link>
                           </li>
                         </ul>
                       </li>
-                      
+
                       <li>
                         <Link
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
                         >
-                          <a href="#">Openable System</a>
+                          <a href="#ourproducts">Openable System</a>
                         </Link>
                         <ul className="submenu_2">
                           <li>
@@ -181,7 +189,7 @@ function Navbar() {
                               to="/openablewindow"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Openable Window System</a>
+                              <a href="#openablewindow">Openable Window System</a>
                             </Link>
                           </li>
                           <li>
@@ -189,8 +197,7 @@ function Navbar() {
                               to="/openablesingledr"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Openable Single Door System</a>
-                            
+                              <a href="#openablesingledr">Openable Single Door System</a>
                             </Link>
                           </li>
                           {/* <li>
@@ -207,8 +214,15 @@ function Navbar() {
                               to="/openabledoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#">Openable Double Door</a>
-                            
+                              <a href="#openabledoubledoor">Openable Double Door</a>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/RemovableFrame"
+                              style={{ textDecoration: "none" }}
+                            >
+                              <a href="#RemovableFrame">Quick Removable Frame with Magnet</a>
                             </Link>
                           </li>
                           {/* <li>
@@ -226,7 +240,7 @@ function Navbar() {
                   </li>
                   <li>
                     <Link to="/contactus" style={{ textDecoration: "none" }}>
-                      <a href="#" className="contacttrans">
+                      <a href="#contactus" className="contacttrans">
                         Contact Us
                       </a>{" "}
                     </Link>
@@ -266,20 +280,20 @@ function Navbar() {
               <ul className="topnavbar-nav">
                 <li className="nav-item">
                   <Link to="/" style={{ textDecoration: "none" }}>
-                    <a href="#" className="nav-link">
+                    <a href="#/" className="nav-link">
                       Home Page
                     </a>
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/companyprofile" style={{ textDecoration: "none" }}>
-                    <a href="#" className="nav-link">
+                    <a href="#companyprofile" className="nav-link">
                       Company Profile
                     </a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#" className="nav-link" onClick={Open}>
+                  <a href="#ourproducts" className="nav-link" onClick={Open}>
                     Our Products
                   </a>
                   <span>
@@ -296,7 +310,7 @@ function Navbar() {
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
                         >
-                          <a href="#" className="submenu-link">
+                          <a href="#ourproducts" className="submenu-link">
                             Retractable Double Door
                           </a>
                         </Link>
@@ -306,7 +320,7 @@ function Navbar() {
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
                         >
-                          <a href="#" className="submenu-link">
+                          <a href="#ourproducts" className="submenu-link">
                             Doors/Windows Accessories
                           </a>
                         </Link>
@@ -316,7 +330,7 @@ function Navbar() {
                           to="/ourproducts"
                           style={{ textDecoration: "none" }}
                         >
-                          <a href="#" className="submenu-link">
+                          <a href="#ourproducts" className="submenu-link">
                             Magnetic Insect Screens
                           </a>
                         </Link>
@@ -326,7 +340,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                   <Link to="/contactus" style={{ textDecoration: "none" }}>
-                    <a href="#" className="nav-link">
+                    <a href="#contactus" className="nav-link">
                       Contact Us
                     </a>
                   </Link>

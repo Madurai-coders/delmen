@@ -5,7 +5,7 @@ import Footer from "../Footer/footer";
 import RetractableRollerDoubleDoor from "../../assets/Retractable Double Door/RollerDoubledr.png";
 import OpenableSingleDoorSystem from "../../assets/Retractable Double Door/OpenableSingleDoorSystem.png";
 // import SingleSliderWithTrack from "../../assets/Windows Accessories/SingleSlidingWithTrack.png";
-// import OpenableWindowSystem from "../../assets/Retractable Double Door/OpenableWindowSystem.png";
+import OpenableWindowSystem from "../../assets/Windows Accessories/OpenableWindow.png";
 import SlidingWindowSystem from "../../assets/Retractable Double Door/SlidingWindowSystem.png";
 import Navbar1 from "../Navbar_1/navbar_1";
 // import SlidingWindowMesh from "../../assets/Windows Accessories/slidingwindowmesh.png";
@@ -15,7 +15,7 @@ import OpenableDoubleDoor from "../../assets/Retractable Double Door/OpenableDou
 import MultiSlidingDoor from "../../assets/Windows Accessories/MultiSlidingDoor.png";
 import Slidingdr from "../../assets/Windows Accessories/rollerdr.png";
 import SlidingDoor from "../../assets/Retractable Double Door/slidingdoor.png";
-
+import RemovableFrame from "../../assets/Magnetic Insect Screens/RemovableFrame.png";
 function OurProduct() {
   return (
     <>
@@ -36,11 +36,20 @@ function OurProduct() {
                         Magnetic Net With Fiber Glass Mesh
                       </h6>
                     </Link>
+                    <Link
+                      to="/PatioSpace"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <h6 className="names">
+                     Stainless steel Mesh with Frame for Patio Space
+
+                      </h6>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="LISTS_1 ms-5 ps-5">
-                <div className="row mt-5 justify-content-center product_list">
+                <div className="row mt-5 justify-content-start product_list">
                   <div className="col-lg-4 col-md-6 col-sm-12 col-12 card_list">
                     <div className="card-1 text-center">
                       <Link
@@ -58,7 +67,23 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-4 text-center"></div>{" "}
+                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 card_list">
+                    <div className="card-1 text-center">
+                      <Link
+                        to="/PatioSpace"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <img
+                          src={RemovableFrame}
+                          alt=""
+                          className="img-fluid  mt-2 pt-1"
+                        ></img>
+                        <h4 className="card1-title mt-4">
+                        Stainless steel Mesh with<br></br> Frame for Patio Space
+                        </h4>
+                      </Link>
+                    </div>
+                  </div>
                   <div className="col-4 text-center"></div>
                 </div>
               </div>
@@ -70,9 +95,7 @@ function OurProduct() {
               <div className="tables ms-5 mt-5">
                 <div className="products_table2">
                   <div className="ms-4">
-                    <h5 className="products_name pt-3">
-                      Retractable Door
-                    </h5>
+                    <h5 className="products_name pt-3">Retractable Door</h5>
                     <Link
                       to="/retractabledoubledoor"
                       style={{ textDecoration: "none" }}
@@ -86,9 +109,9 @@ function OurProduct() {
                       <h6 className="names">Retractable Roller Door</h6>
                     </Link>
 
-                    {/* <Link to="/rollerwindow" style={{ textDecoration: "none" }}>
+                    <Link to="/rollerwindow" style={{ textDecoration: "none" }}>
                       <h6 className="names">Retractable Roller Window</h6>
-                    </Link> */}
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -129,7 +152,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-                  {/* <div className="col-lg-4 col-md-6 col-sm-12 col-12  card_list mt">
+                  <div className="col-lg-4 col-md-6 col-sm-12 col-12  card_list mt">
                     <div className="card-1 text-center cc">
                       <Link
                         to="/rollerwindow"
@@ -141,7 +164,7 @@ function OurProduct() {
                         </h4>
                       </Link>
                     </div>
-                  </div> */}
+                  </div>
                   <div className="col-4 text-center"></div>
                 </div>
               </div>
@@ -240,7 +263,7 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-{/* 
+                  {/* 
                   <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center mt-5 mt">
                     <div className="card-1 text-center ms-4 cc">
                       <Link
@@ -274,7 +297,6 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
-                 
                 </div>
               </div>
             </div>
@@ -286,12 +308,12 @@ function OurProduct() {
                 <div className="products_table2">
                   <div className="ms-4">
                     <h5 className="products_name pt-3">Openable System</h5>
-                    {/* <Link
+                    <Link
                       to="/openablewindow"
                       style={{ textDecoration: "none" }}
                     >
                       <h6 className="names">Openable Window System</h6>
-                    </Link> */}
+                    </Link>
                     <Link
                       to="/openablesingledr"
                       style={{ textDecoration: "none" }}
@@ -308,6 +330,14 @@ function OurProduct() {
                         Openable Double Door<br></br>System
                       </h6>
                     </Link>
+                     <Link
+                      to="/RemovableFrame"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <h6 className="names">
+                      Quick Removable Frame with Magnet
+                      </h6>
+                    </Link>
                     {/* <Link
                       to="/fixedopenable"
                       style={{ textDecoration: "none" }}
@@ -315,7 +345,6 @@ function OurProduct() {
                       <h6 className="names">Fixed Openable</h6>
                     </Link> */}
 
-                   
                     {/* <Link
                       to="/openablemultifolddoor"
                       style={{ textDecoration: "none" }}
@@ -329,7 +358,7 @@ function OurProduct() {
               </div>
               <div className="LISTS_1 ms-5 ps-5">
                 <div className="row mt-5 justify-content-center product_list">
-                  {/* <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc">
+                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc">
                     <div className="card-1 text-center ms-5">
                       <Link
                         to="/openablewindow"
@@ -345,7 +374,7 @@ function OurProduct() {
                         </h4>
                       </Link>
                     </div>
-                  </div> */}
+                  </div>
                   <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center">
                     <div className="card-1 text-center ms-4">
                       <Link
@@ -380,7 +409,26 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div>
+                  <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center mt-4">
+                    <div className="card-1 text-center ms-4">
+                      <Link
+                        to="/RemovableFrame"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <img
+                          src={RemovableFrame}
+                          alt=""
+                          className="img-fluid  mt-2 pt-1"
+                        ></img>
+                        <h4 className="card1-title mt-4">
+                         Quick Removable Frame with Magnet
+                        </h4>
+                      </Link>
+                    </div>
+                  </div>
                   <div className="col-4"></div>
+                  <div className="col-4"></div>
+
                   {/* <div className="col-lg-4 col-md-6 col-sm-12 col-12 text-center cc mt-5">
                     <div className="card-1 text-center ms-5">
                       <Link
@@ -398,7 +446,6 @@ function OurProduct() {
                       </Link>
                     </div>
                   </div> */}
-                  
                 </div>
               </div>
             </div>

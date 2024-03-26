@@ -17,6 +17,8 @@ import SlidingDoor from "./Components/ProductCards/Window/SlidingDoor";
 import MagneticInsect from "./Components/ProductCards/MagnetInsectScreen/MagneticInsect";
 import ScrollToTop from "./Components/script/script";
 import RollerWindow from "./Components/ProductCards/Retractable/RetractableRollerWindow";
+import PatioSpace from './Components/ProductCards/MagnetInsectScreen/StainlessMesh';
+import RemovableFrame from './Components/ProductCards/Openable System/RemovablwFrame';
 // import SlidingWindowMesh from "./Components/ProductCards/Window/SlidingWindowMesh";
 // import SingleSliderWithTrack from "./Components/ProductCards/Window/SingleSliderWithTrack";
 // import OpenableMultiFold from "./Components/ProductCards/Openable System/OpenableMultiFold";
@@ -88,6 +90,14 @@ function App() {
               <Route
                 path="/openabledoubledoor"
                 element={<OpenableDoubleDoor />}
+              ></Route>
+                <Route
+                path="/RemovableFrame"
+                element={<RemovableFrame />}
+              ></Route>
+                <Route
+                path="/PatioSpace"
+                element={<PatioSpace />}
               ></Route>
 
               {/* <Route
