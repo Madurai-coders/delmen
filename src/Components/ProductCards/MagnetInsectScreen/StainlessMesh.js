@@ -15,7 +15,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import Callback from "../../card_section/Callback";
 import PatioSpaceVideo from "../../../assets/ProductsVideo/PatioSpace.mp4";
 import Slidingdr from "../../../assets/Windows Accessories/rollerdr.png";
-
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 function StainlessMeshWithFrame() {
