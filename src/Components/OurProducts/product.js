@@ -16,6 +16,8 @@ import MultiSlidingDoor from "../../assets/Windows Accessories/MultiSlidingDoor.
 import Slidingdr from "../../assets/Windows Accessories/rollerdr.png";
 import SlidingDoor from "../../assets/Retractable Double Door/slidingdoor.png";
 import RemovableFrame from "../../assets/Magnetic Insect Screens/RemovableFrame.png";
+import Rollerwindow from '../../assets/Windows Accessories/rollerwindow.png';
+import Patiospace from '../../assets/Magnetic Insect Screens/Patiospace.png';
 function OurProduct() {
   return (
     <>
@@ -74,7 +76,7 @@ function OurProduct() {
                         style={{ textDecoration: "none" }}
                       >
                         <img
-                          src={RemovableFrame}
+                          src={Patiospace}
                           alt=""
                           className="img-fluid  mt-2 pt-1"
                         ></img>
@@ -158,7 +160,7 @@ function OurProduct() {
                         to="/rollerwindow"
                         style={{ textDecoration: "none" }}
                       >
-                        <img alt="" className="img-fluid  mt-2 pt-1"></img>
+                        <img  src={Rollerwindow} alt="" className="img-fluid  mt-2 pt-1"></img>
                         <h4 className="card1-title mt-4">
                           Retractable roller Window
                         </h4>
@@ -367,6 +369,7 @@ function OurProduct() {
                         <img
                           src={OpenableWindowSystem}
                           alt=""
+                          
                           className="img-fluid  mt-2 pt-1"
                         ></img>
                         <h4 className="card1-title mt-4">
@@ -401,6 +404,7 @@ function OurProduct() {
                         <img
                           src={OpenableDoubleDoor}
                           alt=""
+                      
                           className="img-fluid  mt-2 pt-1"
                         ></img>
                         <h4 className="card1-title mt-4">
