@@ -49,22 +49,8 @@ function RollerWindow() {
                       >
                         <source src={RollerWindowVideo} type="video/mp4" />
                       </Video>
-                      <div className="share p-5">
-                        <h6 className="share_txt">Share Your Product</h6>
-                        <div className="Icons d-flex flex-row">
-                          <IconButton>
-                            <FacebookRoundedIcon className="facebook" />
-                          </IconButton>
-                          <IconButton>
-                            <TwitterIcon className="twitter" />
-                          </IconButton>
-                          <IconButton>
-                            <LinkedInIcon className="linkedin" />
-                          </IconButton>
-                          <IconButton>
-                            <WhatsAppIcon className="whatsapp" />
-                          </IconButton>
-                        </div>
+                      <div className=" p-5">
+                       
                       </div>
                     </div>
                   </div>

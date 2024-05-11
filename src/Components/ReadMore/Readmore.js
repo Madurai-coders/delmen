@@ -20,14 +20,14 @@ function Readmore() {
                 unwanted insects and mosquitoes from entering.
               </h6>
               <h6 className="about_delmen2 mt-5">
-                As a Business, we value Quality and consistency.
+                As a Business, we value Quality and consistency
               </h6>
               <h6 className="about_delmen1 mt-5">
-                Quality testing is done at every stage of the production process
+                Quality testing is done at every stage of the production process right
                 from the procurement of raw materials to installation. Our
                 infrastructure aids in our efficient operations. We have the
                 most sophisticated manufacturing facility with skilled workers,
-                cut-off machines, hand tools, slot milling, and drilling, etc.
+                cut-off machines, hand tools, slot milling and drilling etc.
               </h6>
               <h1 className="advatanges_txt mt-5 me-5">Advantages</h1>
               <div className="ad">

@@ -21,8 +21,11 @@ function RollerDoubleDoor() {
   const [CallBackCard, setCallBackCard] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
-  const isCard_3 = useMediaQuery({ query: "(min-width: 576px)" });
 
+  const handleWhatsAppClick = () => {
+    // Direct to WhatsApp with your number
+    window.location.href = 'https://wa.me/9342883487'; // Replace 1234567890 with your WhatsApp number
+  };
   return (
     <>
       <div className="retractable">
@@ -46,22 +49,9 @@ function RollerDoubleDoor() {
                       >
                         <source src={RollerDrVideo} type="video/mp4" />
                       </Video>
-                      <div className="share p-5">
-                        <h6 className="share_txt">Share Your Product</h6>
-                        <div className="Icons d-flex flex-row">
-                          <IconButton>
-                            <FacebookRoundedIcon className="facebook" />
-                          </IconButton>
-                          <IconButton>
-                            <TwitterIcon className="twitter" />
-                          </IconButton>
-                          <IconButton>
-                            <LinkedInIcon className="linkedin" />
-                          </IconButton>
-                          <IconButton>
-                            <WhatsAppIcon className="whatsapp" />
-                          </IconButton>
-                        </div>
+                      <div className="p-5">
+                        
+                          
                       </div>
                     </div>
                   </div>
@@ -81,7 +71,7 @@ function RollerDoubleDoor() {
                         </li>
                         <li className="Product_Points">
                           This system is compatible with any type of door,
-                          whether it is made of wood, UPVC, or aluminum.
+                          whether it is made of wood, UPVC or aluminum.
                         </li>
                         <li className="Product_Points">
                           Fiberglass mesh (stiff mesh) and aluminum profiles are
@@ -98,12 +88,12 @@ function RollerDoubleDoor() {
                         </li>
                         <li className="Product_Points">
                           It's quite simple to use, provides a high level of
-                          transparency in the mesh, and has a nice, sturdy
+                          transparency in the mesh and has a nice sturdy
                           appearance.
                         </li>
                         <li className="Product_Points">
                           This system is compatible with any type of door,
-                          whether it is made of wood, UPVC, or aluminum.
+                          whether it is made of wood, UPVC or aluminum.
                         </li>
                         <li className="Product_Points">
                           It can be operated from left to right or right to
@@ -189,7 +179,7 @@ function RollerDoubleDoor() {
                   </li>
                   <li className="Product_Points">
                     This system is compatible with any type of door, whether it
-                    is made of wood, UPVC, or aluminum.
+                    is made of wood, UPVC or aluminum.
                   </li>
                   <li className="Product_Points">
                     Fiberglass mesh (stiff mesh) and aluminum profiles are used
@@ -204,11 +194,11 @@ function RollerDoubleDoor() {
                   </li>
                   <li className="Product_Points">
                     It's quite simple to use, provides a high level of
-                    transparency in the mesh, and has a nice, sturdy appearance.
+                    transparency in the mesh and has a nice sturdy appearance.
                   </li>
                   <li className="Product_Points">
                     This system is compatible with any type of door, whether it
-                    is made of wood, UPVC, or aluminum.
+                    is made of wood, UPVC or aluminum.
                   </li>
                   <li className="Product_Points">
                     It can be operated from left to right or right to left.

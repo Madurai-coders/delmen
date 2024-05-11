@@ -46,22 +46,8 @@ function OpenableSingleDr() {
                         <source src={OpenableDrVideo} type="video/mp4" />
                       </Video>
 
-                      <div className="share p-5">
-                        <h6 className="share_txt">Share Your Product</h6>
-                        <div className="Icons d-flex flex-row">
-                          <IconButton>
-                            <FacebookRoundedIcon className="facebook" />
-                          </IconButton>
-                          <IconButton>
-                            <TwitterIcon className="twitter" />
-                          </IconButton>
-                          <IconButton>
-                            <LinkedInIcon className="linkedin" />
-                          </IconButton>
-                          <IconButton>
-                            <WhatsAppIcon className="whatsapp" />
-                          </IconButton>
-                        </div>
+                      <div className="p-5">
+                      
                       </div>
                     </div>
                   </div>
@@ -90,13 +76,13 @@ function OpenableSingleDr() {
                           This system sticks on the magnet while closing.
                         </li>
                       </ul>
-                      <p className="Product_Feature mt-3">Features</p>
+                      <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">Rust Free</li>
                         <li className="Product_Points">Durability</li>
 
                       </ul>
-                      <p className="Product_Feature mt-3">Advantages</p>
+                      <p className="Product_Feature mt-5">Advantages</p>
                       <ul>
                         <li className="Product_Points">
                           This system has removable hinges
@@ -110,7 +96,7 @@ function OpenableSingleDr() {
                           for main doors, utility doors and balcony doors.
                         </li>
                       </ul>
-                      <p className="Product_Feature mt-3">Color Options</p>
+                      <p className="Product_Feature mt-5">Color Options</p>
 
                       <ul>
                         <li className="Product_Points">White</li>

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 .ourproducts {
-  padding: 20px 200px;
+  padding: 0px 200px;
 }
 .product_title {
   color: #8d1fa8;
@@ -11,10 +11,13 @@
   font-size: 40px;
   line-height: 129%;
 }
+.product_img{
+  width: 100%;
+}
 .zoom-img {
   transition: transform 0.3s; /* add a transition for the zoom effect */
   height: 250px;
-  width: 70%;
+  width: 100%;
   border-radius: 12px;
 }
 
@@ -152,6 +155,11 @@
     font-size: 17px;
     padding: 10px 0px;
   }
+  .mtimg{
+    margin-top: 24px;
+   
+  }
+  
 }
 
 
@@ -176,6 +184,9 @@
     font-size: 12px;
     line-height: 18px;
     top: 65%;
+  }
+  .pro{
+    margin: 0 20px;
   }
  
 }

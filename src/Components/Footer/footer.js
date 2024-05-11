@@ -43,8 +43,8 @@ function Footer() {
                   <span className="ms-1 call_no">8095116488</span>
                 </h6>
                 <h6 className="contactcard_address mt-3">
-                  31,1st block,2nd main, Bhavani layout<br></br>
-                  Banashankari 3rd stage ,<br></br>Bangalore-85
+                  31, 1st Block, 2nd Main, Bhavani Layout<br></br>
+                  Banashankari 3rd stage,<br></br>Bangalore-560085
                 </h6>
               </div>
 
@@ -57,10 +57,10 @@ function Footer() {
                   <CallIcon className="CALL" />
                   <span className="ms-1 call_no">8056035572</span>
                 </h6>
-                <h6 className="contactcard_address mt-3 pr-3">
+                <h6 className="contactcard_address mt-3">
                   AVM Life Style Porur,<br></br>
-                  147a roja street,sathya narayana puram,<br></br>
-                  mowlivakkkam,porur
+                  147A Roja street, Sathya narayana puram,
+                  Mowlivakkam, Porur
                 </h6>
               </div>
             </div>
@@ -77,12 +77,12 @@ function Footer() {
           </div>
         </div>
         <div className="row cards_row">
-          <div className="col-lg-5 col-md-5 col-sm-12 col-12">
+          <div className="col-lg-6 col-md-5 col-sm-12 col-12">
             <div className="footer_content">
               {isTab && (
                 <>
                   <h2 className="company_title">
-                    DELMEN MOSQUITO<br></br> SCREENS
+                    DELMEN MOSQUITO SCREENS
                   </h2>
                 </>
               )}
@@ -92,9 +92,8 @@ function Footer() {
                 </>
               )}
               <p className="footer_txt">
-                "We are accepting local inquiries<br></br> mostly from Tamil
-                Nadu &<br></br>
-                Karnataka."
+                "We are accepting local inquiries mostly from Tamil
+                Nadu & Karnataka"
               </p>
             </div>
           </div>

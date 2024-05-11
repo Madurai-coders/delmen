@@ -46,22 +46,8 @@ function RemovableFrameWithMagnet() {
                       >
                         <source src={RemovableFrameVideo} type="video/mp4" />
                       </Video>
-                      <div className="share p-5">
-                        <h6 className="share_txt">Share Your Product</h6>
-                        <div className="Icons d-flex flex-row">
-                          <IconButton>
-                            <FacebookRoundedIcon className="facebook" />
-                          </IconButton>
-                          <IconButton>
-                            <TwitterIcon className="twitter" />
-                          </IconButton>
-                          <IconButton>
-                            <LinkedInIcon className="linkedin" />
-                          </IconButton>
-                          <IconButton>
-                            <WhatsAppIcon className="whatsapp" />
-                          </IconButton>
-                        </div>
+                      <div className="p-5">
+                       
                       </div>
                     </div>
                   </div>
@@ -71,12 +57,12 @@ function RemovableFrameWithMagnet() {
                         Quick Removable Frame with Magnet
                       </h5>
                       <div></div>
-                      <ul className="pr-5">
-                        <li className="Product_Points">
-                          This Product is fabricated with one inch profile along
-                          with SS 304 grade mesh
-                        </li>
-                      </ul>
+
+                      <h6 className="Product_Points">
+                        This Product is fabricated with one inch profile along
+                        with SS 304 grade mesh
+                      </h6>
+
                       <p className="Product_Feature mt-5">Features</p>
                       <ul>
                         <li className="Product_Points">
@@ -139,7 +125,7 @@ function RemovableFrameWithMagnet() {
               <div className="row cards_row mt-5">
                 <div className="col-12 mt-3">
                   <h5 className="Product_Name ms-3">
-                    Retractable Double Door System
+                    Quick Removable Frame with Magnet
                   </h5>
                 </div>
                 <div className="col-12 text-center mt-5">
@@ -159,12 +145,11 @@ function RemovableFrameWithMagnet() {
               </div>
 
               <div className="col-12 mt-5">
-                <ul className="pr-5">
-                  <li className="Product_Points">
-                    This Product is fabricated with one inch profile along with
-                    SS 304 grade mesh
-                  </li>
-                </ul>
+                <h6 className="Product_Points">
+                  This Product is fabricated with one inch profile along with SS
+                  304 grade mesh
+                </h6>
+
                 <p className="Product_Feature mt-5">Features</p>
                 <ul>
                   <li className="Product_Points">

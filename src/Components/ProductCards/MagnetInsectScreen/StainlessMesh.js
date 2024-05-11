@@ -45,22 +45,8 @@ function StainlessMeshWithFrame() {
                       >
                         <source src={PatioSpaceVideo} type="video/mp4" />
                       </Video>
-                      <div className="share p-5">
-                        <h6 className="share_txt">Share Your Product</h6>
-                        <div className="Icons d-flex flex-row">
-                          <IconButton>
-                            <FacebookRoundedIcon className="facebook" />
-                          </IconButton>
-                          <IconButton>
-                            <TwitterIcon className="twitter" />
-                          </IconButton>
-                          <IconButton>
-                            <LinkedInIcon className="linkedin" />
-                          </IconButton>
-                          <IconButton>
-                            <WhatsAppIcon className="whatsapp" />
-                          </IconButton>
-                        </div>
+                      <div className=" p-5">
+                        
                       </div>
                     </div>
                   </div>
@@ -88,13 +74,12 @@ function StainlessMeshWithFrame() {
                           Our system is custom made as per the client’s
                           requirement
                         </li>
+
+                        <li className="Product_Points">Reptile free</li>
+                        <li className="Product_Points">
+                          The mesh is rodent free
+                        </li>
                       </ul>
-
-                      <li className="Product_Points">Reptile free</li>
-                      <li className="Product_Points">
-                        The mesh is rodent free
-                      </li>
-
                       <p className="Product_Feature mt-5">Color Options</p>
 
                       <ul>
@@ -147,7 +132,7 @@ function StainlessMeshWithFrame() {
               <div className="row cards_row mt-5">
                 <div className="col-12 mt-3">
                   <h5 className="Product_Name ms-3">
-                    Retractable Double Door System
+                    Stainless Mesh with Frame for Patio Space
                   </h5>
                 </div>
                 <div className="col-12 text-center mt-5">
@@ -185,11 +170,10 @@ function StainlessMeshWithFrame() {
                   <li className="Product_Points">
                     Our system is custom made as per the client’s requirement
                   </li>
+
+                  <li className="Product_Points">Reptile free</li>
+                  <li className="Product_Points">The mesh is rodent free</li>
                 </ul>
-
-                <li className="Product_Points">Reptile free</li>
-                <li className="Product_Points">The mesh is rodent free</li>
-
                 <p className="Product_Feature mt-5">Color Options</p>
 
                 <ul>

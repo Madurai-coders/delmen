@@ -21,6 +21,11 @@ function MagneticInsect() {
   const isTab = useMediaQuery({ query: "(min-width: 767px)" });
   const [CallBackCard, setCallBackCard] = useState(false);
 
+  const handleWhatsAppClick = () => {
+    // Direct to WhatsApp with your number
+    window.location.href = "https://wa.me/9845374254"; // Replace 1234567890 with your WhatsApp number
+  };
+
   return (
     <>
       <div className="RollerDr">
@@ -44,23 +49,6 @@ function MagneticInsect() {
                       >
                         <source src={MagneticInsectVideo} type="video/mp4" />
                       </Video>
-                      <div className="share p-5">
-                        <h6 className="share_txt">Share Your Product</h6>
-                        <div className="Icons d-flex flex-row">
-                          <IconButton>
-                            <FacebookRoundedIcon className="facebook" />
-                          </IconButton>
-                          <IconButton>
-                            <TwitterIcon className="twitter" />
-                          </IconButton>
-                          <IconButton>
-                            <LinkedInIcon className="linkedin" />
-                          </IconButton>
-                          <IconButton>
-                            <WhatsAppIcon className="whatsapp" />
-                          </IconButton>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div className="col-7">
@@ -70,7 +58,7 @@ function MagneticInsect() {
                       <p className="Product_Exn mt-3">
                         Magnetic insect screen is fabricated with fiberglass
                         mesh. It is specifically designed to fit existing
-                        wooden, aluminum, or UPVC windows. Using a flexible
+                        wooden, aluminum and UPVC windows. Using a flexible
                         magnetic strip with fiberglass mesh, they create a
                         complete seal around the window.
                       </p>
@@ -93,10 +81,11 @@ function MagneticInsect() {
                       <ul>
                         <li className="Product_Points">Black</li>
                         <li className="Product_Points">White</li>
-                        <h6 className="Product_req">
+                        </ul>
+                        <h6 className="product_customize">
                           Can be customized as per the client’s requirement.
                         </h6>
-                      </ul>
+                      
 
                       <div className="d-flex flex-row mt-5 pt-3">
                         <Button
@@ -159,7 +148,7 @@ function MagneticInsect() {
               <div className="col-12 mt-5">
                 <p className="Product_Exn mt-3">
                   Magnetic insect screen is fabricated with fiberglass mesh. It
-                  is specifically designed to fit existing wooden, aluminum, or
+                  is specifically designed to fit existing wooden, aluminum and
                   UPVC windows. Using a flexible magnetic strip with fiberglass
                   mesh, they create a complete seal around the window.
                 </p>
