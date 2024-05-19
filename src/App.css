@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 ::-webkit-scrollbar {
   width: 1px!important;
   background: #9100b7;
@@ -20,4 +22,11 @@
 }
 body{
   overflow-x: hidden!important;
+}
+
+* {
+  font-family: "Montserrat", sans-serif!important;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }

@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const nodemailer = require("nodemailer");
 const express = require("express");
 const app = express();
@@ -6,11 +8,15 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json({ limit: "10mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
 
+
 app.use(cors());
 const path = require("path");
 const buildPath = path.join(__dirname, "..", "build");
 app.use(express.json());
 app.use(express.static(buildPath));
+
+const noreplyId= process.env.REACT_APP_NO_REPLY_MAIL
+const enquiryId= process.env.REACT_APP_ENQUIRE_ID
 
 app.post("/users", (req, res) => {
   console.log(req.body);
@@ -30,23 +36,21 @@ app.post("/users", (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: "kaamil@larangel.com",
-      pass: "Sujitha312@",
+      user: noreplyId,//noreply delmen id
+      pass: process.env.REACT_APP_NO_REPLY_PASS,//pass for no reply id
     },
   });
 
-  const emailBody = `<html>
+const emailBody = `<html>
   <body>
-
     <div style="padding:0px 20px;">
     <h3 style="color:white;">Hi Sir,</h3>
     <h4 style="color:white;">You have got a customer inquiry from your website delmennets.in</h4>
     <p>Customer details are as follows</p></div>
-
     <div style="border-style: ridge">
     <ul style="list-style-type:none;line-height:20px">
         <li>Email: ${req.body.email}</li> 
-        <li>  Mobile Number: ${req.body.no}</li> 
+        <li>Mobile Number: ${req.body.no}</li> 
         </ul>
         <h4 style="margin-left:10px;color:white"> Customer Request is as follows</h4>
         <h4 style="padding:0 30px">${req.body.subject}</h4> 
@@ -60,8 +64,8 @@ app.post("/users", (req, res) => {
 </html>`;
 
   var mailOptions = {
-    from: "kaamil@larangel.com", // sender address/no reply mail id
-    to: "nilapriya5517@gmail.com", // list of receivers/delmen mail id
+    from: noreplyId, // noreply delmen id
+    to: enquiryId, // id to receive client mail
     subject: "You have a new Contact Request",
     html: emailBody,
     attachments: [...arr],
