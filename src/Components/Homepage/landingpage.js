@@ -99,8 +99,7 @@ function Landingpage() {
      <Helmet>
                 <meta charSet="utf-8" />
                 <title>Delmen Mosquito Net</title>
-                <link rel="canonical" href="https://www.
-                delmennet.com/" />
+                <link rel="canonical" href="https://www.delmennet.com/" />
             </Helmet>
       <div className="Navbar">
         <div className="container">
