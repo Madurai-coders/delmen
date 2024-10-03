@@ -9,6 +9,7 @@ import Navbar from "../Navbar/navbar";
 import InputAdornment from "@mui/material/InputAdornment";
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
+import {Helmet} from "react-helmet";
 
 const searchData = [
   "Door",
@@ -95,6 +96,12 @@ function Landingpage() {
   };
   return (
     <>
+     <Helmet>
+                <meta charSet="utf-8" />
+                <title>Delmen Mosquito Net</title>
+                <link rel="canonical" href="https://www.
+                delmennet.com/" />
+            </Helmet>
       <div className="Navbar">
         <div className="container">
           <Navbar />

@@ -22,7 +22,7 @@ function Callback(props) {
         No: "",
       });
       await axios
-        .post("http://localhost:9000/Requests/", {
+        .post("https://api-gepbjzusba-uc.a.run.app/Requests/", {
           ...req,
         })
         .then((response) => setMsg(response.data.respMesg));
