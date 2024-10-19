@@ -14,7 +14,7 @@ function Company() {
       <div className="advantage" id="readmore">
         <Navbar1 />
         <div className="OurProducts">
-          <div className="row justify-content-center mt-5 cards_row">
+          <div className="row justify-content-center mb-5 cards_row">
             <div className="col-12 text-center">
               <h2 className="infrastructure_title mt-5 pt-5">
                 Our Infrastructure
@@ -36,41 +36,40 @@ function Company() {
                 </p>
               </div>
             </div>
-
-            <div className="col-12">
-              <div className="products-des pt-5">
-                <h4 className="ourproducts-title mt-5 text-center me-5">
-                  Our Products
-                </h4>
-              </div>
             </div>
-            <div className="col-12">
-              <div className="pd ms-5">
-                <p className="infrastructure_des mt-5">
-                  Our streamlined production process and cost-cutting techniques
-                  guarantee that customers receive products at the most
-                  affordable possible prices. Our premium quality products
-                  include:
-                </p>
-                <ul className="mt-4 Products_Points">
-                  <li className="products_points ms-5">
-                    Magnetic insect screens (with fiberglass mesh)
-                  </li>
-                  <li className="products_points ms-5">
-                    Openable windows and doors with stainless steel mesh
-                  </li>
-                  <li className="products_points ms-5">
-                    Sliding doors with stainless steel mesh
-                  </li>
 
-                  <li className="products_points ms-5">
-                    Retractable roller system for existing windows<br></br>
-                    and doors
-                  </li>
-                </ul>
-              </div>
+            <div className="row justify-content-center mt-5 cards_row product-bg">
+
+                  <h4 className="ourproducts-title mt-5 text-center me-5">
+                    Our Products
+                  </h4>
+              <div className="col-12 ">
+                <div className="pd ms-5">
+                  <p className="infrastructure_des1 mt-5">
+                    Our streamlined production process and cost-cutting
+                    techniques guarantee that customers receive products at the
+                    most affordable possible prices. Our premium quality
+                    products include:
+                  </p>
+                  <ul className="mt-4 Products_Points mb-5">
+                    <li className="products_points ms-5">
+                      Magnetic insect screens (with fiberglass mesh)
+                    </li>
+                    <li className="products_points ms-5">
+                      Openable windows and doors with stainless steel mesh
+                    </li>
+                    <li className="products_points ms-5">
+                      Sliding doors with stainless steel mesh
+                    </li>
+
+                    <li className="products_points ms-5">
+                      Retractable roller system for existing windows<br></br>
+                      and doors
+                    </li>
+                  </ul>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
         <Footer />
       </div>

@@ -1,5 +1,5 @@
 import "../../CSS/homepage/weare.css";
-import Since from "../../assets/HomePage/about.svg";
+import Since from "../../assets/HomePage/about1.svg";
 import { Link } from "react-router-dom";
 import "../script/script";
 function Weare() {

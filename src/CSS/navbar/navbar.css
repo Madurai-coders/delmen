@@ -2,10 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
 
 .Navbar {
-  background-image: url("../../assets/HomePage/homepage.png");
+  background-image: url("../../assets/HomePage/homepage1.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
   height: fit-content;
+
 }
 
 .NAVBAR {
@@ -41,11 +43,19 @@
   background-color: #ffffff;
   padding: 10px 20px;
   color: black;
-}
+  text-decoration: none; 
+  outline: none;
 
+}
+.menu li.no-line::after {
+  display: none;
+}
 .inquiry_btn:hover {
   color: black;
+  text-decoration: none; 
+
 }
+
 .homepage_title {
   font-family: "Rubik";
   font-style: normal;
@@ -65,7 +75,7 @@
   color: #ffffff;
 }
 .iconbutton {
-  background-color: #8d1fa8 !important;
+  background-color: #384D4B !important;
 }
 /* menulist */
 .menu > li,
@@ -90,83 +100,103 @@
 }
 .submenu {
   position: absolute;
-  width: 180px;
-  left: -20px;
-  right: 0;
-  display: none;
-  padding: 10px 0px;
-  border-top: 2px #8d1fa8;
-  z-index: 2;
-  background: #ffffff;
-  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
-  border-radius: 11px;
+  left: 38%; /* Centers the submenu horizontally based on the parent */
+  transform: translateX(-50%); /* Shifts the submenu left by 50% of its width */
+  display: none; /* Initially hidden */
+  padding: 10px 0; /* Adjust padding as necessary */
+  width: 200px; /* Define a specific width */
+  background-color: #f6f5f5; /* White background */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for better visibility */
+  border-radius: 8px;
+  z-index: 99;
 }
+
 .submenu li {
   list-style: none;
 }
 
 .submenu a {
+  display: block;
   color: #7a7979;
-  font-size: 12px;
-  padding: 5px 5px;
+  padding: 6px 0px; /* Adjust padding to ensure uniform spacing */
+  font-size: 14px;
+  text-align: center;
 }
 .menu li:hover > .submenu {
-  display: block;
+  display: block; /* Show submenu on hover */
 }
 
 .submenu_2 {
+  width: 200px; /* Define a specific width */
+
   position: absolute;
-  left: 182px;
   top: 0;
-  display: none;
-  overflow-x: hidden;
-  width: 110%;
-  background: #ffffff;
-  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
-  border-radius: 11px;
+  left: 103%; /* Aligns next submenu to the right of the first submenu */
+  display: none; /* Hidden by default */
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 }
+
 .submenu_2 a {
+  display: block;
   color: #7a7979;
+  padding: 5px;
   font-size: 13px;
 }
+
 .submenu_2 li {
-  padding: 1px 0px;
-  margin-left: -20px;
+  padding: 6px 0px; /* Increase padding if needed */
 }
 .menu li:hover > .submenu_2 {
   display: block;
 }
-.submenu a:after {
+.submenu li:after {
   content: "";
   position: absolute;
   width: 0%;
   height: 2px;
-  bottom: 0;
+  bottom: 12px;
   left: 10px;
-  background-color: #8d1fa8 !important;
+  background-color:#384D4B!important;
   transition: 0.6s ease-in-out;
 }
 .submenu a:hover:after {
-  width: 90%;
+  width: 100%;
 }
 
-.menu a:after {
+
+
+
+.menu li:after {
   content: "";
   position: absolute;
-  width: 0%;
+  width: 0;
   height: 2px;
-  bottom: 0px;
-  left: 10px;
+  bottom: 12px;
+  left: 50%;
   background-color: #ffffff;
-  transition: 0.3s ease-in-out;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
 }
+
+.menu li:hover:after {
+  width: 90%; /* Hover effect width */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
 .menu .contacttrans {
   padding: 2px 20px;
 }
 
-.menu a:hover:after {
+/* .menu a:hover:after {
   width: 90%;
-}
+} */
 /* card */
 .card {
   background: #ffffff;
@@ -224,7 +254,7 @@
 }
 
 .sub-menu {
-  background-color: #8d1fa8;
+  background-color:#384D4B;
   color: #ffffff;
   overflow: hidden;
   height: 0;
@@ -245,11 +275,11 @@
   position: absolute;
   bottom: 160px;
   font-size: 36px !important;
-  color: #9100b7;
+  color: #384D4B;
 }
 
 .menuopenicon {
-  color: #9100b7;
+  color:#384D4B;
 }
 .sub-menu.open {
   height: 180px;
@@ -285,7 +315,7 @@
 
 .nav-link {
   display: block;
-  color: #9100b7 !important;
+  color: #384D4B !important;
   padding: 35px 20px;
   text-decoration: none;
   transition: background-color 0.22s ease, color 0.22s ease;

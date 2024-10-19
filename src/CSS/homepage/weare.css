@@ -7,7 +7,7 @@
   font-size: 40px;
   line-height: 129%;
   letter-spacing: 0.05em;
-  color: #8d1fa8;
+  color:#384D4B;
 }
 .about_content {
   width: 79%;
@@ -30,8 +30,8 @@
 }
 
 .readmore_btn {
-  border-color: #8d1fa8 !important;
-  background: #8d1fa8 !important;
+  border-color: #384D4B !important;
+  background:#384D4B !important;
   border-radius: 70px;
   padding: 10px 35px;
 }
