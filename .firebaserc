@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "delmen"
-  }
+    "default": "delmennet",
+    "prod": "delmennet"
+  },
+  "targets": {},
+  "etags": {}
 }
