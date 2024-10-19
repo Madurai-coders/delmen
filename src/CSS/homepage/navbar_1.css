@@ -4,13 +4,26 @@
   justify-content: space-around;
 }
 .Logo {
-  color: #8d1fa8;
+  color:#384D4B;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
   font-size: 18.2836px;
   line-height: 22px;
   text-transform: uppercase;
+}
+a {
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: none; 
+}
+
+.Inquiry_btn:hover {
+  color: rgb(250, 249, 249);
+  text-decoration: none; 
+
 }
 
 .Inquiry_btn {
@@ -20,14 +33,17 @@
   font-weight: 400;
   font-size: 14.2636px;
   line-height: 17px;
-  background-color: #8d1fa8;
+  background-color:#384D4B;
   padding: 10px 20px;
   color: #ffffff;
+  text-decoration: none; /* Ensure no underline by default */
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
-.Inquiry_btn:hover {
-  color: #ffffff;
+.Menu li.no-line::after {
+  display: none;
 }
-
 .Menu > li,
 .Menu > a {
   display: inline-block;
@@ -42,7 +58,7 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 23px;
-  color: #8d1fa8;
+  color:#384D4B;
 }
 
 .Menu li {
@@ -50,90 +66,100 @@
 }
 .SubMenu {
   position: absolute;
-  width: 180px;
-  left: -20px;
-  right: 0;
-  display: none;
-  padding: 10px 0px;
-  border-top: 2px #8d1fa8;
-  z-index: 2;
-  background: #8d1fa8;
-  box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
-  border-radius: 11px;
+  left: 38%; /* Centers the submenu horizontally based on the parent */
+  transform: translateX(-50%); /* Shifts the submenu left by 50% of its width */
+  display: none; /* Initially hidden */
+  padding: 10px 0; /* Adjust padding as necessary */
+  width: 200px; /* Define a specific width */
+  border-top: 2px #384D4B;
+  background: #384D4B;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for better visibility */
+  border-radius: 8px;
+  z-index: 99;
 }
 .SubMenu li {
   list-style: none;
 }
 
 .SubMenu a {
+  display: block;
+
   color: #ffffff;
-  font-size: 12px;
-  padding: 5px 5px;
+  padding: 6px 0px; /* Adjust padding to ensure uniform spacing */
+  font-size: 14px;
+  text-align: center;
 }
 .Menu li:hover > .SubMenu {
   display: block;
 }
 
 .Submenu_2 {
+  width: 200px; /* Define a specific width */
+
   position: absolute;
-  left: 182px;
   top: 0;
-  display: none;
-  overflow-x: hidden;
-  width: 110%;
-  background: #8d1fa8;
+  left: 103%; /* Aligns next submenu to the right of the first submenu */
+  display: none; /* Hidden by default */
+  padding: 10px;
+  background: #384D4B;
   box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
   border-radius: 11px;
 }
 .Submenu_2 a {
+  display: block;
+
   color: #ffffff;
+  padding: 5px;
   font-size: 13px;
 }
 .Submenu_2 li {
-  padding: 1px 0px;
-  margin-left: -20px;
+  padding: 6px 0px;
 }
 .Menu li:hover > .Submenu_2 {
   display: block;
 }
-.SubMenu a:after {
+.SubMenu li:after {
   content: "";
   position: absolute;
   width: 0%;
   height: 2px;
-  bottom: 0;
+  bottom: 12px;
   left: 10px;
   background-color: #ffffff !important;
   transition: 0.6s ease-in-out;
 }
 .SubMenu a:hover:after {
-  width: 90%;
+  width: 100%;
 }
 
-.Menu a:after {
+.Menu li:after {
   content: "";
   position: absolute;
-  width: 0%;
+  width: 0;
   height: 2px;
-  bottom: 0px;
-  left: 10px;
-  background-color: #8d1fa8;
+  bottom: 12px;
+  left:50%;
+  background-color:#384D4B;
   transition: 0.3s ease-in-out;
+  transform: translateX(-50%);
+
 }
 .Menu .Contacttrans {
   padding: 2px 20px;
 }
 
-.Menu a:hover:after {
+.Menu li:hover:after {
   width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /* mobiloe navbar */
 
 .Menu_icon {
-  color: #9100b7;
+  color: #384D4B;
 }
 .Topnavbar {
-  background-color: #9100b7;
+  background-color: #384D4B;
   overflow: hidden;
   height: 0;
   transition: height 0.3s ease-in-out;
@@ -186,7 +212,7 @@
 }
 .Submenu-link {
   display: block;
-  color: #9100b7!important;
+  color: #384D4B!important;
   padding: 15px 20px;
   text-decoration: none;
   transition: background-color 0.22s ease, color 0.22s ease;

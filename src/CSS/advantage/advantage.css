@@ -8,10 +8,20 @@
   font-size: 32px;
   line-height: 33px;
   letter-spacing: 0.075em;
-  color: #000000;
+  color: #ffffff;
 }
-.products-des {
+/* .products-des {
   padding-right: 40px;
+  
+
+} */
+
+.product-bg{
+  background-image: url("../../assets/company/product.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: fit-content;
 }
 .products_details {
   font-family:  "Rubik";
@@ -31,7 +41,7 @@
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 0.035em;
-  color: #000000;
+  color: #ffffff;
   margin-top: 50px;
 }
 .advantageof_title {
@@ -138,6 +148,16 @@
   font-size: 19px;
   line-height: 31px;
   letter-spacing: 0.085em;
+  color: #000000;
+}
+.infrastructure_des1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 31px;
+  letter-spacing: 0.085em;
+  color: #ffffff;
 }
 .advantage_quotes {
   font-family: "Rubik";

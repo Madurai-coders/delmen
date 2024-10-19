@@ -101,7 +101,10 @@ function Navbar() {
                               to="/retractabledoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#retractabledoubledoor"> Retractable Double Door</a>
+                              <a href="#retractabledoubledoor">
+                                {" "}
+                                Retractable Double Door
+                              </a>
                             </Link>
                           </li>
                           <li>
@@ -109,7 +112,9 @@ function Navbar() {
                               to="/rollerdoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#rollerdoubledoor">Retractable Roller Door</a>
+                              <a href="#rollerdoubledoor">
+                                Retractable Roller Door
+                              </a>
                             </Link>
                           </li>
 
@@ -118,7 +123,9 @@ function Navbar() {
                               to="/rollerwindow"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#rollerwindow">Retractable Roller Window</a>
+                              <a href="#rollerwindow">
+                                Retractable Roller Window
+                              </a>
                             </Link>
                           </li>
                         </ul>
@@ -137,7 +144,9 @@ function Navbar() {
                               to="/slidingwindowsystem"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#slidingwindowsystem">Sliding Window System</a>
+                              <a href="#slidingwindowsystem">
+                                Sliding Window System
+                              </a>
                             </Link>
                           </li>
                           {/* <li>
@@ -189,7 +198,9 @@ function Navbar() {
                               to="/openablewindow"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#openablewindow">Openable Window System</a>
+                              <a href="#openablewindow">
+                                Openable Window System
+                              </a>
                             </Link>
                           </li>
                           <li>
@@ -197,7 +208,9 @@ function Navbar() {
                               to="/openablesingledr"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#openablesingledr">Openable Single Door System</a>
+                              <a href="#openablesingledr">
+                                Openable Single Door System
+                              </a>
                             </Link>
                           </li>
                           {/* <li>
@@ -214,7 +227,9 @@ function Navbar() {
                               to="/openabledoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#openabledoubledoor">Openable Double Door</a>
+                              <a href="#openabledoubledoor">
+                                Openable Double Door
+                              </a>
                             </Link>
                           </li>
                           <li>
@@ -222,7 +237,9 @@ function Navbar() {
                               to="/RemovableFrame"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#RemovableFrame">Quick Removable Frame with Magnet</a>
+                              <a href="#RemovableFrame">
+                                Quick Removable Frame with Magnet
+                              </a>
                             </Link>
                           </li>
                           {/* <li>
@@ -245,7 +262,7 @@ function Navbar() {
                       </a>{" "}
                     </Link>
                   </li>
-                  <li>
+                  <li className="no-line">
                     <Link to="/contactus">
                       <button type="button" className="btn inquiry_btn ms-4">
                         Send Enquiry

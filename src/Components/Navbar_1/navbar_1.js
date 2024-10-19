@@ -103,7 +103,10 @@ function Navbar_1() {
                               to="/retractabledoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#retractabledoubledoor"> Retractable Double Door</a>
+                              <a href="#retractabledoubledoor">
+                                {" "}
+                                Retractable Double Door
+                              </a>
                             </Link>
                           </li>
                           <li>
@@ -111,7 +114,9 @@ function Navbar_1() {
                               to="/rollerdoubledoor"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#rollerdoubledoor">Retractable Roller Door</a>
+                              <a href="#rollerdoubledoor">
+                                Retractable Roller Door
+                              </a>
                             </Link>
                           </li>
 
@@ -208,7 +213,7 @@ function Navbar_1() {
                               </a>
                             </Link>
                           </li>
-                        
+
                           <li>
                             <Link
                               to="/openabledoubledoor"
@@ -230,8 +235,7 @@ function Navbar_1() {
                             </Link>
                           </li>
 
-
-                            {/* <li>
+                          {/* <li>
                             <Link
                               to="/fixedopenable"
                               style={{ textDecoration: "none" }}
@@ -248,8 +252,6 @@ function Navbar_1() {
                               <a href="#">Openable MultiFold Door</a>
                             </Link>
                           </li> */}
-
-
                         </ul>
                       </li>
                     </ul>
@@ -261,9 +263,9 @@ function Navbar_1() {
                       </a>
                     </Link>
                   </li>
-                  <li>
-                    <Link to="/contactus" style={{ textDecoration: "none" }}>
-                      <button type="button" className="btn  Inquiry_btn ms-4">
+                  <li className="no-line">
+                    <Link to="/contactus">
+                      <button type="button" className="btn Inquiry_btn ms-4">
                         Send Enquiry
                       </button>
                     </Link>

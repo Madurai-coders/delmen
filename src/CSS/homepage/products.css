@@ -4,7 +4,7 @@
   padding: 0px 200px;
 }
 .product_title {
-  color: #8d1fa8;
+  color:#384D4B;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -73,7 +73,7 @@
 }
 .img-container:hover .hover-text {
   visibility: visible; /* show the text when hovering over the image */
-  color: #8d1fa8;
+  color:#384D4B;
 }
 .img-container:hover img {
   opacity: 0.3;
@@ -85,7 +85,7 @@
 }
 .img-container:hover .hover-text1 {
   visibility: visible; /* show the text when hovering over the image */
-  color: #8d1fa8;
+  color:#384D4B;
 }
 
 @media only screen and (max-width: 1479px) {
