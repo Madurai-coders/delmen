@@ -18,7 +18,7 @@ function Products() {
       <div className="ourproducts">
         <div className="row cards_row justify-content-center">
           <div className="col-12 text-center">
-            <h2 className="product_title">OURs PRODUCTS</h2>
+            <h2 className="product_title">OUR PRODUCTS</h2>
           </div>
         </div>
         <div className="pro">
