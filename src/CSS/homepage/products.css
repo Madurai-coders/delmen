@@ -141,6 +141,10 @@
   }
   .product_img {
     margin-left: 10px !important;
+
+  }
+  .ourproducts {
+    padding: 20px 20px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -159,6 +163,7 @@
     margin-top: 24px;
    
   }
+ 
   
 }
 
@@ -189,6 +194,7 @@
     margin: 0 20px;
   }
  
+ 
 }
 
 
@@ -196,4 +202,5 @@
   .product_title {
     font-size: 24px;
   }
+ 
 }

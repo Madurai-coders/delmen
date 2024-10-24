@@ -107,7 +107,7 @@ function Landingpage() {
 
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
-              <h1 className="homepage_title mt-5 mb-3">
+              <h1 className="homepage_title mt-3 mb-3">
                 Delmen Mosquito screens 
                 </h1>  
                 <h4 style={{color:'white'}}>

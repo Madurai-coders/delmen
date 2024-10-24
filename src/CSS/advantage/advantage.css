@@ -255,6 +255,10 @@
   .advantage_quotes {
     font-size: 18px;
   }
+  .product-bg{
+    padding: 30px 0px;
+
+  }
 }
 @media only screen and (max-width: 992px) {
   .products-des{

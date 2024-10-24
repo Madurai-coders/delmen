@@ -10,8 +10,11 @@
 
 }
 
+
 .NAVBAR {
-  max-width: 2200px;
+  /* max-width: 2200px; */
+  padding:  0px 40px;
+
 }
 
 .container {
@@ -19,32 +22,40 @@
   padding: 0 0;
 }
 .Nav {
-  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 }
 .logo {
-  color: white;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18.2836px;
-  line-height: 22px;
-  text-transform: uppercase;
+ text-align: start;
 }
+ .del-logo{
+  width: 120px;
+  height: auto;
+ }
 
 .inquiry_btn {
   border-radius: 32px;
   font-family: "Rubik";
-  font-style: normal;
+  font-style:normal;
   font-weight: 400;
-  font-size: 14.2636px;
+  font-size: 12.2636px;
   line-height: 17px;
   background-color: #ffffff;
-  padding: 10px 20px;
+  padding: 5px 10px;
   color: black;
   text-decoration: none; 
   outline: none;
+
+}
+.menu{
+  display: flex;
+  justify-content: flex-end; 
+  padding: 0;
+  
+}
+.homepage_menu{
+  margin-left: 360px;
 
 }
 .menu li.no-line::after {
@@ -81,45 +92,46 @@
 .menu > li,
 .menu > a {
   display: inline-block;
+
 }
-.menu a {
-  text-decoration: none;
-  display: block;
-  padding: 20px 25px;
+.menu li a {
+ 
   transition: background-color 0.22s ease, color 0.22s ease;
   font-family: "Rubik";
   font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 23px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
   color: white;
 }
 
+
 .menu li {
-  position: relative;
-}
+  padding: 0 20px;
+  position: relative;}
 .submenu {
   position: absolute;
-  left: 38%; /* Centers the submenu horizontally based on the parent */
+  left: 33%; /* Centers the submenu horizontally based on the parent */
   transform: translateX(-50%); /* Shifts the submenu left by 50% of its width */
   display: none; /* Initially hidden */
   padding: 10px 0; /* Adjust padding as necessary */
-  width: 200px; /* Define a specific width */
+  width: 180px; /* Define a specific width */
   background-color: #f6f5f5; /* White background */
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for better visibility */
-  border-radius: 8px;
+  border-radius: 3px;
   z-index: 99;
+  margin-top: 10px;
 }
 
 .submenu li {
   list-style: none;
 }
 
-.submenu a {
+.submenu li  a {
   display: block;
-  color: #7a7979;
-  padding: 6px 0px; /* Adjust padding to ensure uniform spacing */
-  font-size: 14px;
+  color: #323232;
+  padding: 4px 0px; /* Adjust padding to ensure uniform spacing */
+  font-size: 12px;
   text-align: center;
 }
 .menu li:hover > .submenu {
@@ -130,69 +142,69 @@
   width: 200px; /* Define a specific width */
 
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 103%; /* Aligns next submenu to the right of the first submenu */
   display: none; /* Hidden by default */
-  padding: 10px;
+  padding: 10px 0px;
   background-color: #ffffff;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
+  border-radius: 3px;
+  width: 100%;
+
 }
 
 .submenu_2 a {
   display: block;
-  color: #7a7979;
-  padding: 5px;
-  font-size: 13px;
+  color: #f6f1f1;
+  padding: 5px 0px;
+  font-size: 10px;
+  width: 100%;
+
 }
 
 .submenu_2 li {
-  padding: 6px 0px; /* Increase padding if needed */
+  padding: 3px 2px; 
+  width: 100%;
+
 }
 .menu li:hover > .submenu_2 {
   display: block;
 }
-.submenu li:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 12px;
-  left: 10px;
-  background-color:#384D4B!important;
-  transition: 0.6s ease-in-out;
+.submenu li:after,
+.submenu_2 li:after {
+  content: none;
 }
-.submenu a:hover:after {
-  width: 100%;
+
+/* Submenu background hover (optional) */
+.submenu li:hover,
+.submenu_2 li:hover {
+  background-color: #384d4b3f !important;
 }
 
 
 
 
-.menu li:after {
+.menu > li:after {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 12px;
+  bottom: 2px;
   left: 50%;
   background-color: #ffffff;
   transform: translateX(-50%);
   transition: width 0.3s ease-in-out;
+  border-radius: 25px;
 }
 
-.menu li:hover:after {
-  width: 90%; /* Hover effect width */
-  left: 50%;
-  transform: translateX(-50%);
+/* Hover effect for main menu items */
+.menu > li:hover:after {
+  width: 90%;
 }
 
 
 
 
-.menu .contacttrans {
-  padding: 2px 20px;
-}
 
 /* .menu a:hover:after {
   width: 90%;
@@ -241,6 +253,10 @@
 /* mobile_navbar */
 .menu_icon {
   color: #ffffff;
+  margin: 0 0;
+}
+.iconbtn{
+  margin: 0 0;
 }
 .topnavbar {
   background-color: #ffffff;
@@ -249,7 +265,6 @@
   transition: height 0.3s ease-in-out;
   z-index: 2;
   cursor: pointer;
-  position: absolute;
   width: 100%;
 }
 
@@ -263,8 +278,9 @@
   box-shadow: 0px -2px 8px rgba(255, 255, 255, 0.53);
 }
 .topnavbar.open {
-  height: 470px;
+  height: auto;
   overflow-y: scroll;
+  width: 100%;
 }
 .nav-item span {
   display: flex;
@@ -272,20 +288,20 @@
   text-align: end;
 }
 .menuopenicon {
-  position: absolute;
-  bottom: 160px;
+  /* position: absolute; */
+  bottom: 1000px;
   font-size: 36px !important;
   color: #384D4B;
 }
 
-.menuopenicon {
-  color:#384D4B;
-}
+
 .sub-menu.open {
   height: 180px;
 }
 .menuopen_icon {
   transform: rotate(180deg);
+  color:#384D4B;
+
 }
 
 .topnavbar-nav {
@@ -324,11 +340,12 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 10px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 .nav-link:hover {
   text-decoration: underline;
 }
+
 /* search */
 
 .search {
@@ -381,18 +398,27 @@
 .search_list:hover {
   background: rgba(249, 223, 255, 0.18);
 }
-
-@media only screen and (max-width: 1177px) {
-  .menu a {
-    font-size: 16px;
-    padding: 20px 15px;
+@media only screen and (max-width: 1300px){
+  .homepage_menu{
+    margin-left: 300px;
+  
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .homepage_menu{
+    margin-left: 100px;
+  
+  }
+  .menu li a {
+    font-size: 12px;
+    padding:0 0px;
   }
   .submenu a {
-    font-size: 12px;
+    font-size: 10px;
     padding: 5px 0px;
   }
   .submenu_2 a {
-    font-size: 12px;
+    font-size: 9px;
   }
   .menu {
     margin-top: 11px !important;
@@ -413,8 +439,14 @@
   }
 }
 @media only screen and (max-width: 1000px) {
-  .homepage_menu {
-    margin-left: 0px !important;
+  /* .homepage_menu{
+    margin-left: 100px;
+  
+  } */
+  .NAVBAR {
+    /* max-width: 2200px; */
+    padding:  0px 20px;
+  
   }
   .card {
     width: 90%;
@@ -429,15 +461,20 @@
     font-size: 38px;
   }
   .Navbar {
-    background-image: url("../../assets/HomePage/homepage.png");
+    background-image: url("../../assets/HomePage/homepage1.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: cover;
     height: fit-content;
-    width: 100%;
   }
 }
 
 @media only screen and (max-width: 700px) {
+  .del-logo{
+    width: 100px;
+    height: auto;
+    margin-top: 4px;
+   }
   .dropdown {
     position: absolute;
     right: 150px;
