@@ -100,7 +100,7 @@ function Landingpage() {
         <meta charSet="utf-8" />
         <title>Delmen Mosquito Net</title>
         {/* <link rel="canonical" href="https://www.delmennet.com/" /> */}
-        <link rel="icon" href="/public/del-1.svg" type="image/x-icon" />
+        <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
       </Helmet>
       <div className="Navbar">
         <div className="container">
