@@ -55,7 +55,7 @@ function Products() {
                 alt=""
                 className="img-fluid zoom-img mtimg"
               ></img>
-              <div class="hover-text1">Retractable Roller Window</div>
+              <div class="hover-text">Retractable Roller Window</div>
             </Link>
           </div>
 
@@ -103,7 +103,7 @@ function Products() {
                 alt=""
                 className="img-fluid zoom-img mtimg"
               ></img>
-              <div className="hover-text1">openable single door system</div>
+              <div className="hover-text">openable single door system</div>
             </Link>
           </div>
 
@@ -114,7 +114,7 @@ function Products() {
                 alt=""
                 className="img-fluid zoom-img mtimg"
               ></img>
-              <div class="hover-text1">
+              <div class="hover-text">
                 Openable Double<br></br> Door System
               </div>
             </Link>
@@ -143,14 +143,14 @@ function Products() {
                 alt=""
                 className="img-fluid zoom-img"
               ></img>
-              <div class="hover-text1">Retractable Double Door</div>
+              <div class="hover-text">Retractable Double Door</div>
             </Link>
           </div>
 
           <div className="col-lg-3  col-md-3 col-6 text-center img-container">
             <Link to="/PatioSpace" style={{ textDecoration: "none" }}>
               <img src={Patiospace} alt="" className="img-flui zoom-img mtimg"></img>
-              <div class="hover-text1">
+              <div class="hover-text">
                 Stainless steel Mesh with Frame for Patio Space
               </div>
             </Link>
@@ -162,7 +162,7 @@ function Products() {
                 alt=""
                 className="img-fluid zoom-img mtimg"
               ></img>
-              <div class="hover-text1">Quick Removable Frame with Magnet</div>
+              <div class="hover-text">Quick Removable Frame with Magnet</div>
             </Link>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { useMediaQuery } from "react-responsive";
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Logo1 from "../../assets/HomePage/logo1.svg";
 function Navbar_1() {
   const isMobile = useMediaQuery({ query: "(max-width: 1015px)" });
   const isTab = useMediaQuery({ query: "(min-width: 1015px)" });
@@ -27,13 +28,16 @@ function Navbar_1() {
           <>
             <div className="Nav text-center">
               <Link to="/" style={{ textDecoration: "none" }}>
-                <h5 className="Logo mt-4">
+                {/* <h5 className="Logo mt-4">
                   Delmen Mosquito<br></br>Screen
-                </h5>
+                </h5> */}
+                <div className="Logo ">
+                  <img src={Logo1} className="del-logo1"></img>
+                </div>
               </Link>
 
               <div className="homepage_menu">
-                <ul className="Menu mt-2">
+                <ul className="Menu mt-3">
                   <li>
                     <Link to="/" style={{ textDecoration: "none" }}>
                       <a href="#/" className="Contacttrans">
@@ -256,13 +260,7 @@ function Navbar_1() {
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <Link to="/contactus" style={{ textDecoration: "none" }}>
-                      <a href="#contactus" className="Contacttrans">
-                        Contact Us
-                      </a>
-                    </Link>
-                  </li>
+                  
                   <li className="no-line">
                     <Link to="/contactus">
                       <button type="button" className="btn Inquiry_btn ms-4">
@@ -280,14 +278,17 @@ function Navbar_1() {
             <div className="row cards_row">
               <div className="col-md-4 col-sm-5 col-5 text-center">
                 <Link to="/" style={{ textDecoration: "none" }}>
-                  <h2 className="Logo pt-3">
+                  {/* <h2 className="Logo pt-3">
                     Delmen Mosquito<br></br>Screen
-                  </h2>
+                  </h2> */}
+                  <div className="Logo ">
+                  <img src={Logo1} className="del-logo1"></img>
+                </div>
                 </Link>
               </div>
               <div className="col-md-8 col-sm-7 col-7 text-end">
                 <IconButton
-                  className="me-4 mt-1 iconbtn"
+                  className=" mt-1 iconbtn"
                   onClick={toggleNavbar}
                 >
                   <MenuIcon className="Menu_icon" />
@@ -311,19 +312,19 @@ function Navbar_1() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/ourproducts" style={{ textDecoration: "none" }}>
-                    <a href="#ourproducts" className="Nav-link" onClick={Open}>
-                      Our Products
-                    </a>
-                  </Link>
-                  <span>
+                <Link to="/ourproducts" style={{ textDecoration: "none" }}>
+                      <a href="#ourproducts" className="Nav-link">
+                        Our Products
+                      </a>
+                    </Link>
+                  {/* <span>
                     <ExpandMoreIcon
                       onClick={Open}
                       id="Down"
                       className="Menuopenicon"
                     />
-                  </span>
-                  <div className={`sub-Menu  ${isMenuopen ? "open" : ""}`}>
+                  </span> */}
+                  {/* <div className={`sub-Menu  ${isMenuopen ? "open" : ""}`}>
                     <ul className="sub mt-2">
                       <li className="subMenu-item">
                         <Link
@@ -356,7 +357,7 @@ function Navbar_1() {
                         </Link>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </li>
                 <li className="nav-item">
                   <Link to="/contactus" style={{ textDecoration: "none" }}>

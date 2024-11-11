@@ -5,9 +5,10 @@ import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Logo from "../../assets/HomePage/logo.svg";
 function Navbar() {
-  const isMobile = useMediaQuery({ query: "(max-width: 1030px)" });
-  const isTab = useMediaQuery({ query: "(min-width: 1030px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+  const isTab = useMediaQuery({ query: "(min-width: 1000px)" });
 
   function Open() {
     setisMenuopen(!isMenuopen);
@@ -27,13 +28,16 @@ function Navbar() {
           <>
             <div className="Nav text-center">
               <Link to="/" style={{ textDecoration: "none" }}>
-                <h5 className="logo mt-4" style={{ cursor: "pointer" }}>
+                {/* <h5 className="logo mt-4" style={{ cursor: "pointer" }}>
                   Delmen Mosquito<br></br>Screens
-                </h5>
+                </h5> */}
+                <div className="logo pt-1">
+                  <img src={Logo} className="del-logo"></img>
+                </div>
               </Link>
 
               <div className="homepage_menu">
-                <ul className="menu mt-2">
+                <ul className="menu mt-3">
                   <li>
                     <Link to="/" style={{ textDecoration: "none" }}>
                       <a href="#/" className="contacttrans">
@@ -71,7 +75,7 @@ function Navbar() {
                               to="/magneticinsectscreens"
                               style={{ textDecoration: "none" }}
                             >
-                              <a href="#magneticinsectscreens">
+                              <a href="#magneticinsectscreens"  className="text-center"> 
                                 Magnetic Insect Screens with Fiber Glass Mesh
                               </a>
                             </Link>
@@ -255,13 +259,7 @@ function Navbar() {
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <Link to="/contactus" style={{ textDecoration: "none" }}>
-                      <a href="#contactus" className="contacttrans">
-                        Contact Us
-                      </a>{" "}
-                    </Link>
-                  </li>
+                 
                   <li className="no-line">
                     <Link to="/contactus">
                       <button type="button" className="btn inquiry_btn ms-4">
@@ -279,14 +277,17 @@ function Navbar() {
             <div className="row cards_row">
               <div className="col-md-4 col-sm-5 col-5 text-center">
                 <Link to="/" style={{ textDecoration: "none" }}>
-                  <h2 className="logo pt-3">
+                  {/* <h2 className="logo pt-3">
                     Delmen Mosquito<br></br>Screen
-                  </h2>
+                  </h2> */}
+                  <div className="logo">
+                  <img src={Logo} className="del-logo"></img>
+                </div>
                 </Link>
               </div>
               <div className="col-md-8 col-sm-7 col-7 text-end">
                 <IconButton
-                  className="me-4 mt-1 iconbtn"
+                  className=" mt-1 iconbtn"
                   onClick={toggleNavbar}
                 >
                   <MenuIcon className="menu_icon" />
@@ -310,17 +311,19 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#ourproducts" className="nav-link" onClick={Open}>
-                    Our Products
-                  </a>
-                  <span>
+                <Link to="/ourproducts" style={{ textDecoration: "none" }}>
+                      <a href="#ourproducts" className="nav-link">
+                        Our Products
+                      </a>
+                    </Link>
+                  {/* <span>
                     <ExpandMoreIcon
                       onClick={Open}
                       id="down"
                       className="menuopenicon"
                     />
-                  </span>
-                  <div className={`sub-menu  ${isMenuopen ? "open" : ""}`}>
+                  </span> */}
+                  {/* <div className={`sub-menu  ${isMenuopen ? "open" : ""}`}>
                     <ul className="sub">
                       <li className="submenu-item">
                         <Link
@@ -353,7 +356,7 @@ function Navbar() {
                         </Link>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </li>
                 <li className="nav-item">
                   <Link to="/contactus" style={{ textDecoration: "none" }}>

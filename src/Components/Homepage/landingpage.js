@@ -9,7 +9,7 @@ import Navbar from "../Navbar/navbar";
 import InputAdornment from "@mui/material/InputAdornment";
 import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const searchData = [
   "Door",
@@ -96,28 +96,28 @@ function Landingpage() {
   };
   return (
     <>
-     <Helmet>
-                <meta charSet="utf-8" />
-                <title>Delmen Mosquito Net</title>
-                <link rel="canonical" href="https://www.delmennet.com/" />
-            </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Delmen Mosquito Net</title>
+        {/* <link rel="canonical" href="https://www.delmennet.com/" /> */}
+        <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+      </Helmet>
       <div className="Navbar">
         <div className="container">
           <Navbar />
 
           <div className="row justify-content-center cards_row">
             <div className="col-12 text-center">
-              <h1 className="homepage_title mt-5 mb-3">
-                Delmen Mosquito screens 
-                </h1>  
-                <h4 style={{color:'white'}}>
+              <h1 className="homepage_title mt-3 mb-3">
+                Delmen Mosquito screens
+              </h1>
+              <h4 style={{ color: "white" }}>
                 Import and export of Magnetic Net and Roller Mosquito Screens
-                </h4>
-                <h3 style={{color:'white'}}>
+              </h4>
+              <h3 style={{ color: "white" }}>
                 Making your home free from<br></br> Mosquitoes, Flies and
                 <br></br> Insects
-                </h3> 
-                
+              </h3>
             </div>
             <div className="col-lg-3 col-md-5 col-sm-6 col-8 text-center">
               <div className="search mt-4 mb-5">
@@ -127,7 +127,6 @@ function Landingpage() {
                   onChange={handleInputChange}
                   className="inputbase pe-1 mb-2"
                   placeholder="Search"
-                  
                   endAdornment={
                     <InputAdornment position="end">
                       <IconButton className="iconbutton">
